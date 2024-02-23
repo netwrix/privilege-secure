@@ -3882,7 +3882,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ActivityCard, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.activitycard, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ActivityCard]]](#schemasbpam.models.datatable`1[[sbpam.models.activitycard]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -4480,7 +4480,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.AccessControlPolicyDetails, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.accesscontrolpolicydetails, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.AccessControlPolicyDetails]]](#schemasbpam.models.datatable`1[[sbpam.models.accesscontrolpolicydetails]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -5577,7 +5577,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.GroupActivityCard, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.groupactivitycard, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.GroupActivityCard]]](#schemasbpam.models.datatable`1[[sbpam.models.groupactivitycard]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -6079,7 +6079,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.SimpleAccessControlPolicy, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.simpleaccesscontrolpolicy, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.SimpleAccessControlPolicy]]](#schemasbpam.models.datatable`1[[sbpam.models.simpleaccesscontrolpolicy]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -7983,7 +7983,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.AccessPolicyObject, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.accesspolicyobject, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.AccessPolicyObject]]](#schemasbpam.models.datatable`1[[sbpam.models.accesspolicyobject]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -8070,7 +8070,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ActivityAndGroupView, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.activityandgroupview, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ActivityAndGroupView]]](#schemasbpam.models.datatable`1[[sbpam.models.activityandgroupview]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -8157,7 +8157,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ActivityAndGroupView, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.activityandgroupview, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ActivityAndGroupView]]](#schemasbpam.models.datatable`1[[sbpam.models.activityandgroupview]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -8250,7 +8250,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.CredentialPolicyCredentialView, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.credentialpolicycredentialview, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.CredentialPolicyCredentialView]]](#schemasbpam.models.datatable`1[[sbpam.models.credentialpolicycredentialview]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -8343,7 +8343,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.CredentialPolicyCandidateView, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.credentialpolicycandidateview, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.CredentialPolicyCandidateView]]](#schemasbpam.models.datatable`1[[sbpam.models.credentialpolicycandidateview]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -8447,7 +8447,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ManagedAccountView, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.managedaccountview, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ManagedAccountView]]](#schemasbpam.models.datatable`1[[sbpam.models.managedaccountview]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -8552,7 +8552,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ManagedAccountView, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.managedaccountview, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ManagedAccountView]]](#schemasbpam.models.datatable`1[[sbpam.models.managedaccountview]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -8647,7 +8647,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ManagedResourceAndGroupView, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.managedresourceandgroupview, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ManagedResourceAndGroupView]]](#schemasbpam.models.datatable`1[[sbpam.models.managedresourceandgroupview]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -8742,7 +8742,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ManagedResourceAndGroupView, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.managedresourceandgroupview, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ManagedResourceAndGroupView]]](#schemasbpam.models.datatable`1[[sbpam.models.managedresourceandgroupview]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -8847,7 +8847,7 @@ print(r.json())
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ActivityCardWithPolicies, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.activitycardwithpolicies, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.ActivityCardWithPolicies]]](#schemasbpam.models.datatable`1[[sbpam.models.activitycardwithpolicies]])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
