@@ -79,10 +79,10 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|[[SbPAM.Models.ManagedAccountGroupInfo](#schemasbpam.models.managedaccountgroupinfo)]|false|none|none|
+|*anonymous*|[[SbPAM.Models.ManagedAccountGroupInfo](../models/sbpam.models.managedaccountgroupinfo.md#schemasbpam.models.managedaccountgroupinfo)]|false|none|none|
 |» id|string(uuid)|false|none|none|
 |» name|string¦null|false|none|none|
-|» type|[SbPAM.Models.ManagedAccountGroupType](#schemasbpam.models.managedaccountgrouptype)(int32)|false|none|none|
+|» type|[SbPAM.Models.ManagedAccountGroupType](../models/sbpam.models.managedaccountgrouptype.md#schemasbpam.models.managedaccountgrouptype)(int32)|false|none|none|
 |» groupId|string(uuid)¦null|false|none|none|
 |» mfaConnectorId|string(uuid)¦null|false|none|none|
 |» isReviewer|boolean|false|none|none|

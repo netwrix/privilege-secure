@@ -43,7 +43,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchManagedAcco
 |OrderDescending|query|boolean|false|none|
 |FilterText|query|string|false|none|
 |FilterColumns|query|array[string]|false|none|
-|entityType|query|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](#schemasbpam.models.managedaccountviewentitytypeenum)|false|none|
+|entityType|query|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../models/sbpam.models.managedaccountviewentitytypeenum.md#schemasbpam.models.managedaccountviewentitytypeenum)|false|none|
 
 #### Enumerated Values
 
@@ -96,7 +96,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchManagedAcco
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedAccountView]](#schemasbpam.models.datatable[sbpam.models.managedaccountview])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedAccountView]](../models/sbpam.models.datatable[sbpam.models.managedaccountview].md#schemasbpam.models.datatable[sbpam.models.managedaccountview])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

@@ -43,7 +43,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentials
 |OrderDescending|query|boolean|false|none|
 |FilterText|query|string|false|none|
 |FilterColumns|query|array[string]|false|none|
-|entityType|query|[SbPAM.Models.CredentialOrHostUser](#schemasbpam.models.credentialorhostuser)|false|none|
+|entityType|query|[SbPAM.Models.CredentialOrHostUser](../models/sbpam.models.credentialorhostuser.md#schemasbpam.models.credentialorhostuser)|false|none|
 
 #### Enumerated Values
 
@@ -84,7 +84,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentials
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.CredentialPolicyCredentialView]](#schemasbpam.models.datatable[sbpam.models.credentialpolicycredentialview])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.CredentialPolicyCredentialView]](../models/sbpam.models.datatable[sbpam.models.credentialpolicycredentialview].md#schemasbpam.models.datatable[sbpam.models.credentialpolicycredentialview])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

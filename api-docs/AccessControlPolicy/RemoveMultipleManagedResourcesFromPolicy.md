@@ -57,7 +57,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Manage
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |policyId|path|string(uuid)|true|none|
-|body|body|[SbPAM.Models.ManagedResourceIdAndEntity](#schemasbpam.models.managedresourceidandentity)|false|none|
+|body|body|[SbPAM.Models.ManagedResourceIdAndEntity](../models/sbpam.models.managedresourceidandentity.md#schemasbpam.models.managedresourceidandentity)|false|none|
 
 > Example responses
 
@@ -78,7 +78,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Manage
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](#schemasystem.tuple[system.int32,[system.int32])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](../models/system.tuple[system.int32,[system.int32].md#schemasystem.tuple[system.int32,[system.int32])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

@@ -96,7 +96,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ActivityCardWithP
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityCardWithPolicies]](#schemasbpam.models.datatable[sbpam.models.activitycardwithpolicies])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityCardWithPolicies]](../models/sbpam.models.datatable[sbpam.models.activitycardwithpolicies].md#schemasbpam.models.datatable[sbpam.models.activitycardwithpolicies])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

@@ -84,7 +84,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccount/{m
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityCard]](#schemasbpam.models.datatable[sbpam.models.activitycard])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityCard]](../models/sbpam.models.datatable[sbpam.models.activitycard].md#schemasbpam.models.datatable[sbpam.models.activitycard])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

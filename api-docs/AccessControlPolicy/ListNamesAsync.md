@@ -61,7 +61,7 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|[[SbPAM.Models.NameAndId](#schemasbpam.models.nameandid)]|false|none|none|
+|*anonymous*|[[SbPAM.Models.NameAndId](../models/sbpam.models.nameandid.md#schemasbpam.models.nameandid)]|false|none|none|
 |» id|string(uuid)|false|none|none|
 |» name|string¦null|false|none|none|
 

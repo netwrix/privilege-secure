@@ -37,7 +37,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |managedAccountGroupId|query|string(uuid)|false|none|
-|policyType|query|[SbPAM.Models.PolicyType](#schemasbpam.models.policytype)|false|none|
+|policyType|query|[SbPAM.Models.PolicyType](../models/sbpam.models.policytype.md#schemasbpam.models.policytype)|false|none|
 |filterText|query|string|false|none|
 |orderBy|query|string|false|none|
 |orderDescending|query|boolean|false|none|
@@ -79,7 +79,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.AccessControlPolicyDetails]](#schemasbpam.models.datatable[sbpam.models.accesscontrolpolicydetails])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.AccessControlPolicyDetails]](../models/sbpam.models.datatable[sbpam.models.accesscontrolpolicydetails].md#schemasbpam.models.datatable[sbpam.models.accesscontrolpolicydetails])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

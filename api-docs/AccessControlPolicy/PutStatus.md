@@ -503,7 +503,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPol
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.SimpleAccessControlPolicy](#schemasbpam.models.simpleaccesscontrolpolicy)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.SimpleAccessControlPolicy](../models/sbpam.models.simpleaccesscontrolpolicy.md#schemasbpam.models.simpleaccesscontrolpolicy)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

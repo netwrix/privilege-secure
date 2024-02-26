@@ -84,8 +84,8 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|[[SbPAM.Models.ManagedAccountView](#schemasbpam.models.managedaccountview)]|false|none|none|
-|» entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](#schemasbpam.models.managedaccountviewentitytypeenum)(int32)|false|none|none|
+|*anonymous*|[[SbPAM.Models.ManagedAccountView](../models/sbpam.models.managedaccountview.md#schemasbpam.models.managedaccountview)]|false|none|none|
+|» entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../models/sbpam.models.managedaccountviewentitytypeenum.md#schemasbpam.models.managedaccountviewentitytypeenum)(int32)|false|none|none|
 |» id|string(uuid)|false|none|none|
 |» hostUserId|string(uuid)¦null|false|none|none|
 |» name|string¦null|false|none|none|

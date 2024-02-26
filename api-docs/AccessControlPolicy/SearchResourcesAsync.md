@@ -43,7 +43,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchResources/{
 |OrderDescending|query|boolean|false|none|
 |FilterText|query|string|false|none|
 |FilterColumns|query|array[string]|false|none|
-|entityType|query|[SbPAM.Models.ManagedResourceAndGroupEntityType](#schemasbpam.models.managedresourceandgroupentitytype)|false|none|
+|entityType|query|[SbPAM.Models.ManagedResourceAndGroupEntityType](../models/sbpam.models.managedresourceandgroupentitytype.md#schemasbpam.models.managedresourceandgroupentitytype)|false|none|
 
 #### Enumerated Values
 
@@ -86,7 +86,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchResources/{
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedResourceAndGroupView]](#schemasbpam.models.datatable[sbpam.models.managedresourceandgroupview])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedResourceAndGroupView]](../models/sbpam.models.datatable[sbpam.models.managedresourceandgroupview].md#schemasbpam.models.datatable[sbpam.models.managedresourceandgroupview])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
