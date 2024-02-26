@@ -81,7 +81,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentialC
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.CredentialPolicyCandidateView, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.credentialpolicycandidateview, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.CredentialPolicyCandidateView]](#schemasbpam.models.datatable[sbpam.models.credentialpolicycandidateview])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

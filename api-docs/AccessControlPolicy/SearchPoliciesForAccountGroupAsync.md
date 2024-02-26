@@ -70,7 +70,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable`1[[SbPAM.Models.GroupActivityCard, SbPAM.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]](#schemasbpam.models.datatable`1[[sbpam.models.groupactivitycard, sbpam.models, version=1.0.0.0, culture=neutral, publickeytoken=null]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.GroupActivityCard]](#schemasbpam.models.datatable[sbpam.models.groupactivitycard])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

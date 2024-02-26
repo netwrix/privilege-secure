@@ -73,7 +73,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Creden
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple`2[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]](#schemasystem.tuple`2[[system.int32, system.private.corelib, version=6.0.0.0, culture=neutral, publickeytoken=7cec85d7bea7798e],[system.int32, system.private.corelib, version=6.0.0.0, culture=neutral, publickeytoken=7cec85d7bea7798e]])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](#schemasystem.tuple[system.int32,[system.int32])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
