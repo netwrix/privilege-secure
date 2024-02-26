@@ -1,5 +1,5 @@
 
-## Add credentials to a policy
+## Add credentials to a policy (Auth roles: Admin)
 
 <a id="opIdAddMultipleCredentialsToPolicyAsync"></a>
 
@@ -47,7 +47,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Creden
 ]
 ```
 
-<h3 id="add-credentials-to-a-policy-parameters">Parameters</h3>
+<h3 id="add-credentials-to-a-policy-(auth-roles:-admin)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -69,7 +69,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Creden
 }
 ```
 
-<h3 id="add-credentials-to-a-policy-responses">Responses</h3>
+<h3 id="add-credentials-to-a-policy-(auth-roles:-admin)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

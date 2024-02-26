@@ -1,5 +1,5 @@
 
-## Search for users and groups that are not a part of the policy.
+## Search for users and groups that are not a part of the policy. (Auth roles: Admin,UserPlus)
 
 <a id="opIdSearchManagedAccountCandidatesAsync"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchManagedAcco
 
 `GET /api/v1/AccessControlPolicy/SearchManagedAccountCandidates/{accessPolicyId}`
 
-<h3 id="search-for-users-and-groups-that-are-not-a-part-of-the-policy.-parameters">Parameters</h3>
+<h3 id="search-for-users-and-groups-that-are-not-a-part-of-the-policy.-(auth-roles:-admin,userplus)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -89,7 +89,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchManagedAcco
 }
 ```
 
-<h3 id="search-for-users-and-groups-that-are-not-a-part-of-the-policy.-responses">Responses</h3>
+<h3 id="search-for-users-and-groups-that-are-not-a-part-of-the-policy.-(auth-roles:-admin,userplus)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

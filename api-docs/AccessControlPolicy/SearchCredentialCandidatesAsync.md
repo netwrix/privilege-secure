@@ -1,5 +1,5 @@
 
-## Search for credentials not in the given policy.
+## Search for credentials not in the given policy. (Auth roles: Admin,UserPlus)
 
 <a id="opIdSearchCredentialCandidatesAsync"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentialC
 
 `GET /api/v1/AccessControlPolicy/SearchCredentialCandidates/{accessPolicyId}`
 
-<h3 id="search-for-credentials-not-in-the-given-policy.-parameters">Parameters</h3>
+<h3 id="search-for-credentials-not-in-the-given-policy.-(auth-roles:-admin,userplus)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -77,7 +77,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentialC
 }
 ```
 
-<h3 id="search-for-credentials-not-in-the-given-policy.-responses">Responses</h3>
+<h3 id="search-for-credentials-not-in-the-given-policy.-(auth-roles:-admin,userplus)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

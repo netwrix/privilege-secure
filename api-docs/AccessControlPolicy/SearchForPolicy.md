@@ -1,5 +1,5 @@
 
-## Search for access policies
+## Search for access policies (Auth)
 
 <a id="opIdSearchForPolicy"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/PolicySearch
 
 `GET /api/v1/AccessControlPolicy/PolicySearch`
 
-<h3 id="search-for-access-policies-parameters">Parameters</h3>
+<h3 id="search-for-access-policies-(auth)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -500,13 +500,13 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/PolicySearch
 ]
 ```
 
-<h3 id="search-for-access-policies-responses">Responses</h3>
+<h3 id="search-for-access-policies-(auth)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
 
-<h3 id="search-for-access-policies-responseschema">Response Schema</h3>
+<h3 id="search-for-access-policies-(auth)-responseschema">Response Schema</h3>
 
 Status Code **200**
 

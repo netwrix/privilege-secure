@@ -1,5 +1,5 @@
 
-## Search for credentials in the given policy.
+## Search for credentials in the given policy. (Auth roles: App,Admin,UserPlus)
 
 <a id="opIdSearchCredentialsAsync"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentials
 
 `GET /api/v1/AccessControlPolicy/SearchCredentials/{accessPolicyId}`
 
-<h3 id="search-for-credentials-in-the-given-policy.-parameters">Parameters</h3>
+<h3 id="search-for-credentials-in-the-given-policy.-(auth-roles:-app,admin,userplus)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -77,7 +77,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentials
 }
 ```
 
-<h3 id="search-for-credentials-in-the-given-policy.-responses">Responses</h3>
+<h3 id="search-for-credentials-in-the-given-policy.-(auth-roles:-app,admin,userplus)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

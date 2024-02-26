@@ -1,5 +1,5 @@
 
-## Search for resources by policy that can be accessed.
+## Search for resources by policy that can be accessed. (Auth)
 
 <a id="opIdActivitySessionCandidateResources"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ActivitySessionRe
 
 `GET /api/v1/AccessControlPolicy/ActivitySessionResources`
 
-<h3 id="search-for-resources-by-policy-that-can-be-accessed.-parameters">Parameters</h3>
+<h3 id="search-for-resources-by-policy-that-can-be-accessed.-(auth)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -79,7 +79,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ActivitySessionRe
 }
 ```
 
-<h3 id="search-for-resources-by-policy-that-can-be-accessed.-responses">Responses</h3>
+<h3 id="search-for-resources-by-policy-that-can-be-accessed.-(auth)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

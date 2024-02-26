@@ -1,5 +1,5 @@
 
-## Search for resources that are not a part of the given policy id.
+## Search for resources that are not a part of the given policy id. (Auth roles: Admin,UserPlus)
 
 <a id="opIdSearchResourceCandidatesAsync"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchResourceCan
 
 `GET /api/v1/AccessControlPolicy/SearchResourceCandidates/{accessPolicyId}`
 
-<h3 id="search-for-resources-that-are-not-a-part-of-the-given-policy-id.-parameters">Parameters</h3>
+<h3 id="search-for-resources-that-are-not-a-part-of-the-given-policy-id.-(auth-roles:-admin,userplus)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -79,7 +79,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchResourceCan
 }
 ```
 
-<h3 id="search-for-resources-that-are-not-a-part-of-the-given-policy-id.-responses">Responses</h3>
+<h3 id="search-for-resources-that-are-not-a-part-of-the-given-policy-id.-(auth-roles:-admin,userplus)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

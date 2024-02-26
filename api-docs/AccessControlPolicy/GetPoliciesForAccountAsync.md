@@ -1,5 +1,5 @@
 
-## Retrieve policies by managed account id.
+## Retrieve policies by managed account id. (Auth)
 
 <a id="opIdGetPoliciesForAccountAsync"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccount/{m
 
 `GET /api/v1/AccessControlPolicy/ManagedAccount/{managedAccountId}`
 
-<h3 id="retrieve-policies-by-managed-account-id.-parameters">Parameters</h3>
+<h3 id="retrieve-policies-by-managed-account-id.-(auth)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -77,7 +77,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccount/{m
 }
 ```
 
-<h3 id="retrieve-policies-by-managed-account-id.-responses">Responses</h3>
+<h3 id="retrieve-policies-by-managed-account-id.-(auth)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

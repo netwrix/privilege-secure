@@ -1,5 +1,5 @@
 
-## Retrieve policies by managed account/managed resource id pair.
+## Retrieve policies by managed account/managed resource id pair. (Auth roles: Admin)
 
 <a id="opIdFindPolicies"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccount/{m
 
 `GET /api/v1/AccessControlPolicy/ManagedAccount/{managedAccountId}/ManagedResource/{managedResourceId}`
 
-<h3 id="retrieve-policies-by-managed-account/managed-resource-id-pair.-parameters">Parameters</h3>
+<h3 id="retrieve-policies-by-managed-account/managed-resource-id-pair.-(auth-roles:-admin)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -497,13 +497,13 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccount/{m
 ]
 ```
 
-<h3 id="retrieve-policies-by-managed-account/managed-resource-id-pair.-responses">Responses</h3>
+<h3 id="retrieve-policies-by-managed-account/managed-resource-id-pair.-(auth-roles:-admin)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
 
-<h3 id="retrieve-policies-by-managed-account/managed-resource-id-pair.-responseschema">Response Schema</h3>
+<h3 id="retrieve-policies-by-managed-account/managed-resource-id-pair.-(auth-roles:-admin)-responseschema">Response Schema</h3>
 
 Status Code **200**
 

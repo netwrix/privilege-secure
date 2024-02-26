@@ -1,5 +1,5 @@
 
-## Get activity card information with access policy information
+## Get activity card information with access policy information (Auth)
 
 <a id="opIdGetActivityCardsWithPolicies"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ActivityCardWithP
 
 `GET /api/v1/AccessControlPolicy/ActivityCardWithPolicies`
 
-<h3 id="get-activity-card-information-with-access-policy-information-parameters">Parameters</h3>
+<h3 id="get-activity-card-information-with-access-policy-information-(auth)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -89,7 +89,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ActivityCardWithP
 }
 ```
 
-<h3 id="get-activity-card-information-with-access-policy-information-responses">Responses</h3>
+<h3 id="get-activity-card-information-with-access-policy-information-(auth)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

@@ -1,5 +1,5 @@
 
-## Associate activity from a policy.
+## Associate activity from a policy. (Auth roles: Admin,UserPlus)
 
 <a id="opIdAddMultipleActivitiesToPolicy"></a>
 
@@ -47,7 +47,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Activi
 ]
 ```
 
-<h3 id="associate-activity-from-a-policy.-parameters">Parameters</h3>
+<h3 id="associate-activity-from-a-policy.-(auth-roles:-admin,userplus)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -69,11 +69,11 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Activi
 }
 ```
 
-<h3 id="associate-activity-from-a-policy.-responses">Responses</h3>
+<h3 id="associate-activity-from-a-policy.-(auth-roles:-admin,userplus)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,System.Int32]](#schemasystem.tuple[system.int32,system.int32])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](#schemasystem.tuple[system.int32,[system.int32])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

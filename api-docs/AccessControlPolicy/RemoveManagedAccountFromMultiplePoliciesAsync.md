@@ -1,5 +1,5 @@
 
-## Remove managed account from multiple policies.
+## Remove managed account from multiple policies. (Auth roles: Admin)
 
 <a id="opIdRemoveManagedAccountFromMultiplePoliciesAsync"></a>
 
@@ -41,7 +41,7 @@ Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy/RemoveManagedAcc
 ]
 ```
 
-<h3 id="remove-managed-account-from-multiple-policies.-parameters">Parameters</h3>
+<h3 id="remove-managed-account-from-multiple-policies.-(auth-roles:-admin)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -60,7 +60,7 @@ Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy/RemoveManagedAcc
 "string"
 ```
 
-<h3 id="remove-managed-account-from-multiple-policies.-responses">Responses</h3>
+<h3 id="remove-managed-account-from-multiple-policies.-(auth-roles:-admin)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

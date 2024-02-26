@@ -1,5 +1,5 @@
 
-## Change policy delete/disabled status.
+## Change policy delete/disabled status. (Auth roles: Admin)
 
 <a id="opIdPutStatus"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPol
 
 `PUT /api/v1/AccessControlPolicy/{accessControlPolicyId}/Status`
 
-<h3 id="change-policy-delete/disabled-status.-parameters">Parameters</h3>
+<h3 id="change-policy-delete/disabled-status.-(auth-roles:-admin)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -496,7 +496,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPol
 }
 ```
 
-<h3 id="change-policy-delete/disabled-status.-responses">Responses</h3>
+<h3 id="change-policy-delete/disabled-status.-(auth-roles:-admin)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

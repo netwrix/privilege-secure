@@ -1,5 +1,5 @@
 
-## Update access policy
+## Update access policy (Auth roles: Admin,App,UserPlus)
 
 <a id="opIdPut"></a>
 
@@ -931,7 +931,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPol
 }
 ```
 
-<h3 id="update-access-policy-parameters">Parameters</h3>
+<h3 id="update-access-policy-(auth-roles:-admin,app,userplus)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -1397,7 +1397,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPol
 }
 ```
 
-<h3 id="update-access-policy-responses">Responses</h3>
+<h3 id="update-access-policy-(auth-roles:-admin,app,userplus)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

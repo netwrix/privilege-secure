@@ -1,5 +1,5 @@
 
-## Disassociate a managed resource from a policy.
+## Disassociate a managed resource from a policy. (Auth roles: Admin,UserPlus)
 
 <a id="opIdRemoveMultipleManagedResourcesFromPolicy"></a>
 
@@ -47,7 +47,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Manage
 ]
 ```
 
-<h3 id="disassociate-a-managed-resource-from-a-policy.-parameters">Parameters</h3>
+<h3 id="disassociate-a-managed-resource-from-a-policy.-(auth-roles:-admin,userplus)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -69,7 +69,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Manage
 }
 ```
 
-<h3 id="disassociate-a-managed-resource-from-a-policy.-responses">Responses</h3>
+<h3 id="disassociate-a-managed-resource-from-a-policy.-(auth-roles:-admin,userplus)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

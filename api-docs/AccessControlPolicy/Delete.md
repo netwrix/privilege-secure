@@ -1,5 +1,5 @@
 
-## Delete access policy
+## Delete access policy (Auth roles: Admin)
 
 <a id="opIdDelete"></a>
 
@@ -28,13 +28,13 @@ Invoke-RestMethod -Method DELETE -Url /api/v1/AccessControlPolicy/{accessControl
 
 `DELETE /api/v1/AccessControlPolicy/{accessControlPolicyId}`
 
-<h3 id="delete-access-policy-parameters">Parameters</h3>
+<h3 id="delete-access-policy-(auth-roles:-admin)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |accessControlPolicyId|path|string(uuid)|true|none|
 
-<h3 id="delete-access-policy-responses">Responses</h3>
+<h3 id="delete-access-policy-(auth-roles:-admin)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

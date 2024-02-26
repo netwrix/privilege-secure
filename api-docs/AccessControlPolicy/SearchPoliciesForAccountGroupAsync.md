@@ -1,5 +1,5 @@
 
-## Retrieve policies by managed account group id.
+## Retrieve policies by managed account group id. (Auth roles: Admin)
 
 <a id="opIdSearchPoliciesForAccountGroupAsync"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 
 `GET /api/v1/AccessControlPolicy/ManagedAccountGroup/{managedAccountGroupId}`
 
-<h3 id="retrieve-policies-by-managed-account-group-id.-parameters">Parameters</h3>
+<h3 id="retrieve-policies-by-managed-account-group-id.-(auth-roles:-admin)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -66,7 +66,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 }
 ```
 
-<h3 id="retrieve-policies-by-managed-account-group-id.-responses">Responses</h3>
+<h3 id="retrieve-policies-by-managed-account-group-id.-(auth-roles:-admin)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

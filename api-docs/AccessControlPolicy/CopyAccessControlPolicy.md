@@ -1,5 +1,5 @@
 
-## Copy access policy to new policy
+## Copy access policy to new policy (Auth roles: Admin)
 
 <a id="opIdCopyAccessControlPolicy"></a>
 
@@ -931,7 +931,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/Copy -ContentType
 }
 ```
 
-<h3 id="copy-access-policy-to-new-policy-parameters">Parameters</h3>
+<h3 id="copy-access-policy-to-new-policy-(auth-roles:-admin)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -12821,7 +12821,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/Copy -ContentType
 }
 ```
 
-<h3 id="copy-access-policy-to-new-policy-responses">Responses</h3>
+<h3 id="copy-access-policy-to-new-policy-(auth-roles:-admin)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

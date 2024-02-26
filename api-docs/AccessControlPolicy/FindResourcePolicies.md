@@ -1,5 +1,5 @@
 
-## Retrieve policies by managed resource id.
+## Retrieve policies by managed resource id. (Auth roles: Admin,App)
 
 <a id="opIdFindResourcePolicies"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedResource/{
 
 `GET /api/v1/AccessControlPolicy/ManagedResource/{managedResourceId}`
 
-<h3 id="retrieve-policies-by-managed-resource-id.-parameters">Parameters</h3>
+<h3 id="retrieve-policies-by-managed-resource-id.-(auth-roles:-admin,app)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -486,7 +486,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedResource/{
 }
 ```
 
-<h3 id="retrieve-policies-by-managed-resource-id.-responses">Responses</h3>
+<h3 id="retrieve-policies-by-managed-resource-id.-(auth-roles:-admin,app)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

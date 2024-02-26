@@ -1,5 +1,5 @@
 
-## Create a new policy.
+## Create a new policy. (Auth roles: Admin,App)
 
 <a id="opIdPost"></a>
 
@@ -931,7 +931,7 @@ Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy -ContentType app
 }
 ```
 
-<h3 id="create-a-new-policy.-parameters">Parameters</h3>
+<h3 id="create-a-new-policy.-(auth-roles:-admin,app)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -1396,7 +1396,7 @@ Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy -ContentType app
 }
 ```
 
-<h3 id="create-a-new-policy.-responses">Responses</h3>
+<h3 id="create-a-new-policy.-(auth-roles:-admin,app)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

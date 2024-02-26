@@ -1,5 +1,5 @@
 
-## Get available resources for access policy
+## Get available resources for access policy (Auth roles: Admin,UserPlus)
 
 <a id="opIdGetResourceLookupForPolicyAsync"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/Lookup/{policyId}
 
 `GET /api/v1/AccessControlPolicy/Lookup/{policyId}/Resource`
 
-<h3 id="get-available-resources-for-access-policy-parameters">Parameters</h3>
+<h3 id="get-available-resources-for-access-policy-(auth-roles:-admin,userplus)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -50,13 +50,13 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/Lookup/{policyId}
 }
 ```
 
-<h3 id="get-available-resources-for-access-policy-responses">Responses</h3>
+<h3 id="get-available-resources-for-access-policy-(auth-roles:-admin,userplus)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
 
-<h3 id="get-available-resources-for-access-policy-responseschema">Response Schema</h3>
+<h3 id="get-available-resources-for-access-policy-(auth-roles:-admin,userplus)-responseschema">Response Schema</h3>
 
 Status Code **200**
 

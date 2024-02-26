@@ -1,5 +1,5 @@
 
-## Remove secret vaults from access policy
+## Remove secret vaults from access policy (Auth roles: Admin)
 
 <a id="opIdRemoveVaultFromPolicyMultipleAsync"></a>
 
@@ -41,7 +41,7 @@ Invoke-RestMethod -Method DELETE -Url /api/v1/AccessControlPolicy/{policyId}/Sec
 ]
 ```
 
-<h3 id="remove-secret-vaults-from-access-policy-parameters">Parameters</h3>
+<h3 id="remove-secret-vaults-from-access-policy-(auth-roles:-admin)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -60,7 +60,7 @@ Invoke-RestMethod -Method DELETE -Url /api/v1/AccessControlPolicy/{policyId}/Sec
 0
 ```
 
-<h3 id="remove-secret-vaults-from-access-policy-responses">Responses</h3>
+<h3 id="remove-secret-vaults-from-access-policy-(auth-roles:-admin)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|

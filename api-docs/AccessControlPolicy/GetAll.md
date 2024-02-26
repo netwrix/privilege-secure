@@ -1,5 +1,5 @@
 
-## Retrieve all access policies.
+## Retrieve all access policies. (Auth roles: Admin,App)
 
 <a id="opIdGetAll"></a>
 
@@ -29,7 +29,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy
 
 `GET /api/v1/AccessControlPolicy`
 
-<h3 id="retrieve-all-access-policies.-parameters">Parameters</h3>
+<h3 id="retrieve-all-access-policies.-(auth-roles:-admin,app)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -498,13 +498,13 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy
 ]
 ```
 
-<h3 id="retrieve-all-access-policies.-responses">Responses</h3>
+<h3 id="retrieve-all-access-policies.-(auth-roles:-admin,app)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
 
-<h3 id="retrieve-all-access-policies.-responseschema">Response Schema</h3>
+<h3 id="retrieve-all-access-policies.-(auth-roles:-admin,app)-responseschema">Response Schema</h3>
 
 Status Code **200**
 

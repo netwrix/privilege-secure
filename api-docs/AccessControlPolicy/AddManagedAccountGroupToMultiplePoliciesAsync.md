@@ -1,5 +1,5 @@
 
-## Add managed account group to multiple policies.
+## Add managed account group to multiple policies. (Auth roles: Admin)
 
 <a id="opIdAddManagedAccountGroupToMultiplePoliciesAsync"></a>
 
@@ -41,7 +41,7 @@ Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy/AddManagedAccoun
 ]
 ```
 
-<h3 id="add-managed-account-group-to-multiple-policies.-parameters">Parameters</h3>
+<h3 id="add-managed-account-group-to-multiple-policies.-(auth-roles:-admin)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -60,7 +60,7 @@ Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy/AddManagedAccoun
 "string"
 ```
 
-<h3 id="add-managed-account-group-to-multiple-policies.-responses">Responses</h3>
+<h3 id="add-managed-account-group-to-multiple-policies.-(auth-roles:-admin)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
