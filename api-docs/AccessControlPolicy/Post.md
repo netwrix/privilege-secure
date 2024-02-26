@@ -483,6 +483,13 @@ Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy -ContentType "ap
 
 `POST /api/v1/AccessControlPolicy`
 
+A policy can be one of two types: CredentialBased or ResourceBased. CredentialBased policies allow
+users to run the *Credential Release* activity and then view the password while the session is active.
+ResourceBased policies allow users to perform any of valid activities for the resource that are part
+of the policy.
+            
+Resource validity is based on matching the platform of the resource and platform of the activity.
+
 > Body parameter
 
 ```json
