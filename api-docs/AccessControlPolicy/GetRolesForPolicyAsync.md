@@ -14,9 +14,10 @@ curl -X GET /api/v1/AccessControlPolicy/RolesForPolicy/{policyId} \
 ```
 
 ```powershell
+# PowerShell example
 
 $Login = @{
-    Login = "User",
+    Login = "User"
     Password = "Password"
 }
 $Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
@@ -24,7 +25,9 @@ $Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @
 
 $Headers = @{
 
-Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/RolesForPolicy/{policyId}
+    Authorization = "Bearer $Token"
+}
+Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/RolesForPolicy/{policyId} -Headers $Headers
 ```
 
 `GET /api/v1/AccessControlPolicy/RolesForPolicy/{policyId}`

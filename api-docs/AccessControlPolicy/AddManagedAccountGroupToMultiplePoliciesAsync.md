@@ -15,12 +15,15 @@ curl -X POST /api/v1/AccessControlPolicy/AddManagedAccountGroupToMultiplePolicie
 ```
 
 ```powershell
-$JsonBody = [
+# PowerShell example
+$JsonBody = @"
+[
   "497f6eca-6276-4993-bfeb-53cbbbba6f08"
-];
+]
+"@
 
 $Login = @{
-    Login = "User",
+    Login = "User"
     Password = "Password"
 }
 $Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
@@ -28,7 +31,9 @@ $Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @
 
 $Headers = @{
 
-Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy/AddManagedAccountGroupToMultiplePolicies/{managedAccountGroupId} -ContentType application/json-patch+json -Body $JsonBody
+    Authorization = "Bearer $Token"
+}
+Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy/AddManagedAccountGroupToMultiplePolicies/{managedAccountGroupId} -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
 ```
 
 `POST /api/v1/AccessControlPolicy/AddManagedAccountGroupToMultiplePolicies/{managedAccountGroupId}`

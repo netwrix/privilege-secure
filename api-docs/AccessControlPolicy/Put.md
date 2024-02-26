@@ -15,7 +15,9 @@ curl -X PUT /api/v1/AccessControlPolicy/{accessControlPolicyId} \
 ```
 
 ```powershell
-$JsonBody = {
+# PowerShell example
+$JsonBody = @"
+{
   "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
   "name": "string",
   "description": "string",
@@ -462,10 +464,11 @@ $JsonBody = {
   "activityGroupIds": [
     "497f6eca-6276-4993-bfeb-53cbbbba6f08"
   ]
-};
+}
+"@
 
 $Login = @{
-    Login = "User",
+    Login = "User"
     Password = "Password"
 }
 $Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
@@ -473,7 +476,9 @@ $Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @
 
 $Headers = @{
 
-Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPolicyId} -ContentType application/json-patch+json -Body $JsonBody
+    Authorization = "Bearer $Token"
+}
+Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPolicyId} -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
 ```
 
 `PUT /api/v1/AccessControlPolicy/{accessControlPolicyId}`

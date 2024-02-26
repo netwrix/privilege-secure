@@ -14,9 +14,10 @@ curl -X DELETE /api/v1/AccessControlPolicy/ManagedGroupAccount/{managedAccountId
 ```
 
 ```powershell
+# PowerShell example
 
 $Login = @{
-    Login = "User",
+    Login = "User"
     Password = "Password"
 }
 $Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
@@ -24,7 +25,9 @@ $Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @
 
 $Headers = @{
 
-Invoke-RestMethod -Method DELETE -Url /api/v1/AccessControlPolicy/ManagedGroupAccount/{managedAccountId}
+    Authorization = "Bearer $Token"
+}
+Invoke-RestMethod -Method DELETE -Url /api/v1/AccessControlPolicy/ManagedGroupAccount/{managedAccountId} -Headers $Headers
 ```
 
 `DELETE /api/v1/AccessControlPolicy/ManagedGroupAccount/{managedAccountId}`

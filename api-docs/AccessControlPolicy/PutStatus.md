@@ -14,9 +14,10 @@ curl -X PUT /api/v1/AccessControlPolicy/{accessControlPolicyId}/Status \
 ```
 
 ```powershell
+# PowerShell example
 
 $Login = @{
-    Login = "User",
+    Login = "User"
     Password = "Password"
 }
 $Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
@@ -24,7 +25,9 @@ $Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @
 
 $Headers = @{
 
-Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPolicyId}/Status
+    Authorization = "Bearer $Token"
+}
+Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPolicyId}/Status -Headers $Headers
 ```
 
 `PUT /api/v1/AccessControlPolicy/{accessControlPolicyId}/Status`
