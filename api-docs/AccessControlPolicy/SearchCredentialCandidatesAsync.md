@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/SearchCredentialCandidates/{accessPolicyId} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -36,12 +36,12 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentialC
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|accessPolicyId|path|string(uuid)|true|none|
+|accessPolicyId|path|string(uuid)|true|AccessControlPolicy Id|
 |filterText|query|string|false|none|
-|orderBy|query|string|false|none|
-|orderDescending|query|boolean|false|none|
-|skip|query|integer(int32)|false|none|
-|take|query|integer(int32)|false|none|
+|orderBy|query|string|false|Property name to order results by|
+|orderDescending|query|boolean|false|Use descending sort order|
+|skip|query|integer(int32)|false|Start at this item (default: 0)|
+|take|query|integer(int32)|false|Return this number of items (default: 30)|
 |entityType|query|[SbPAM.Models.CredentialOrHostUser](../models/sbpam.models.credentialorhostuser.md#schemasbpam.models.credentialorhostuser)|false|none|
 
 #### Enumerated Values
@@ -55,10 +55,6 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentialC
 > Example responses
 
 > 200 Response
-
-```
-{"data":[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","username":"string","name":"string","description":"string","domain":"string","userId":"2c4a230c-5085-4924-a3e1-25fb4fc5965b","os":"string","activeSessionCount":0,"entityType":"Credential","vaultConnectorId":"da5bc90a-dbcd-442c-91be-be4204003524"}],"recordsTotal":0}
-```
 
 ```json
 {

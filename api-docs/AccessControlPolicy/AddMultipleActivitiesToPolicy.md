@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X PUT /api/v1/AccessControlPolicy/{policyId}/Activity \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -56,16 +56,12 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Activi
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|policyId|path|string(uuid)|true|none|
-|body|body|[SbPAM.Models.ActivityIdAndEntity](../models/sbpam.models.activityidandentity.md#schemasbpam.models.activityidandentity)|false|none|
+|policyId|path|string(uuid)|true|Access control policy id|
+|body|body|[SbPAM.Models.ActivityIdAndEntity](../Models/sbpam.models.activityidandentity.md#schemasbpam.models.activityidandentity)|false|none|
 
 > Example responses
 
 > 200 Response
-
-```
-{"item1":0,"item2":0}
-```
 
 ```json
 {
@@ -78,7 +74,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Activi
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](../models/system.tuple[system.int32,[system.int32].md#schemasystem.tuple[system.int32,[system.int32])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](../Models/system.tuple[system.int32,[system.int32].md#schemasystem.tuple[system.int32,[system.int32])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

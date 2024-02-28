@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/Lookup/{policyId}/Credential \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -36,15 +36,11 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/Lookup/{policyId}
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|policyId|path|string(uuid)|true|none|
+|policyId|path|string(uuid)|true|Access control policy id|
 
 > Example responses
 
 > 200 Response
-
-```
-{"property1":"string","property2":"string"}
-```
 
 ```json
 {

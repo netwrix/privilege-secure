@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/SearchActivities/{accessPolicyId} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -36,14 +36,14 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchActivities/
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|accessPolicyId|path|string(uuid)|true|none|
+|accessPolicyId|path|string(uuid)|true|AccessControlPolicy Id|
 |Skip|query|integer(int32)|false|none|
 |Take|query|integer(int32)|false|none|
 |OrderBy|query|string|false|none|
 |OrderDescending|query|boolean|false|none|
 |FilterText|query|string|false|none|
 |FilterColumns|query|array[string]|false|none|
-|entityType|query|[SbPAM.Models.ActivityAndGroupEntityType](../models/sbpam.models.activityandgroupentitytype.md#schemasbpam.models.activityandgroupentitytype)|false|none|
+|entityType|query|[SbPAM.Models.ActivityAndGroupEntityType](../Models/sbpam.models.activityandgroupentitytype.md#schemasbpam.models.activityandgroupentitytype)|false|none|
 
 #### Enumerated Values
 
@@ -55,10 +55,6 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchActivities/
 > Example responses
 
 > 200 Response
-
-```
-{"data":[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","name":"string","description":"string","entityType":"Activity"}],"recordsTotal":0}
-```
 
 ```json
 {
@@ -78,7 +74,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchActivities/
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityAndGroupView]](../models/sbpam.models.datatable[sbpam.models.activityandgroupview].md#schemasbpam.models.datatable[sbpam.models.activityandgroupview])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityAndGroupView]](../Models/sbpam.models.datatable[sbpam.models.activityandgroupview].md#schemasbpam.models.datatable[sbpam.models.activityandgroupview])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

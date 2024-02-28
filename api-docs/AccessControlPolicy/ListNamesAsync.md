@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/Names \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -36,10 +36,6 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/Names -Headers $H
 
 > 200 Response
 
-```
-[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","name":"string"}]
-```
-
 ```json
 [
   {
@@ -54,6 +50,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/Names -Headers $H
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error fetching access policy|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md#schemamicrosoft.aspnetcore.mvc.problemdetails)|
 
 <h3 id="get-names-and-ids-for-all-access-policies.-(auth-roles:-admin,userplus)-responseschema">Response Schema</h3>
 
@@ -61,7 +58,7 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|[[SbPAM.Models.NameAndId](../models/sbpam.models.nameandid.md#schemasbpam.models.nameandid)]|false|none|none|
+|*anonymous*|[[SbPAM.Models.NameAndId](../Models/sbpam.models.nameandid.md#schemasbpam.models.nameandid)]|false|none|none|
 |» id|string(uuid)|false|none|none|
 |» name|string¦null|false|none|none|
 

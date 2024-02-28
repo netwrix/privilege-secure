@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/{policyId}/ManagedAccountGroup \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -36,15 +36,11 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/{policyId}/Manage
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|policyId|path|string(uuid)|true|none|
+|policyId|path|string(uuid)|true|Access control policy id|
 
 > Example responses
 
 > 200 Response
-
-```
-[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","name":"string","type":"Local","groupId":"eb54e96e-21b8-4f54-9cd4-80fccbd06f55","mfaConnectorId":"360d3915-9c3c-42c2-9c41-55ba84bbd9f8","isReviewer":true,"distinguishedName":"string","domain":"string","email":"string","samaccountname":"string","sid":"string","nodeId":"959356e3-6168-4a92-b4a5-b9d462be6177","createdDateTimeUtc":"2019-08-24T14:15:22Z","modifiedDateTimeUtc":"2019-08-24T14:15:22Z"}]
-```
 
 ```json
 [
@@ -79,10 +75,10 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|[[SbPAM.Models.ManagedAccountGroupInfo](../models/sbpam.models.managedaccountgroupinfo.md#schemasbpam.models.managedaccountgroupinfo)]|false|none|none|
+|*anonymous*|[[SbPAM.Models.ManagedAccountGroupInfo](../Models/sbpam.models.managedaccountgroupinfo.md#schemasbpam.models.managedaccountgroupinfo)]|false|none|none|
 |» id|string(uuid)|false|none|none|
 |» name|string¦null|false|none|none|
-|» type|[SbPAM.Models.ManagedAccountGroupType](../models/sbpam.models.managedaccountgrouptype.md#schemasbpam.models.managedaccountgrouptype)(int32)|false|none|none|
+|» type|[SbPAM.Models.ManagedAccountGroupType](../Models/sbpam.models.managedaccountgrouptype.md#schemasbpam.models.managedaccountgrouptype)(int32)|false|none|none|
 |» groupId|string(uuid)¦null|false|none|none|
 |» mfaConnectorId|string(uuid)¦null|false|none|none|
 |» isReviewer|boolean|false|none|none|

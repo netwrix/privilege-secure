@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X POST /api/v1/AccessControlPolicy/AddManagedAccountToMultiplePolicies/{managedAccountId} \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -50,16 +50,12 @@ Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy/AddManagedAccoun
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|managedAccountId|path|string(uuid)|true|none|
-|body|body|array[string]|false|none|
+|managedAccountId|path|string(uuid)|true|Managed account id|
+|body|body|array[string]|false|List of access control policy ids|
 
 > Example responses
 
 > 200 Response
-
-```
-"string"
-```
 
 ```json
 "string"
@@ -70,6 +66,7 @@ Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy/AddManagedAccoun
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|string|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Account was not added to any policies|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md#schemamicrosoft.aspnetcore.mvc.problemdetails)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

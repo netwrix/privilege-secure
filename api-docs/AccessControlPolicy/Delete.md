@@ -35,13 +35,13 @@ Invoke-RestMethod -Method DELETE -Url /api/v1/AccessControlPolicy/{accessControl
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|accessControlPolicyId|path|string(uuid)|true|none|
+|accessControlPolicyId|path|string(uuid)|true|Policy Id to delete|
 
 <h3 id="delete-access-policy-(auth-roles:-admin)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
+|202|[Accepted](https://tools.ietf.org/html/rfc7231#section-6.3.3)|Accepted|None|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

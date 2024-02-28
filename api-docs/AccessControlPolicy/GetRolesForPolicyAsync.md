@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/RolesForPolicy/{policyId} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -36,15 +36,11 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/RolesForPolicy/{p
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|policyId|path|string(uuid)|true|none|
+|policyId|path|string(uuid)|true|Access control policy id|
 
 > Example responses
 
 > 200 Response
-
-```
-[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","name":"string"}]
-```
 
 ```json
 [
@@ -67,7 +63,7 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|[[SbPAM.Models.NameAndId](../models/sbpam.models.nameandid.md#schemasbpam.models.nameandid)]|false|none|none|
+|*anonymous*|[[SbPAM.Models.NameAndId](../Models/sbpam.models.nameandid.md#schemasbpam.models.nameandid)]|false|none|none|
 |» id|string(uuid)|false|none|none|
 |» name|string¦null|false|none|none|
 

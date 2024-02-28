@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X PUT /api/v1/AccessControlPolicy/{policyId}/SecretVault \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -50,16 +50,12 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Secret
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|policyId|path|string(uuid)|true|none|
+|policyId|path|string(uuid)|true|Access control policy id|
 |body|body|array[string]|false|none|
 
 > Example responses
 
 > 200 Response
-
-```
-0
-```
 
 ```json
 0

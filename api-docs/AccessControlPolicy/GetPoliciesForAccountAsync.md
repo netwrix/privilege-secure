@@ -1,5 +1,5 @@
 
-## Retrieve policies by managed account id. (Auth)
+##  (Auth)
 
 <a id="opIdGetPoliciesForAccountAsync"></a>
 
@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/ManagedAccount/{managedAccountId} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -32,7 +32,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccount/{m
 
 `GET /api/v1/AccessControlPolicy/ManagedAccount/{managedAccountId}`
 
-<h3 id="retrieve-policies-by-managed-account-id.-(auth)-parameters">Parameters</h3>
+<h3 id="-(auth)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -48,10 +48,6 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccount/{m
 > Example responses
 
 > 200 Response
-
-```
-{"data":[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","name":"string","description":"string","activityType":"Interactive","resourceText":"string","platformId":"32a6e381-64f4-4911-86b6-3bf681b64d23","platformName":"string","os":"string","managedAccountId":"98c25b84-2c06-4fcd-94c7-306443f45a3d","totalResources":0,"latestSessionActualStartUtc":"2019-08-24T14:15:22Z","policyId":"2f5573e6-5ba4-48f2-a75d-df99c936463b","policyName":"string","policyType":"Resource","notesRequired":true,"ticketRequired":true,"maxSessionLength":0}],"recordsTotal":0}
-```
 
 ```json
 {
@@ -80,11 +76,12 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccount/{m
 }
 ```
 
-<h3 id="retrieve-policies-by-managed-account-id.-(auth)-responses">Responses</h3>
+<h3 id="-(auth)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityCard]](../models/sbpam.models.datatable[sbpam.models.activitycard].md#schemasbpam.models.datatable[sbpam.models.activitycard])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityCard]](../Models/sbpam.models.datatable[sbpam.models.activitycard].md#schemasbpam.models.datatable[sbpam.models.activitycard])|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md#schemamicrosoft.aspnetcore.mvc.problemdetails)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

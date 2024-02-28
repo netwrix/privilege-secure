@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/{accessControlPolicyId}/ManagedAccount \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -41,10 +41,6 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/{accessControlPol
 > Example responses
 
 > 200 Response
-
-```
-[{"entityType":"ManagedAccount","id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","hostUserId":"f49f66da-8e90-4a2e-90ba-36f4d97bfbe9","name":"string","displayName":"string","samAccountName":"string","department":"string","userPrincipalName":"string","email":"string","domainConfigId":"0ef2a0ae-0442-42e8-9ed5-4a4ed3f7578e","domainName":"string","lastLogonTimestamp":"2019-08-24T14:15:22Z","activeSessionCount":0,"scheduledSessionCount":0,"accessPolicyCount":0,"certificateSerialNumber":"string","locked":true,"lockoutEnd":"2019-08-24T14:15:22Z","isReviewer":true}]
-```
 
 ```json
 [
@@ -84,8 +80,8 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|[[SbPAM.Models.ManagedAccountView](../models/sbpam.models.managedaccountview.md#schemasbpam.models.managedaccountview)]|false|none|none|
-|» entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../models/sbpam.models.managedaccountviewentitytypeenum.md#schemasbpam.models.managedaccountviewentitytypeenum)(int32)|false|none|none|
+|*anonymous*|[[SbPAM.Models.ManagedAccountView](../Models/sbpam.models.managedaccountview.md#schemasbpam.models.managedaccountview)]|false|none|none|
+|» entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../Models/sbpam.models.managedaccountviewentitytypeenum.md#schemasbpam.models.managedaccountviewentitytypeenum)(int32)|false|none|none|
 |» id|string(uuid)|false|none|none|
 |» hostUserId|string(uuid)¦null|false|none|none|
 |» name|string¦null|false|none|none|

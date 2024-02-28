@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X POST /api/v1/AccessControlPolicy/RemoveManagedAccountGroupFromMultiplePolicies/{managedAccountGroupId} \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -56,10 +56,6 @@ Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy/RemoveManagedAcc
 > Example responses
 
 > 200 Response
-
-```
-"string"
-```
 
 ```json
 "string"

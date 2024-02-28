@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/SearchManagedAccountCandidates/{accessPolicyId} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -36,14 +36,14 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchManagedAcco
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|accessPolicyId|path|string(uuid)|true|none|
+|accessPolicyId|path|string(uuid)|true|AccessControlPolicy Id|
 |Skip|query|integer(int32)|false|none|
 |Take|query|integer(int32)|false|none|
 |OrderBy|query|string|false|none|
 |OrderDescending|query|boolean|false|none|
 |FilterText|query|string|false|none|
 |FilterColumns|query|array[string]|false|none|
-|entityType|query|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../models/sbpam.models.managedaccountviewentitytypeenum.md#schemasbpam.models.managedaccountviewentitytypeenum)|false|none|
+|entityType|query|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../Models/sbpam.models.managedaccountviewentitytypeenum.md#schemasbpam.models.managedaccountviewentitytypeenum)|false|none|
 
 #### Enumerated Values
 
@@ -58,10 +58,6 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchManagedAcco
 > Example responses
 
 > 200 Response
-
-```
-{"data":[{"entityType":"ManagedAccount","id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","hostUserId":"f49f66da-8e90-4a2e-90ba-36f4d97bfbe9","name":"string","displayName":"string","samAccountName":"string","department":"string","userPrincipalName":"string","email":"string","domainConfigId":"0ef2a0ae-0442-42e8-9ed5-4a4ed3f7578e","domainName":"string","lastLogonTimestamp":"2019-08-24T14:15:22Z","activeSessionCount":0,"scheduledSessionCount":0,"accessPolicyCount":0,"certificateSerialNumber":"string","locked":true,"lockoutEnd":"2019-08-24T14:15:22Z","isReviewer":true}],"recordsTotal":0}
-```
 
 ```json
 {
@@ -96,7 +92,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchManagedAcco
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedAccountView]](../models/sbpam.models.datatable[sbpam.models.managedaccountview].md#schemasbpam.models.datatable[sbpam.models.managedaccountview])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedAccountView]](../Models/sbpam.models.datatable[sbpam.models.managedaccountview].md#schemasbpam.models.datatable[sbpam.models.managedaccountview])|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
