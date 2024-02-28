@@ -16,18 +16,22 @@ curl -X GET /api/v1/AccessControlPolicy/ManagedAccountGroup/{managedAccountGroup
 ```powershell
 # PowerShell example
 
+$Host = https://localhost:6500
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGroup/{managedAccountGroupId} -Headers $Headers
+Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedAccountGroup/{managedAccountGroupId} -Headers $Headers
 ```
 
 `GET /api/v1/AccessControlPolicy/ManagedAccountGroup/{managedAccountGroupId}`
@@ -36,8 +40,8 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|managedAccountGroupId|path|string(uuid)|true|none|
-|includeLastRun|query|boolean|false|none|
+|managedAccountGroupId|path|string(uuid)|true|Managed account group id|
+|includeLastRun|query|boolean|false|Include last run of activity, this is an expensive operation|
 |Skip|query|integer(int32)|false|none|
 |Take|query|integer(int32)|false|none|
 |OrderBy|query|string|false|none|
@@ -69,7 +73,8 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.GroupActivityCard]](../Models/sbpam.models.datatable[sbpam.models.groupactivitycard].md#schemasbpam.models.datatable[sbpam.models.groupactivitycard])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.GroupActivityCard]](../Models/sbpam.models.datatable[sbpam.models.groupactivitycard].md)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|No group supplied|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

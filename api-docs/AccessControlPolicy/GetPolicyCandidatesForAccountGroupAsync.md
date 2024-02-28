@@ -16,18 +16,22 @@ curl -X GET /api/v1/AccessControlPolicy/ManagedAccountGroup/Candidates \
 ```powershell
 # PowerShell example
 
+$Host = https://localhost:6500
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGroup/Candidates -Headers $Headers
+Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedAccountGroup/Candidates -Headers $Headers
 ```
 
 `GET /api/v1/AccessControlPolicy/ManagedAccountGroup/Candidates`
@@ -37,7 +41,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |managedAccountGroupId|query|string(uuid)|false|ManageAccountGroupId to retrieve policies for|
-|policyType|query|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md#schemasbpam.models.policytype)|false|Resource or Credential|
+|policyType|query|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)|false|Resource or Credential|
 |filterText|query|string|false|Search policy names that contain this string|
 |orderBy|query|string|false|Property name to order results by|
 |orderDescending|query|boolean|false|Use descending sort order|
@@ -75,8 +79,8 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.AccessControlPolicyDetails]](../Models/sbpam.models.datatable[sbpam.models.accesscontrolpolicydetails].md#schemasbpam.models.datatable[sbpam.models.accesscontrolpolicydetails])|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|ManagedAccountGroupid is missing|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md#schemamicrosoft.aspnetcore.mvc.problemdetails)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.AccessControlPolicyDetails]](../Models/sbpam.models.datatable[sbpam.models.accesscontrolpolicydetails].md)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|ManagedAccountGroupid is missing|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

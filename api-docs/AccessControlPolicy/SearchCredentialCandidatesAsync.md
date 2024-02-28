@@ -16,18 +16,22 @@ curl -X GET /api/v1/AccessControlPolicy/SearchCredentialCandidates/{accessPolicy
 ```powershell
 # PowerShell example
 
+$Host = https://localhost:6500
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentialCandidates/{accessPolicyId} -Headers $Headers
+Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/SearchCredentialCandidates/{accessPolicyId} -Headers $Headers
 ```
 
 `GET /api/v1/AccessControlPolicy/SearchCredentialCandidates/{accessPolicyId}`
@@ -37,12 +41,12 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentialC
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |accessPolicyId|path|string(uuid)|true|AccessControlPolicy Id|
-|filterText|query|string|false|none|
+|filterText|query|string|false|String to search using contains|
 |orderBy|query|string|false|Property name to order results by|
 |orderDescending|query|boolean|false|Use descending sort order|
 |skip|query|integer(int32)|false|Start at this item (default: 0)|
 |take|query|integer(int32)|false|Return this number of items (default: 30)|
-|entityType|query|[SbPAM.Models.CredentialOrHostUser](../models/sbpam.models.credentialorhostuser.md#schemasbpam.models.credentialorhostuser)|false|none|
+|entityType|query|[SbPAM.Models.CredentialOrHostUser](../Models/sbpam.models.credentialorhostuser.md)|false|none|
 
 #### Enumerated Values
 
@@ -80,7 +84,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchCredentialC
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.CredentialPolicyCandidateView]](../models/sbpam.models.datatable[sbpam.models.credentialpolicycandidateview].md#schemasbpam.models.datatable[sbpam.models.credentialpolicycandidateview])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.CredentialPolicyCandidateView]](../Models/sbpam.models.datatable[sbpam.models.credentialpolicycandidateview].md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

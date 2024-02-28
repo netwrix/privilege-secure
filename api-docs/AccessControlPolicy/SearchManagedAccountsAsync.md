@@ -1,5 +1,5 @@
 
-##  (Auth roles: Admin,UserPlus)
+## Search for managed accounts in given policy. (Auth roles: Admin,UserPlus)
 
 <a id="opIdSearchManagedAccountsAsync"></a>
 
@@ -16,33 +16,37 @@ curl -X GET /api/v1/AccessControlPolicy/SearchManagedAccounts/{accessPolicyId} \
 ```powershell
 # PowerShell example
 
+$Host = https://localhost:6500
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchManagedAccounts/{accessPolicyId} -Headers $Headers
+Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/SearchManagedAccounts/{accessPolicyId} -Headers $Headers
 ```
 
 `GET /api/v1/AccessControlPolicy/SearchManagedAccounts/{accessPolicyId}`
 
-<h3 id="-(auth-roles:-admin,userplus)-parameters">Parameters</h3>
+<h3 id="search-for-managed-accounts-in-given-policy.-(auth-roles:-admin,userplus)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|accessPolicyId|path|string(uuid)|true|none|
-|filterText|query|string|false|none|
-|orderBy|query|string|false|none|
-|orderDescending|query|boolean|false|none|
-|skip|query|integer(int32)|false|none|
-|take|query|integer(int32)|false|none|
-|entityType|query|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../Models/sbpam.models.managedaccountviewentitytypeenum.md#schemasbpam.models.managedaccountviewentitytypeenum)|false|none|
+|accessPolicyId|path|string(uuid)|true|AccessControlPolicy Id|
+|filterText|query|string|false|String to search using contains|
+|orderBy|query|string|false|Property name to order results by|
+|orderDescending|query|boolean|false|Use descending sort order|
+|skip|query|integer(int32)|false|Start at this item (default: 0)|
+|take|query|integer(int32)|false|Return this number of items (default: 30)|
+|entityType|query|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../Models/sbpam.models.managedaccountviewentitytypeenum.md)|false|none|
 
 #### Enumerated Values
 
@@ -87,11 +91,11 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/SearchManagedAcco
 }
 ```
 
-<h3 id="-(auth-roles:-admin,userplus)-responses">Responses</h3>
+<h3 id="search-for-managed-accounts-in-given-policy.-(auth-roles:-admin,userplus)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedAccountView]](../Models/sbpam.models.datatable[sbpam.models.managedaccountview].md#schemasbpam.models.datatable[sbpam.models.managedaccountview])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedAccountView]](../Models/sbpam.models.datatable[sbpam.models.managedaccountview].md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

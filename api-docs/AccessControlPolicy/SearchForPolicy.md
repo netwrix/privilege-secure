@@ -16,18 +16,22 @@ curl -X GET /api/v1/AccessControlPolicy/PolicySearch \
 ```powershell
 # PowerShell example
 
+$Host = https://localhost:6500
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/PolicySearch -Headers $Headers
+Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/PolicySearch -Headers $Headers
 ```
 
 `GET /api/v1/AccessControlPolicy/PolicySearch`
@@ -504,6 +508,9 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/PolicySearch -Hea
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Unable to find a policy for given resource, credential or policy. See response body for details.|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Logged in user is not an administrator and the managed account id does not match logged in id|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Unable to find a matching policy|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <h3 id="search-for-access-policies-(auth)-responseschema">Response Schema</h3>
 
@@ -511,33 +518,33 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|[[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md#schemasbpam.models.simpleaccesscontrolpolicy)]|false|none|none|
+|*anonymous*|[[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md)]|false|none|none|
 |» id|string(uuid)|false|none|none|
 |» name|string¦null|false|none|none|
 |» description|string¦null|false|none|none|
 |» priority|integer(int32)|false|none|none|
 |» notesRequired|boolean|false|none|none|
 |» ticketRequired|boolean|false|none|none|
-|» approvalTypeRequired|[SbPAM.Models.ApprovalType](../Models/sbpam.models.approvaltype.md#schemasbpam.models.approvaltype)(int32)|false|none|none|
-|» policyType|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md#schemasbpam.models.policytype)(int32)|false|none|none|
+|» approvalTypeRequired|[SbPAM.Models.ApprovalType](../Models/sbpam.models.approvaltype.md)(int32)|false|none|none|
+|» policyType|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)(int32)|false|none|none|
 |» managedAccountIds|[string]¦null|false|none|none|
 |» managedAccountGroupIds|[string]¦null|false|none|none|
 |» managedResourceIds|[string]¦null|false|none|none|
 |» managedResourceGroupIds|[string]¦null|false|none|none|
 |» credentialIds|[string]¦null|false|none|none|
 |» activityIds|[string]¦null|false|none|none|
-|» activities|[[SbPAM.Models.Activity](../Models/sbpam.models.activity.md#schemasbpam.models.activity)]¦null|false|none|none|
+|» activities|[[SbPAM.Models.Activity](../Models/sbpam.models.activity.md)]¦null|false|none|none|
 |»» id|string(uuid)|false|none|none|
 |»» createdBy|string(uuid)¦null|false|none|none|
 |»» modifiedBy|string(uuid)¦null|false|none|none|
 |»» name|string¦null|false|none|none|
 |»» description|string¦null|false|none|none|
 |»» activityConfigurationId|string(uuid)¦null|false|none|none|
-|»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md#schemasbpam.models.activityconfiguration)|false|none|none|
+|»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|none|
 |»»» id|string(uuid)|false|none|none|
 |»»» name|string¦null|false|none|none|
 |»»» description|string¦null|false|none|none|
-|»»» type|[SbPAM.Models.ActivityConfigurationType](../Models/sbpam.models.activityconfigurationtype.md#schemasbpam.models.activityconfigurationtype)(int32)|false|none|none|
+|»»» type|[SbPAM.Models.ActivityConfigurationType](../Models/sbpam.models.activityconfigurationtype.md)(int32)|false|none|none|
 |»»» createdBy|string(uuid)¦null|false|none|none|
 |»»» modifiedBy|string(uuid)¦null|false|none|none|
 |»»» createdDateTimeUtc|string(date-time)|false|none|none|
@@ -546,24 +553,24 @@ Status Code **200**
 |»»» isDeleted|boolean|false|none|none|
 |»»» isUserModified|boolean|false|none|none|
 |»»» nodeId|string(uuid)|false|none|none|
-|»»» activityConfigurationSettings|[[SbPAM.Models.ActivityConfigurationSetting](../Models/sbpam.models.activityconfigurationsetting.md#schemasbpam.models.activityconfigurationsetting)]¦null|false|none|none|
+|»»» activityConfigurationSettings|[[SbPAM.Models.ActivityConfigurationSetting](../Models/sbpam.models.activityconfigurationsetting.md)]¦null|false|none|none|
 |»»»» id|string(uuid)|false|none|none|
 |»»»» name|string¦null|false|none|none|
 |»»»» key|string¦null|false|none|none|
 |»»»» value|string¦null|false|none|none|
-|»»»» type|[SbPAM.Models.ActivityConfigurationSettingType](../Models/sbpam.models.activityconfigurationsettingtype.md#schemasbpam.models.activityconfigurationsettingtype)(int32)|false|none|none|
+|»»»» type|[SbPAM.Models.ActivityConfigurationSettingType](../Models/sbpam.models.activityconfigurationsettingtype.md)(int32)|false|none|none|
 |»»»» activityConfigurationId|string(uuid)|false|none|none|
 |»»»» nodeId|string(uuid)|false|none|none|
 |»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
 |»» platformId|string(uuid)¦null|false|none|none|
-|»» platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md#schemasbpam.models.platform)|false|none|none|
+|»» platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|none|
 |»»» id|string(uuid)|false|none|none|
 |»»» name|string¦null|false|none|none|
 |»»» description|string¦null|false|none|none|
 |»»» builtInAccount|string¦null|false|none|none|
 |»»» passwordComplexityPolicyId|string(uuid)¦null|false|none|none|
-|»»» passwordComplexityPolicy|[SbPAM.Models.PasswordComplexity](../Models/sbpam.models.passwordcomplexity.md#schemasbpam.models.passwordcomplexity)|false|none|none|
+|»»» passwordComplexityPolicy|[SbPAM.Models.PasswordComplexity](../Models/sbpam.models.passwordcomplexity.md)|false|none|none|
 |»»»» id|string(uuid)|false|none|none|
 |»»»» name|string¦null|false|none|none|
 |»»»» description|string¦null|false|none|none|
@@ -572,17 +579,17 @@ Status Code **200**
 |»»»» specialCharacter|boolean|false|none|none|
 |»»»» space|boolean|false|none|none|
 |»»»» numeric|boolean|false|none|none|
-|»»»» mustEndWith|[SbPAM.Constants.CharacterTypeFlags](../Models/sbpam.constants.charactertypeflags.md#schemasbpam.constants.charactertypeflags)(int32)|false|none|none|
-|»»»» mustStartWith|[SbPAM.Constants.CharacterTypeFlags](../Models/sbpam.constants.charactertypeflags.md#schemasbpam.constants.charactertypeflags)(int32)|false|none|none|
+|»»»» mustEndWith|[SbPAM.Constants.CharacterTypeFlags](../Models/sbpam.constants.charactertypeflags.md)(int32)|false|none|none|
+|»»»» mustStartWith|[SbPAM.Constants.CharacterTypeFlags](../Models/sbpam.constants.charactertypeflags.md)(int32)|false|none|none|
 |»»»» length|integer(int32)|false|none|none|
 |»»»» maxConsecutive|integer(int32)|false|none|none|
 |»»»» charsToExclude|string¦null|false|none|none|
 |»»»» nodeId|string(uuid)|false|none|none|
 |»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»» type|[SbPAM.Models.PasswordComplexityTypeEnum](../Models/sbpam.models.passwordcomplexitytypeenum.md#schemasbpam.models.passwordcomplexitytypeenum)(int32)|false|none|none|
+|»»»» type|[SbPAM.Models.PasswordComplexityTypeEnum](../Models/sbpam.models.passwordcomplexitytypeenum.md)(int32)|false|none|none|
 |»»» scheduledChangePolicyId|string(uuid)¦null|false|none|none|
-|»»» scheduledChangePolicy|[SbPAM.Models.ScheduledChangePolicy](../Models/sbpam.models.scheduledchangepolicy.md#schemasbpam.models.scheduledchangepolicy)|false|none|none|
+|»»» scheduledChangePolicy|[SbPAM.Models.ScheduledChangePolicy](../Models/sbpam.models.scheduledchangepolicy.md)|false|none|none|
 |»»»» id|string(uuid)|false|none|none|
 |»»»» name|string¦null|false|none|none|
 |»»»» description|string¦null|false|none|none|
@@ -596,34 +603,34 @@ Status Code **200**
 |»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
 |»»» protectionPolicyScheduleId|string(uuid)¦null|false|none|none|
-|»»» protectionPolicySchedule|[SbPAM.Models.ScheduledChangePolicy](../Models/sbpam.models.scheduledchangepolicy.md#schemasbpam.models.scheduledchangepolicy)|false|none|none|
+|»»» protectionPolicySchedule|[SbPAM.Models.ScheduledChangePolicy](../Models/sbpam.models.scheduledchangepolicy.md)|false|none|none|
 |»»» scanScheduleId|string(uuid)¦null|false|none|none|
-|»»» scanSchedule|[SbPAM.Models.ScheduledChangePolicy](../Models/sbpam.models.scheduledchangepolicy.md#schemasbpam.models.scheduledchangepolicy)|false|none|none|
+|»»» scanSchedule|[SbPAM.Models.ScheduledChangePolicy](../Models/sbpam.models.scheduledchangepolicy.md)|false|none|none|
 |»»» verificationScheduleId|string(uuid)¦null|false|none|none|
-|»»» verificationSchedule|[SbPAM.Models.ScheduledChangePolicy](../Models/sbpam.models.scheduledchangepolicy.md#schemasbpam.models.scheduledchangepolicy)|false|none|none|
+|»»» verificationSchedule|[SbPAM.Models.ScheduledChangePolicy](../Models/sbpam.models.scheduledchangepolicy.md)|false|none|none|
 |»»» resetOnMismatch|boolean|false|none|none|
 |»»» icon|string(byte)¦null|false|none|none|
 |»»» basePlatformId|string(uuid)¦null|false|none|none|
-|»»» type|[SbPAM.Models.PlatformTypeEnum](../Models/sbpam.models.platformtypeenum.md#schemasbpam.models.platformtypeenum)(int32)|false|none|none|
+|»»» type|[SbPAM.Models.PlatformTypeEnum](../Models/sbpam.models.platformtypeenum.md)(int32)|false|none|none|
 |»»» nodeId|string(uuid)|false|none|none|
 |»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
 |»» startActionGroupId|string(uuid)¦null|false|none|none|
 |»» duringActionGroupId|string(uuid)¦null|false|none|none|
 |»» endActionGroupId|string(uuid)¦null|false|none|none|
-|»» activityType|[SbPAM.Models.ActivityType](../Models/sbpam.models.activitytype.md#schemasbpam.models.activitytype)(int32)|false|none|none|
-|»» loginAccount|[SbPAM.Models.ActivityLoginType](../Models/sbpam.models.activitylogintype.md#schemasbpam.models.activitylogintype)(int32)|false|none|none|
+|»» activityType|[SbPAM.Models.ActivityType](../Models/sbpam.models.activitytype.md)(int32)|false|none|none|
+|»» loginAccount|[SbPAM.Models.ActivityLoginType](../Models/sbpam.models.activitylogintype.md)(int32)|false|none|none|
 |»» loginAccountNameFormat|string¦null|false|none|none|
-|»» requesterLoginFormat|[SbPAM.Models.RequesterLoginFormat](../Models/sbpam.models.requesterloginformat.md#schemasbpam.models.requesterloginformat)(int32)|false|none|none|
+|»» requesterLoginFormat|[SbPAM.Models.RequesterLoginFormat](../Models/sbpam.models.requesterloginformat.md)(int32)|false|none|none|
 |»» applicationToLaunch|string¦null|false|none|none|
 |»» preferredRDSHostId|string(uuid)¦null|false|none|none|
 |»» connectCredentialId|string(uuid)¦null|false|none|none|
 |»» createAccount|boolean|false|none|none|
-|»» activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](../Models/sbpam.models.activitygroupactivity.md#schemasbpam.models.activitygroupactivity)]¦null|false|none|none|
+|»» activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](../Models/sbpam.models.activitygroupactivity.md)]¦null|false|none|none|
 |»»» activityId|string(uuid)|false|none|none|
-|»»» activity|[SbPAM.Models.Activity](../Models/sbpam.models.activity.md#schemasbpam.models.activity)|false|none|none|
+|»»» activity|[SbPAM.Models.Activity](../Models/sbpam.models.activity.md)|false|none|none|
 |»»» activityGroupId|string(uuid)|false|none|none|
-|»»» activityGroup|[SbPAM.Models.ActivityGroup](../Models/sbpam.models.activitygroup.md#schemasbpam.models.activitygroup)|false|none|none|
+|»»» activityGroup|[SbPAM.Models.ActivityGroup](../Models/sbpam.models.activitygroup.md)|false|none|none|
 |»»»» id|string(uuid)|false|none|none|
 |»»»» createdBy|string(uuid)¦null|false|none|none|
 |»»»» modifiedBy|string(uuid)¦null|false|none|none|
@@ -631,8 +638,8 @@ Status Code **200**
 |»»»» name|string¦null|false|none|none|
 |»»»» description|string¦null|false|none|none|
 |»»»» activityConfigurationId|string(uuid)¦null|false|none|none|
-|»»»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md#schemasbpam.models.activityconfiguration)|false|none|none|
-|»»»» activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](../Models/sbpam.models.activitygroupactivity.md#schemasbpam.models.activitygroupactivity)]¦null|false|none|none|
+|»»»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|none|
+|»»»» activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](../Models/sbpam.models.activitygroupactivity.md)]¦null|false|none|none|
 |»»»» isDefault|boolean|false|none|none|
 |»»»» isDeleted|boolean|false|none|none|
 |»»»» isUserModified|boolean|false|none|none|
@@ -655,7 +662,7 @@ Status Code **200**
 |» activityConfiguration|string¦null|false|none|none|
 |» activityConfigurationMaxSessionLength|integer(int32)¦null|false|none|none|
 |» activityConfigurationId|string(uuid)¦null|false|none|none|
-|» activityGroups|[[SbPAM.Models.ActivityGroup](../Models/sbpam.models.activitygroup.md#schemasbpam.models.activitygroup)]¦null|false|none|none|
+|» activityGroups|[[SbPAM.Models.ActivityGroup](../Models/sbpam.models.activitygroup.md)]¦null|false|none|none|
 |» activityGroupIds|[string]¦null|false|none|none|
 
 #### Enumerated Values

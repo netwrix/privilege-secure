@@ -467,18 +467,22 @@ $JsonBody = @"
 }
 "@
 
+$Host = https://localhost:6500
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method POST -Url /api/v1/AccessControlPolicy -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
+Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/AccessControlPolicy" -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
 ```
 
 `POST /api/v1/AccessControlPolicy`
@@ -947,7 +951,7 @@ Resource validity is based on matching the platform of the resource and platform
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md#schemasbpam.models.simpleaccesscontrolpolicy)|false|Access control policy to create. The policy must have a unique name.|
+|body|body|[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md)|false|Access control policy to create. The policy must have a unique name.|
 
 > Example responses
 
@@ -1408,7 +1412,7 @@ Resource validity is based on matching the platform of the resource and platform
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md#schemasbpam.models.simpleaccesscontrolpolicy)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

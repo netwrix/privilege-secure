@@ -16,18 +16,22 @@ curl -X GET /api/v1/AccessControlPolicy/{policyId}/ManagedAccountGroup \
 ```powershell
 # PowerShell example
 
+$Host = https://localhost:6500
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/{policyId}/ManagedAccountGroup -Headers $Headers
+Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/{policyId}/ManagedAccountGroup -Headers $Headers
 ```
 
 `GET /api/v1/AccessControlPolicy/{policyId}/ManagedAccountGroup`
@@ -75,10 +79,10 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|[[SbPAM.Models.ManagedAccountGroupInfo](../Models/sbpam.models.managedaccountgroupinfo.md#schemasbpam.models.managedaccountgroupinfo)]|false|none|none|
+|*anonymous*|[[SbPAM.Models.ManagedAccountGroupInfo](../Models/sbpam.models.managedaccountgroupinfo.md)]|false|none|none|
 |» id|string(uuid)|false|none|none|
 |» name|string¦null|false|none|none|
-|» type|[SbPAM.Models.ManagedAccountGroupType](../Models/sbpam.models.managedaccountgrouptype.md#schemasbpam.models.managedaccountgrouptype)(int32)|false|none|none|
+|» type|[SbPAM.Models.ManagedAccountGroupType](../Models/sbpam.models.managedaccountgrouptype.md)(int32)|false|none|none|
 |» groupId|string(uuid)¦null|false|none|none|
 |» mfaConnectorId|string(uuid)¦null|false|none|none|
 |» isReviewer|boolean|false|none|none|

@@ -16,18 +16,22 @@ curl -X GET /api/v1/AccessControlPolicy/ManagedResource/{managedResourceId} \
 ```powershell
 # PowerShell example
 
+$Host = https://localhost:6500
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedResource/{managedResourceId} -Headers $Headers
+Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedResource/{managedResourceId} -Headers $Headers
 ```
 
 `GET /api/v1/AccessControlPolicy/ManagedResource/{managedResourceId}`
@@ -36,14 +40,14 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedResource/{
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|managedResourceId|path|string(uuid)|true|none|
+|managedResourceId|path|string(uuid)|true|Managed resource id|
 |Skip|query|integer(int32)|false|none|
 |Take|query|integer(int32)|false|none|
 |OrderBy|query|string|false|none|
 |OrderDescending|query|boolean|false|none|
 |FilterText|query|string|false|none|
 |FilterColumns|query|array[string]|false|none|
-|directOnly|query|boolean|false|none|
+|directOnly|query|boolean|false|Do not expand groups|
 
 > Example responses
 
@@ -489,7 +493,7 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedResource/{
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.SimpleAccessControlPolicy]](../Models/sbpam.models.datatable[sbpam.models.simpleaccesscontrolpolicy].md#schemasbpam.models.datatable[sbpam.models.simpleaccesscontrolpolicy])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.SimpleAccessControlPolicy]](../Models/sbpam.models.datatable[sbpam.models.simpleaccesscontrolpolicy].md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

@@ -25,18 +25,22 @@ $JsonBody = @"
 ]
 "@
 
+$Host = https://localhost:6500
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Activity -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
+Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/AccessControlPolicy/{policyId}/Activity" -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
 ```
 
 `PUT /api/v1/AccessControlPolicy/{policyId}/Activity`
@@ -57,7 +61,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Activi
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |policyId|path|string(uuid)|true|Access control policy id|
-|body|body|[SbPAM.Models.ActivityIdAndEntity](../Models/sbpam.models.activityidandentity.md#schemasbpam.models.activityidandentity)|false|none|
+|body|body|[SbPAM.Models.ActivityIdAndEntity](../Models/sbpam.models.activityidandentity.md)|false|none|
 
 > Example responses
 
@@ -74,7 +78,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Activi
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](../Models/system.tuple[system.int32,[system.int32].md#schemasystem.tuple[system.int32,[system.int32])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](../Models/system.tuple[system.int32,[system.int32].md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

@@ -467,18 +467,22 @@ $JsonBody = @"
 }
 "@
 
+$Host = https://localhost:6500
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPolicyId} -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
+Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/AccessControlPolicy/{accessControlPolicyId}" -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
 ```
 
 `PUT /api/v1/AccessControlPolicy/{accessControlPolicyId}`
@@ -941,7 +945,7 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPol
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |accessControlPolicyId|path|string(uuid)|true|The policy id of the policy to update.|
-|body|body|[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md#schemasbpam.models.simpleaccesscontrolpolicy)|false|Access policy to update|
+|body|body|[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md)|false|Access policy to update|
 
 > Example responses
 
@@ -1402,10 +1406,10 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{accessControlPol
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md#schemasbpam.models.simpleaccesscontrolpolicy)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error has occurred while updating. Check response body for details|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md#schemamicrosoft.aspnetcore.mvc.problemdetails)|
-|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not authorized to update policy.|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md#schemamicrosoft.aspnetcore.mvc.problemdetails)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|The access control policy was not found.|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md#schemamicrosoft.aspnetcore.mvc.problemdetails)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error has occurred while updating. Check response body for details|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not authorized to update policy.|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|The access control policy was not found.|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
