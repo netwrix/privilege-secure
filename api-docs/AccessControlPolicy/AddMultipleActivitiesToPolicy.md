@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X PUT /api/v1/AccessControlPolicy/{policyId}/Activity \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -25,18 +25,22 @@ $JsonBody = @"
 ]
 "@
 
+$Host = "https://localhost:6500"
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Activity -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
+Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/AccessControlPolicy/{policyId}/Activity" -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
 ```
 
 `PUT /api/v1/AccessControlPolicy/{policyId}/Activity`
@@ -56,16 +60,12 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Activi
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|policyId|path|string(uuid)|true|none|
-|body|body|[SbPAM.Models.ActivityIdAndEntity](../models/sbpam.models.activityidandentity.md#schemasbpam.models.activityidandentity)|false|none|
+|policyId|path|string(uuid)|true|Access control policy id|
+|body|body|[SbPAM.Models.ActivityIdAndEntity](../Models/sbpam.models.activityidandentity.md)|false|List of ids and activity entity types|
 
 > Example responses
 
 > 200 Response
-
-```
-{"item1":0,"item2":0}
-```
 
 ```json
 {
@@ -78,7 +78,9 @@ Invoke-RestMethod -Method PUT -Url /api/v1/AccessControlPolicy/{policyId}/Activi
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](../models/system.tuple[system.int32,[system.int32].md#schemasystem.tuple[system.int32,[system.int32])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](../Models/system.tuple[system.int32,[system.int32].md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Admin or does not have access via Access Policy custom role|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Policy was not found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

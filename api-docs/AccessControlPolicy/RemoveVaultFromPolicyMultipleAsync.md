@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X DELETE /api/v1/AccessControlPolicy/{policyId}/SecretVault \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -22,18 +22,22 @@ $JsonBody = @"
 ]
 "@
 
+$Host = "https://localhost:6500"
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method DELETE -Url /api/v1/AccessControlPolicy/{policyId}/SecretVault -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
+Invoke-RestMethod -Method DELETE -Url "$($Host)/api/v1/AccessControlPolicy/{policyId}/SecretVault" -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
 ```
 
 `DELETE /api/v1/AccessControlPolicy/{policyId}/SecretVault`
@@ -50,16 +54,12 @@ Invoke-RestMethod -Method DELETE -Url /api/v1/AccessControlPolicy/{policyId}/Sec
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|policyId|path|string(uuid)|true|none|
-|body|body|array[string]|false|none|
+|policyId|path|string(uuid)|true|Access control policy id|
+|body|body|array[string]|false|List of secret vault ids|
 
 > Example responses
 
 > 200 Response
-
-```
-0
-```
 
 ```json
 0
@@ -70,6 +70,9 @@ Invoke-RestMethod -Method DELETE -Url /api/v1/AccessControlPolicy/{policyId}/Sec
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|integer|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Missing list of vault ids or no vault ids were removed|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Admin|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Policy not found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

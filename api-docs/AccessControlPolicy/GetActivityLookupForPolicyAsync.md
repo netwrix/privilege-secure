@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/Lookup/{policyId}/Activity \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -16,18 +16,22 @@ curl -X GET /api/v1/AccessControlPolicy/Lookup/{policyId}/Activity \
 ```powershell
 # PowerShell example
 
+$Host = "https://localhost:6500"
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/Lookup/{policyId}/Activity -Headers $Headers
+Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/Lookup/{policyId}/Activity -Headers $Headers
 ```
 
 `GET /api/v1/AccessControlPolicy/Lookup/{policyId}/Activity`
@@ -36,15 +40,11 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/Lookup/{policyId}
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|policyId|path|string(uuid)|true|none|
+|policyId|path|string(uuid)|true|Access control policy id|
 
 > Example responses
 
 > 200 Response
-
-```
-{"property1":"string","property2":"string"}
-```
 
 ```json
 {
@@ -58,6 +58,8 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/Lookup/{policyId}
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Admin or does not have access via Access Policy custom role|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Policy was not found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <h3 id="get-activityid-and-name-dictionary-for-given-policy.-(auth-roles:-admin,userplus)-responseschema">Response Schema</h3>
 

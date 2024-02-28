@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/ManagedAccountGroup/Candidates \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -16,18 +16,22 @@ curl -X GET /api/v1/AccessControlPolicy/ManagedAccountGroup/Candidates \
 ```powershell
 # PowerShell example
 
+$Host = "https://localhost:6500"
+
 $Login = @{
     Login = "User"
     Password = "Password"
 }
-$Token = Invoke-RestMethod -Url /signinBody -Method POST -Body (ConvertTo-Json $Login)
-$Token = Invoke-RestMethod -Url /sigin2fa -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
 
 $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGroup/Candidates -Headers $Headers
+Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedAccountGroup/Candidates -Headers $Headers
 ```
 
 `GET /api/v1/AccessControlPolicy/ManagedAccountGroup/Candidates`
@@ -36,13 +40,13 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|managedAccountGroupId|query|string(uuid)|false|none|
-|policyType|query|[SbPAM.Models.PolicyType](../models/sbpam.models.policytype.md#schemasbpam.models.policytype)|false|none|
-|filterText|query|string|false|none|
-|orderBy|query|string|false|none|
-|orderDescending|query|boolean|false|none|
-|skip|query|integer(int32)|false|none|
-|take|query|integer(int32)|false|none|
+|managedAccountGroupId|query|string(uuid)|false|ManageAccountGroupId to retrieve policies for|
+|policyType|query|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)|false|Resource or Credential|
+|filterText|query|string|false|Search policy names that contain this string|
+|orderBy|query|string|false|Property name to order results by|
+|orderDescending|query|boolean|false|Use descending sort order|
+|skip|query|integer(int32)|false|Start at this item (default: 0)|
+|take|query|integer(int32)|false|Return this number of items (default: 30)|
 
 #### Enumerated Values
 
@@ -54,10 +58,6 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 > Example responses
 
 > 200 Response
-
-```
-{"data":[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","name":"string","description":"string","connectionProfileName":"string","policyType":"Resource","policyTypeName":"string"}],"recordsTotal":0}
-```
 
 ```json
 {
@@ -79,7 +79,8 @@ Invoke-RestMethod -Method GET -Url /api/v1/AccessControlPolicy/ManagedAccountGro
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.AccessControlPolicyDetails]](../models/sbpam.models.datatable[sbpam.models.accesscontrolpolicydetails].md#schemasbpam.models.datatable[sbpam.models.accesscontrolpolicydetails])|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.AccessControlPolicyDetails]](../Models/sbpam.models.datatable[sbpam.models.accesscontrolpolicydetails].md)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|ManagedAccountGroupid is missing|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
