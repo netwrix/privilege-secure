@@ -16,7 +16,7 @@ curl -X GET /api/v1/AccessControlPolicy/ManagedAccount/{managedAccountId}/Manage
 ```powershell
 # PowerShell example
 
-$Host = https://localhost:6500
+$Host = "https://localhost:6500"
 
 $Login = @{
     Login = "User"

@@ -16,7 +16,7 @@ curl -X GET /api/v1/AccessControlPolicy/{accessControlPolicyId}/ManagedAccount \
 ```powershell
 # PowerShell example
 
-$Host = https://localhost:6500
+$Host = "https://localhost:6500"
 
 $Login = @{
     Login = "User"
@@ -82,7 +82,7 @@ Endpoint is for Administrators and users that have *Access Policy* based custom 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedAccountView]](../Models/sbpam.models.datatable[sbpam.models.managedaccountview].md)|
-|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an administrator or does not have custom role to get managed accounts for policy|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Admin or does not have access via Access Policy custom role|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

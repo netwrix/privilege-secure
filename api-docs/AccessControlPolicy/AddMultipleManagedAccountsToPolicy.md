@@ -25,7 +25,7 @@ $JsonBody = @"
 ]
 "@
 
-$Host = https://localhost:6500
+$Host = "https://localhost:6500"
 
 $Login = @{
     Login = "User"
@@ -61,7 +61,7 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/AccessControlPolicy/{policyI
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |policyId|path|string(uuid)|true|Access control policy id|
-|body|body|[SbPAM.Models.AccountIdAndEntity](../Models/sbpam.models.accountidandentity.md)|false|none|
+|body|body|[SbPAM.Models.AccountIdAndEntity](../Models/sbpam.models.accountidandentity.md)|false|List of ids and entity types|
 
 > Example responses
 
@@ -79,6 +79,8 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/AccessControlPolicy/{policyI
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](../Models/system.tuple[system.int32,[system.int32].md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Admin or does not have access via Access Policy custom role|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Policy was not found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

@@ -16,7 +16,7 @@ curl -X PUT /api/v1/AccessControlPolicy/{accessControlPolicyId}/Status \
 ```powershell
 # PowerShell example
 
-$Host = https://localhost:6500
+$Host = "https://localhost:6500"
 
 $Login = @{
     Login = "User"

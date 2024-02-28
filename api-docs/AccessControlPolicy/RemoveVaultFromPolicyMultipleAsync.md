@@ -22,7 +22,7 @@ $JsonBody = @"
 ]
 "@
 
-$Host = https://localhost:6500
+$Host = "https://localhost:6500"
 
 $Login = @{
     Login = "User"
@@ -55,7 +55,7 @@ Invoke-RestMethod -Method DELETE -Url "$($Host)/api/v1/AccessControlPolicy/{poli
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |policyId|path|string(uuid)|true|Access control policy id|
-|body|body|array[string]|false|none|
+|body|body|array[string]|false|List of secret vault ids|
 
 > Example responses
 
@@ -70,6 +70,9 @@ Invoke-RestMethod -Method DELETE -Url "$($Host)/api/v1/AccessControlPolicy/{poli
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|integer|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Missing list of vault ids or no vault ids were removed|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Admin|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Policy not found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

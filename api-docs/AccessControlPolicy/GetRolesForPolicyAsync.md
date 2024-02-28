@@ -16,7 +16,7 @@ curl -X GET /api/v1/AccessControlPolicy/RolesForPolicy/{policyId} \
 ```powershell
 # PowerShell example
 
-$Host = https://localhost:6500
+$Host = "https://localhost:6500"
 
 $Login = @{
     Login = "User"
@@ -60,6 +60,9 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/RolesFor
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error retrieving roles, see response body.|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Admin or does not have access via Access Policy custom role|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not Found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <h3 id="get-roles-for-access-policy-(auth-roles:-admin,userplus)-responseschema">Response Schema</h3>
 

@@ -16,7 +16,7 @@ curl -X GET /api/v1/AccessControlPolicy/ActivityCardWithPolicies \
 ```powershell
 # PowerShell example
 
-$Host = https://localhost:6500
+$Host = "https://localhost:6500"
 
 $Login = @{
     Login = "User"
@@ -47,9 +47,9 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/Activity
 |OrderDescending|query|boolean|false|none|
 |FilterText|query|string|false|none|
 |FilterColumns|query|array[string]|false|none|
-|groupByPolicy|query|boolean|false|none|
-|includeCount|query|boolean|false|none|
-|includeData|query|boolean|false|none|
+|groupByPolicy|query|boolean|false|Group data by policy|
+|includeCount|query|boolean|false|Include counts (slower request)|
+|includeData|query|boolean|false|Include data (slower request)|
 
 > Example responses
 
@@ -97,6 +97,8 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/Activity
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityCardWithPolicies]](../Models/sbpam.models.datatable[sbpam.models.activitycardwithpolicies].md)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|ManagedAccountId not defined on request|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Admin and has specified an accountid that does not match their accountid|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

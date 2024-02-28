@@ -467,7 +467,7 @@ $JsonBody = @"
 }
 "@
 
-$Host = https://localhost:6500
+$Host = "https://localhost:6500"
 
 $Login = @{
     Login = "User"

@@ -16,7 +16,7 @@ curl -X GET /api/v1/AccessControlPolicy/Lookup/{policyId}/Resource \
 ```powershell
 # PowerShell example
 
-$Host = https://localhost:6500
+$Host = "https://localhost:6500"
 
 $Login = @{
     Login = "User"
@@ -48,8 +48,8 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/Lookup/{
 
 ```json
 {
-  "property1": "string",
-  "property2": "string"
+  "item1": 0,
+  "item2": 0
 }
 ```
 
@@ -57,15 +57,9 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/Lookup/{
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
-
-<h3 id="get-available-resources-for-access-policy-(auth-roles:-admin,userplus)-responseschema">Response Schema</h3>
-
-Status Code **200**
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|» **additionalProperties**|string|false|none|none|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.Tuple[System.Int32,[System.Int32]](../Models/system.tuple[system.int32,[system.int32].md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Admin or does not have access via Access Policy custom role|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Policy was not found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

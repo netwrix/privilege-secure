@@ -16,7 +16,7 @@ curl -X GET /api/v1/AccessControlPolicy/SearchCredentialCandidates/{accessPolicy
 ```powershell
 # PowerShell example
 
-$Host = https://localhost:6500
+$Host = "https://localhost:6500"
 
 $Login = @{
     Login = "User"
@@ -46,7 +46,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/SearchCr
 |orderDescending|query|boolean|false|Use descending sort order|
 |skip|query|integer(int32)|false|Start at this item (default: 0)|
 |take|query|integer(int32)|false|Return this number of items (default: 30)|
-|entityType|query|[SbPAM.Models.CredentialOrHostUser](../Models/sbpam.models.credentialorhostuser.md)|false|none|
+|entityType|query|[SbPAM.Models.CredentialOrHostUser](../Models/sbpam.models.credentialorhostuser.md)|false|Credential, CredentialGroup, or HostUser|
 
 #### Enumerated Values
 
@@ -85,6 +85,8 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/SearchCr
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.CredentialPolicyCandidateView]](../Models/sbpam.models.datatable[sbpam.models.credentialpolicycandidateview].md)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Access policy not defined on request|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Admin or does not have access via Access Policy custom role|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
