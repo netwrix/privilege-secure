@@ -36,6 +36,10 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/GetDomainNam
 
 `GET /api/v1/ManagedResource/GetDomainNames`
 
+The domain name list contains the managed resources that
+are domains. Use the id with the /api/v1/ManagedResource/{Id}
+endpoint to get more information about the managed resource.
+
 > Example responses
 
 > 200 Response

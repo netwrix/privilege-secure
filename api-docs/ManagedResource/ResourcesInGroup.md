@@ -42,10 +42,10 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/InGroup/{man
 |---|---|---|---|---|
 |managedResourceGroupId|path|string(uuid)|true|none|
 |filterText|query|string|false|none|
-|orderBy|query|string|false|none|
-|orderDescending|query|boolean|false|none|
-|skip|query|integer(int32)|false|none|
-|take|query|integer(int32)|false|none|
+|orderBy|query|string|false|Property name to order results by|
+|orderDescending|query|boolean|false|Use descending sort order|
+|skip|query|integer(int32)|false|Start at this item (default: 0)|
+|take|query|integer(int32)|false|Return this number of items (default: -1)|
 |showAll|query|boolean|false|none|
 
 > Example responses

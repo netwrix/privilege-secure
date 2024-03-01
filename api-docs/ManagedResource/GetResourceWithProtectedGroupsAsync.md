@@ -1,6 +1,5 @@
 
-## Get protected groups for managed resource
-Gets a resource with its protected groups (Auth roles: App)
+## Gets a resource with its protected groups (Auth roles: App)
 
 <a id="opIdGetResourceWithProtectedGroupsAsync"></a>
 
@@ -37,8 +36,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/ResourceWith
 
 `GET /api/v1/ManagedResource/ResourceWithProtectedGroups/{managedResourceId}`
 
-<h3 id="get-protected-groups-for-managed-resource
-gets-a-resource-with-its-protected-groups-(auth-roles:-app)-parameters">Parameters</h3>
+<h3 id="gets-a-resource-with-its-protected-groups-(auth-roles:-app)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -17311,12 +17309,12 @@ gets-a-resource-with-its-protected-groups-(auth-roles:-app)-parameters">Paramete
 }
 ```
 
-<h3 id="get-protected-groups-for-managed-resource
-gets-a-resource-with-its-protected-groups-(auth-roles:-app)-responses">Responses</h3>
+<h3 id="gets-a-resource-with-its-protected-groups-(auth-roles:-app)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Unable to find resource, see web log for further information.|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

@@ -36,17 +36,25 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/Candidate/Se
 
 `GET /api/v1/ManagedResource/Candidate/Search`
 
+The filterText parameter will perform a case-insensitive search using the following properties:
+* DisplayName
+* DomainName
+* Os
+* DnsHostName
+* DistinguishedName
+* ServiceAccountName
+
 <h3 id="search-for-resources-that-are-not-under-management-(auth-roles:-admin,app)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|filterAppResourceType|query|undefined|false|none|
-|filterText|query|string|false|none|
+|filterAppResourceType|query|undefined|false|NotEnrolled, Resource|
+|filterText|query|string|false|Search for items that contain this string|
 |domainConfigId|query|string(uuid)|false|ActiveDirectory domain configuration id|
-|orderBy|query|string|false|none|
-|orderDescending|query|boolean|false|none|
-|skip|query|integer(int32)|false|none|
-|take|query|integer(int32)|false|none|
+|orderBy|query|string|false|Property name to order results by|
+|orderDescending|query|boolean|false|Use descending sort order|
+|skip|query|integer(int32)|false|Start at this item (default: 0)|
+|take|query|integer(int32)|false|Return this number of items (default: 100)|
 |filterServers|query|boolean|false|none|
 
 > Example responses

@@ -36,6 +36,12 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/User/Search 
 
 `GET /api/v1/ManagedResource/User/Search`
 
+Search filter is case-insensitive contains of:
+* DisplayName
+* SamAccountName
+* ScheduleName
+* PasswordComplexityName
+
 <h3 id="search-for-resource-users-(auth-roles:-admin,app)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
@@ -46,8 +52,8 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/User/Search 
 |OrderDescending|query|boolean|false|none|
 |FilterText|query|string|false|none|
 |FilterColumns|query|array[string]|false|none|
-|filterAppUserType|query|undefined|false|none|
-|filterManagedType|query|[SbPAM.Models.ManagedUserType](../Models/sbpam.models.managedusertype.md)|false|none|
+|filterAppUserType|query|undefined|false|One of: NonUser, User, Admin|
+|filterManagedType|query|[SbPAM.Models.ManagedUserType](../Models/sbpam.models.managedusertype.md)|false|One of: NotManaged, Manual, Automatic|
 |domainConfigId|query|string(uuid)|false|ActiveDirectory domain configuration id|
 |hostId|query|string(uuid)|false|Host id|
 |IsCancellationRequested|query|boolean|false|none|
@@ -119,6 +125,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/User/Search 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedResourceLocalUserView]](../Models/sbpam.models.datatable[sbpam.models.managedresourcelocaluserview].md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

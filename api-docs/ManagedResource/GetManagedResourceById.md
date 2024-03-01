@@ -36,6 +36,16 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/{managedReso
 
 `GET /api/v1/ManagedResource/{managedResourceId}`
 
+Administrators can view any resource in the system.
+Non administrators will be limited to resources that have been assigned
+to policies that they are also assigned to. If a non-administrator
+attempts to view a resource they do not have rights to see, they will
+receive a 400 error.
+            
+A resource id that is not exist, will also return a 400 error. To
+determine if the underlying reason for the 400 error, an Administrator
+will need to review the web logs.
+
 <h3 id="get-specific-managed-resource-(auth)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
@@ -4179,6 +4189,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/{managedReso
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.ManagedResourceView](../Models/sbpam.models.managedresourceview.md)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Unable to find resource|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

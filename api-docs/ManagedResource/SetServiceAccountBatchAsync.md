@@ -60,7 +60,7 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedResource/ServiceAccou
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[SbPAM.WebAPI.Controllers.ManagedResourceBatch[System.Guid]](../Models/sbpam.webapi.controllers.managedresourcebatch[system.guid].md)|false|none|
+|body|body|[SbPAM.WebAPI.Controllers.ManagedResourceBatch[System.Guid]](../Models/sbpam.webapi.controllers.managedresourcebatch[system.guid].md)|false|Managed resource ids and service account id|
 
 > Example responses
 
@@ -81,6 +81,8 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedResource/ServiceAccou
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|An error has occurred, please see web log for more information|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <h3 id="set-service-account-for-batch-of-resources-(auth-roles:-admin,app)-responseschema">Response Schema</h3>
 

@@ -46,7 +46,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/Search -Head
 |OrderDescending|query|boolean|false|none|
 |FilterText|query|string|false|none|
 |FilterColumns|query|array[string]|false|none|
-|filterType|query|[SbPAM.Models.ManagedResourceType](../Models/sbpam.models.managedresourcetype.md)|false|Host, Domain, Website, AzureAdTenant, SecretVault, or Database|
+|filterType|query|[SbPAM.Models.ManagedResourceType](../Models/sbpam.models.managedresourcetype.md)|false|One of: Host, Domain, Website, AzureAdTenant, SecretVault, Database|
 |filterTextExcludeDomainName|query|boolean|false|Set to true to exclude the domain name from search filterText.|
 |domainConfigId|query|string(uuid)|false|ActiveDirectory domain configuration id|
 |managedResourceId|query|string(uuid)|false|Managed resource id|

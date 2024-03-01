@@ -60,7 +60,7 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedResource/Candidate/A
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[SbPAM.WebAPI.Controllers.CandidateAddMultipleAsyncRequest](../Models/sbpam.webapi.controllers.candidateaddmultipleasyncrequest.md)|false|none|
+|body|body|[SbPAM.WebAPI.Controllers.CandidateAddMultipleAsyncRequest](../Models/sbpam.webapi.controllers.candidateaddmultipleasyncrequest.md)|false|Object containing list of ids and the service account id|
 
 > Example responses
 
@@ -75,6 +75,8 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedResource/Candidate/A
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|integer|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|No hosts in request payload OR error onboarding see web logs|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

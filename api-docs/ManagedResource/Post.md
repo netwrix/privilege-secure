@@ -20776,7 +20776,7 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedResource" -ContentTy
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|
+|body|body|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|Managed resource to create|
 
 > Example responses
 
@@ -38049,6 +38049,7 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedResource" -ContentTy
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

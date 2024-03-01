@@ -20700,6 +20700,9 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedResource/{managedReso
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Id in payload does not match id in route|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Error has occurred, please see web log|None|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

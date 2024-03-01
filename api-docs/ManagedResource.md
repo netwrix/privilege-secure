@@ -25,7 +25,7 @@
 
 [Remove managed resource (Auth roles: Admin,App)](ManagedResource/DeleteAsync.md)
 
-[Get protected groups for managed resource](ManagedResource/GetResourceWithProtectedGroupsAsync.md)
+[Gets a resource with its protected groups (Auth roles: App)](ManagedResource/GetResourceWithProtectedGroupsAsync.md)
 
 [Get managed resource by host id (Auth roles: Admin,App)](ManagedResource/GetManagedResourceByHostId.md)
 

@@ -36,11 +36,15 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource -Headers $He
 
 `GET /api/v1/ManagedResource`
 
+This can be a very expensive call and it is recommended that you use the
+<cref name="Search">Search</cref> endpoint instead which supports paging
+and filtering.
+
 <h3 id="get-all-managed-resources-(auth-roles:-admin,app)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|type|query|[SbPAM.Models.ManagedResourceType](../Models/sbpam.models.managedresourcetype.md)|false|none|
+|type|query|[SbPAM.Models.ManagedResourceType](../Models/sbpam.models.managedresourcetype.md)|false|One of: Host, Domain, Website, AzureAdTenant, SecretVault, Database|
 |IsCancellationRequested|query|boolean|false|none|
 |CanBeCanceled|query|boolean|false|none|
 |WaitHandle.Handle|query|[System.IntPtr](../Models/system.intptr.md)|false|none|
