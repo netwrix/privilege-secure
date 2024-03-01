@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/ManagedResource/WinRmHttps/{managedResourceId} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -48,10 +48,6 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/WinRmHttps/{
 > Example responses
 
 > 200 Response
-
-```
-"497f6eca-6276-4993-bfeb-53cbbbba6f08"
-```
 
 ```json
 "497f6eca-6276-4993-bfeb-53cbbbba6f08"

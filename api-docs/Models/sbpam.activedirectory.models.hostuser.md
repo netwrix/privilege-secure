@@ -11990,7 +11990,7 @@
 |id|string(uuid)|false|none|none|
 |activeDirectoryObjectId|string(uuid)¦null|false|none|none|
 |activeDirectoryDomainId|string(uuid)¦null|false|none|none|
-|activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](#schemasbpam.activedirectory.models.activedirectorydomain)|false|none|none|
+|activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)|false|none|none|
 |displayName|string¦null|false|none|none|
 |enabled|boolean|false|none|none|
 |unixId|integer(int32)¦null|false|none|none|
@@ -12000,7 +12000,7 @@
 |expirationDate|string(date-time)¦null|false|none|none|
 |managed|boolean|false|none|none|
 |hostId|string(uuid)¦null|false|none|none|
-|host|[SbPAM.ActiveDirectory.Models.Host](#schemasbpam.activedirectory.models.host)|false|none|none|
+|host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
 |primaryGroupTokenId|integer(int32)¦null|false|none|none|
 |primaryGroupToken|string(byte)¦null|false|none|none|
 |managerSamaccountname|string¦null|false|none|none|
@@ -12019,10 +12019,10 @@
 |passwordChangedDateTimeUtc|string(date-time)¦null|false|none|none|
 |passwordExpirationDateTimeUtc|string(date-time)¦null|false|none|none|
 |forcePasswordReset|boolean|false|none|none|
-|privilege|[SbPAM.ActiveDirectory.Models.Enums.UserPrivilege](#schemasbpam.activedirectory.models.enums.userprivilege)|false|none|none|
-|hostUserGroupJoin|[[SbPAM.ActiveDirectory.Models.HostUserGroupJoin](#schemasbpam.activedirectory.models.hostusergroupjoin)]¦null|false|read-only|none|
-|hostDatabaseDbs|[[SbPAM.ActiveDirectory.Models.HostDatabaseDb](#schemasbpam.activedirectory.models.hostdatabasedb)]¦null|false|read-only|none|
-|hostDatabaseRoles|[[SbPAM.ActiveDirectory.Models.HostDatabaseRole](#schemasbpam.activedirectory.models.hostdatabaserole)]¦null|false|read-only|none|
+|privilege|[SbPAM.ActiveDirectory.Models.Enums.UserPrivilege](../Models/sbpam.activedirectory.models.enums.userprivilege.md)|false|none|none|
+|hostUserGroupJoin|[[SbPAM.ActiveDirectory.Models.HostUserGroupJoin](../Models/sbpam.activedirectory.models.hostusergroupjoin.md)]¦null|false|read-only|none|
+|hostDatabaseDbs|[[SbPAM.ActiveDirectory.Models.HostDatabaseDb](../Models/sbpam.activedirectory.models.hostdatabasedb.md)]¦null|false|read-only|none|
+|hostDatabaseRoles|[[SbPAM.ActiveDirectory.Models.HostDatabaseRole](../Models/sbpam.activedirectory.models.hostdatabaserole.md)]¦null|false|read-only|none|
 |deleted|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

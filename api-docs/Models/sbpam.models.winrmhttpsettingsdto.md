@@ -18,7 +18,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|httpSettings|[SbPAM.Models.WinRmHttpSettings](#schemasbpam.models.winrmhttpsettings)|false|none|none|
+|httpSettings|[SbPAM.Models.WinRmHttpSettings](../Models/sbpam.models.winrmhttpsettings.md)|false|none|none|
 |thumbprint|string¦null|false|none|none|
 
 

@@ -468,19 +468,19 @@
 |priority|integer(int32)|false|none|none|
 |notesRequired|boolean|false|none|none|
 |ticketRequired|boolean|false|none|none|
-|approvalTypeRequired|[SbPAM.Models.ApprovalType](#schemasbpam.models.approvaltype)|false|none|none|
-|policyType|[SbPAM.Models.PolicyType](#schemasbpam.models.policytype)|false|none|none|
+|approvalTypeRequired|[SbPAM.Models.ApprovalType](../Models/sbpam.models.approvaltype.md)|false|none|none|
+|policyType|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)|false|none|none|
 |managedAccountIds|[string]¦null|false|none|none|
 |managedAccountGroupIds|[string]¦null|false|none|none|
 |managedResourceIds|[string]¦null|false|none|none|
 |managedResourceGroupIds|[string]¦null|false|none|none|
 |credentialIds|[string]¦null|false|none|none|
 |activityIds|[string]¦null|false|none|none|
-|activities|[[SbPAM.Models.Activity](#schemasbpam.models.activity)]¦null|false|none|none|
+|activities|[[SbPAM.Models.Activity](../Models/sbpam.models.activity.md)]¦null|false|none|none|
 |activityConfiguration|string¦null|false|none|none|
 |activityConfigurationMaxSessionLength|integer(int32)¦null|false|none|none|
 |activityConfigurationId|string(uuid)¦null|false|none|none|
-|activityGroups|[[SbPAM.Models.ActivityGroup](#schemasbpam.models.activitygroup)]¦null|false|none|none|
+|activityGroups|[[SbPAM.Models.ActivityGroup](../Models/sbpam.models.activitygroup.md)]¦null|false|none|none|
 |activityGroupIds|[string]¦null|false|none|none|
 
 

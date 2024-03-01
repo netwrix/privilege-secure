@@ -1849,7 +1849,7 @@
 |deleted|boolean|false|none|none|
 |userId|string(uuid)¦null|false|none|none|
 |protectionPolicyGroupId|string(uuid)¦null|false|none|none|
-|protectionPolicyGroup|[SbPAM.Models.ProtectionPolicyGroup](#schemasbpam.models.protectionpolicygroup)|false|none|none|
+|protectionPolicyGroup|[SbPAM.Models.ProtectionPolicyGroup](../Models/sbpam.models.protectionpolicygroup.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

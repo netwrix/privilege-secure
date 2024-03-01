@@ -44,8 +44,8 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|managedAccountView|[SbPAM.Models.ManagedAccountView](#schemasbpam.models.managedaccountview)|false|none|none|
-|localUserPasswordChangeRequest|[SbPAM.Models.LocalUserPasswordChangeRequest](#schemasbpam.models.localuserpasswordchangerequest)|false|none|none|
+|managedAccountView|[SbPAM.Models.ManagedAccountView](../Models/sbpam.models.managedaccountview.md)|false|none|none|
+|localUserPasswordChangeRequest|[SbPAM.Models.LocalUserPasswordChangeRequest](../Models/sbpam.models.localuserpasswordchangerequest.md)|false|none|none|
 |changePasswordNextLogin|boolean|false|none|none|
 
 

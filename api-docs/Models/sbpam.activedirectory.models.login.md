@@ -5979,10 +5979,10 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |userId|string(uuid)|false|none|none|
-|user|[SbPAM.ActiveDirectory.Models.HostUser](#schemasbpam.activedirectory.models.hostuser)|false|none|none|
+|user|[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)|false|none|none|
 |hostId|string(uuid)|false|none|none|
-|host|[SbPAM.ActiveDirectory.Models.Host](#schemasbpam.activedirectory.models.host)|false|none|none|
-|sessionState|[SbPAM.ActiveDirectory.Models.Enums.LoginSessionState](#schemasbpam.activedirectory.models.enums.loginsessionstate)|false|none|none|
+|host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
+|sessionState|[SbPAM.ActiveDirectory.Models.Enums.LoginSessionState](../Models/sbpam.activedirectory.models.enums.loginsessionstate.md)|false|none|none|
 |idleTime|integer(int32)|false|none|none|
 |loginDateTimeUtc|string(date-time)¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|

@@ -28,7 +28,7 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |specificGroups|string¦null|false|none|none|
-|nameFormat|[SbPAM.ActiveDirectory.Models.Enums.ActiveDirectoryNameFormat](#schemasbpam.activedirectory.models.enums.activedirectorynameformat)|false|none|none|
+|nameFormat|[SbPAM.ActiveDirectory.Models.Enums.ActiveDirectoryNameFormat](../Models/sbpam.activedirectory.models.enums.activedirectorynameformat.md)|false|none|none|
 |fullScan|boolean|false|none|none|
 |useGlobalCatalog|boolean|false|none|none|
 |domain|string¦null|false|none|none|

@@ -27,6 +27,6 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |totalCount|integer(int32)|false|none|none|
-|lines|[[SbPAM.Models.LogLine](#schemasbpam.models.logline)]¦null|false|none|none|
+|lines|[[SbPAM.Models.LogLine](../Models/sbpam.models.logline.md)]¦null|false|none|none|
 
 

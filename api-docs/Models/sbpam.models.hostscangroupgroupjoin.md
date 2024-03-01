@@ -529,7 +529,7 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |hostScanGroupId|string(uuid)|false|none|none|
-|hostScanGroup|[SbPAM.Models.HostScanGroup](#schemasbpam.models.hostscangroup)|false|none|none|
+|hostScanGroup|[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)|false|none|none|
 |hostScanGroupMemberId|string(uuid)|false|none|none|
 
 

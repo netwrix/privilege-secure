@@ -763,7 +763,7 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|type|[SbPAM.Models.RegisteredServiceType](#schemasbpam.models.registeredservicetype)|false|none|none|
+|type|[SbPAM.Models.RegisteredServiceType](../Models/sbpam.models.registeredservicetype.md)|false|none|none|
 |dnsHostName|string¦null|false|none|none|
 |credentialId|string(uuid)¦null|false|none|none|
 |serviceName|string¦null|false|none|none|
@@ -771,7 +771,7 @@
 |settingsFileContents|string¦null|false|none|none|
 |createdBy|string(uuid)¦null|false|none|none|
 |actionQueueId|string(uuid)¦null|false|none|none|
-|actionQueue|[SbPAM.Models.ActionQueue](#schemasbpam.models.actionqueue)|false|none|none|
+|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

@@ -29,7 +29,7 @@
 |name|string¦null|false|none|none|
 |key|string¦null|false|none|none|
 |value|string¦null|false|none|none|
-|type|[SbPAM.Models.ActivityConfigurationSettingType](#schemasbpam.models.activityconfigurationsettingtype)|false|none|none|
+|type|[SbPAM.Models.ActivityConfigurationSettingType](../Models/sbpam.models.activityconfigurationsettingtype.md)|false|none|none|
 |activityConfigurationId|string(uuid)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

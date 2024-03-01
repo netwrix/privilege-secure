@@ -31,7 +31,7 @@
 |value|string¦null|false|none|none|
 |required|boolean|false|none|none|
 |defaultValue|string¦null|false|none|none|
-|type|[SbPAM.Models.ConnectorConfigurationValueType](#schemasbpam.models.connectorconfigurationvaluetype)|false|none|none|
+|type|[SbPAM.Models.ConnectorConfigurationValueType](../Models/sbpam.models.connectorconfigurationvaluetype.md)|false|none|none|
 |displayOrder|integer(int32)|false|none|none|
 |advanced|boolean|false|none|none|
 

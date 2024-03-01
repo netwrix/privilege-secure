@@ -18,7 +18,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](#schemasbpam.models.managedaccountviewentitytypeenum)|false|none|none|
+|entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../Models/sbpam.models.managedaccountviewentitytypeenum.md)|false|none|none|
 |id|string(uuid)|false|none|none|
 
 

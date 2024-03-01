@@ -6484,9 +6484,9 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |userId|string(uuid)|false|none|none|
-|user|[SbPAM.ActiveDirectory.Models.HostUser](#schemasbpam.activedirectory.models.hostuser)|false|none|none|
+|user|[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)|false|none|none|
 |groupId|string(uuid)|false|none|none|
-|group|[SbPAM.ActiveDirectory.Models.HostGroup](#schemasbpam.activedirectory.models.hostgroup)|false|none|none|
+|group|[SbPAM.ActiveDirectory.Models.HostGroup](../Models/sbpam.activedirectory.models.hostgroup.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

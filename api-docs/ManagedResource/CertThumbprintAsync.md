@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X PUT /api/v1/ManagedResource/{resourceId}/CertThumbprint \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -61,10 +61,6 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedResource/{resourceId}
 > Example responses
 
 > 400 Response
-
-```
-{"type":"string","title":"string","status":0,"detail":"string","instance":"string","property1":null,"property2":null}
-```
 
 ```json
 {

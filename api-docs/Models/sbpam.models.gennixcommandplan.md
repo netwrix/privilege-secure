@@ -31,12 +31,6 @@
           "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
           "commandSetId": "e8c8a103-3a07-4419-8d37-aa37616deb52",
           "commandToSend": "string",
-          "isSensitive": true,
-          "shouldSerialize_SensitiveDataTags": true,
-          "_SensitiveDataTags": "string",
-          "sensitiveDataTags": [
-            "string"
-          ],
           "executionOrder": 0,
           "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
           "createdDateTimeUtc": "2019-08-24T14:15:22Z",
@@ -81,6 +75,6 @@
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
-|commandSets|[[SbPAM.Models.GennixCommandSet](#schemasbpam.models.gennixcommandset)]¦null|false|none|none|
+|commandSets|[[SbPAM.Models.GennixCommandSet](../Models/sbpam.models.gennixcommandset.md)]¦null|false|none|none|
 
 

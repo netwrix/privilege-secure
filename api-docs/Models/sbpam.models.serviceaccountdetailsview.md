@@ -39,12 +39,12 @@
 |resourceName|string¦null|false|none|none|
 |samaccountName|string¦null|false|none|none|
 |platformName|string¦null|false|none|none|
-|passwordStatus|[SbPAM.Models.VerificationScanStatus](#schemasbpam.models.verificationscanstatus)|false|none|none|
+|passwordStatus|[SbPAM.Models.VerificationScanStatus](../Models/sbpam.models.verificationscanstatus.md)|false|none|none|
 |passwordLastCheckedUtc|string(date-time)¦null|false|none|none|
 |passwordLastChangedUtc|string(date-time)¦null|false|none|none|
 |passwordNextChangeUtc|string(date-time)¦null|false|none|none|
-|rotationStatus|[SbPAM.Models.ServiceRotationJobStatus](#schemasbpam.models.servicerotationjobstatus)|false|none|none|
-|rollbackStatus|[SbPAM.Models.ServiceRotationJobStatus](#schemasbpam.models.servicerotationjobstatus)|false|none|none|
+|rotationStatus|[SbPAM.Models.ServiceRotationJobStatus](../Models/sbpam.models.servicerotationjobstatus.md)|false|none|none|
+|rollbackStatus|[SbPAM.Models.ServiceRotationJobStatus](../Models/sbpam.models.servicerotationjobstatus.md)|false|none|none|
 |dependencyCount|integer(int32)|false|none|none|
 |age|integer(int32)|false|none|none|
 |passwordStatusName|string¦null|false|none|none|

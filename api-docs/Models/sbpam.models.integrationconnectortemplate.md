@@ -343,9 +343,9 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|type|[SbPAM.Models.IntegrationConnectorType](#schemasbpam.models.integrationconnectortype)|false|none|none|
+|type|[SbPAM.Models.IntegrationConnectorType](../Models/sbpam.models.integrationconnectortype.md)|false|none|none|
 |configurationId|string(uuid)|false|none|none|
-|configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](#schemasbpam.models.connectorconfigurationvalue)]¦null|false|none|none|
+|configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](../Models/sbpam.models.connectorconfigurationvalue.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

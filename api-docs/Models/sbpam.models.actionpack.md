@@ -1042,9 +1042,9 @@
 |version|string¦null|false|none|none|
 |timeoutOverride|integer(int32)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
-|actionTemplate|[[SbPAM.Models.ActionTemplate](#schemasbpam.models.actiontemplate)]¦null|false|none|none|
-|actionTemplateParameter|[[SbPAM.Models.ActionTemplateParameter](#schemasbpam.models.actiontemplateparameter)]¦null|false|none|none|
-|actionTemplateDemand|[[SbPAM.Models.ActionTemplateDemand](#schemasbpam.models.actiontemplatedemand)]¦null|false|none|none|
+|actionTemplate|[[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)]¦null|false|none|none|
+|actionTemplateParameter|[[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)]¦null|false|none|none|
+|actionTemplateDemand|[[SbPAM.Models.ActionTemplateDemand](../Models/sbpam.models.actiontemplatedemand.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 

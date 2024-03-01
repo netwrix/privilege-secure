@@ -63,11 +63,11 @@
 |modelTitle|string¦null|false|none|none|
 |rowKey|string¦null|false|none|none|
 |rowTitle|string¦null|false|none|none|
-|changeType|[SbPAM.Constants.ActionConstants+AuditChangeRowType](#schemasbpam.constants.actionconstants+auditchangerowtype)|false|none|none|
+|changeType|[SbPAM.Constants.ActionConstants+AuditChangeRowType](../Models/sbpam.constants.actionconstants+auditchangerowtype.md)|false|none|none|
 |changedByUserId|string(uuid)¦null|false|none|none|
 |changedByUserName|string¦null|false|none|none|
 |fromAction|string¦null|false|none|none|
-|changedColumns|[[SbPAM.Models.AuditChangeColumn](#schemasbpam.models.auditchangecolumn)]¦null|false|none|none|
+|changedColumns|[[SbPAM.Models.AuditChangeColumn](../Models/sbpam.models.auditchangecolumn.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

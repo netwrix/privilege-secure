@@ -23,7 +23,7 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |statusString|string¦null|false|none|none|
-|status|[SbPAM.Constants.ActionConstants+ActionLogType](#schemasbpam.constants.actionconstants+actionlogtype)|false|none|none|
+|status|[SbPAM.Constants.ActionConstants+ActionLogType](../Models/sbpam.constants.actionconstants+actionlogtype.md)|false|none|none|
 |logMessage|string¦null|false|none|none|
 |lineNumber|integer(int32)|false|none|none|
 |timestamp|string(date-time)|false|none|none|

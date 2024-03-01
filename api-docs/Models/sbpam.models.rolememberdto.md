@@ -21,6 +21,6 @@
 |---|---|---|---|---|
 |memberId|string(uuid)|false|none|none|
 |memberName|string¦null|false|none|none|
-|memberType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](#schemasbpam.models.managedaccountviewentitytypeenum)|false|none|none|
+|memberType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../Models/sbpam.models.managedaccountviewentitytypeenum.md)|false|none|none|
 
 

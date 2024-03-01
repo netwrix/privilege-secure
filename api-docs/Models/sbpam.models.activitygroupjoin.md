@@ -228,7 +228,7 @@
 |---|---|---|---|---|
 |accessControlPolicyId|string(uuid)|false|none|none|
 |activityGroupId|string(uuid)|false|none|none|
-|activityGroup|[SbPAM.Models.ActivityGroup](#schemasbpam.models.activitygroup)|false|none|none|
+|activityGroup|[SbPAM.Models.ActivityGroup](../Models/sbpam.models.activitygroup.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

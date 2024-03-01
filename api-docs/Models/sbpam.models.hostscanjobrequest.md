@@ -35,8 +35,8 @@
 |credentialName|string¦null|false|none|none|
 |platformName|string¦null|false|none|none|
 |acceptThumbprintOnFirstDiscovery|boolean|false|none|none|
-|sshTrustActionType|[SbPAM.Constants.SshConstants+SshTrustActionType](#schemasbpam.constants.sshconstants+sshtrustactiontype)|false|none|none|
-|certificateType|[SbPAM.Constants.SshConstants+CertificateType](#schemasbpam.constants.sshconstants+certificatetype)|false|none|none|
+|sshTrustActionType|[SbPAM.Constants.SshConstants+SshTrustActionType](../Models/sbpam.constants.sshconstants+sshtrustactiontype.md)|false|none|none|
+|certificateType|[SbPAM.Constants.SshConstants+CertificateType](../Models/sbpam.constants.sshconstants+certificatetype.md)|false|none|none|
 |trustedThumbprint|string¦null|false|none|none|
 |sshPort|integer(int32)¦null|false|none|none|
 |source|string¦null|false|none|none|

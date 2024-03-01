@@ -36,7 +36,7 @@
 |smtpHost|string¦null|false|none|none|
 |smtpPort|integer(int32)|false|none|none|
 |credentialId|string(uuid)¦null|false|none|none|
-|importance|[SbPAM.Models.ImportanceEnums](#schemasbpam.models.importanceenums)|false|none|none|
-|priority|[SbPAM.Models.PriorityEnums](#schemasbpam.models.priorityenums)|false|none|none|
+|importance|[SbPAM.Models.ImportanceEnums](../Models/sbpam.models.importanceenums.md)|false|none|none|
+|priority|[SbPAM.Models.PriorityEnums](../Models/sbpam.models.priorityenums.md)|false|none|none|
 
 

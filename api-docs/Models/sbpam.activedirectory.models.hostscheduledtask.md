@@ -2655,13 +2655,13 @@
 |nextRunTimeUtc|string(date-time)|false|none|none|
 |lastRunTimeUtc|string(date-time)|false|none|none|
 |lastRunResult|integer(int32)|false|none|none|
-|scheduledTaskTriggers|[[SbPAM.Models.Common.ScheduledTaskTrigger](#schemasbpam.models.common.scheduledtasktrigger)]¦null|false|none|none|
-|scheduledTaskActions|[[SbPAM.Models.Common.ScheduledTaskAction](#schemasbpam.models.common.scheduledtaskaction)]¦null|false|none|none|
+|scheduledTaskTriggers|[[SbPAM.Models.Common.ScheduledTaskTrigger](../Models/sbpam.models.common.scheduledtasktrigger.md)]¦null|false|none|none|
+|scheduledTaskActions|[[SbPAM.Models.Common.ScheduledTaskAction](../Models/sbpam.models.common.scheduledtaskaction.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 |hostId|string(uuid)|false|none|none|
-|host|[SbPAM.ActiveDirectory.Models.Host](#schemasbpam.activedirectory.models.host)|false|none|none|
+|host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
 |credentialId|string(uuid)¦null|false|none|none|
 |hostUserId|string(uuid)¦null|false|none|none|
 

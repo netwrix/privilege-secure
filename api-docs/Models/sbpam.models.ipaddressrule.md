@@ -28,7 +28,7 @@
 |id|string(uuid)|false|none|none|
 |address|string¦null|false|none|none|
 |allowed|boolean|false|none|none|
-|ipAddressRuleType|[SbPAM.Models.IPAddressRuleType](#schemasbpam.models.ipaddressruletype)|false|none|none|
+|ipAddressRuleType|[SbPAM.Models.IPAddressRuleType](../Models/sbpam.models.ipaddressruletype.md)|false|none|none|
 |activityConfigurationId|string(uuid)¦null|false|none|none|
 |managedAccountId|string(uuid)¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|

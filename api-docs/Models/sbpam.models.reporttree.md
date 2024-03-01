@@ -38,7 +38,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|folders|[[SbPAM.Models.ReportRenderTree](#schemasbpam.models.reportrendertree)]¦null|false|none|none|
-|reports|[[SbPAM.Models.ReportRenderTree](#schemasbpam.models.reportrendertree)]¦null|false|none|none|
+|folders|[[SbPAM.Models.ReportRenderTree](../Models/sbpam.models.reportrendertree.md)]¦null|false|none|none|
+|reports|[[SbPAM.Models.ReportRenderTree](../Models/sbpam.models.reportrendertree.md)]¦null|false|none|none|
 
 

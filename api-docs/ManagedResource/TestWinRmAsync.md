@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/ManagedResource/WinRmHttps/{resourceId}/Test \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -45,10 +45,6 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/WinRmHttps/{
 > Example responses
 
 > 200 Response
-
-```
-{"natsString":"string"}
-```
 
 ```json
 {

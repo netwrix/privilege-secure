@@ -25,9 +25,9 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|userAndGroupIdAndTypes|[[SbPAM.Models.UserAndGroupIdAndType](#schemasbpam.models.userandgroupidandtype)]¦null|false|none|none|
+|userAndGroupIdAndTypes|[[SbPAM.Models.UserAndGroupIdAndType](../Models/sbpam.models.userandgroupidandtype.md)]¦null|false|none|none|
 |all|boolean|false|none|none|
 |filterText|string¦null|false|none|none|
-|entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](#schemasbpam.models.managedaccountviewentitytypeenum)|false|none|none|
+|entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../Models/sbpam.models.managedaccountviewentitytypeenum.md)|false|none|none|
 
 

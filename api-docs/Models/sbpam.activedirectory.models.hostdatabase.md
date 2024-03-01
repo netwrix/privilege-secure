@@ -2619,12 +2619,12 @@
 |version|string¦null|false|none|none|
 |isClustered|boolean|false|none|none|
 |clusterName|string¦null|false|none|none|
-|type|[SbPAM.Models.Common.DatabaseType](#schemasbpam.models.common.databasetype)|false|none|none|
+|type|[SbPAM.Models.Common.DatabaseType](../Models/sbpam.models.common.databasetype.md)|false|none|none|
 |discoveredDateTimeUtc|string(date-time)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 |hostId|string(uuid)|false|none|none|
-|host|[SbPAM.ActiveDirectory.Models.Host](#schemasbpam.activedirectory.models.host)|false|none|none|
+|host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
 
 

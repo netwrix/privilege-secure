@@ -27,7 +27,7 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|roleTarget|[SbPAM.Models.RoleTarget](#schemasbpam.models.roletarget)|false|none|none|
+|roleTarget|[SbPAM.Models.RoleTarget](../Models/sbpam.models.roletarget.md)|false|none|none|
 |isDeleted|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

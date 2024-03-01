@@ -1825,8 +1825,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |managedAccountGroupId|string(uuid)|false|none|none|
-|managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](#schemasbpam.models.managedaccountgroup)|false|none|none|
+|managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](../Models/sbpam.models.managedaccountgroup.md)|false|none|none|
 |userAndGroupCollectionId|string(uuid)|false|none|none|
-|userAndGroupCollection|[SbPAM.Models.UserAndGroupCollection](#schemasbpam.models.userandgroupcollection)|false|none|none|
+|userAndGroupCollection|[SbPAM.Models.UserAndGroupCollection](../Models/sbpam.models.userandgroupcollection.md)|false|none|none|
 
 

@@ -952,12 +952,12 @@
 |unixGroupId|integer(int32)¦null|false|none|none|
 |homeDirectory|string¦null|false|none|none|
 |shell|string¦null|false|none|none|
-|privilege|[SbPAM.ActiveDirectory.Models.Enums.UserPrivilege](#schemasbpam.activedirectory.models.enums.userprivilege)|false|none|none|
+|privilege|[SbPAM.ActiveDirectory.Models.Enums.UserPrivilege](../Models/sbpam.activedirectory.models.enums.userprivilege.md)|false|none|none|
 |discoveredDateTimeUtc|string(date-time)¦null|false|none|none|
 |userId|string(uuid)¦null|false|none|none|
 |hostScanHostId|string(uuid)¦null|false|none|none|
-|hostScanHost|[SbPAM.Models.HostScanHost](#schemasbpam.models.hostscanhost)|false|none|none|
-|hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](#schemasbpam.models.hostscanusergroupjoin)]¦null|false|none|none|
+|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
+|hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](../Models/sbpam.models.hostscanusergroupjoin.md)]¦null|false|none|none|
 |resourceObjectId|string(uuid)¦null|false|none|none|
 |isDisabled|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|

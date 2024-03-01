@@ -1135,9 +1135,9 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
-|activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](#schemasbpam.activedirectory.models.activedirectorydomain)|false|none|none|
+|activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)|false|none|none|
 |activeDirectoryDomainConfigurationId|string(uuid)|false|none|none|
-|activeDirectoryDomainConfiguration|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomainConfiguration](#schemasbpam.activedirectory.models.activedirectorydomainconfiguration)|false|none|none|
+|activeDirectoryDomainConfiguration|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomainConfiguration](../Models/sbpam.activedirectory.models.activedirectorydomainconfiguration.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

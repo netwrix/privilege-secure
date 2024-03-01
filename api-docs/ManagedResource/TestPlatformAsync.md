@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/ManagedResource/TestPlatform \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -55,10 +55,6 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/TestPlatform
 > Example responses
 
 > 200 Response
-
-```
-true
-```
 
 ```json
 true

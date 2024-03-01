@@ -395,7 +395,7 @@
 |errorTimeUtc|string(date-time)¦null|false|none|none|
 |errorMessage|string¦null|false|none|none|
 |activeDirectorySyncStatsId|string(uuid)|false|none|none|
-|activeDirectorySyncStats|[SbPAM.ActiveDirectory.Models.ActiveDirectorySyncStats](#schemasbpam.activedirectory.models.activedirectorysyncstats)|false|none|none|
+|activeDirectorySyncStats|[SbPAM.ActiveDirectory.Models.ActiveDirectorySyncStats](../Models/sbpam.activedirectory.models.activedirectorysyncstats.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

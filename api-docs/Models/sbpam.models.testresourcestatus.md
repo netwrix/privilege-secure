@@ -55,11 +55,11 @@
 |id|string(uuid)|false|none|none|
 |managedResourceId|string(uuid)¦null|false|none|none|
 |hostId|string(uuid)¦null|false|none|none|
-|status|[SbPAM.Models.TestStepStatus](#schemasbpam.models.teststepstatus)|false|none|none|
+|status|[SbPAM.Models.TestStepStatus](../Models/sbpam.models.teststepstatus.md)|false|none|none|
 |startedDateTimeUtc|string(date-time)|false|none|none|
 |finishedDateTimeUtc|string(date-time)|false|none|none|
 |errorMessage|string¦null|false|none|none|
-|steps|[[SbPAM.Models.TestResourceStatusStep](#schemasbpam.models.testresourcestatusstep)]¦null|false|none|none|
+|steps|[[SbPAM.Models.TestResourceStatusStep](../Models/sbpam.models.testresourcestatusstep.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

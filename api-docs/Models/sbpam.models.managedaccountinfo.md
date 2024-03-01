@@ -6658,9 +6658,9 @@
 |samaccountname|string¦null|false|none|none|
 |email|string¦null|false|none|none|
 |mfaConnectorId|string(uuid)¦null|false|none|none|
-|policies|[[SbPAM.Models.AccessControlPolicy](#schemasbpam.models.accesscontrolpolicy)]¦null|false|none|none|
-|resources|[[SbPAM.Models.ManagedResource](#schemasbpam.models.managedresource)]¦null|false|none|none|
-|activeSessions|[[SbPAM.Models.SessionSummary](#schemasbpam.models.sessionsummary)]¦null|false|none|none|
+|policies|[[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)]¦null|false|none|none|
+|resources|[[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)]¦null|false|none|none|
+|activeSessions|[[SbPAM.Models.SessionSummary](../Models/sbpam.models.sessionsummary.md)]¦null|false|none|none|
 |lastLogonDateUtc|string(date-time)¦null|false|none|none|
 |scheduledSessionCount|integer(int32)|false|none|none|
 |type|string¦null|false|none|none|

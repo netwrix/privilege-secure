@@ -1425,12 +1425,12 @@
 |timeStarted|string(date-time)|false|none|none|
 |timeFinished|string(date-time)|false|none|none|
 |heartBeatDateTimeUtc|string(date-time)|false|none|none|
-|status|[SbPAM.Constants.ActionConstants+ActionStatus](#schemasbpam.constants.actionconstants+actionstatus)|false|none|none|
+|status|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 |statusDescription|string¦null|false|none|none|
-|failureReason|[SbPAM.Constants.ActionConstants+ActionFailureReason](#schemasbpam.constants.actionconstants+actionfailurereason)|false|none|none|
+|failureReason|[SbPAM.Constants.ActionConstants+ActionFailureReason](../Models/sbpam.constants.actionconstants+actionfailurereason.md)|false|none|none|
 |actionGroupId|string(uuid)|false|none|none|
-|actionGroup|[SbPAM.Models.ActionGroup](#schemasbpam.models.actiongroup)|false|none|none|
-|actionQueueAction|[[SbPAM.Models.ActionQueueAction](#schemasbpam.models.actionqueueaction)]¦null|false|none|none|
+|actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|none|
+|actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

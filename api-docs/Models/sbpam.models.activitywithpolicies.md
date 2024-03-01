@@ -2904,7 +2904,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|activity|[SbPAM.Models.Activity](#schemasbpam.models.activity)|false|none|none|
-|policies|[[SbPAM.Models.AccessControlPolicy](#schemasbpam.models.accesscontrolpolicy)]¦null|false|none|none|
+|activity|[SbPAM.Models.Activity](../Models/sbpam.models.activity.md)|false|none|none|
+|policies|[[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)]¦null|false|none|none|
 
 

@@ -118,7 +118,7 @@
 |id|string(uuid)|false|none|none|
 |os|string¦null|false|none|none|
 |platformId|string(uuid)|false|none|none|
-|platform|[SbPAM.Models.Platform](#schemasbpam.models.platform)|false|none|none|
+|platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

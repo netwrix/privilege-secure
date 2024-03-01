@@ -34,8 +34,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|status|[SbPAM.Constants.ActionConstants+ActionStatus](#schemasbpam.constants.actionconstants+actionstatus)|false|none|none|
+|status|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 |statusDescription|string¦null|false|none|none|
-|hostScanHostStatus|[[SbPAM.Models.HostScanHostStatus](#schemasbpam.models.hostscanhoststatus)]¦null|false|none|none|
+|hostScanHostStatus|[[SbPAM.Models.HostScanHostStatus](../Models/sbpam.models.hostscanhoststatus.md)]¦null|false|none|none|
 
 

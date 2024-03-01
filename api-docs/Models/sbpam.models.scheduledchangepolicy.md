@@ -31,7 +31,7 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|frequency|[SbPAM.Models.ScheduledChangePolicy+FrequencyType](#schemasbpam.models.scheduledchangepolicy+frequencytype)|false|none|none|
+|frequency|[SbPAM.Models.ScheduledChangePolicy+FrequencyType](../Models/sbpam.models.scheduledchangepolicy+frequencytype.md)|false|none|none|
 |periodValue|integer(int32)|false|none|none|
 |daysOfWeek|string¦null|false|none|none|
 |dayNumber|integer(int32)|false|none|none|

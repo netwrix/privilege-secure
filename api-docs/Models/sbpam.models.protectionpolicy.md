@@ -6578,9 +6578,9 @@
 |groupMonitorInterval|integer(int32)|false|none|none|
 |isDisabled|boolean|false|none|none|
 |isDeleted|boolean|false|none|none|
-|protectionPolicyGroup|[[SbPAM.Models.ProtectionPolicyGroup](#schemasbpam.models.protectionpolicygroup)]¦null|false|none|none|
-|manageResourceProtectionPolicyJoin|[[SbPAM.Models.ManageResourceProtectionPolicyJoin](#schemasbpam.models.manageresourceprotectionpolicyjoin)]¦null|false|none|none|
-|manageResourceGroupProtectionPolicyJoin|[[SbPAM.Models.ManageResourceGroupProtectionPolicyJoin](#schemasbpam.models.manageresourcegroupprotectionpolicyjoin)]¦null|false|none|none|
+|protectionPolicyGroup|[[SbPAM.Models.ProtectionPolicyGroup](../Models/sbpam.models.protectionpolicygroup.md)]¦null|false|none|none|
+|manageResourceProtectionPolicyJoin|[[SbPAM.Models.ManageResourceProtectionPolicyJoin](../Models/sbpam.models.manageresourceprotectionpolicyjoin.md)]¦null|false|none|none|
+|manageResourceGroupProtectionPolicyJoin|[[SbPAM.Models.ManageResourceGroupProtectionPolicyJoin](../Models/sbpam.models.manageresourcegroupprotectionpolicyjoin.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

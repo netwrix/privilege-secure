@@ -129,10 +129,10 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |displayName|string¦null|false|none|none|
-|dataType|[SbPAM.Models.ReportAttributeDataType](#schemasbpam.models.reportattributedatatype)|false|none|none|
-|type|[SbPAM.Models.ReportAttributeType](#schemasbpam.models.reportattributetype)|false|none|none|
-|reportAttributeTemplateJoins|[[SbPAM.Models.ReportAttributeTemplateJoin](#schemasbpam.models.reportattributetemplatejoin)]¦null|false|none|none|
-|reportOperatorJoins|[[SbPAM.Models.ReportOperatorJoin](#schemasbpam.models.reportoperatorjoin)]¦null|false|none|none|
+|dataType|[SbPAM.Models.ReportAttributeDataType](../Models/sbpam.models.reportattributedatatype.md)|false|none|none|
+|type|[SbPAM.Models.ReportAttributeType](../Models/sbpam.models.reportattributetype.md)|false|none|none|
+|reportAttributeTemplateJoins|[[SbPAM.Models.ReportAttributeTemplateJoin](../Models/sbpam.models.reportattributetemplatejoin.md)]¦null|false|none|none|
+|reportOperatorJoins|[[SbPAM.Models.ReportOperatorJoin](../Models/sbpam.models.reportoperatorjoin.md)]¦null|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 |nodeId|string(uuid)|false|none|none|

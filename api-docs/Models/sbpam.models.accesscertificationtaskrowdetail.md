@@ -39,7 +39,7 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |userName|string¦null|false|none|none|
-|status|[SbPAM.Models.AccessCertificationTaskRowStatus](#schemasbpam.models.accesscertificationtaskrowstatus)|false|none|none|
+|status|[SbPAM.Models.AccessCertificationTaskRowStatus](../Models/sbpam.models.accesscertificationtaskrowstatus.md)|false|none|none|
 |accessControlPolicy|string¦null|false|none|none|
 |resource|string¦null|false|none|none|
 |credential|string¦null|false|none|none|

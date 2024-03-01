@@ -38,7 +38,7 @@
 |sharedSecret|string¦null|false|none|none|
 |timeout|integer(int32)|false|none|none|
 |maxRetries|integer(int32)|false|none|none|
-|authType|[Stealthbits.Radius.RadiusAuthType](#schemastealthbits.radius.radiusauthtype)|false|none|none|
+|authType|[Stealthbits.Radius.RadiusAuthType](../Models/stealthbits.radius.radiusauthtype.md)|false|none|none|
 |dialogTitle|string¦null|false|none|none|
 |loginText|string¦null|false|none|none|
 |autoResponse|boolean|false|none|none|

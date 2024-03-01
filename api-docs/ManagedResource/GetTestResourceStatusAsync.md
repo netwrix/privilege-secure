@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/ManagedResource/TestConnection/{resourceId}/{testId} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -46,10 +46,6 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/TestConnecti
 > Example responses
 
 > 200 Response
-
-```
-{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","managedResourceId":"43aaf5a7-e929-49e6-870e-49d47d9cdc2f","hostId":"70e3fb2d-1cb6-4dbc-ab8d-fa7209aca5dd","status":"Pending","startedDateTimeUtc":"2019-08-24T14:15:22Z","finishedDateTimeUtc":"2019-08-24T14:15:22Z","errorMessage":"string","steps":[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","testResourceStatusId":"d44f170a-5b59-4773-9908-5b3939496cdd","testResourceStatus":{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","managedResourceId":"43aaf5a7-e929-49e6-870e-49d47d9cdc2f","hostId":"70e3fb2d-1cb6-4dbc-ab8d-fa7209aca5dd","status":"Pending","startedDateTimeUtc":"2019-08-24T14:15:22Z","finishedDateTimeUtc":"2019-08-24T14:15:22Z","errorMessage":"string","steps":[],"nodeId":"959356e3-6168-4a92-b4a5-b9d462be6177","createdDateTimeUtc":"2019-08-24T14:15:22Z","modifiedDateTimeUtc":"2019-08-24T14:15:22Z"},"stepName":"string","index":0,"status":"Pending","errorMessage":"string","nodeId":"959356e3-6168-4a92-b4a5-b9d462be6177","createdDateTimeUtc":"2019-08-24T14:15:22Z","modifiedDateTimeUtc":"2019-08-24T14:15:22Z"}],"nodeId":"959356e3-6168-4a92-b4a5-b9d462be6177","createdDateTimeUtc":"2019-08-24T14:15:22Z","modifiedDateTimeUtc":"2019-08-24T14:15:22Z"}
-```
 
 ```json
 {

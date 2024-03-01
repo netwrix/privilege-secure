@@ -36,7 +36,7 @@
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
 |reviewerId|string(uuid)|false|none|none|
-|status|[SbPAM.Models.AccessCertificationTaskStatus](#schemasbpam.models.accesscertificationtaskstatus)|false|none|none|
+|status|[SbPAM.Models.AccessCertificationTaskStatus](../Models/sbpam.models.accesscertificationtaskstatus.md)|false|none|none|
 |startDateTimeUtc|string(date-time)¦null|false|none|none|
 |scheduledStartDateTimeUtc|string(date-time)¦null|false|none|none|
 |userIds|[string]¦null|false|none|none|

@@ -35,6 +35,6 @@
 |username|string¦null|false|none|none|
 |lastLogonTimestamp|string(date-time)¦null|false|none|none|
 |email|string¦null|false|none|none|
-|entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](#schemasbpam.models.managedaccountviewentitytypeenum)|false|none|none|
+|entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../Models/sbpam.models.managedaccountviewentitytypeenum.md)|false|none|none|
 
 

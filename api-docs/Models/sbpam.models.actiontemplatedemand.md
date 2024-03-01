@@ -1123,11 +1123,11 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |value|string¦null|false|none|none|
-|type|[SbPAM.Constants.ActionConstants+ActionServiceDemandType](#schemasbpam.constants.actionconstants+actionservicedemandtype)|false|none|none|
+|type|[SbPAM.Constants.ActionConstants+ActionServiceDemandType](../Models/sbpam.constants.actionconstants+actionservicedemandtype.md)|false|none|none|
 |actionTemplateId|string(uuid)|false|none|none|
-|actionTemplate|[SbPAM.Models.ActionTemplate](#schemasbpam.models.actiontemplate)|false|none|none|
+|actionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|none|
 |actionPackId|string(uuid)¦null|false|none|none|
-|actionPack|[SbPAM.Models.ActionPack](#schemasbpam.models.actionpack)|false|none|none|
+|actionPack|[SbPAM.Models.ActionPack](../Models/sbpam.models.actionpack.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

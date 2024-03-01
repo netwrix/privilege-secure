@@ -25,7 +25,7 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |domainName|string¦null|false|none|none|
-|status|[SbPAM.ActiveDirectory.Models.TestConnectionStatusType](#schemasbpam.activedirectory.models.testconnectionstatustype)|false|none|none|
+|status|[SbPAM.ActiveDirectory.Models.TestConnectionStatusType](../Models/sbpam.activedirectory.models.testconnectionstatustype.md)|false|none|none|
 |message|string¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

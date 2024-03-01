@@ -28,8 +28,8 @@
 |id|string(uuid)|false|none|none|
 |clientId|string¦null|false|none|none|
 |authority|string¦null|false|none|none|
-|login|[SbPAM.Models.SbPAMOpenIdLoginType](#schemasbpam.models.sbpamopenidlogintype)|false|none|none|
-|userIdSource|[SbPAM.Models.SbPAMOpenIdUserIdSource](#schemasbpam.models.sbpamopeniduseridsource)|false|none|none|
+|login|[SbPAM.Models.SbPAMOpenIdLoginType](../Models/sbpam.models.sbpamopenidlogintype.md)|false|none|none|
+|userIdSource|[SbPAM.Models.SbPAMOpenIdUserIdSource](../Models/sbpam.models.sbpamopeniduseridsource.md)|false|none|none|
 |userIdSourceField|string¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

@@ -3307,13 +3307,13 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
-|type|[SbPAM.Models.ManagedAccountGroupType](#schemasbpam.models.managedaccountgrouptype)|false|none|none|
+|type|[SbPAM.Models.ManagedAccountGroupType](../Models/sbpam.models.managedaccountgrouptype.md)|false|none|none|
 |groupId|string(uuid)¦null|false|none|none|
 |mfaConnectorId|string(uuid)¦null|false|none|none|
 |isReviewer|boolean|false|none|none|
-|managedAccountJoin|[[SbPAM.Models.ManagedAccountJoin](#schemasbpam.models.managedaccountjoin)]¦null|false|none|none|
-|managedAccountGroupPolicyJoin|[[SbPAM.Models.ManagedAccountGroupPolicyJoin](#schemasbpam.models.managedaccountgrouppolicyjoin)]¦null|false|none|none|
-|groupCollectionJoin|[[SbPAM.Models.GroupCollectionJoin](#schemasbpam.models.groupcollectionjoin)]¦null|false|read-only|none|
+|managedAccountJoin|[[SbPAM.Models.ManagedAccountJoin](../Models/sbpam.models.managedaccountjoin.md)]¦null|false|none|none|
+|managedAccountGroupPolicyJoin|[[SbPAM.Models.ManagedAccountGroupPolicyJoin](../Models/sbpam.models.managedaccountgrouppolicyjoin.md)]¦null|false|none|none|
+|groupCollectionJoin|[[SbPAM.Models.GroupCollectionJoin](../Models/sbpam.models.groupcollectionjoin.md)]¦null|false|read-only|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

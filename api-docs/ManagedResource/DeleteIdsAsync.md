@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X POST /api/v1/ManagedResource/Delete \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -59,10 +59,6 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedResource/Delete" -Co
 > Example responses
 
 > 400 Response
-
-```
-{"type":"string","title":"string","status":0,"detail":"string","instance":"string","property1":null,"property2":null}
-```
 
 ```json
 {

@@ -1194,9 +1194,9 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|userCollectionJoin|[[SbPAM.Models.UserCollectionJoin](#schemasbpam.models.usercollectionjoin)]¦null|false|read-only|none|
-|groupCollectionJoin|[[SbPAM.Models.GroupCollectionJoin](#schemasbpam.models.groupcollectionjoin)]¦null|false|read-only|none|
-|userAndGroupCollectionPolicyJoin|[[SbPAM.Models.UserAndGroupCollectionPolicyJoin](#schemasbpam.models.userandgroupcollectionpolicyjoin)]¦null|false|read-only|none|
+|userCollectionJoin|[[SbPAM.Models.UserCollectionJoin](../Models/sbpam.models.usercollectionjoin.md)]¦null|false|read-only|none|
+|groupCollectionJoin|[[SbPAM.Models.GroupCollectionJoin](../Models/sbpam.models.groupcollectionjoin.md)]¦null|false|read-only|none|
+|userAndGroupCollectionPolicyJoin|[[SbPAM.Models.UserAndGroupCollectionPolicyJoin](../Models/sbpam.models.userandgroupcollectionpolicyjoin.md)]¦null|false|read-only|none|
 |isReviewer|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

@@ -1784,10 +1784,10 @@
 |platformId|string(uuid)¦null|false|none|none|
 |lastScanTimeUtc|string(date-time)¦null|false|none|none|
 |lastScanStartTimeUtc|string(date-time)|false|none|none|
-|hostScanUser|[[SbPAM.Models.HostScanUser](#schemasbpam.models.hostscanuser)]¦null|false|none|none|
-|hostScanGroup|[[SbPAM.Models.HostScanGroup](#schemasbpam.models.hostscangroup)]¦null|false|none|none|
-|hostScanFeature|[[SbPAM.Models.HostScanFeature](#schemasbpam.models.hostscanfeature)]¦null|false|none|none|
-|hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](#schemasbpam.models.hostscanjobhostjoin)]¦null|false|none|none|
+|hostScanUser|[[SbPAM.Models.HostScanUser](../Models/sbpam.models.hostscanuser.md)]¦null|false|none|none|
+|hostScanGroup|[[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)]¦null|false|none|none|
+|hostScanFeature|[[SbPAM.Models.HostScanFeature](../Models/sbpam.models.hostscanfeature.md)]¦null|false|none|none|
+|hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](../Models/sbpam.models.hostscanjobhostjoin.md)]¦null|false|none|none|
 |hostConnected|boolean|false|none|none|
 |netBiosName|string¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|

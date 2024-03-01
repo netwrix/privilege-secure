@@ -784,7 +784,7 @@
 |---|---|---|---|---|
 |accessControlPolicyId|string(uuid)|false|none|none|
 |credentialId|string(uuid)|false|none|none|
-|credential|[SbPAM.Models.Credential](#schemasbpam.models.credential)|false|none|none|
+|credential|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

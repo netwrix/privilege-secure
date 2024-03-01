@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X DELETE /api/v1/ManagedResource/{managedResourceId} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -45,10 +45,6 @@ Invoke-RestMethod -Method DELETE -Url "$($Host)/api/v1/ManagedResource/{managedR
 > Example responses
 
 > 400 Response
-
-```
-{"type":"string","title":"string","status":0,"detail":"string","instance":"string","property1":null,"property2":null}
-```
 
 ```json
 {

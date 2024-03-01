@@ -42,7 +42,7 @@
 |actionServiceId|string(uuid)¦null|false|none|none|
 |startTimeUtc|string(date-time)|false|none|none|
 |endTimeUtc|string(date-time)|false|none|none|
-|status|[SbPAM.Constants.ActionConstants+ActionStatus](#schemasbpam.constants.actionconstants+actionstatus)|false|none|none|
+|status|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 |statusDescription|string¦null|false|none|none|
 |platformId|string(uuid)¦null|false|none|none|
 |hostId|string(uuid)¦null|false|none|none|
@@ -50,7 +50,7 @@
 |hostUserId|string(uuid)¦null|false|none|none|
 |hostUserName|string¦null|false|none|none|
 |managedObjectId|string(uuid)¦null|false|none|none|
-|managedObjectType|[SbPAM.Models.ManagedAccountType](#schemasbpam.models.managedaccounttype)|false|none|none|
+|managedObjectType|[SbPAM.Models.ManagedAccountType](../Models/sbpam.models.managedaccounttype.md)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 
 

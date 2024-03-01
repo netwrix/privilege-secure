@@ -30,11 +30,11 @@
 |credentialId|string(uuid)¦null|false|none|none|
 |displayName|string¦null|false|none|none|
 |domain|string¦null|false|none|none|
-|passwordStatus|[SbPAM.Models.VerificationScanStatus](#schemasbpam.models.verificationscanstatus)|false|none|none|
-|managedType|[SbPAM.Models.ManagedType](#schemasbpam.models.managedtype)|false|none|none|
-|rotationType|[SbPAM.Models.ManagedUserType](#schemasbpam.models.managedusertype)|false|none|none|
-|credentialType|[SbPAM.Models.CredentialType](#schemasbpam.models.credentialtype)|false|none|none|
-|privilege|[SbPAM.ActiveDirectory.Models.Enums.UserPrivilege](#schemasbpam.activedirectory.models.enums.userprivilege)|false|none|none|
-|entityType|[SbPAM.Models.CredentialOrHostUser](#schemasbpam.models.credentialorhostuser)|false|none|none|
+|passwordStatus|[SbPAM.Models.VerificationScanStatus](../Models/sbpam.models.verificationscanstatus.md)|false|none|none|
+|managedType|[SbPAM.Models.ManagedType](../Models/sbpam.models.managedtype.md)|false|none|none|
+|rotationType|[SbPAM.Models.ManagedUserType](../Models/sbpam.models.managedusertype.md)|false|none|none|
+|credentialType|[SbPAM.Models.CredentialType](../Models/sbpam.models.credentialtype.md)|false|none|none|
+|privilege|[SbPAM.ActiveDirectory.Models.Enums.UserPrivilege](../Models/sbpam.activedirectory.models.enums.userprivilege.md)|false|none|none|
+|entityType|[SbPAM.Models.CredentialOrHostUser](../Models/sbpam.models.credentialorhostuser.md)|false|none|none|
 
 

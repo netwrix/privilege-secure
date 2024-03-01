@@ -1849,11 +1849,11 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |hostScanJobId|string(uuid)|false|none|none|
-|hostScanJob|[SbPAM.Models.HostScanJob](#schemasbpam.models.hostscanjob)|false|none|none|
+|hostScanJob|[SbPAM.Models.HostScanJob](../Models/sbpam.models.hostscanjob.md)|false|none|none|
 |hostScanHostId|string(uuid)|false|none|none|
-|hostScanHost|[SbPAM.Models.HostScanHost](#schemasbpam.models.hostscanhost)|false|none|none|
+|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
 |actionQueueId|string(uuid)¦null|false|none|none|
-|actionQueue|[SbPAM.Models.ActionQueue](#schemasbpam.models.actionqueue)|false|none|none|
+|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

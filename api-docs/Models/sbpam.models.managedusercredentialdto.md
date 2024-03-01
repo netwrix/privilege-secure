@@ -30,7 +30,7 @@
 |name|string¦null|false|none|none|
 |username|string¦null|false|none|none|
 |password|string¦null|false|none|none|
-|managedType|[SbPAM.Models.ManagedUserType](#schemasbpam.models.managedusertype)|false|none|none|
+|managedType|[SbPAM.Models.ManagedUserType](../Models/sbpam.models.managedusertype.md)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 
 

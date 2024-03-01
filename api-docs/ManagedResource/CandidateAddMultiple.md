@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X POST /api/v1/ManagedResource/Candidate/AddMultiple \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -65,10 +65,6 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedResource/Candidate/A
 > Example responses
 
 > 200 Response
-
-```
-0
-```
 
 ```json
 0

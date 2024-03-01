@@ -1679,9 +1679,9 @@
 |connectorConfigurationId|string(uuid)|false|none|none|
 |connectorTemplateId|string(uuid)|false|none|none|
 |monitorActionQueueId|string(uuid)¦null|false|none|none|
-|monitorActionQueue|[SbPAM.Models.ActionQueue](#schemasbpam.models.actionqueue)|false|none|none|
-|configuration|[SbPAM.Models.ConnectorConfiguration](#schemasbpam.models.connectorconfiguration)|false|none|none|
-|configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](#schemasbpam.models.connectorconfigurationvalue)]¦null|false|none|none|
+|monitorActionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
+|configuration|[SbPAM.Models.ConnectorConfiguration](../Models/sbpam.models.connectorconfiguration.md)|false|none|none|
+|configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](../Models/sbpam.models.connectorconfigurationvalue.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

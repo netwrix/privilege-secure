@@ -20,7 +20,7 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |name|string¦null|false|none|none|
-|settingType|[SbPAM.Models.PostgresqlSettingType](#schemasbpam.models.postgresqlsettingtype)|false|none|none|
+|settingType|[SbPAM.Models.PostgresqlSettingType](../Models/sbpam.models.postgresqlsettingtype.md)|false|none|none|
 |value|string¦null|false|none|none|
 
 

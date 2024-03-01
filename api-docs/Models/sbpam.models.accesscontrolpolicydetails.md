@@ -26,7 +26,7 @@
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
 |connectionProfileName|string¦null|false|none|none|
-|policyType|[SbPAM.Models.PolicyType](#schemasbpam.models.policytype)|false|none|none|
+|policyType|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)|false|none|none|
 |policyTypeName|string¦null|false|none|none|
 
 

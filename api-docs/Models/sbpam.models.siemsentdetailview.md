@@ -44,7 +44,7 @@
 |siemServerId|string(uuid)¦null|false|none|none|
 |resourceName|string¦null|false|none|none|
 |managedResourceId|string(uuid)¦null|false|none|none|
-|managedResourceType|[SbPAM.Models.ManagedResourceType](#schemasbpam.models.managedresourcetype)|false|none|none|
+|managedResourceType|[SbPAM.Models.ManagedResourceType](../Models/sbpam.models.managedresourcetype.md)|false|none|none|
 |accountName|string¦null|false|none|none|
 |managedAccountId|string(uuid)¦null|false|none|none|
 |activityName|string¦null|false|none|none|

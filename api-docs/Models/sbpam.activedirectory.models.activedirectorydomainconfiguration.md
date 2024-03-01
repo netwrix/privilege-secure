@@ -691,9 +691,9 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|activeDirectoryDomain|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](#schemasbpam.activedirectory.models.activedirectorydomain)]¦null|false|read-only|none|
+|activeDirectoryDomain|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)]¦null|false|read-only|none|
 |name|string¦null|false|none|none|
-|controllers|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryController](#schemasbpam.activedirectory.models.activedirectorycontroller)]¦null|false|read-only|none|
+|controllers|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryController](../Models/sbpam.activedirectory.models.activedirectorycontroller.md)]¦null|false|read-only|none|
 |enabled|boolean|false|none|none|
 |credentialId|string(uuid)¦null|false|none|none|
 |useSsl|boolean|false|none|none|

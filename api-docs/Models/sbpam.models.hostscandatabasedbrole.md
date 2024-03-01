@@ -593,7 +593,7 @@
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 |hostScanHostId|string(uuid)|false|none|none|
-|hostScanHost|[SbPAM.Models.HostScanHost](#schemasbpam.models.hostscanhost)|false|none|none|
+|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
 |hostObjectId|string(uuid)¦null|false|none|none|
 |databaseDbId|string(uuid)|false|none|none|
 

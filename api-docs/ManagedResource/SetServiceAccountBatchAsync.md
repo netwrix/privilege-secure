@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X PUT /api/v1/ManagedResource/ServiceAccount/Bulk \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -65,10 +65,6 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedResource/ServiceAccou
 > Example responses
 
 > 200 Response
-
-```
-[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","status":0,"message":"string"}]
-```
 
 ```json
 [

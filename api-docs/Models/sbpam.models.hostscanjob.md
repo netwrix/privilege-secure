@@ -724,7 +724,7 @@
 |createdBy|string(uuid)¦null|false|none|none|
 |createdByUserName|string¦null|false|none|none|
 |createdFromAddress|string¦null|false|none|none|
-|hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](#schemasbpam.models.hostscanjobhostjoin)]¦null|false|none|none|
+|hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](../Models/sbpam.models.hostscanjobhostjoin.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

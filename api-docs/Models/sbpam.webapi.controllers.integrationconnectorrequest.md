@@ -37,7 +37,7 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|settings|[[SbPAM.WebAPI.Controllers.IntegrationConnectorSettingValue](#schemasbpam.webapi.controllers.integrationconnectorsettingvalue)]¦null|false|none|none|
+|settings|[[SbPAM.WebAPI.Controllers.IntegrationConnectorSettingValue](../Models/sbpam.webapi.controllers.integrationconnectorsettingvalue.md)]¦null|false|none|none|
 |connectorTemplateId|string(uuid)|false|none|none|
 |connectorConfigurationId|string(uuid)|false|none|none|
 

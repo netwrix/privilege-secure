@@ -43,7 +43,7 @@
 |description|string¦null|false|none|none|
 |sortOrder|integer(int32)|false|none|none|
 |required|boolean|false|none|none|
-|type|[SbPAM.Constants.ActionConstants+ActionParameterType](#schemasbpam.constants.actionconstants+actionparametertype)|false|none|none|
+|type|[SbPAM.Constants.ActionConstants+ActionParameterType](../Models/sbpam.constants.actionconstants+actionparametertype.md)|false|none|none|
 |multiline|boolean|false|none|none|
 |defaultValue|string¦null|false|none|none|
 |shouldSerialize_ValueSet|boolean|false|read-only|none|

@@ -24,8 +24,8 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|authenticationMethod|[SbPAM.Models.AuthenticationMethodType](#schemasbpam.models.authenticationmethodtype)|false|none|none|
-|credentialType|[SbPAM.Models.CredentialType](#schemasbpam.models.credentialtype)|false|none|none|
+|authenticationMethod|[SbPAM.Models.AuthenticationMethodType](../Models/sbpam.models.authenticationmethodtype.md)|false|none|none|
+|credentialType|[SbPAM.Models.CredentialType](../Models/sbpam.models.credentialtype.md)|false|none|none|
 |autoGenPassphrase|boolean|false|none|none|
 |passphrase|string¦null|false|none|none|
 |privateKey|string¦null|false|none|none|

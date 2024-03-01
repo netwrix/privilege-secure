@@ -25,6 +25,6 @@
 |ids|[string]¦null|false|none|none|
 |all|boolean|false|none|none|
 |filterText|string¦null|false|none|none|
-|managedType|[SbPAM.Models.ManagedType](#schemasbpam.models.managedtype)|false|none|none|
+|managedType|[SbPAM.Models.ManagedType](../Models/sbpam.models.managedtype.md)|false|none|none|
 
 

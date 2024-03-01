@@ -40,7 +40,7 @@
 |localPort|integer(int32)|false|none|none|
 |remoteHost|string¦null|false|none|none|
 |remotePort|integer(int32)|false|none|none|
-|authType|[Stealthbits.Radius.RadiusAuthType](#schemastealthbits.radius.radiusauthtype)|false|none|none|
+|authType|[Stealthbits.Radius.RadiusAuthType](../Models/stealthbits.radius.radiusauthtype.md)|false|none|none|
 |timeout|integer(int32)|false|none|none|
 |maxRetries|integer(int32)|false|none|none|
 |sendNasIdentifier|boolean|false|none|none|

@@ -1202,7 +1202,7 @@
 |id|string(uuid)|false|none|none|
 |modifiedBy|string(uuid)¦null|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
-|approvalWorkflowTiers|[[SbPAM.Models.ApprovalWorkflowTier](#schemasbpam.models.approvalworkflowtier)]¦null|false|none|none|
+|approvalWorkflowTiers|[[SbPAM.Models.ApprovalWorkflowTier](../Models/sbpam.models.approvalworkflowtier.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 

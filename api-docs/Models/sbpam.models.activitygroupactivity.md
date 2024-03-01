@@ -433,9 +433,9 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |activityId|string(uuid)|false|none|none|
-|activity|[SbPAM.Models.Activity](#schemasbpam.models.activity)|false|none|none|
+|activity|[SbPAM.Models.Activity](../Models/sbpam.models.activity.md)|false|none|none|
 |activityGroupId|string(uuid)|false|none|none|
-|activityGroup|[SbPAM.Models.ActivityGroup](#schemasbpam.models.activitygroup)|false|none|none|
+|activityGroup|[SbPAM.Models.ActivityGroup](../Models/sbpam.models.activitygroup.md)|false|none|none|
 |isDeleted|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

@@ -15,12 +15,14 @@
 
 ```
 
+Batched response
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|status|integer(int32)|false|none|none|
-|message|string¦null|false|none|none|
+|id|string(uuid)|false|none|Id of record that this response corresponds to|
+|status|integer(int32)|false|none|HttpStatus of response|
+|message|string¦null|false|none|Human readable message|
 
 

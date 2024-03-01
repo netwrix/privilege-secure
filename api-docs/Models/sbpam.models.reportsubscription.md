@@ -2331,13 +2331,13 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |reportId|string(uuid)|false|none|none|
-|report|[SbPAM.Models.Report](#schemasbpam.models.report)|false|none|none|
+|report|[SbPAM.Models.Report](../Models/sbpam.models.report.md)|false|none|none|
 |managedAccountId|string(uuid)|false|none|none|
-|managedAccount|[SbPAM.Models.ManagedAccount](#schemasbpam.models.managedaccount)|false|none|none|
+|managedAccount|[SbPAM.Models.ManagedAccount](../Models/sbpam.models.managedaccount.md)|false|none|none|
 |scheduledChangePolicyId|string(uuid)|false|none|none|
-|scheduledChangePolicy|[SbPAM.Models.ScheduledChangePolicy](#schemasbpam.models.scheduledchangepolicy)|false|none|none|
+|scheduledChangePolicy|[SbPAM.Models.ScheduledChangePolicy](../Models/sbpam.models.scheduledchangepolicy.md)|false|none|none|
 |actionJobId|string(uuid)¦null|false|none|none|
-|actionJob|[SbPAM.Models.ActionJob](#schemasbpam.models.actionjob)|false|none|none|
+|actionJob|[SbPAM.Models.ActionJob](../Models/sbpam.models.actionjob.md)|false|none|none|
 |subscribedToCsv|boolean|false|none|none|
 |subscribedToPdf|boolean|false|none|none|
 

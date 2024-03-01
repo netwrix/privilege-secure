@@ -40,22 +40,22 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |actionQueueId|string(uuid)¦null|false|none|none|
-|recurrenceType|[SbPAM.Constants.ActionConstants+RecurrenceType](#schemasbpam.constants.actionconstants+recurrencetype)|false|none|none|
+|recurrenceType|[SbPAM.Constants.ActionConstants+RecurrenceType](../Models/sbpam.constants.actionconstants+recurrencetype.md)|false|none|none|
 |hour|integer(int32)|false|none|none|
 |minute|integer(int32)|false|none|none|
-|dayOfWeek|[System.DayOfWeek](#schemasystem.dayofweek)|false|none|none|
+|dayOfWeek|[System.DayOfWeek](../Models/system.dayofweek.md)|false|none|none|
 |recurrenceCount|integer(int32)|false|none|none|
 |disabled|boolean|false|none|none|
 |lastRunId|string(uuid)¦null|false|none|none|
 |lastRunTimeUtc|string(date-time)¦null|false|none|none|
-|lastRunStatus|[SbPAM.Constants.ActionConstants+ActionStatus](#schemasbpam.constants.actionconstants+actionstatus)|false|none|none|
+|lastRunStatus|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 |nextStartTimeUtc|string(date-time)|false|none|none|
 |recurrenceInterval|integer(int32)|false|none|none|
 |dayOfMonth|integer(int32)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
-|status|[SbPAM.Constants.ActionConstants+ActionStatus](#schemasbpam.constants.actionconstants+actionstatus)|false|none|none|
+|status|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 |isRecurring|boolean|false|none|none|
 |recurrence|string¦null|false|none|none|
 

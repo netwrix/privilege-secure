@@ -57,7 +57,7 @@
 |activeDirectoryDomainId|string(uuid)¦null|false|none|none|
 |associatedResourceId|string(uuid)¦null|false|none|none|
 |logonUrl|string¦null|false|none|none|
-|uris|[[SbPAM.Models.WebsiteUri](#schemasbpam.models.websiteuri)]¦null|false|none|none|
+|uris|[[SbPAM.Models.WebsiteUri](../Models/sbpam.models.websiteuri.md)]¦null|false|none|none|
 |isVirtual|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

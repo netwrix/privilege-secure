@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X POST /api/v1/ManagedResource/TestConnection/{resourceId} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -45,10 +45,6 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedResource/TestConnect
 > Example responses
 
 > 200 Response
-
-```
-"497f6eca-6276-4993-bfeb-53cbbbba6f08"
-```
 
 ```json
 "497f6eca-6276-4993-bfeb-53cbbbba6f08"

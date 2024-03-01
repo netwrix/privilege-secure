@@ -639,8 +639,8 @@
 |required|boolean|false|none|none|
 |connectorId|string(uuid)¦null|false|none|none|
 |integrationConnectorTemplateId|string(uuid)¦null|false|none|none|
-|connectorConfiguration|[SbPAM.Models.ConnectorConfiguration](#schemasbpam.models.connectorconfiguration)|false|none|none|
-|type|[SbPAM.Models.ConnectorConfigurationValueType](#schemasbpam.models.connectorconfigurationvaluetype)|false|none|none|
+|connectorConfiguration|[SbPAM.Models.ConnectorConfiguration](../Models/sbpam.models.connectorconfiguration.md)|false|none|none|
+|type|[SbPAM.Models.ConnectorConfigurationValueType](../Models/sbpam.models.connectorconfigurationvaluetype.md)|false|none|none|
 |advanced|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

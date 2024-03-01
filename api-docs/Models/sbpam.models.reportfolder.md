@@ -160,7 +160,7 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |reportFolderId|string(uuid)¦null|false|none|none|
-|reports|[[SbPAM.Models.Report](#schemasbpam.models.report)]¦null|false|none|none|
+|reports|[[SbPAM.Models.Report](../Models/sbpam.models.report.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

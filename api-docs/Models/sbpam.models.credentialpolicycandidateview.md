@@ -34,7 +34,7 @@
 |userId|string(uuid)¦null|false|none|none|
 |os|string¦null|false|none|none|
 |activeSessionCount|integer(int32)|false|none|none|
-|entityType|[SbPAM.Models.CredentialOrHostUser](#schemasbpam.models.credentialorhostuser)|false|none|none|
+|entityType|[SbPAM.Models.CredentialOrHostUser](../Models/sbpam.models.credentialorhostuser.md)|false|none|none|
 |vaultConnectorId|string(uuid)¦null|false|none|none|
 
 

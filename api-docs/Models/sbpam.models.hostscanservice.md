@@ -590,21 +590,21 @@
 |name|string¦null|false|none|none|
 |displayName|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|startType|[SbPAM.Models.Common.ServiceStartType](#schemasbpam.models.common.servicestarttype)|false|none|none|
+|startType|[SbPAM.Models.Common.ServiceStartType](../Models/sbpam.models.common.servicestarttype.md)|false|none|none|
 |userName|string¦null|false|none|none|
 |binaryPathName|string¦null|false|none|none|
 |dependentServices|string¦null|false|none|none|
 |canPauseAndContinue|boolean|false|none|none|
 |canShutdown|boolean|false|none|none|
 |canStop|boolean|false|none|none|
-|serviceType|[SbPAM.Models.Common.ServiceTypeFlags](#schemasbpam.models.common.servicetypeflags)|false|none|none|
+|serviceType|[SbPAM.Models.Common.ServiceTypeFlags](../Models/sbpam.models.common.servicetypeflags.md)|false|none|none|
 |delayedStart|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 |discoveredDateTimeUtc|string(date-time)|false|none|none|
 |hostScanHostId|string(uuid)|false|none|none|
-|hostScanHost|[SbPAM.Models.HostScanHost](#schemasbpam.models.hostscanhost)|false|none|none|
+|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
 |hostObjectId|string(uuid)¦null|false|none|none|
 
 

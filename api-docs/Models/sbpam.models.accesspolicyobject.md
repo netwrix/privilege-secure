@@ -35,8 +35,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|policyType|[SbPAM.Models.PolicyType](#schemasbpam.models.policytype)|false|none|none|
-|activityPolicies|[[SbPAM.Models.ActivityPolicy](#schemasbpam.models.activitypolicy)]¦null|false|none|none|
+|policyType|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)|false|none|none|
+|activityPolicies|[[SbPAM.Models.ActivityPolicy](../Models/sbpam.models.activitypolicy.md)]¦null|false|none|none|
 |name|string¦null|false|none|none|
 |os|string¦null|false|none|none|
 |platform|string¦null|false|none|none|

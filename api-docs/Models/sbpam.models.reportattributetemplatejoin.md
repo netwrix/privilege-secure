@@ -122,9 +122,9 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |reportSourceId|string(uuid)|false|none|none|
-|reportSource|[SbPAM.Models.ReportSource](#schemasbpam.models.reportsource)|false|none|none|
+|reportSource|[SbPAM.Models.ReportSource](../Models/sbpam.models.reportsource.md)|false|none|none|
 |reportAttributeTemplateId|string(uuid)|false|none|none|
-|reportAttributeTemplate|[SbPAM.Models.ReportAttributeTemplate](#schemasbpam.models.reportattributetemplate)|false|none|none|
+|reportAttributeTemplate|[SbPAM.Models.ReportAttributeTemplate](../Models/sbpam.models.reportattributetemplate.md)|false|none|none|
 |attributeName|string¦null|false|none|none|
 
 

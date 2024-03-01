@@ -3718,8 +3718,8 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |memberId|string(uuid)|false|none|none|
-|group|[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](#schemasbpam.activedirectory.models.activedirectorygroup)|false|none|none|
-|member|[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](#schemasbpam.activedirectory.models.activedirectorygroup)|false|none|none|
+|group|[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)|false|none|none|
+|member|[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)|false|none|none|
 |groupId|string(uuid)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

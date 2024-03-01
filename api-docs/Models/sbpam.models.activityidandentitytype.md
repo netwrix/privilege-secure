@@ -19,6 +19,6 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|entityType|[SbPAM.Models.ActivityAndGroupEntityType](#schemasbpam.models.activityandgroupentitytype)|false|none|none|
+|entityType|[SbPAM.Models.ActivityAndGroupEntityType](../Models/sbpam.models.activityandgroupentitytype.md)|false|none|none|
 
 
