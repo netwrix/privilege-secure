@@ -56,8 +56,8 @@
 |displayName|string¦null|false|none|none|
 |email|string¦null|false|none|none|
 |managed|boolean|false|none|none|
-|managedType|[SbPAM.Models.ManagedType](#schemasbpam.models.managedtype)|false|none|none|
-|rotationType|[SbPAM.Models.ManagedUserType](#schemasbpam.models.managedusertype)|false|none|none|
+|managedType|[SbPAM.Models.ManagedType](../Models/sbpam.models.managedtype.md)|false|none|none|
+|rotationType|[SbPAM.Models.ManagedUserType](../Models/sbpam.models.managedusertype.md)|false|none|none|
 |title|string¦null|false|none|none|
 |department|string¦null|false|none|none|
 |samAccountName|string¦null|false|none|none|
@@ -65,7 +65,7 @@
 |distinguishedName|string¦null|false|none|none|
 |enabled|boolean|false|none|none|
 |unixId|integer(int32)¦null|false|none|none|
-|privilege|[SbPAM.ActiveDirectory.Models.Enums.UserPrivilege](#schemasbpam.activedirectory.models.enums.userprivilege)|false|none|none|
+|privilege|[SbPAM.ActiveDirectory.Models.Enums.UserPrivilege](../Models/sbpam.activedirectory.models.enums.userprivilege.md)|false|none|none|
 |lastLogonUtc|string(date-time)¦null|false|none|none|
 |passwordChangedUtc|string(date-time)¦null|false|none|none|
 |domainConfigId|string(uuid)¦null|false|none|none|
@@ -74,7 +74,7 @@
 |hostName|string¦null|false|none|none|
 |managedAccountId|string(uuid)¦null|false|none|none|
 |managedAccountName|string¦null|false|none|none|
-|appUserType|[SbPAM.Models.ManagedResourceLocalUserView+AppUserTypeEnum](#schemasbpam.models.managedresourcelocaluserview+appusertypeenum)|false|none|none|
+|appUserType|[SbPAM.Models.ManagedResourceLocalUserView+AppUserTypeEnum](../Models/sbpam.models.managedresourcelocaluserview+appusertypeenum.md)|false|none|none|
 |managedUserId|string(uuid)¦null|false|none|none|
 |scheduleId|string(uuid)¦null|false|none|none|
 |scheduleName|string¦null|false|none|none|
@@ -82,7 +82,7 @@
 |passwordComplexityName|string¦null|false|none|none|
 |credentialId|string(uuid)¦null|false|none|none|
 |dependencyCount|integer(int32)|false|none|none|
-|passwordStatus|[SbPAM.Models.VerificationScanStatus](#schemasbpam.models.verificationscanstatus)|false|none|none|
+|passwordStatus|[SbPAM.Models.VerificationScanStatus](../Models/sbpam.models.verificationscanstatus.md)|false|none|none|
 |passwordLastCheckedUtc|string(date-time)¦null|false|none|none|
 |passwordNextChangeUtc|string(date-time)¦null|false|none|none|
 |changeOnCheckout|boolean¦null|false|none|none|

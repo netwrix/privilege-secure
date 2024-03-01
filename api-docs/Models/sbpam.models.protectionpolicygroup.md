@@ -3374,8 +3374,8 @@
 |name|string¦null|false|none|none|
 |deleted|boolean|false|none|none|
 |protectionPolicyId|string(uuid)|false|none|none|
-|protectionPolicy|[SbPAM.Models.ProtectionPolicy](#schemasbpam.models.protectionpolicy)|false|none|none|
-|protectionPolicyGroupMember|[[SbPAM.Models.ProtectionPolicyGroupMember](#schemasbpam.models.protectionpolicygroupmember)]¦null|false|none|none|
+|protectionPolicy|[SbPAM.Models.ProtectionPolicy](../Models/sbpam.models.protectionpolicy.md)|false|none|none|
+|protectionPolicyGroupMember|[[SbPAM.Models.ProtectionPolicyGroupMember](../Models/sbpam.models.protectionpolicygroupmember.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

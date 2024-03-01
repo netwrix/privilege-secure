@@ -1197,9 +1197,9 @@
 |unixId|integer(int32)¦null|false|none|none|
 |groupId|string(uuid)¦null|false|none|none|
 |hostScanHostId|string(uuid)|false|none|none|
-|hostScanHost|[SbPAM.Models.HostScanHost](#schemasbpam.models.hostscanhost)|false|none|none|
-|hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](#schemasbpam.models.hostscanusergroupjoin)]¦null|false|none|none|
-|hostScanGroupGroupJoin|[[SbPAM.Models.HostScanGroupGroupJoin](#schemasbpam.models.hostscangroupgroupjoin)]¦null|false|none|none|
+|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
+|hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](../Models/sbpam.models.hostscanusergroupjoin.md)]¦null|false|none|none|
+|hostScanGroupGroupJoin|[[SbPAM.Models.HostScanGroupGroupJoin](../Models/sbpam.models.hostscangroupgroupjoin.md)]¦null|false|none|none|
 |resourceObjectId|string(uuid)¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

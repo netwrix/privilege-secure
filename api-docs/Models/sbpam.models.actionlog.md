@@ -800,13 +800,13 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|type|[SbPAM.Constants.ActionConstants+ActionLogType](#schemasbpam.constants.actionconstants+actionlogtype)|false|none|none|
+|type|[SbPAM.Constants.ActionConstants+ActionLogType](../Models/sbpam.constants.actionconstants+actionlogtype.md)|false|none|none|
 |hResult|integer(int32)|false|none|none|
 |timestamp|string(date-time)|false|none|none|
 |message|string¦null|false|none|none|
 |version|string¦null|false|none|none|
 |actionQueueActionId|string(uuid)|false|none|none|
-|actionQueueAction|[SbPAM.Models.ActionQueueAction](#schemasbpam.models.actionqueueaction)|false|none|none|
+|actionQueueAction|[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

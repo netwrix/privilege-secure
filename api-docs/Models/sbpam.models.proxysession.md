@@ -60,6 +60,6 @@
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
-|sessionMetadata|[SbPAM.Models.ReplayMetadata](#schemasbpam.models.replaymetadata)|false|none|none|
+|sessionMetadata|[SbPAM.Models.ReplayMetadata](../Models/sbpam.models.replaymetadata.md)|false|none|none|
 
 

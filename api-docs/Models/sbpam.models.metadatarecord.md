@@ -21,7 +21,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|type|[SbPAM.Constants.ProxyConstants+StreamType](#schemasbpam.constants.proxyconstants+streamtype)|false|none|none|
+|type|[SbPAM.Constants.ProxyConstants+StreamType](../Models/sbpam.constants.proxyconstants+streamtype.md)|false|none|none|
 |timestamp|integer(int64)|false|none|none|
 |entries|[string]¦null|false|none|none|
 

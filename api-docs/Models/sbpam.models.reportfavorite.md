@@ -165,7 +165,7 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |reportId|string(uuid)|false|none|none|
-|report|[SbPAM.Models.Report](#schemasbpam.models.report)|false|none|none|
+|report|[SbPAM.Models.Report](../Models/sbpam.models.report.md)|false|none|none|
 |userId|string(uuid)|false|none|none|
 
 

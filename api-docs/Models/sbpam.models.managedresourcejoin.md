@@ -8954,8 +8954,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |managedResourceId|string(uuid)|false|none|none|
-|managedResource|[SbPAM.Models.ManagedResource](#schemasbpam.models.managedresource)|false|none|none|
+|managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|none|
 |managedResourceGroupId|string(uuid)|false|none|none|
-|managedResourceGroup|[SbPAM.Models.ManagedResourceGroup](#schemasbpam.models.managedresourcegroup)|false|none|none|
+|managedResourceGroup|[SbPAM.Models.ManagedResourceGroup](../Models/sbpam.models.managedresourcegroup.md)|false|none|none|
 
 

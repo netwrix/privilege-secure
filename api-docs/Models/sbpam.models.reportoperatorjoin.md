@@ -70,7 +70,7 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |reportAttributeTemplateId|string(uuid)|false|none|none|
-|reportAttributeTemplate|[SbPAM.Models.ReportAttributeTemplate](#schemasbpam.models.reportattributetemplate)|false|none|none|
-|reportOperator|[SbPAM.Models.ReportOperatorEnum](#schemasbpam.models.reportoperatorenum)|false|none|none|
+|reportAttributeTemplate|[SbPAM.Models.ReportAttributeTemplate](../Models/sbpam.models.reportattributetemplate.md)|false|none|none|
+|reportOperator|[SbPAM.Models.ReportOperatorEnum](../Models/sbpam.models.reportoperatorenum.md)|false|none|none|
 
 

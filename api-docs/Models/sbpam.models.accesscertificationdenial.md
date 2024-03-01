@@ -35,7 +35,7 @@
 |activityId|string(uuid)|false|none|none|
 |credentialId|string(uuid)¦null|false|none|none|
 |denyingTaskId|string(uuid)|false|none|none|
-|status|[SbPAM.Models.AccessCertificationTaskRowStatus](#schemasbpam.models.accesscertificationtaskrowstatus)|false|none|none|
+|status|[SbPAM.Models.AccessCertificationTaskRowStatus](../Models/sbpam.models.accesscertificationtaskrowstatus.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

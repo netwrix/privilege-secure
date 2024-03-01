@@ -34,13 +34,13 @@
 |displayName|string¦null|false|none|none|
 |serviceName|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|startType|[SbPAM.Models.Common.ServiceStartType](#schemasbpam.models.common.servicestarttype)|false|none|none|
+|startType|[SbPAM.Models.Common.ServiceStartType](../Models/sbpam.models.common.servicestarttype.md)|false|none|none|
 |serviceType|integer(int32)|false|none|none|
 |userName|string¦null|false|none|none|
 |serviceAccountId|string(uuid)¦null|false|none|none|
-|serviceAccountType|[SbPAM.Models.CredentialType](#schemasbpam.models.credentialtype)|false|none|none|
+|serviceAccountType|[SbPAM.Models.CredentialType](../Models/sbpam.models.credentialtype.md)|false|none|none|
 |serviceAccountName|string¦null|false|none|none|
-|managedType|[SbPAM.Models.ManagedTypeEnum](#schemasbpam.models.managedtypeenum)|false|none|none|
+|managedType|[SbPAM.Models.ManagedTypeEnum](../Models/sbpam.models.managedtypeenum.md)|false|none|none|
 |dependencyCount|integer(int32)|false|none|none|
 
 

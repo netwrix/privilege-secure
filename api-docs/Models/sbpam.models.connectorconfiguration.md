@@ -992,8 +992,8 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
-|integrationConnector|[SbPAM.Models.IntegrationConnector](#schemasbpam.models.integrationconnector)|false|none|none|
-|integrationConnectorTemplate|[SbPAM.Models.IntegrationConnectorTemplate](#schemasbpam.models.integrationconnectortemplate)|false|none|none|
+|integrationConnector|[SbPAM.Models.IntegrationConnector](../Models/sbpam.models.integrationconnector.md)|false|none|none|
+|integrationConnectorTemplate|[SbPAM.Models.IntegrationConnectorTemplate](../Models/sbpam.models.integrationconnectortemplate.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

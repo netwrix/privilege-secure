@@ -223,11 +223,11 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |reportId|string(uuid)|false|none|none|
-|report|[SbPAM.Models.Report](#schemasbpam.models.report)|false|none|none|
+|report|[SbPAM.Models.Report](../Models/sbpam.models.report.md)|false|none|none|
 |reportAttributeTemplateId|string(uuid)|false|none|none|
-|reportAttributeTemplate|[SbPAM.Models.ReportAttributeTemplate](#schemasbpam.models.reportattributetemplate)|false|none|none|
+|reportAttributeTemplate|[SbPAM.Models.ReportAttributeTemplate](../Models/sbpam.models.reportattributetemplate.md)|false|none|none|
 |value|string¦null|false|none|none|
-|operator|[SbPAM.Models.ReportOperatorEnum](#schemasbpam.models.reportoperatorenum)|false|none|none|
+|operator|[SbPAM.Models.ReportOperatorEnum](../Models/sbpam.models.reportoperatorenum.md)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 |nodeId|string(uuid)|false|none|none|

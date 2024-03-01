@@ -128,8 +128,8 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |dbSet|string¦null|false|none|none|
-|reportAttributeTemplateJoins|[[SbPAM.Models.ReportAttributeTemplateJoin](#schemasbpam.models.reportattributetemplatejoin)]¦null|false|none|none|
-|columns|[[SbPAM.Models.ReportColumn](#schemasbpam.models.reportcolumn)]¦null|false|none|none|
+|reportAttributeTemplateJoins|[[SbPAM.Models.ReportAttributeTemplateJoin](../Models/sbpam.models.reportattributetemplatejoin.md)]¦null|false|none|none|
+|columns|[[SbPAM.Models.ReportColumn](../Models/sbpam.models.reportcolumn.md)]¦null|false|none|none|
 |dateColumn|string¦null|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

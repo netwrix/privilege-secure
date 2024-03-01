@@ -425,7 +425,7 @@
 |ouFqdn|string¦null|false|none|none|
 |ouAutoOnboard|boolean|false|none|none|
 |ouIncludeChildren|boolean|false|none|none|
-|ouDomainConfig|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomainConfiguration](#schemasbpam.activedirectory.models.activedirectorydomainconfiguration)|false|none|none|
-|resources|[[SbPAM.Models.ManagedResourceSkeletonDto](#schemasbpam.models.managedresourceskeletondto)]¦null|false|none|none|
+|ouDomainConfig|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomainConfiguration](../Models/sbpam.activedirectory.models.activedirectorydomainconfiguration.md)|false|none|none|
+|resources|[[SbPAM.Models.ManagedResourceSkeletonDto](../Models/sbpam.models.managedresourceskeletondto.md)]¦null|false|none|none|
 
 

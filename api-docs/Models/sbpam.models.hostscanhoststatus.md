@@ -33,8 +33,8 @@
 |os|string¦null|false|none|none|
 |ipAddress|string¦null|false|none|none|
 |version|string¦null|false|none|none|
-|status|[SbPAM.Constants.ActionConstants+ActionStatus](#schemasbpam.constants.actionconstants+actionstatus)|false|none|none|
+|status|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 |statusDescription|string¦null|false|none|none|
-|failureReason|[SbPAM.Constants.ActionConstants+ActionFailureReason](#schemasbpam.constants.actionconstants+actionfailurereason)|false|none|none|
+|failureReason|[SbPAM.Constants.ActionConstants+ActionFailureReason](../Models/sbpam.constants.actionconstants+actionfailurereason.md)|false|none|none|
 
 

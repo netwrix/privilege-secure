@@ -19,6 +19,6 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|entityType|[SbPAM.Models.CredentialOrHostUser](#schemasbpam.models.credentialorhostuser)|false|none|none|
+|entityType|[SbPAM.Models.CredentialOrHostUser](../Models/sbpam.models.credentialorhostuser.md)|false|none|none|
 
 

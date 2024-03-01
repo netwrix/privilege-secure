@@ -31,6 +31,6 @@
 |databaseName|string¦null|false|none|none|
 |isOnline|boolean|false|none|none|
 |status|string¦null|false|none|none|
-|memberList|[[SbPAM.Models.RoleMemberDto](#schemasbpam.models.rolememberdto)]¦null|false|none|none|
+|memberList|[[SbPAM.Models.RoleMemberDto](../Models/sbpam.models.rolememberdto.md)]¦null|false|none|none|
 
 

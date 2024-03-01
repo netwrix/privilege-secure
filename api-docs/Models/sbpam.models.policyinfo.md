@@ -57,10 +57,10 @@
 |managedAccountId|string(uuid)|false|none|none|
 |policyId|string(uuid)|false|none|none|
 |policyName|string¦null|false|none|none|
-|policyType|[SbPAM.Models.PolicyType](#schemasbpam.models.policytype)|false|none|none|
+|policyType|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)|false|none|none|
 |maxSessionLength|integer(int32)|false|none|none|
 |notesRequired|boolean|false|none|none|
 |ticketRequired|boolean|false|none|none|
-|activityCard|[SbPAM.Models.ActivityCardWithPolicies](#schemasbpam.models.activitycardwithpolicies)|false|none|none|
+|activityCard|[SbPAM.Models.ActivityCardWithPolicies](../Models/sbpam.models.activitycardwithpolicies.md)|false|none|none|
 
 

@@ -230,7 +230,7 @@
 |---|---|---|---|---|
 |accessControlPolicyId|string(uuid)|false|none|none|
 |activityId|string(uuid)|false|none|none|
-|activity|[SbPAM.Models.Activity](#schemasbpam.models.activity)|false|none|none|
+|activity|[SbPAM.Models.Activity](../Models/sbpam.models.activity.md)|false|none|none|
 |isDefault|boolean|false|none|none|
 |isDeleted|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|

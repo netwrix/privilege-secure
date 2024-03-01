@@ -5258,8 +5258,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |managedAccountId|string(uuid)|false|none|none|
-|managedAccount|[SbPAM.Models.ManagedAccount](#schemasbpam.models.managedaccount)|false|none|none|
+|managedAccount|[SbPAM.Models.ManagedAccount](../Models/sbpam.models.managedaccount.md)|false|none|none|
 |accessControlPolicyId|string(uuid)|false|none|none|
-|accessControlPolicy|[SbPAM.Models.AccessControlPolicy](#schemasbpam.models.accesscontrolpolicy)|false|none|none|
+|accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|none|
 
 

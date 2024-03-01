@@ -23,6 +23,6 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|entityType|[SbPAM.Models.ActivityAndGroupEntityType](#schemasbpam.models.activityandgroupentitytype)|false|none|none|
+|entityType|[SbPAM.Models.ActivityAndGroupEntityType](../Models/sbpam.models.activityandgroupentitytype.md)|false|none|none|
 
 

@@ -45,10 +45,10 @@
 |name|string¦null|false|none|none|
 |lastPasswordChangeDateTimeUtc|string(date-time)¦null|false|none|none|
 |nextPasswordChangeDateTimeUtc|string(date-time)¦null|false|none|none|
-|lastPasswordChangeStatus|[SbPAM.Constants.ActionConstants+ActionStatus](#schemasbpam.constants.actionconstants+actionstatus)|false|none|none|
-|currentPasswordChangeStatus|[SbPAM.Constants.ActionConstants+ActionStatus](#schemasbpam.constants.actionconstants+actionstatus)|false|none|none|
+|lastPasswordChangeStatus|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
+|currentPasswordChangeStatus|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 |lastHostScanDateTimeUtc|string(date-time)¦null|false|none|none|
 |nextHostScanDateTimeUtc|string(date-time)¦null|false|none|none|
-|lastHostScanStatus|[SbPAM.Constants.ActionConstants+ActionStatus](#schemasbpam.constants.actionconstants+actionstatus)|false|none|none|
+|lastHostScanStatus|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 
 

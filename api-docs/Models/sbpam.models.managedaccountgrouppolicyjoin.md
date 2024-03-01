@@ -5260,8 +5260,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |managedAccountGroupId|string(uuid)|false|none|none|
-|managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](#schemasbpam.models.managedaccountgroup)|false|none|none|
+|managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](../Models/sbpam.models.managedaccountgroup.md)|false|none|none|
 |accessControlPolicyId|string(uuid)|false|none|none|
-|accessControlPolicy|[SbPAM.Models.AccessControlPolicy](#schemasbpam.models.accesscontrolpolicy)|false|none|none|
+|accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|none|
 
 

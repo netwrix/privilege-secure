@@ -33,6 +33,6 @@
 |parentId|string(uuid)¦null|false|none|none|
 |name|string¦null|false|none|none|
 |isFavorite|boolean|false|none|none|
-|children|[[SbPAM.Models.ReportRenderTree](#schemasbpam.models.reportrendertree)]¦null|false|none|none|
+|children|[[SbPAM.Models.ReportRenderTree](../Models/sbpam.models.reportrendertree.md)]¦null|false|none|none|
 
 

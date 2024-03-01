@@ -39,10 +39,10 @@
 |dnsHostName|string¦null|false|none|none|
 |hostDistinguishedName|string¦null|false|none|none|
 |hostObjectSid|string¦null|false|none|none|
-|onboardState|[SbPAM.Models.ResourceOnboardState](#schemasbpam.models.resourceonboardstate)|false|none|none|
+|onboardState|[SbPAM.Models.ResourceOnboardState](../Models/sbpam.models.resourceonboardstate.md)|false|none|none|
 |onboardStateName|string¦null|false|none|none|
 |ipAddress|string¦null|false|none|none|
-|manageAccount|[SbPAM.Models.ManagedResourceManageAccountEnum](#schemasbpam.models.managedresourcemanageaccountenum)|false|none|none|
+|manageAccount|[SbPAM.Models.ManagedResourceManageAccountEnum](../Models/sbpam.models.managedresourcemanageaccountenum.md)|false|none|none|
 |os|string¦null|false|none|none|
 |saName|string¦null|false|none|none|
 |platformId|string(uuid)¦null|false|none|none|

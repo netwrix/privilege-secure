@@ -267,8 +267,8 @@
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
 |activityConfigurationId|string(uuid)¦null|false|none|none|
-|activityConfiguration|[SbPAM.Models.ActivityConfiguration](#schemasbpam.models.activityconfiguration)|false|none|none|
-|activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](#schemasbpam.models.activitygroupactivity)]¦null|false|none|none|
+|activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|none|
+|activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](../Models/sbpam.models.activitygroupactivity.md)]¦null|false|none|none|
 |isDefault|boolean|false|none|none|
 |isDeleted|boolean|false|none|none|
 |isUserModified|boolean|false|none|none|

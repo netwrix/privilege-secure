@@ -1048,8 +1048,8 @@
 |id|string(uuid)|false|none|none|
 |actionGroupId|string(uuid)|false|none|none|
 |jobId|string(uuid)|false|none|none|
-|job|[SbPAM.Models.Job](#schemasbpam.models.job)|false|none|none|
-|actionGroup|[SbPAM.Models.ActionGroup](#schemasbpam.models.actiongroup)|false|none|none|
+|job|[SbPAM.Models.Job](../Models/sbpam.models.job.md)|false|none|none|
+|actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

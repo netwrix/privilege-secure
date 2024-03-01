@@ -12720,10 +12720,10 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
-|allowedProtectedGroupMember|[[SbPAM.Models.ProtectedGroupMember](#schemasbpam.models.protectedgroupmember)]¦null|false|none|none|
-|currentProtectedGroupMember|[[SbPAM.Models.ProtectedGroupMember](#schemasbpam.models.protectedgroupmember)]¦null|false|none|none|
+|allowedProtectedGroupMember|[[SbPAM.Models.ProtectedGroupMember](../Models/sbpam.models.protectedgroupmember.md)]¦null|false|none|none|
+|currentProtectedGroupMember|[[SbPAM.Models.ProtectedGroupMember](../Models/sbpam.models.protectedgroupmember.md)]¦null|false|none|none|
 |managedResourceId|string(uuid)|false|none|none|
-|managedResource|[SbPAM.Models.ManagedResource](#schemasbpam.models.managedresource)|false|none|none|
+|managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|none|
 |isSystem|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

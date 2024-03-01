@@ -3306,13 +3306,13 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
-|type|[SbPAM.Models.ManagedAccountType](#schemasbpam.models.managedaccounttype)|false|none|none|
+|type|[SbPAM.Models.ManagedAccountType](../Models/sbpam.models.managedaccounttype.md)|false|none|none|
 |locked|boolean|false|none|none|
 |userId|string(uuid)¦null|false|none|none|
-|managedAccountJoin|[[SbPAM.Models.ManagedAccountJoin](#schemasbpam.models.managedaccountjoin)]¦null|false|none|none|
-|managedAccountPolicyJoin|[[SbPAM.Models.ManagedAccountPolicyJoin](#schemasbpam.models.managedaccountpolicyjoin)]¦null|false|none|none|
+|managedAccountJoin|[[SbPAM.Models.ManagedAccountJoin](../Models/sbpam.models.managedaccountjoin.md)]¦null|false|none|none|
+|managedAccountPolicyJoin|[[SbPAM.Models.ManagedAccountPolicyJoin](../Models/sbpam.models.managedaccountpolicyjoin.md)]¦null|false|none|none|
 |sid|string¦null|false|none|none|
-|userCollectionJoin|[[SbPAM.Models.UserCollectionJoin](#schemasbpam.models.usercollectionjoin)]¦null|false|read-only|none|
+|userCollectionJoin|[[SbPAM.Models.UserCollectionJoin](../Models/sbpam.models.usercollectionjoin.md)]¦null|false|read-only|none|
 |isReviewer|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

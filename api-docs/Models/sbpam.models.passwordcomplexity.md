@@ -41,14 +41,14 @@
 |specialCharacter|boolean|false|none|none|
 |space|boolean|false|none|none|
 |numeric|boolean|false|none|none|
-|mustEndWith|[SbPAM.Constants.CharacterTypeFlags](#schemasbpam.constants.charactertypeflags)|false|none|none|
-|mustStartWith|[SbPAM.Constants.CharacterTypeFlags](#schemasbpam.constants.charactertypeflags)|false|none|none|
+|mustEndWith|[SbPAM.Constants.CharacterTypeFlags](../Models/sbpam.constants.charactertypeflags.md)|false|none|none|
+|mustStartWith|[SbPAM.Constants.CharacterTypeFlags](../Models/sbpam.constants.charactertypeflags.md)|false|none|none|
 |length|integer(int32)|false|none|none|
 |maxConsecutive|integer(int32)|false|none|none|
 |charsToExclude|string¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
-|type|[SbPAM.Models.PasswordComplexityTypeEnum](#schemasbpam.models.passwordcomplexitytypeenum)|false|none|none|
+|type|[SbPAM.Models.PasswordComplexityTypeEnum](../Models/sbpam.models.passwordcomplexitytypeenum.md)|false|none|none|
 
 

@@ -51,10 +51,10 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |websiteId|string(uuid)|false|none|none|
-|website|[SbPAM.Models.Website](#schemasbpam.models.website)|false|none|none|
+|website|[SbPAM.Models.Website](../Models/sbpam.models.website.md)|false|none|none|
 |uri|string¦null|false|none|none|
-|match|[SbPAM.Models.WebsiteUriMatchType](#schemasbpam.models.websiteurimatchtype)|false|none|none|
-|matchType|[SbPAM.Models.WebsiteUriMatchType](#schemasbpam.models.websiteurimatchtype)|false|none|none|
+|match|[SbPAM.Models.WebsiteUriMatchType](../Models/sbpam.models.websiteurimatchtype.md)|false|none|none|
+|matchType|[SbPAM.Models.WebsiteUriMatchType](../Models/sbpam.models.websiteurimatchtype.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

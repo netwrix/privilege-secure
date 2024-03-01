@@ -1034,8 +1034,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |hostScanUserId|string(uuid)|false|none|none|
-|hostScanUser|[SbPAM.Models.HostScanUser](#schemasbpam.models.hostscanuser)|false|none|none|
+|hostScanUser|[SbPAM.Models.HostScanUser](../Models/sbpam.models.hostscanuser.md)|false|none|none|
 |hostScanGroupId|string(uuid)|false|none|none|
-|hostScanGroup|[SbPAM.Models.HostScanGroup](#schemasbpam.models.hostscangroup)|false|none|none|
+|hostScanGroup|[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)|false|none|none|
 
 

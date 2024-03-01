@@ -53,10 +53,10 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |testResourceStatusId|string(uuid)|false|none|none|
-|testResourceStatus|[SbPAM.Models.TestResourceStatus](#schemasbpam.models.testresourcestatus)|false|none|none|
+|testResourceStatus|[SbPAM.Models.TestResourceStatus](../Models/sbpam.models.testresourcestatus.md)|false|none|none|
 |stepName|string¦null|false|none|none|
 |index|integer(int32)|false|none|none|
-|status|[SbPAM.Models.TestStepStatus](#schemasbpam.models.teststepstatus)|false|none|none|
+|status|[SbPAM.Models.TestStepStatus](../Models/sbpam.models.teststepstatus.md)|false|none|none|
 |errorMessage|string¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

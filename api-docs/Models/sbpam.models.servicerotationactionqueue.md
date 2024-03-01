@@ -1182,11 +1182,11 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|rotationJob|[SbPAM.Models.ServiceRotationJob](#schemasbpam.models.servicerotationjob)|false|none|none|
+|rotationJob|[SbPAM.Models.ServiceRotationJob](../Models/sbpam.models.servicerotationjob.md)|false|none|none|
 |rotationJobId|string(uuid)|false|none|none|
-|actionQueue|[SbPAM.Models.ActionQueue](#schemasbpam.models.actionqueue)|false|none|none|
+|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
 |actionQueueId|string(uuid)|false|none|none|
-|status|[SbPAM.Constants.ActionConstants+ActionStatus](#schemasbpam.constants.actionconstants+actionstatus)|false|none|none|
+|status|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 |targetName|string¦null|false|none|none|
 |targetHost|string¦null|false|none|none|
 |targetHostServiceId|string(uuid)¦null|false|none|none|

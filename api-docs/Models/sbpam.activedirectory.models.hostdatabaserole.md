@@ -10456,10 +10456,10 @@
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 |hostId|string(uuid)|false|none|none|
-|host|[SbPAM.ActiveDirectory.Models.Host](#schemasbpam.activedirectory.models.host)|false|none|none|
+|host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
 |databaseDbId|string(uuid)¦null|false|none|none|
-|databaseDb|[SbPAM.ActiveDirectory.Models.HostDatabaseDb](#schemasbpam.activedirectory.models.hostdatabasedb)|false|none|none|
-|hostUsers|[[SbPAM.ActiveDirectory.Models.HostUser](#schemasbpam.activedirectory.models.hostuser)]¦null|false|read-only|none|
-|hostGroups|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](#schemasbpam.activedirectory.models.activedirectorygroup)]¦null|false|none|none|
+|databaseDb|[SbPAM.ActiveDirectory.Models.HostDatabaseDb](../Models/sbpam.activedirectory.models.hostdatabasedb.md)|false|none|none|
+|hostUsers|[[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)]¦null|false|read-only|none|
+|hostGroups|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)]¦null|false|none|none|
 
 

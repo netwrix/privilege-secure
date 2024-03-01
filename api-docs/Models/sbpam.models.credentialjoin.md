@@ -1151,8 +1151,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |credentialId|string(uuid)|false|none|none|
-|credential|[SbPAM.Models.Credential](#schemasbpam.models.credential)|false|none|none|
+|credential|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|none|none|
 |credentialGroupId|string(uuid)|false|none|none|
-|credentialGroup|[SbPAM.Models.CredentialGroup](#schemasbpam.models.credentialgroup)|false|none|none|
+|credentialGroup|[SbPAM.Models.CredentialGroup](../Models/sbpam.models.credentialgroup.md)|false|none|none|
 
 

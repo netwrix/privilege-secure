@@ -45,7 +45,7 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|configurationSettings|[[SbPAM.Models.ActivityConfigurationSetting](#schemasbpam.models.activityconfigurationsetting)]¦null|false|none|none|
+|configurationSettings|[[SbPAM.Models.ActivityConfigurationSetting](../Models/sbpam.models.activityconfigurationsetting.md)]¦null|false|none|none|
 |sendNotification|boolean|false|none|none|
 |useTls|boolean|false|none|none|
 |useAuth|boolean|false|none|none|

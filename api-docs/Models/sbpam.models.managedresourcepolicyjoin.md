@@ -9090,8 +9090,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |managedResourceId|string(uuid)|false|none|none|
-|managedResource|[SbPAM.Models.ManagedResource](#schemasbpam.models.managedresource)|false|none|none|
+|managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|none|
 |accessControlPolicyId|string(uuid)|false|none|none|
-|accessControlPolicy|[SbPAM.Models.AccessControlPolicy](#schemasbpam.models.accesscontrolpolicy)|false|none|none|
+|accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|none|
 
 

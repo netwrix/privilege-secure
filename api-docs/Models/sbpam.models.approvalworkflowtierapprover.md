@@ -3616,8 +3616,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |approvalWorkflowTierId|string(uuid)|false|none|none|
-|approvalWorkflowTier|[SbPAM.Models.ApprovalWorkflowTier](#schemasbpam.models.approvalworkflowtier)|false|none|none|
+|approvalWorkflowTier|[SbPAM.Models.ApprovalWorkflowTier](../Models/sbpam.models.approvalworkflowtier.md)|false|none|none|
 |approvalWorkflowApproverAccountId|string(uuid)|false|none|none|
-|approvalWorkflowApproverAccount|[SbPAM.Models.ManagedAccount](#schemasbpam.models.managedaccount)|false|none|none|
+|approvalWorkflowApproverAccount|[SbPAM.Models.ManagedAccount](../Models/sbpam.models.managedaccount.md)|false|none|none|
 
 

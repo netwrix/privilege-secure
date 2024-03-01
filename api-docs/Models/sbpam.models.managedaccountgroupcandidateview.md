@@ -25,7 +25,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|appGroupType|[SbPAM.Models.ManagedAccountGroupCandidateView+AppGroupTypeEnum](#schemasbpam.models.managedaccountgroupcandidateview+appgrouptypeenum)|false|none|none|
+|appGroupType|[SbPAM.Models.ManagedAccountGroupCandidateView+AppGroupTypeEnum](../Models/sbpam.models.managedaccountgroupcandidateview+appgrouptypeenum.md)|false|none|none|
 |id|string(uuid)|false|none|none|
 |displayName|string¦null|false|none|none|
 |samAccountName|string¦null|false|none|none|

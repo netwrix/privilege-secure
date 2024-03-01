@@ -37,6 +37,6 @@
 |dnsHostName|string¦null|false|none|none|
 |activeSessionCount|integer(int32)¦null|false|none|none|
 |os|string¦null|false|none|none|
-|entityType|[SbPAM.Models.ManagedResourceAndGroupEntityType](#schemasbpam.models.managedresourceandgroupentitytype)|false|none|none|
+|entityType|[SbPAM.Models.ManagedResourceAndGroupEntityType](../Models/sbpam.models.managedresourceandgroupentitytype.md)|false|none|none|
 
 

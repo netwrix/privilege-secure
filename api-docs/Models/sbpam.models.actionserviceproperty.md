@@ -989,7 +989,7 @@
 |name|string¦null|false|none|none|
 |value|string¦null|false|none|none|
 |actionServiceId|string(uuid)|false|none|none|
-|registeredService|[SbPAM.Models.RegisteredService](#schemasbpam.models.registeredservice)|false|none|none|
+|registeredService|[SbPAM.Models.RegisteredService](../Models/sbpam.models.registeredservice.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

@@ -55,7 +55,7 @@
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
 |emailSettingsId|string(uuid)¦null|false|none|none|
-|emailSettings|[SbPAM.Models.ActivityConfiguration](#schemasbpam.models.activityconfiguration)|false|none|none|
+|emailSettings|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|none|
 |htmlTemplate|string¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

@@ -7702,9 +7702,9 @@
 |userName|string¦null|false|none|none|
 |userId|string(uuid)¦null|false|none|none|
 |allowedProtectedGroupId|string(uuid)¦null|false|none|none|
-|allowedProtectedGroup|[SbPAM.Models.ProtectedGroup](#schemasbpam.models.protectedgroup)|false|none|none|
+|allowedProtectedGroup|[SbPAM.Models.ProtectedGroup](../Models/sbpam.models.protectedgroup.md)|false|none|none|
 |currentProtectedGroupId|string(uuid)¦null|false|none|none|
-|currentProtectedGroup|[SbPAM.Models.ProtectedGroup](#schemasbpam.models.protectedgroup)|false|none|none|
+|currentProtectedGroup|[SbPAM.Models.ProtectedGroup](../Models/sbpam.models.protectedgroup.md)|false|none|none|
 |isTransient|boolean|false|none|none|
 |isSystem|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|

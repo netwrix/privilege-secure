@@ -30,7 +30,7 @@
 |id|string(uuid)|false|none|none|
 |issuer|string¦null|false|none|none|
 |logoutUri|string¦null|false|none|none|
-|loginType|[SbPAM.Models.SbPAMOpenIdLoginType](#schemasbpam.models.sbpamopenidlogintype)|false|none|none|
+|loginType|[SbPAM.Models.SbPAMOpenIdLoginType](../Models/sbpam.models.sbpamopenidlogintype.md)|false|none|none|
 |claim|string¦null|false|none|none|
 |checkCertificate|boolean|false|none|none|
 |certificate|string¦null|false|none|none|

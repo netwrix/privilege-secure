@@ -1823,8 +1823,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |managedAccountId|string(uuid)|false|none|none|
-|managedAccount|[SbPAM.Models.ManagedAccount](#schemasbpam.models.managedaccount)|false|none|none|
+|managedAccount|[SbPAM.Models.ManagedAccount](../Models/sbpam.models.managedaccount.md)|false|none|none|
 |userAndGroupCollectionId|string(uuid)|false|none|none|
-|userAndGroupCollection|[SbPAM.Models.UserAndGroupCollection](#schemasbpam.models.userandgroupcollection)|false|none|none|
+|userAndGroupCollection|[SbPAM.Models.UserAndGroupCollection](../Models/sbpam.models.userandgroupcollection.md)|false|none|none|
 
 

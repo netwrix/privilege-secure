@@ -823,12 +823,12 @@
 |id|string(uuid)|false|none|none|
 |value|string¦null|false|none|none|
 |actionTemplateParameterId|string(uuid)|false|none|none|
-|actionTemplateParameter|[SbPAM.Models.ActionTemplateParameter](#schemasbpam.models.actiontemplateparameter)|false|none|none|
+|actionTemplateParameter|[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)|false|none|none|
 |actionId|string(uuid)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 |actionQueueActionId|string(uuid)|false|none|none|
-|actionQueueAction|[SbPAM.Models.ActionQueueAction](#schemasbpam.models.actionqueueaction)|false|none|none|
+|actionQueueAction|[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)|false|none|none|
 
 

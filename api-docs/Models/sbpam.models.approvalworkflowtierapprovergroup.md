@@ -3618,8 +3618,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |approvalWorkflowTierId|string(uuid)|false|none|none|
-|approvalWorkflowTier|[SbPAM.Models.ApprovalWorkflowTier](#schemasbpam.models.approvalworkflowtier)|false|none|none|
+|approvalWorkflowTier|[SbPAM.Models.ApprovalWorkflowTier](../Models/sbpam.models.approvalworkflowtier.md)|false|none|none|
 |approvalWorkflowApproverGroupId|string(uuid)|false|none|none|
-|approvalWorkflowApproverGroup|[SbPAM.Models.ManagedAccountGroup](#schemasbpam.models.managedaccountgroup)|false|none|none|
+|approvalWorkflowApproverGroup|[SbPAM.Models.ManagedAccountGroup](../Models/sbpam.models.managedaccountgroup.md)|false|none|none|
 
 

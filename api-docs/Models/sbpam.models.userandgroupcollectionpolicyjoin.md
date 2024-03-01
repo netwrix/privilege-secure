@@ -396,7 +396,7 @@
 |---|---|---|---|---|
 |accessControlPolicyId|string(uuid)|false|none|none|
 |userAndGroupCollectionId|string(uuid)|false|none|none|
-|userAndGroupCollection|[SbPAM.Models.UserAndGroupCollection](#schemasbpam.models.userandgroupcollection)|false|none|none|
+|userAndGroupCollection|[SbPAM.Models.UserAndGroupCollection](../Models/sbpam.models.userandgroupcollection.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

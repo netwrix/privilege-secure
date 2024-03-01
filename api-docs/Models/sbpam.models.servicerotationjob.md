@@ -606,12 +606,12 @@
 |id|string(uuid)|false|none|none|
 |actionJobId|string(uuid)|false|none|none|
 |passwordRotationActionQueueId|string(uuid)|false|none|none|
-|serviceRotationActionQueues|[[SbPAM.Models.ServiceRotationActionQueue](#schemasbpam.models.servicerotationactionqueue)]¦null|false|none|none|
+|serviceRotationActionQueues|[[SbPAM.Models.ServiceRotationActionQueue](../Models/sbpam.models.servicerotationactionqueue.md)]¦null|false|none|none|
 |credentialId|string(uuid)|false|none|none|
 |managedUserId|string(uuid)|false|none|none|
 |startDateTimeUtc|string(date-time)|false|none|none|
 |endDateTimeUtc|string(date-time)|false|none|none|
-|status|[SbPAM.Models.ServiceRotationJobStatus](#schemasbpam.models.servicerotationjobstatus)|false|none|none|
+|status|[SbPAM.Models.ServiceRotationJobStatus](../Models/sbpam.models.servicerotationjobstatus.md)|false|none|none|
 |pauseHostRotations|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

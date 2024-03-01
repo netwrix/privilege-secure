@@ -394,7 +394,7 @@
 |---|---|---|---|---|
 |accessControlPolicyId|string(uuid)|false|none|none|
 |credentialGroupId|string(uuid)|false|none|none|
-|credentialGroup|[SbPAM.Models.CredentialGroup](#schemasbpam.models.credentialgroup)|false|none|none|
+|credentialGroup|[SbPAM.Models.CredentialGroup](../Models/sbpam.models.credentialgroup.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

@@ -996,11 +996,11 @@
 |errorCount|integer(int32)|false|none|none|
 |warningCount|integer(int32)|false|none|none|
 |jobSettingsId|string(uuid)¦null|false|none|none|
-|jobSettings|[SbPAM.ActiveDirectory.Models.AdSyncInput](#schemasbpam.activedirectory.models.adsyncinput)|false|none|none|
+|jobSettings|[SbPAM.ActiveDirectory.Models.AdSyncInput](../Models/sbpam.activedirectory.models.adsyncinput.md)|false|none|none|
 |activeDirectoryDomainId|string(uuid)¦null|false|none|none|
-|activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](#schemasbpam.activedirectory.models.activedirectorydomain)|false|none|none|
-|status|[SbPAM.ActiveDirectory.Models.Enums.ActiveDirectorySyncStatusType](#schemasbpam.activedirectory.models.enums.activedirectorysyncstatustype)|false|none|none|
-|activeDirectorySyncStatsError|[[SbPAM.ActiveDirectory.Models.ActiveDirectorySyncStatsError](#schemasbpam.activedirectory.models.activedirectorysyncstatserror)]¦null|false|read-only|none|
+|activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)|false|none|none|
+|status|[SbPAM.ActiveDirectory.Models.Enums.ActiveDirectorySyncStatusType](../Models/sbpam.activedirectory.models.enums.activedirectorysyncstatustype.md)|false|none|none|
+|activeDirectorySyncStatsError|[[SbPAM.ActiveDirectory.Models.ActiveDirectorySyncStatsError](../Models/sbpam.activedirectory.models.activedirectorysyncstatserror.md)]¦null|false|read-only|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

@@ -19,6 +19,6 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|entityType|[SbPAM.Models.ManagedResourceAndGroupEntityType](#schemasbpam.models.managedresourceandgroupentitytype)|false|none|none|
+|entityType|[SbPAM.Models.ManagedResourceAndGroupEntityType](../Models/sbpam.models.managedresourceandgroupentitytype.md)|false|none|none|
 
 

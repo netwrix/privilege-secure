@@ -19,7 +19,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|status|[SbPAM.Constants.ActionConstants+ActionStatus](#schemasbpam.constants.actionconstants+actionstatus)|false|none|none|
+|status|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 |count|integer(int32)|false|none|none|
 |reportedDateTimeUtc|string(date-time)|false|none|none|
 

@@ -62,7 +62,7 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|activityType|[SbPAM.Models.ActivityType](#schemasbpam.models.activitytype)|false|none|none|
+|activityType|[SbPAM.Models.ActivityType](../Models/sbpam.models.activitytype.md)|false|none|none|
 |resourceText|string¦null|false|none|none|
 |platformId|string(uuid)|false|none|none|
 |platformName|string¦null|false|none|none|
@@ -70,9 +70,9 @@
 |managedAccountId|string(uuid)|false|none|none|
 |totalResources|integer(int32)|false|none|none|
 |latestSessionActualStartUtc|string(date-time)¦null|false|none|none|
-|policies|[[SbPAM.Models.PolicyInfo](#schemasbpam.models.policyinfo)]¦null|false|none|none|
+|policies|[[SbPAM.Models.PolicyInfo](../Models/sbpam.models.policyinfo.md)]¦null|false|none|none|
 |policyId|string(uuid)|false|none|none|
 |policyName|string¦null|false|none|none|
-|policyType|[SbPAM.Models.PolicyType](#schemasbpam.models.policytype)|false|none|none|
+|policyType|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)|false|none|none|
 
 

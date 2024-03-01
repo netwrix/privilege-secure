@@ -37,7 +37,7 @@
 |radiusOptionsId|string(uuid)¦null|false|none|none|
 |isDefault|boolean|false|none|none|
 |isExclusive|boolean|false|none|none|
-|connectorType|[SbPAM.Identity.Models.SbPAMMfaConnectorType](#schemasbpam.identity.models.sbpammfaconnectortype)|false|none|none|
+|connectorType|[SbPAM.Identity.Models.SbPAMMfaConnectorType](../Models/sbpam.identity.models.sbpammfaconnectortype.md)|false|none|none|
 |openIdOptionsId|string(uuid)¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

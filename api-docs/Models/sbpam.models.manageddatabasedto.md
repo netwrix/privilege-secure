@@ -41,7 +41,7 @@
 |server|string¦null|false|none|none|
 |port|integer(int32)|false|none|none|
 |domainId|string(uuid)¦null|false|none|none|
-|type|[SbPAM.Models.Common.DatabaseType](#schemasbpam.models.common.databasetype)|false|none|none|
+|type|[SbPAM.Models.Common.DatabaseType](../Models/sbpam.models.common.databasetype.md)|false|none|none|
 |hostDatabaseId|string(uuid)¦null|false|none|none|
 |integratedSecurity|boolean|false|none|none|
 |trustServerCertificate|boolean|false|none|none|

@@ -1810,8 +1810,8 @@
 |lastModifiedBy|string(uuid)¦null|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
-|action|[[SbPAM.Models.Action](#schemasbpam.models.action)]¦null|false|none|none|
-|actionGroupJob|[[SbPAM.Models.ActionGroupJob](#schemasbpam.models.actiongroupjob)]¦null|false|none|none|
-|actionQueue|[[SbPAM.Models.ActionQueue](#schemasbpam.models.actionqueue)]¦null|false|none|none|
+|action|[[SbPAM.Models.Action](../Models/sbpam.models.action.md)]¦null|false|none|none|
+|actionGroupJob|[[SbPAM.Models.ActionGroupJob](../Models/sbpam.models.actiongroupjob.md)]¦null|false|none|none|
+|actionQueue|[[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)]¦null|false|none|none|
 
 

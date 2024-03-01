@@ -26,7 +26,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|type|[SbPAM.Models.Common.DatabaseType](#schemasbpam.models.common.databasetype)|false|none|none|
+|type|[SbPAM.Models.Common.DatabaseType](../Models/sbpam.models.common.databasetype.md)|false|none|none|
 |host|string¦null|false|none|none|
 |port|integer(int32)|false|none|none|
 |database|string¦null|false|none|none|

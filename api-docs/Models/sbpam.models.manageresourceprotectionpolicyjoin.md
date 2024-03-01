@@ -7965,8 +7965,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |managedResourceId|string(uuid)|false|none|none|
-|managedResource|[SbPAM.Models.ManagedResource](#schemasbpam.models.managedresource)|false|none|none|
+|managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|none|
 |protectionPolicyId|string(uuid)|false|none|none|
-|protectionPolicy|[SbPAM.Models.ProtectionPolicy](#schemasbpam.models.protectionpolicy)|false|none|none|
+|protectionPolicy|[SbPAM.Models.ProtectionPolicy](../Models/sbpam.models.protectionpolicy.md)|false|none|none|
 
 

@@ -1570,9 +1570,9 @@
 |domainController|string¦null|false|none|none|
 |usnChanged|integer(int64)¦null|false|none|none|
 |activeDirectoryDomainConfigurationId|string(uuid)|false|none|none|
-|activeDirectoryDomainConfiguration|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomainConfiguration](#schemasbpam.activedirectory.models.activedirectorydomainconfiguration)|false|none|none|
+|activeDirectoryDomainConfiguration|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomainConfiguration](../Models/sbpam.activedirectory.models.activedirectorydomainconfiguration.md)|false|none|none|
 |functionalLevel|string¦null|false|none|none|
-|activeDirectoryGroup|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](#schemasbpam.activedirectory.models.activedirectorygroup)]¦null|false|none|none|
+|activeDirectoryGroup|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)]¦null|false|none|none|
 |objectSid|string¦null|false|none|none|
 |maxRenewAge|integer(int32)¦null|false|none|none|
 |maxTicketAge|integer(int32)¦null|false|none|none|

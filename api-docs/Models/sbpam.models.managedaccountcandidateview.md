@@ -27,7 +27,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|entityType|[SbPAM.Models.ManagedAccountCandidateViewEntityType](#schemasbpam.models.managedaccountcandidateviewentitytype)|false|none|none|
+|entityType|[SbPAM.Models.ManagedAccountCandidateViewEntityType](../Models/sbpam.models.managedaccountcandidateviewentitytype.md)|false|none|none|
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |displayName|string¦null|false|none|none|

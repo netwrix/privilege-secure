@@ -32,7 +32,7 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
-|type|[SbPAM.Models.ManagedAccountGroupType](#schemasbpam.models.managedaccountgrouptype)|false|none|none|
+|type|[SbPAM.Models.ManagedAccountGroupType](../Models/sbpam.models.managedaccountgrouptype.md)|false|none|none|
 |groupId|string(uuid)¦null|false|none|none|
 |mfaConnectorId|string(uuid)¦null|false|none|none|
 |isReviewer|boolean|false|none|none|

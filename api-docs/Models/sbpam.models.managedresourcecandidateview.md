@@ -32,7 +32,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|appResourceType|[SbPAM.Models.ManagedResourceCandidateView+AppResourceTypeEnum](#schemasbpam.models.managedresourcecandidateview+appresourcetypeenum)|false|none|none|
+|appResourceType|[SbPAM.Models.ManagedResourceCandidateView+AppResourceTypeEnum](../Models/sbpam.models.managedresourcecandidateview+appresourcetypeenum.md)|false|none|none|
 |id|string(uuid)|false|none|none|
 |displayName|string¦null|false|none|none|
 |platformId|string(uuid)¦null|false|none|none|

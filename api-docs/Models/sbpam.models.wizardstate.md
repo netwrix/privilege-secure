@@ -27,7 +27,7 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|state|[SbPAM.Models.WizardStateEnum](#schemasbpam.models.wizardstateenum)|false|none|none|
+|state|[SbPAM.Models.WizardStateEnum](../Models/sbpam.models.wizardstateenum.md)|false|none|none|
 |netbiosDomain|string¦null|false|none|none|
 |dnsDomain|string¦null|false|none|none|
 |adminUsername|string¦null|false|none|none|

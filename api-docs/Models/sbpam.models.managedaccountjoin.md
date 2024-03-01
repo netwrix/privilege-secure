@@ -2883,8 +2883,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |managedAccountId|string(uuid)|false|none|none|
-|managedAccount|[SbPAM.Models.ManagedAccount](#schemasbpam.models.managedaccount)|false|none|none|
+|managedAccount|[SbPAM.Models.ManagedAccount](../Models/sbpam.models.managedaccount.md)|false|none|none|
 |managedAccountGroupId|string(uuid)|false|none|none|
-|managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](#schemasbpam.models.managedaccountgroup)|false|none|none|
+|managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](../Models/sbpam.models.managedaccountgroup.md)|false|none|none|
 
 

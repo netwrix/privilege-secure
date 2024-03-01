@@ -53,8 +53,8 @@
 |lastActivationTime|string(date-time)|false|none|none|
 |lastConsumptionTime|string(date-time)|false|none|none|
 |trialExpirationDate|string(date-time)|false|none|none|
-|customerInfo|[SbPAM.License.Models.CustomerInfo](#schemasbpam.license.models.customerinfo)|false|none|none|
+|customerInfo|[SbPAM.License.Models.CustomerInfo](../Models/sbpam.license.models.customerinfo.md)|false|none|none|
 |errorMessage|string¦null|false|none|none|
-|creditInfo|[[SbPAM.License.Models.CreditInfo](#schemasbpam.license.models.creditinfo)]¦null|false|none|none|
+|creditInfo|[[SbPAM.License.Models.CreditInfo](../Models/sbpam.license.models.creditinfo.md)]¦null|false|none|none|
 
 

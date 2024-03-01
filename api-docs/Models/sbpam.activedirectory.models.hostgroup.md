@@ -7064,9 +7064,9 @@
 |sid|string¦null|false|none|none|
 |unixId|integer(int32)¦null|false|none|none|
 |hostId|string(uuid)¦null|false|none|none|
-|host|[SbPAM.ActiveDirectory.Models.Host](#schemasbpam.activedirectory.models.host)|false|none|none|
-|hostUserGroupJoin|[[SbPAM.ActiveDirectory.Models.HostUserGroupJoin](#schemasbpam.activedirectory.models.hostusergroupjoin)]¦null|false|read-only|none|
-|hostGroupGroupJoins|[[SbPAM.ActiveDirectory.Models.HostGroupGroupJoin](#schemasbpam.activedirectory.models.hostgroupgroupjoin)]¦null|false|none|none|
+|host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
+|hostUserGroupJoin|[[SbPAM.ActiveDirectory.Models.HostUserGroupJoin](../Models/sbpam.activedirectory.models.hostusergroupjoin.md)]¦null|false|read-only|none|
+|hostGroupGroupJoins|[[SbPAM.ActiveDirectory.Models.HostGroupGroupJoin](../Models/sbpam.activedirectory.models.hostgroupgroupjoin.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

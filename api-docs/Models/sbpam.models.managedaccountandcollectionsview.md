@@ -28,7 +28,7 @@
 |email|string¦null|false|none|none|
 |samAccountName|string¦null|false|none|none|
 |domain|string¦null|false|none|none|
-|entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](#schemasbpam.models.managedaccountviewentitytypeenum)|false|none|none|
+|entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../Models/sbpam.models.managedaccountviewentitytypeenum.md)|false|none|none|
 |isReviewer|boolean|false|none|none|
 
 

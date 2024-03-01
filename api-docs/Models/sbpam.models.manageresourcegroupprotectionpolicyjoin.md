@@ -6374,8 +6374,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |managedResourceGroupId|string(uuid)|false|none|none|
-|managedResourceGroup|[SbPAM.Models.ManagedResourceGroup](#schemasbpam.models.managedresourcegroup)|false|none|none|
+|managedResourceGroup|[SbPAM.Models.ManagedResourceGroup](../Models/sbpam.models.managedresourcegroup.md)|false|none|none|
 |protectionPolicyId|string(uuid)|false|none|none|
-|protectionPolicy|[SbPAM.Models.ProtectionPolicy](#schemasbpam.models.protectionpolicy)|false|none|none|
+|protectionPolicy|[SbPAM.Models.ProtectionPolicy](../Models/sbpam.models.protectionpolicy.md)|false|none|none|
 
 

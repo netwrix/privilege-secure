@@ -21,6 +21,6 @@
 |---|---|---|---|---|
 |userId|string(uuid)¦null|false|none|none|
 |credentialId|string(uuid)¦null|false|none|none|
-|managedType|[SbPAM.Models.ManagedUserType](#schemasbpam.models.managedusertype)|false|none|none|
+|managedType|[SbPAM.Models.ManagedUserType](../Models/sbpam.models.managedusertype.md)|false|none|none|
 
 

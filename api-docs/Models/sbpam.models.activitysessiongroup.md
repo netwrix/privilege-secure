@@ -10327,7 +10327,7 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |createdBy|string(uuid)¦null|false|none|none|
-|activitySessions|[[SbPAM.Models.ActivitySession](#schemasbpam.models.activitysession)]¦null|false|none|none|
+|activitySessions|[[SbPAM.Models.ActivitySession](../Models/sbpam.models.activitysession.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

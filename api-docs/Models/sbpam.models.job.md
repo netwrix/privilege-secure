@@ -528,7 +528,7 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
-|actionGroupJob|[[SbPAM.Models.ActionGroupJob](#schemasbpam.models.actiongroupjob)]¦null|false|none|none|
+|actionGroupJob|[[SbPAM.Models.ActionGroupJob](../Models/sbpam.models.actiongroupjob.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

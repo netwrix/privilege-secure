@@ -44,7 +44,7 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|type|[SbPAM.Models.ActivityConfigurationType](#schemasbpam.models.activityconfigurationtype)|false|none|none|
+|type|[SbPAM.Models.ActivityConfigurationType](../Models/sbpam.models.activityconfigurationtype.md)|false|none|none|
 |createdBy|string(uuid)¦null|false|none|none|
 |modifiedBy|string(uuid)¦null|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
@@ -53,6 +53,6 @@
 |isDeleted|boolean|false|none|none|
 |isUserModified|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
-|activityConfigurationSettings|[[SbPAM.Models.ActivityConfigurationSetting](#schemasbpam.models.activityconfigurationsetting)]¦null|false|none|none|
+|activityConfigurationSettings|[[SbPAM.Models.ActivityConfigurationSetting](../Models/sbpam.models.activityconfigurationsetting.md)]¦null|false|none|none|
 
 

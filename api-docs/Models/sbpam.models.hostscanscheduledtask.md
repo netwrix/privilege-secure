@@ -622,13 +622,13 @@
 |nextRunTimeUtc|string(date-time)|false|none|none|
 |lastRunTimeUtc|string(date-time)|false|none|none|
 |lastRunResult|integer(int32)|false|none|none|
-|scheduledTaskTriggers|[[SbPAM.Models.Common.ScheduledTaskTrigger](#schemasbpam.models.common.scheduledtasktrigger)]¦null|false|none|none|
-|scheduledTaskActions|[[SbPAM.Models.Common.ScheduledTaskAction](#schemasbpam.models.common.scheduledtaskaction)]¦null|false|none|none|
+|scheduledTaskTriggers|[[SbPAM.Models.Common.ScheduledTaskTrigger](../Models/sbpam.models.common.scheduledtasktrigger.md)]¦null|false|none|none|
+|scheduledTaskActions|[[SbPAM.Models.Common.ScheduledTaskAction](../Models/sbpam.models.common.scheduledtaskaction.md)]¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 |hostScanHostId|string(uuid)|false|none|none|
-|hostScanHost|[SbPAM.Models.HostScanHost](#schemasbpam.models.hostscanhost)|false|none|none|
+|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
 |hostObjectId|string(uuid)¦null|false|none|none|
 
 

@@ -39,6 +39,6 @@
 |endTimestamp|string(date-time)¦null|false|none|none|
 |recordingStartTimestamp|string(date-time)¦null|false|none|none|
 |recordingEndTimestamp|string(date-time)¦null|false|none|none|
-|records|[[SbPAM.Models.MetadataRecord](#schemasbpam.models.metadatarecord)]¦null|false|none|none|
+|records|[[SbPAM.Models.MetadataRecord](../Models/sbpam.models.metadatarecord.md)]¦null|false|none|none|
 
 

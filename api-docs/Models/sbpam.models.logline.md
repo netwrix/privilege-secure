@@ -22,7 +22,7 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |timestamp|string(date-time)|false|none|none|
-|status|[SbPAM.Models.LogStatus](#schemasbpam.models.logstatus)|false|none|none|
+|status|[SbPAM.Models.LogStatus](../Models/sbpam.models.logstatus.md)|false|none|none|
 |statusString|string¦null|false|none|none|
 |lineNumber|integer(int32)|false|none|none|
 |logMessage|string¦null|false|none|none|

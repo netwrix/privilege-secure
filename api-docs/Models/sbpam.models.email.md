@@ -60,12 +60,12 @@
 |id|string(uuid)|false|none|none|
 |expiresDateTimeUtc|string(date-time)¦null|false|none|none|
 |emailSettingsId|string(uuid)¦null|false|none|none|
-|emailSettings|[SbPAM.Models.ActivityConfiguration](#schemasbpam.models.activityconfiguration)|false|none|none|
+|emailSettings|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|none|
 |subject|string¦null|false|none|none|
 |toAddress|string¦null|false|none|none|
 |htmlBody|string¦null|false|none|none|
-|importance|[SbPAM.Models.ImportanceEnums](#schemasbpam.models.importanceenums)|false|none|none|
-|priority|[SbPAM.Models.PriorityEnums](#schemasbpam.models.priorityenums)|false|none|none|
+|importance|[SbPAM.Models.ImportanceEnums](../Models/sbpam.models.importanceenums.md)|false|none|none|
+|priority|[SbPAM.Models.PriorityEnums](../Models/sbpam.models.priorityenums.md)|false|none|none|
 |wasSent|boolean|false|none|none|
 |sentDateTimeUtc|string(date-time)¦null|false|none|none|
 |attachmentPath|string¦null|false|none|none|

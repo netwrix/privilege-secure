@@ -407,7 +407,7 @@
 |jobObject|string¦null|false|none|none|
 |jobSchedule|string¦null|false|none|none|
 |activeDirectoryDomainConfigurationId|string(uuid)|false|none|none|
-|activeDirectoryDomainConfiguration|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomainConfiguration](#schemasbpam.activedirectory.models.activedirectorydomainconfiguration)|false|none|none|
+|activeDirectoryDomainConfiguration|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomainConfiguration](../Models/sbpam.activedirectory.models.activedirectorydomainconfiguration.md)|false|none|none|
 |actionGroupId|string(uuid)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

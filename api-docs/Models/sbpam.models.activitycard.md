@@ -36,7 +36,7 @@
 |id|string(uuid)|false|none|none|
 |name|string¦null|false|none|none|
 |description|string¦null|false|none|none|
-|activityType|[SbPAM.Models.ActivityType](#schemasbpam.models.activitytype)|false|none|none|
+|activityType|[SbPAM.Models.ActivityType](../Models/sbpam.models.activitytype.md)|false|none|none|
 |resourceText|string¦null|false|none|none|
 |platformId|string(uuid)|false|none|none|
 |platformName|string¦null|false|none|none|
@@ -46,7 +46,7 @@
 |latestSessionActualStartUtc|string(date-time)¦null|false|none|none|
 |policyId|string(uuid)|false|none|none|
 |policyName|string¦null|false|none|none|
-|policyType|[SbPAM.Models.PolicyType](#schemasbpam.models.policytype)|false|none|none|
+|policyType|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)|false|none|none|
 |notesRequired|boolean|false|none|none|
 |ticketRequired|boolean|false|none|none|
 |maxSessionLength|integer(int32)|false|none|none|

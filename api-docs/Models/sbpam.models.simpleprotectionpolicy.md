@@ -38,6 +38,6 @@
 |groupMonitorInterval|integer(int32)|false|none|none|
 |managedResourceIds|[string]¦null|false|none|none|
 |managedResourceGroupIds|[string]¦null|false|none|none|
-|groupMembers|[[SbPAM.Models.ProtectedGroupMemberInfo](#schemasbpam.models.protectedgroupmemberinfo)]¦null|false|none|none|
+|groupMembers|[[SbPAM.Models.ProtectedGroupMemberInfo](../Models/sbpam.models.protectedgroupmemberinfo.md)]¦null|false|none|none|
 
 

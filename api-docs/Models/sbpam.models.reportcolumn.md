@@ -78,7 +78,7 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |reportSourceId|string(uuid)|false|none|none|
-|source|[SbPAM.Models.ReportSource](#schemasbpam.models.reportsource)|false|none|none|
+|source|[SbPAM.Models.ReportSource](../Models/sbpam.models.reportsource.md)|false|none|none|
 |name|string¦null|false|none|none|
 |title|string¦null|false|none|none|
 |columnOrder|integer(int32)|false|none|none|

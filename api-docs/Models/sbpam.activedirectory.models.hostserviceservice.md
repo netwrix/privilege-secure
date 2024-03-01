@@ -3884,9 +3884,9 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |parentHostServiceId|string(uuid)|false|none|none|
-|parentHostService|[SbPAM.ActiveDirectory.Models.HostService](#schemasbpam.activedirectory.models.hostservice)|false|none|none|
+|parentHostService|[SbPAM.ActiveDirectory.Models.HostService](../Models/sbpam.activedirectory.models.hostservice.md)|false|none|none|
 |childHostServiceId|string(uuid)|false|none|none|
-|childHostService|[SbPAM.ActiveDirectory.Models.HostService](#schemasbpam.activedirectory.models.hostservice)|false|none|none|
+|childHostService|[SbPAM.ActiveDirectory.Models.HostService](../Models/sbpam.activedirectory.models.hostservice.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

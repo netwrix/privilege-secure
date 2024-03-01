@@ -43,6 +43,6 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |taskId|string(uuid)|false|none|none|
-|rows|[[SbPAM.Models.AccessCertificationTaskRowDetail](#schemasbpam.models.accesscertificationtaskrowdetail)]¦null|false|none|none|
+|rows|[[SbPAM.Models.AccessCertificationTaskRowDetail](../Models/sbpam.models.accesscertificationtaskrowdetail.md)]¦null|false|none|none|
 
 

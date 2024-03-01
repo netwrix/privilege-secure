@@ -28,7 +28,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|lines|[[SbPAM.Models.ActionLogDto](#schemasbpam.models.actionlogdto)]¦null|false|none|none|
+|lines|[[SbPAM.Models.ActionLogDto](../Models/sbpam.models.actionlogdto.md)]¦null|false|none|none|
 |totalCount|integer(int32)|false|none|none|
 |version|string¦null|false|none|none|
 

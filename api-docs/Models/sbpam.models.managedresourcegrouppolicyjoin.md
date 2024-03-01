@@ -7499,8 +7499,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |managedResourceGroupId|string(uuid)|false|none|none|
-|managedResourceGroup|[SbPAM.Models.ManagedResourceGroup](#schemasbpam.models.managedresourcegroup)|false|none|none|
+|managedResourceGroup|[SbPAM.Models.ManagedResourceGroup](../Models/sbpam.models.managedresourcegroup.md)|false|none|none|
 |accessControlPolicyId|string(uuid)|false|none|none|
-|accessControlPolicy|[SbPAM.Models.AccessControlPolicy](#schemasbpam.models.accesscontrolpolicy)|false|none|none|
+|accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|none|
 
 

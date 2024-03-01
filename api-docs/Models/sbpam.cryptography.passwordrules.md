@@ -22,9 +22,9 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|needs|[SbPAM.Constants.CharacterTypeFlags](#schemasbpam.constants.charactertypeflags)|false|none|none|
-|mustEndWith|[SbPAM.Constants.CharacterTypeFlags](#schemasbpam.constants.charactertypeflags)|false|none|none|
-|mustStartWith|[SbPAM.Constants.CharacterTypeFlags](#schemasbpam.constants.charactertypeflags)|false|none|none|
+|needs|[SbPAM.Constants.CharacterTypeFlags](../Models/sbpam.constants.charactertypeflags.md)|false|none|none|
+|mustEndWith|[SbPAM.Constants.CharacterTypeFlags](../Models/sbpam.constants.charactertypeflags.md)|false|none|none|
+|mustStartWith|[SbPAM.Constants.CharacterTypeFlags](../Models/sbpam.constants.charactertypeflags.md)|false|none|none|
 |length|integer(int32)|false|none|none|
 |maxConsecutive|integer(int32)|false|none|none|
 |charsToExclude|string¦null|false|none|none|

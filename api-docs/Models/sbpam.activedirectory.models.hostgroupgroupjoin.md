@@ -4959,8 +4959,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |hostGroupId|string(uuid)|false|none|none|
-|hostGroup|[SbPAM.ActiveDirectory.Models.HostGroup](#schemasbpam.activedirectory.models.hostgroup)|false|none|none|
+|hostGroup|[SbPAM.ActiveDirectory.Models.HostGroup](../Models/sbpam.activedirectory.models.hostgroup.md)|false|none|none|
 |domainGroupMemberId|string(uuid)|false|none|none|
-|domainGroupMember|[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](#schemasbpam.activedirectory.models.activedirectorygroup)|false|none|none|
+|domainGroupMember|[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)|false|none|none|
 
 

@@ -2617,6 +2617,6 @@
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 |hostId|string(uuid)|false|none|none|
-|host|[SbPAM.ActiveDirectory.Models.Host](#schemasbpam.activedirectory.models.host)|false|none|none|
+|host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
 
 
