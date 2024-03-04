@@ -60,7 +60,7 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedResource/Platform/Bul
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[SbPAM.WebAPI.Controllers.ManagedResourceBatch[System.Guid]](../Models/sbpam.webapi.controllers.managedresourcebatch[system.guid].md)|false|none|
+|body|body|[SbPAM.WebAPI.Controllers.ManagedResourceBatch[System.Guid]](../Models/sbpam.webapi.controllers.managedresourcebatch_system.guid.md)|false|none|
 
 > Example responses
 

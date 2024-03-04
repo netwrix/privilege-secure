@@ -79,7 +79,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedA
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.AccessControlPolicyDetails]](../Models/sbpam.models.datatable[sbpam.models.accesscontrolpolicydetails].md)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.AccessControlPolicyDetails]](../Models/sbpam.models.datatable_sbpam.models.accesscontrolpolicydetails.md)|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|ManagedAccountGroupid is missing|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">

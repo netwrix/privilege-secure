@@ -1,10 +1,10 @@
 
-<h2 id="tocS_System.Tuple[System.Int32,[System.Int32]">System.Tuple[System.Int32,[System.Int32]</h2>
+<h2 id="tocS_System.TupleSystem.Int32,[System.Int32]">System.TupleSystem.Int32,[System.Int32]</h2>
 
-<a id="schemasystem.tuple[system.int32,[system.int32]"></a>
-<a id="schema_System.Tuple[System.Int32,[System.Int32]"></a>
-<a id="tocSsystem.tuple[system.int32,[system.int32]"></a>
-<a id="tocssystem.tuple[system.int32,[system.int32]"></a>
+<a id="schemasystem.tuplesystem.int32,[system.int32]"></a>
+<a id="schema_System.TupleSystem.Int32,[System.Int32]"></a>
+<a id="tocSsystem.tuplesystem.int32,[system.int32]"></a>
+<a id="tocssystem.tuplesystem.int32,[system.int32]"></a>
 
 ```json
 {

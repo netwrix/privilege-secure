@@ -91,7 +91,7 @@ The filterText parameter will perform a case-insensitive search using the follow
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedResourceCandidateView]](../Models/sbpam.models.datatable[sbpam.models.managedresourcecandidateview].md)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedResourceCandidateView]](../Models/sbpam.models.datatable_sbpam.models.managedresourcecandidateview.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
