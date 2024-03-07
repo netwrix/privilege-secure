@@ -36,6 +36,17 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/WinRmHttps/{
 
 `GET /api/v1/ManagedResource/WinRmHttps/{managedResourceId}`
 
+This will create a job that will update the given
+resource to match the settings given. This also
+updates the WinRM settings for the resource so the
+WinRM calls will be made using HTTPS.
+            
+**NOTE** Setting DeleteHttp to _true_ will remove the
+ability to use WinRM over HTTP on the target resource.
+To re-enable WinRM over HTTP you will need to manually
+connect to the resource and run _Enable-PSRemoting_ as
+an Administrator.
+
 <h3 id="configure-winrm-to-use-https-on-target-resource-(auth-roles:-admin)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
@@ -59,6 +70,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/WinRmHttps/{
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|string|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Resource is not valid for operation|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Managed resource does not exist|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">

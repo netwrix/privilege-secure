@@ -9,6 +9,7 @@
 # You can also use wget
 curl -X PUT /api/v1/ManagedResource/TestConnection/{resourceId}/{testId}/Step \
   -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -125,11 +126,29 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedResource/TestConnecti
 |testId|path|string(uuid)|true|Test Id|
 |body|body|[SbPAM.Models.TestResourceStatusStep](../Models/sbpam.models.testresourcestatusstep.md)|false|Test step information|
 
+> Example responses
+
+> 400 Response
+
+```json
+{
+  "type": "string",
+  "title": "string",
+  "status": 0,
+  "detail": "string",
+  "instance": "string",
+  "property1": null,
+  "property2": null
+}
+```
+
 <h3 id="records-the-resource-test-step-results-to-the-database-(auth-roles:-admin,app)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error has occurred, see Web log for details|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

@@ -58,26 +58,19 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedResource/Delete" -Co
 
 > Example responses
 
-> 400 Response
+> 200 Response
 
 ```json
-{
-  "type": "string",
-  "title": "string",
-  "status": 0,
-  "detail": "string",
-  "instance": "string",
-  "property1": null,
-  "property2": null
-}
+"string"
 ```
 
 <h3 id="remove-batch-of-managed-resources-(auth-roles:-admin,app)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|string|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error while deleting, see Web log for details|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

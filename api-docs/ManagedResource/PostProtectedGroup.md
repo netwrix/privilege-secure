@@ -8442,6 +8442,13 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedResource/ProtectedGr
 
 `POST /api/v1/ManagedResource/ProtectedGroup`
 
+Create a protected group for this resource. The minimal group is a name + a single member.
+Note that once this group is created and protection policy schedules are in place
+NPS will remove all users except for the members listed.
+            
+Protection policy schedules are defined at the Platform level.
+See <a href="../Platform.md">Platforms</a>
+
 > Body parameter
 
 ```json
@@ -16854,7 +16861,7 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedResource/ProtectedGr
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[SbPAM.Models.ProtectedGroup](../Models/sbpam.models.protectedgroup.md)|false|none|
+|body|body|[SbPAM.Models.ProtectedGroup](../Models/sbpam.models.protectedgroup.md)|false|Group to create|
 
 > Example responses
 
@@ -29572,6 +29579,8 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedResource/ProtectedGr
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.ProtectedGroup](../Models/sbpam.models.protectedgroup.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Error has occurred, see Web log for details|None|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
