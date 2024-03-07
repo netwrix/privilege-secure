@@ -96,7 +96,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/Activity
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityCardWithPolicies]](../Models/sbpam.models.datatable[sbpam.models.activitycardwithpolicies].md)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityCardWithPolicies]](../Models/sbpam.models.datatable_sbpam.models.activitycardwithpolicies.md)|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|ManagedAccountId not defined on request|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Admin and has specified an accountid that does not match their accountid|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 

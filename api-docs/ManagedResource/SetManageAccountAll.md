@@ -1,5 +1,5 @@
 
-## Manage all??? (Auth roles: Admin,App)
+## Set the ManageAccount setting for all ManagedResources to the given manageAccount setting (Auth roles: Admin,App)
 
 <a id="opIdSetManageAccountAll"></a>
 
@@ -8,6 +8,7 @@
 ```shell
 # You can also use wget
 curl -X PUT /api/v1/ManagedResource/ManageAccount/All/{manageAccount} \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -35,11 +36,14 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedResource/ManageAccoun
 
 `PUT /api/v1/ManagedResource/ManageAccount/All/{manageAccount}`
 
-<h3 id="manage-all???-(auth-roles:-admin,app)-parameters">Parameters</h3>
+This will only set the property and does not update the scheduler to bring
+the accounts under management. It is not recommended to use this endpoint.
+
+<h3 id="set-the-manageaccount-setting-for-all-managedresources-to-the-given-manageaccount-setting-(auth-roles:-admin,app)-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|manageAccount|path|[SbPAM.Models.ManagedResourceManageAccountEnum](../Models/sbpam.models.managedresourcemanageaccountenum.md)|true|none|
+|manageAccount|path|[SbPAM.Models.ManagedResourceManageAccountEnum](../Models/sbpam.models.managedresourcemanageaccountenum.md)|true|One of Unmanaged, Managed|
 
 #### Enumerated Values
 
@@ -48,11 +52,29 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedResource/ManageAccoun
 |manageAccount|Unmanaged|
 |manageAccount|Managed|
 
-<h3 id="manage-all???-(auth-roles:-admin,app)-responses">Responses</h3>
+> Example responses
+
+> 403 Response
+
+```json
+{
+  "type": "string",
+  "title": "string",
+  "status": 0,
+  "detail": "string",
+  "instance": "string",
+  "property1": null,
+  "property2": null
+}
+```
+
+<h3 id="set-the-manageaccount-setting-for-all-managedresources-to-the-given-manageaccount-setting-(auth-roles:-admin,app)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Error has occurred, see Web log for details|None|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

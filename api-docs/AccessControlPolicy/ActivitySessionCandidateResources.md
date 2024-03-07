@@ -86,7 +86,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/Activity
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.AccessPolicyObject]](../Models/sbpam.models.datatable[sbpam.models.accesspolicyobject].md)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.AccessPolicyObject]](../Models/sbpam.models.datatable_sbpam.models.accesspolicyobject.md)|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|AccountId was not specified in the request|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User has requested a userid that does not match their userid and they are not an Admin|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 

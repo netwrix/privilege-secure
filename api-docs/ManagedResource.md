@@ -39,7 +39,7 @@
 
 [Remove batch of managed resources (Auth roles: Admin,App)](ManagedResource/DeleteIdsAsync.md)
 
-[Get resource groups that resource belongs to (Auth roles: Admin,App)](ManagedResource/GetGroups.md)
+[Get resource groups that resource is a member of (Auth roles: Admin,App)](ManagedResource/GetGroups.md)
 
 [Return DataTable of managed resources in group (Auth roles: Admin,App)](ManagedResource/ResourcesInGroup.md)
 
@@ -63,9 +63,7 @@
 
 [Update member of protected group (Auth roles: Admin,App)](ManagedResource/PutGroupMember.md)
 
-[Manage all??? (Auth roles: Admin,App)](ManagedResource/SetManageAccountAll.md)
-
-[??? (Auth roles: Admin,App)](ManagedResource/SetManageAccount.md)
+[Set the manage account setting for the list of given resources (Auth roles: Admin,App)](ManagedResource/SetManageAccount.md)
 
 [Trust the discovered certificate of type for the managed resource (Auth roles: Admin)](ManagedResource/TrustAsync.md)
 

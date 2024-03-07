@@ -41,7 +41,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/{managedReso
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |managedResourceId|path|string(uuid)|true|Managed resource id|
-|system|query|boolean|false|none|
+|system|query|boolean|false|Set to true to find temporary protection groups|
 
 > Example responses
 
@@ -3893,6 +3893,8 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedResource/{managedReso
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Error has occurred, see Web log for details|None|
 
 <h3 id="return-protected-groups-for-given-resource-(auth-roles:-admin,app)-responseschema">Response Schema</h3>
 

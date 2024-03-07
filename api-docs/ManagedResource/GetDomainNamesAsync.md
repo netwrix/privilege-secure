@@ -58,6 +58,7 @@ endpoint to get more information about the managed resource.
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <h3 id="get-list-of-active-directory-domains-(auth-roles:-admin,app)-responseschema">Response Schema</h3>
 

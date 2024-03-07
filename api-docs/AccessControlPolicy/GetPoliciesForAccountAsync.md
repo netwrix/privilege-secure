@@ -84,7 +84,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedA
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityCard]](../Models/sbpam.models.datatable[sbpam.models.activitycard].md)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ActivityCard]](../Models/sbpam.models.datatable_sbpam.models.activitycard.md)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
