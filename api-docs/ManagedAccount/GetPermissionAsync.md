@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/ManagedAccount/Permission \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -46,10 +46,6 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedAccount/Permission -H
 > Example responses
 
 > 200 Response
-
-```
-[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","name":"string"}]
-```
 
 ```json
 [

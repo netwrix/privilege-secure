@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X POST /api/v1/ManagedAccount/Reviewer/AddMultiple \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -66,10 +66,6 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedAccount/Reviewer/Add
 
 > 200 Response
 
-```
-"string"
-```
-
 ```json
 "string"
 ```
@@ -80,6 +76,7 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedAccount/Reviewer/Add
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|string|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error setting users as Reviewers|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X DELETE /api/v1/ManagedAccount/{managedAccountId} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -46,10 +46,6 @@ Invoke-RestMethod -Method DELETE -Url "$($Host)/api/v1/ManagedAccount/{managedAc
 
 > 202 Response
 
-```
-"string"
-```
-
 ```json
 "string"
 ```
@@ -60,6 +56,7 @@ Invoke-RestMethod -Method DELETE -Url "$($Host)/api/v1/ManagedAccount/{managedAc
 |---|---|---|---|
 |202|[Accepted](https://tools.ietf.org/html/rfc7231#section-6.3.3)|Accepted|string|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error deleting user|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|User not found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">

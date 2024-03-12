@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/ManagedAccount/GetAvailableDomains \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -39,10 +39,6 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedAccount/GetAvailableD
 > Example responses
 
 > 200 Response
-
-```
-["string"]
-```
 
 ```json
 [

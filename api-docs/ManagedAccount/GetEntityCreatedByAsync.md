@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/ManagedAccount/EntityCreatedBy/{hostUserId} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -46,10 +46,6 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedAccount/EntityCreated
 
 > 200 Response
 
-```
-{"samaccountname":"string","hostUserId":"f49f66da-8e90-4a2e-90ba-36f4d97bfbe9","managedAccountId":"98c25b84-2c06-4fcd-94c7-306443f45a3d"}
-```
-
 ```json
 {
   "samaccountname": "string",
@@ -64,6 +60,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedAccount/EntityCreated
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.EntityCreatedBy](../Models/sbpam.models.entitycreatedby.md)|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error generating EntityCreatedBy|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|User not found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
