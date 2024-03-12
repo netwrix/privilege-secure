@@ -9,6 +9,7 @@
 # You can also use wget
 curl -X POST /api/v1/Credential/AddCredentialSSHCertificate/{credentialId} \
   -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -67,14 +68,30 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/Credential/AddCredentialSSH
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|credentialId|path|string(uuid)|true|none|
+|credentialId|path|string(uuid)|true|Credential Id|
 |body|body|[SbPAM.Models.SshFormInfo](../Models/sbpam.models.sshforminfo.md)|false|none|
+
+> Example responses
+
+> 403 Response
+
+```json
+{
+  "type": "string",
+  "title": "string",
+  "status": 0,
+  "detail": "string",
+  "instance": "string",
+  "property1": null,
+  "property2": null
+}
+```
 
 <h3 id="add-ssh-certificates-(by-credential-id)-(auth-roles:-admin,app)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/ManagedAccount/ListLocalUsersNameAndIds \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -40,10 +40,6 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedAccount/ListLocalUser
 
 > 200 Response
 
-```
-[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","name":"string"}]
-```
-
 ```json
 [
   {
@@ -58,6 +54,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedAccount/ListLocalUser
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <h3 id="list-local-user-names-and-ids-(auth-roles:-admin,app)-responseschema">Response Schema</h3>
 

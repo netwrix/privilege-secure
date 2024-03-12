@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/ManagedAccount/Reviewer/Search \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -44,8 +44,8 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedAccount/Reviewer/Sear
 |filterText|query|string|false|Filter by text|
 |orderBy|query|string|false|Sort by field|
 |orderDescending|query|boolean|false|Sort descending/ascending|
-|skip|query|integer(int32)|false|DB records to skip|
-|take|query|integer(int32)|false|DB records to return|
+|skip|query|integer(int32)|false|Start at this item (default: 0)|
+|take|query|integer(int32)|false|Return this number of items (default: 30)|
 |candidates|query|boolean|false|True for candidate reviewers, false for current reviewers|
 
 #### Enumerated Values
@@ -61,10 +61,6 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedAccount/Reviewer/Sear
 > Example responses
 
 > 200 Response
-
-```
-{"data":[{"id":"497f6eca-6276-4993-bfeb-53cbbbba6f08","name":"string","email":"string","samAccountName":"string","domain":"string","entityType":"ManagedAccount","isReviewer":true}],"recordsTotal":0}
-```
 
 ```json
 {
@@ -88,6 +84,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedAccount/Reviewer/Sear
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.DataTable[SbPAM.Models.ManagedAccountAndCollectionsView]](../Models/sbpam.models.datatable_sbpam.models.managedaccountandcollectionsview.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

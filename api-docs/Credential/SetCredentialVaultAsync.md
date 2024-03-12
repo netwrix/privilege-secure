@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/Credential/SetVault/{vaultName}/{userName} \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -40,17 +40,13 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/Credential/SetVault/{vaultNa
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|vaultName|path|string|true|none|
-|userName|path|string|true|none|
+|vaultName|path|string|true|Secret vault name to add credential to (case-insensitive match)|
+|userName|path|string|true|User name for credential (Domain\sAMAccoutname)|
 |vaultUser|query|boolean|false|none|
 
 > Example responses
 
 > 200 Response
-
-```
-true
-```
 
 ```json
 true
@@ -61,6 +57,8 @@ true
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|boolean|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not Found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

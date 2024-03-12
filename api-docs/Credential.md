@@ -5,7 +5,7 @@
 
 [Create a new credential (Auth roles: Admin)](Credential/CreateAsync.md)
 
-[Update existing credential (Auth roles: Admin,App)](Credential/Put.md)
+[Update existing credential or create new credential (Auth roles: Admin,App)](Credential/Put.md)
 
 [Get specific credential by Id (Auth roles: Admin,App)](Credential/GetById.md)
 
@@ -13,7 +13,7 @@
 
 [Update an existing credential (Auth roles: Admin,App)](Credential/UpdateAsync.md)
 
-[Create a copy of an existing credential, generating a new password for the clone (Auth roles: App)](Credential/NewPasswordFromCredential.md)
+[ (Auth roles: App)](Credential/NewPasswordFromCredential.md)
 
 [Get credential by user id (Auth roles: App)](Credential/GetByUserId.md)
 

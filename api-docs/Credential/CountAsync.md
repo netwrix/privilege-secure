@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/Credential/Count \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -40,15 +40,11 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/Credential/Count -Headers $H
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|includeDeleted|query|boolean|false|none|
+|includeDeleted|query|boolean|false|Include deleted credentials|
 
 > Example responses
 
 > 200 Response
-
-```
-0
-```
 
 ```json
 0
@@ -59,6 +55,8 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/Credential/Count -Headers $H
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|integer|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|An error has occurred|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X PUT /api/v1/ManagedAccount/ChangeLocalUserPassword \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -66,10 +66,6 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedAccount/ChangeLocalUs
 > Example responses
 
 > 200 Response
-
-```
-"string"
-```
 
 ```json
 "string"

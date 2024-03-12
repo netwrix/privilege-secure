@@ -8,6 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/Credential/GetAuthenticationMethodTypes \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -35,11 +36,27 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/Credential/GetAuthentication
 
 `GET /api/v1/Credential/GetAuthenticationMethodTypes`
 
+> Example responses
+
+> 403 Response
+
+```json
+{
+  "type": "string",
+  "title": "string",
+  "status": 0,
+  "detail": "string",
+  "instance": "string",
+  "property1": null,
+  "property2": null
+}
+```
+
 <h3 id="get-authentication-method-types-(auth-roles:-admin,app)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

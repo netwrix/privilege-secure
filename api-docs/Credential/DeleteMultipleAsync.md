@@ -9,6 +9,7 @@
 # You can also use wget
 curl -X POST /api/v1/Credential/DeleteMultiple \
   -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -53,13 +54,25 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/Credential/DeleteMultiple" 
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|array[string]|false|none|
+|body|body|array[string]|false|List of Credential ids to remove|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "item1": 0,
+  "item2": 0
+}
+```
 
 <h3 id="delete-list-of-credentials-by-id-(auth-roles:-admin)-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.TupleSystem.Int32,[System.Int32]](../Models/system.tuplesystem.int32,_system.int32.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

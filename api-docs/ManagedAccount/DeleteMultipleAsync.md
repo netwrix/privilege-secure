@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X POST /api/v1/ManagedAccount/DeleteMultiple \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -67,10 +67,6 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedAccount/DeleteMultip
 
 > 200 Response
 
-```
-{"item1":0,"item2":0}
-```
-
 ```json
 {
   "item1": 0,
@@ -84,6 +80,7 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/ManagedAccount/DeleteMultip
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[System.TupleSystem.Int32,[System.Int32]](../Models/system.tuplesystem.int32,_system.int32.md)|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error removing users/groups from NPS|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

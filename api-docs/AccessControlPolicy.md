@@ -15,7 +15,7 @@
 
 [Change policy delete/disabled status. (Auth roles: Admin)](AccessControlPolicy/PutStatus.md)
 
-[Retrieve policies by managed account id. (Auth)](AccessControlPolicy/GetPoliciesForAccountAsync.md)
+[ (Auth)](AccessControlPolicy/GetPoliciesForAccountAsync.md)
 
 [Remove user from all policies containing the managed account id. (Auth roles: Admin)](AccessControlPolicy/RemoveManagedGroupAccountFromAllPolicies.md)
 
@@ -90,3 +90,4 @@
 [Get roles for access policy (Auth roles: Admin,UserPlus)](AccessControlPolicy/GetRolesForPolicyAsync.md)
 
 [Copy access policy to new policy (Auth roles: Admin)](AccessControlPolicy/CopyAccessControlPolicy.md)
+

@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X PUT /api/v1/ManagedAccount/ResetLocalUserPassword/{managedAccountId} \
   -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: text/plain' \
+  -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
 ```
@@ -67,10 +67,6 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedAccount/ResetLocalUse
 
 > 400 Response
 
-```
-{"type":"string","title":"string","status":0,"detail":"string","instance":"string","property1":null,"property2":null}
-```
-
 ```json
 {
   "type": "string",
@@ -89,7 +85,8 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedAccount/ResetLocalUse
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error resetting password|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
-|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Invalid Local user|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Invalid Local user|None|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
