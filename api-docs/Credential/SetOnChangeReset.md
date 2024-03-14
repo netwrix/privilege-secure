@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X PUT /api/v1/Credential/OnChangeReset \
-  -H 'Content-Type: application/json-patch+json' \
+  -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
@@ -37,7 +37,7 @@ $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/Credential/OnChangeReset" -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
+Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/Credential/OnChangeReset" -ContentType "application/json" -Body $JsonBody -Headers $Headers
 ```
 
 `PUT /api/v1/Credential/OnChangeReset`
@@ -60,7 +60,7 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/Credential/OnChangeReset" -C
 
 > Example responses
 
-> 403 Response
+> 400 Response
 
 ```json
 {
@@ -78,6 +78,8 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/Credential/OnChangeReset" -C
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
+|202|[Accepted](https://tools.ietf.org/html/rfc7231#section-6.3.3)|Accepted|None|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|User was not found or an error has occurred|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">

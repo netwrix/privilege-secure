@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X PUT /api/v1/Credential/{id} \
-  -H 'Content-Type: application/json-patch+json' \
+  -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
@@ -928,7 +928,7 @@ $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/Credential/{id}" -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
+Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/Credential/{id}" -ContentType "application/json" -Body $JsonBody -Headers $Headers
 ```
 
 `PUT /api/v1/Credential/{id}`
@@ -1836,8 +1836,8 @@ Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/Credential/{id}" -ContentTyp
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|id|path|string(uuid)|true|none|
-|body|body|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|none|
+|id|path|string(uuid)|true|Credential Id|
+|body|body|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|Credential to update (Id must match route)|
 
 > Example responses
 

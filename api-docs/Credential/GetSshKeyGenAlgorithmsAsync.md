@@ -38,17 +38,16 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/Credential/SSHKeyGenAlgorith
 
 > Example responses
 
-> 403 Response
+> 200 Response
 
 ```json
 {
-  "type": "string",
-  "title": "string",
-  "status": 0,
-  "detail": "string",
-  "instance": "string",
-  "property1": null,
-  "property2": null
+  "property1": [
+    0
+  ],
+  "property2": [
+    0
+  ]
 }
 ```
 
@@ -56,7 +55,17 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/Credential/SSHKeyGenAlgorith
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error has occurred, see web logs|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+
+<h3 id="get-supported-sshkeygen-algorithms-(auth-roles:-admin,app)-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» **additionalProperties**|[integer]|false|none|none|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

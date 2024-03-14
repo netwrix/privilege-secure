@@ -40,8 +40,8 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/Credential/Details/{id} -Hea
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|id|path|string(uuid)|true|none|
-|includeDeleted|query|boolean|false|none|
+|id|path|string(uuid)|true|Credential or User Id|
+|includeDeleted|query|boolean|false|Include deleted credentials|
 
 > Example responses
 
@@ -88,7 +88,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/Credential/Details/{id} -Hea
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SbPAM.Models.CredentialResult](../Models/sbpam.models.credentialresult.md)|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Error has occurred, see response body for details|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|User is not an Administrator|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Credential not found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Credential or User not found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:

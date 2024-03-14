@@ -46,7 +46,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/ManagedAccount/HostUser/Sear
 |orderBy|query|string|false|Sort by field|
 |orderDescending|query|boolean|false|Sort descending ascending|
 |skip|query|integer(int32)|false|Start at this item (default: 0)|
-|take|query|integer(int32)|false|Return this number of items (default: 30)|
+|take|query|integer(int32)|false|Return this number of items (default: 100)|
 
 #### Enumerated Values
 

@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X PUT /api/v1/ManagedAccount/UpdateApplicationUser \
-  -H 'Content-Type: application/json-patch+json' \
+  -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
@@ -55,7 +55,7 @@ $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedAccount/UpdateApplicationUser" -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
+Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedAccount/UpdateApplicationUser" -ContentType "application/json" -Body $JsonBody -Headers $Headers
 ```
 
 `PUT /api/v1/ManagedAccount/UpdateApplicationUser`
