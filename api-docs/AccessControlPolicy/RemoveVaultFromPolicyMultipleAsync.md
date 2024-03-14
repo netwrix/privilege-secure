@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X DELETE /api/v1/AccessControlPolicy/{policyId}/SecretVault \
-  -H 'Content-Type: application/json-patch+json' \
+  -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
@@ -37,7 +37,7 @@ $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method DELETE -Url "$($Host)/api/v1/AccessControlPolicy/{policyId}/SecretVault" -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
+Invoke-RestMethod -Method DELETE -Url "$($Host)/api/v1/AccessControlPolicy/{policyId}/SecretVault" -ContentType "application/json" -Body $JsonBody -Headers $Headers
 ```
 
 `DELETE /api/v1/AccessControlPolicy/{policyId}/SecretVault`

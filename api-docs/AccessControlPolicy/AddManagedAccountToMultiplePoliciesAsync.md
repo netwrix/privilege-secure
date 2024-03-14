@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X POST /api/v1/AccessControlPolicy/AddManagedAccountToMultiplePolicies/{managedAccountId} \
-  -H 'Content-Type: application/json-patch+json' \
+  -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Authorization: API_KEY'
 
@@ -37,7 +37,7 @@ $Headers = @{
 
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/AccessControlPolicy/AddManagedAccountToMultiplePolicies/{managedAccountId}" -ContentType "application/json-patch+json" -Body $JsonBody -Headers $Headers
+Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/AccessControlPolicy/AddManagedAccountToMultiplePolicies/{managedAccountId}" -ContentType "application/json" -Body $JsonBody -Headers $Headers
 ```
 
 `POST /api/v1/AccessControlPolicy/AddManagedAccountToMultiplePolicies/{managedAccountId}`

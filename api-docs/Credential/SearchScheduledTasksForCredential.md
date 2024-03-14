@@ -50,7 +50,7 @@ FilterText is a case-insensitive search using the following properties:
 |filterText|query|string|false|Use for case-insensitive contains search|
 |byHostUser|query|boolean|false|Id is a user|
 |skip|query|integer(int32)|false|Start at this item (default: 0)|
-|take|query|integer(int32)|false|Return this number of items (default: 30)|
+|take|query|integer(int32)|false|Return this number of items (default: 10)|
 
 > Example responses
 
