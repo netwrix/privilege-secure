@@ -69,9 +69,11 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/Host" -ContentType "applica
 This endpoint can be used to create a Host record.
 Host records need to be paired with ManagedResource records in order
 to be used in Netwrix Privilege Secure.
-            
-Typically you create the ManagedResource by using the /api/v1/HostScanJob
-endpoint or by /api/v1/ManagedResource/Addxxxx
+
+You can create the ManagedResource by using the
+endpoint <a href="../ManagedResource/CandidateAddMultiple.md">POST /api/v1/ManagedResource/Candidate/AddMultiple</a>
+This will attempt to use the credential assigned to the host or domain the host
+belongs to.
 
 > Body parameter
 
