@@ -71,7 +71,7 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/Host/{id}/ScheduledTasks -He
       "lastRunResult": 0,
       "scheduledTaskTriggers": null,
       "scheduledTaskActions": null,
-      "nodeId": "00000000-0000-0000-0000-000000000000",
+      "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
       "createdDateTimeUtc": "0001-01-01T00:00:00Z",
       "modifiedDateTimeUtc": "0001-01-01T00:00:00Z"
     }

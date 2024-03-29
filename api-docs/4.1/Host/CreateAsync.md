@@ -85,7 +85,7 @@ endpoint or by /api/v1/ManagedResource/Addxxxx
   "os": "Windows Fake Edition",
   "version": "10.4.2.1",
   "lsaLookupCache": null,
-  "lastUpdatedDateTimeUtc": "2024-03-17T21:16:00Z",
+  "lastUpdatedDateTimeUtc": "2024-03-17T21:16:00",
   "credentialId": "f568fec0-10b6-4b94-9daf-e62c50c9bf3e",
   "hasSSH": false,
   "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
@@ -105,7 +105,7 @@ endpoint or by /api/v1/ManagedResource/Addxxxx
   "isGlobalCatalog": false,
   "usnChanged": 12345,
   "objectSid": "S-1-5-21-1234567890-1234567890-123456789-123456",
-  "added": "2019-08-24T19:15:22Z",
+  "added": "20240327T01:01:01.555Z",
   "deleted": false,
   "isVirtual": false,
   "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
@@ -157,7 +157,7 @@ endpoint or by /api/v1/ManagedResource/Addxxxx
   "added": "2019-08-24T19:15:22Z",
   "deleted": false,
   "isVirtual": false,
-  "nodeId": "00000000-0000-0000-0000-000000000000",
+  "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
   "createdDateTimeUtc": "0001-01-01T00:00:00Z",
   "modifiedDateTimeUtc": "0001-01-01T00:00:00Z"
 }

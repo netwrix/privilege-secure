@@ -13,4 +13,3 @@
 
 [Get scheduled tasks for host (Auth roles: Admin,App)](Host/GetScheduledTasksAsync.md)
 
-
