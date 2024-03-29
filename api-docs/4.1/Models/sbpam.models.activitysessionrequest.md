@@ -25,7 +25,15 @@
   "endDateTimeUtc": "2019-08-24T14:15:22Z",
   "activityName": "string",
   "note": "string",
-  "ticket": "string"
+  "ticket": "string",
+  "customFields": [
+    {
+      "policyId": "2f5573e6-5ba4-48f2-a75d-df99c936463b",
+      "customFieldDataType": "Integer",
+      "name": "string",
+      "value": "string"
+    }
+  ]
 }
 
 ```
@@ -52,5 +60,6 @@
 |activityName|string¦null|false|none|none|
 |note|string¦null|false|none|none|
 |ticket|string¦null|false|none|none|
+|customFields|[[SbPAM.Models.CustomFieldDto](../Models/sbpam.models.customfielddto.md)]¦null|false|none|none|
 
 

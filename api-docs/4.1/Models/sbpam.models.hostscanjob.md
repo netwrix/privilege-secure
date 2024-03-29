@@ -716,15 +716,17 @@
 
 ```
 
+This model represent a job to scan a collection of hosts to obtain os type and version info.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|createdBy|string(uuid)¦null|false|none|none|
-|createdByUserName|string¦null|false|none|none|
-|createdFromAddress|string¦null|false|none|none|
-|hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](../Models/sbpam.models.hostscanjobhostjoin.md)]¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this job.|
+|createdBy|string(uuid)¦null|false|none|Id of user that created this job.|
+|createdByUserName|string¦null|false|none|Name of user that created this job.|
+|createdFromAddress|string¦null|false|none|IP address of user that created this job.|
+|hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](../Models/sbpam.models.hostscanjobhostjoin.md)]¦null|false|none|Host(s) scanned by this job via join table.|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

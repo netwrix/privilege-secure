@@ -21,18 +21,20 @@
 
 ```
 
+Credential Policy Credentials by Policy Id
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|username|string¦null|false|none|none|
-|name|string¦null|false|none|none|
-|domain|string¦null|false|none|none|
-|userId|string(uuid)¦null|false|none|none|
-|policyId|string(uuid)|false|none|none|
-|os|string¦null|false|none|none|
-|activeSessionCount|integer(int32)|false|none|none|
+|id|string(uuid)|false|none|Credential Id|
+|username|string¦null|false|none|Credential username|
+|name|string¦null|false|none|Credential name|
+|domain|string¦null|false|none|Credential domain/resource|
+|userId|string(uuid)¦null|false|none|Credential user id|
+|policyId|string(uuid)|false|none|Policy Id to which the credential is assigned|
+|os|string¦null|false|none|Credential resource operating system or domain functional level|
+|activeSessionCount|integer(int32)|false|none|Number of active sessions for credential|
 |entityType|[SbPAM.Models.CredentialOrHostUser](../Models/sbpam.models.credentialorhostuser.md)|false|none|none|
 
 

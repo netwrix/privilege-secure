@@ -1669,19 +1669,21 @@
 
 ```
 
+This model represents integration connectors for Stealthbits products and available third-party apps.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|description|string¦null|false|none|none|
-|connectorConfigurationId|string(uuid)|false|none|none|
-|connectorTemplateId|string(uuid)|false|none|none|
-|monitorActionQueueId|string(uuid)¦null|false|none|none|
-|monitorActionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
-|configuration|[SbPAM.Models.ConnectorConfiguration](../Models/sbpam.models.connectorconfiguration.md)|false|none|none|
-|configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](../Models/sbpam.models.connectorconfigurationvalue.md)]¦null|false|none|none|
+|id|string(uuid)|false|none|Unique identifier for this integration connector.|
+|name|string¦null|false|none|Name for integration connector.|
+|description|string¦null|false|none|Description for integration connector|
+|connectorConfigurationId|string(uuid)|false|none|Configuration Id for integration connector|
+|connectorTemplateId|string(uuid)|false|none|The template that this connector is based on.|
+|monitorActionQueueId|string(uuid)¦null|false|none|Id of periodic action queue to execute, e.g. to fetch managed user list for a password vault.|
+|monitorActionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
+|configuration|[SbPAM.Models.ConnectorConfiguration](../Models/sbpam.models.connectorconfiguration.md)|false|none|This model represents integration connectors for Stealthbits products and available third-party apps.|
+|configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](../Models/sbpam.models.connectorconfigurationvalue.md)]¦null|false|none|Settings for this connector|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

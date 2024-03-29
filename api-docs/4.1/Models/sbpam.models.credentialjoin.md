@@ -1146,13 +1146,15 @@
 
 ```
 
+This model is used to model the many to many relationship between credentials and credential groups.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|credentialId|string(uuid)|false|none|none|
-|credential|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|none|none|
-|credentialGroupId|string(uuid)|false|none|none|
+|credentialId|string(uuid)|false|none|Id of credential.|
+|credential|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|none|This model represents the stored credentials for a user.|
+|credentialGroupId|string(uuid)|false|none|Id of credential group.|
 |credentialGroup|[SbPAM.Models.CredentialGroup](../Models/sbpam.models.credentialgroup.md)|false|none|none|
 
 

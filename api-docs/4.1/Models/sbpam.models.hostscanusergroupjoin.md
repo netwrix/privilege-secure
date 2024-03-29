@@ -1029,13 +1029,15 @@
 
 ```
 
+This model is used to model the many to many relationship between host scan job users and groups.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|hostScanUserId|string(uuid)|false|none|none|
-|hostScanUser|[SbPAM.Models.HostScanUser](../Models/sbpam.models.hostscanuser.md)|false|none|none|
-|hostScanGroupId|string(uuid)|false|none|none|
-|hostScanGroup|[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)|false|none|none|
+|hostScanUserId|string(uuid)|false|none|Id of host scan user.|
+|hostScanUser|[SbPAM.Models.HostScanUser](../Models/sbpam.models.hostscanuser.md)|false|none|This model is used to store user information from a host scan.|
+|hostScanGroupId|string(uuid)|false|none|Id of host scan group.|
+|hostScanGroup|[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)|false|none|This model is used to store group information from a host scan.|
 
 

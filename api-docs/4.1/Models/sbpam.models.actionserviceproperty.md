@@ -981,15 +981,17 @@
 
 ```
 
+This model represents a property which can be associated with an action service.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|value|string¦null|false|none|none|
-|actionServiceId|string(uuid)|false|none|none|
-|registeredService|[SbPAM.Models.RegisteredService](../Models/sbpam.models.registeredservice.md)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this property.|
+|name|string¦null|false|none|Name of this property.|
+|value|string¦null|false|none|Value of this property.|
+|actionServiceId|string(uuid)|false|none|Id of action service which owns this property.|
+|registeredService|[SbPAM.Models.RegisteredService](../Models/sbpam.models.registeredservice.md)|false|none|This model represents a registration for an service.|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

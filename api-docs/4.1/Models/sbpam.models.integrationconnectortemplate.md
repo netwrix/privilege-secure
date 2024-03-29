@@ -340,12 +340,12 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|description|string¦null|false|none|none|
+|id|string(uuid)|false|none|Unique identifier for this integration connector.|
+|name|string¦null|false|none|Name for integration connector, this corresponds to the "type" of the connector|
+|description|string¦null|false|none|Description for integration connector template.|
 |type|[SbPAM.Models.IntegrationConnectorType](../Models/sbpam.models.integrationconnectortype.md)|false|none|none|
-|configurationId|string(uuid)|false|none|none|
-|configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](../Models/sbpam.models.connectorconfigurationvalue.md)]¦null|false|none|none|
+|configurationId|string(uuid)|false|none|Configuration Id for integration connector template.<br>The configuration of a template provide defaults for a new instance of a connector.|
+|configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](../Models/sbpam.models.connectorconfigurationvalue.md)]¦null|false|none|List of available connector settings|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

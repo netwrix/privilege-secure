@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/ManagedResource/{managedResourceId} \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 
@@ -41,12 +41,12 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedR
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |managedResourceId|path|string(uuid)|true|Managed resource id|
-|Skip|query|integer(int32)|false|none|
-|Take|query|integer(int32)|false|none|
-|OrderBy|query|string|false|none|
-|OrderDescending|query|boolean|false|none|
-|FilterText|query|string|false|none|
-|FilterColumns|query|array[string]|false|none|
+|Skip|query|integer(int32)|false|Start at this item (default: 0)|
+|Take|query|integer(int32)|false|Return this number of items (default: 100)|
+|OrderBy|query|string|false|Property name to order results by|
+|OrderDescending|query|boolean|false|Use descending sort order (default: false)|
+|FilterText|query|string|false|Filter by entries that contain this text. Properties match vary by endpoint.|
+|FilterColumns|query|array[string]|false|Columns to include in filter|
 |directOnly|query|boolean|false|Do not expand groups|
 
 > Example responses
@@ -116,7 +116,54 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedR
                 "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                 "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
               }
-            ]
+            ],
+            "customFields": [
+              {
+                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+                "customFieldNumber": 0,
+                "name": "string",
+                "label": "string",
+                "description": "string",
+                "options": "string",
+                "length": 0,
+                "customFieldDataType": "Integer",
+                "required": true,
+                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+              }
+            ],
+            "deleteAccount": true,
+            "sessionRetryInterval": 0,
+            "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+            "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+            "maxSessionLength": 0,
+            "allowSessionExtension": true,
+            "sessionExtensionMinutes": 0,
+            "sessionExtensionCount": 0,
+            "sessionMonitorInterval": 0,
+            "expirationTimeoutThreshold": 0,
+            "rdpProxyHost": "string",
+            "sshProxyHost": "string",
+            "sshScanDc": true,
+            "recordAudio": true,
+            "proxyAutoConnect": true,
+            "record": true,
+            "approvalTypeRequired": "Deny",
+            "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+            "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+            "monitorEntireSession": true,
+            "allowViewPassword": true,
+            "allowPasswordAccess": true,
+            "allowAutofillPassword": true,
+            "leaveInGroup": true,
+            "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+            "clearWebsiteDataAfterStop": true,
+            "clearWebsiteDataBeforeStart": true,
+            "notesRequired": true,
+            "ticketRequired": true,
+            "viewPasswordInSeconds": 0
           },
           "platformId": "32a6e381-64f4-4911-86b6-3bf681b64d23",
           "platform": {
@@ -251,7 +298,40 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedR
                   "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
                   "activityConfigurationSettings": [
                     {}
-                  ]
+                  ],
+                  "customFields": [
+                    {}
+                  ],
+                  "deleteAccount": true,
+                  "sessionRetryInterval": 0,
+                  "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+                  "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+                  "maxSessionLength": 0,
+                  "allowSessionExtension": true,
+                  "sessionExtensionMinutes": 0,
+                  "sessionExtensionCount": 0,
+                  "sessionMonitorInterval": 0,
+                  "expirationTimeoutThreshold": 0,
+                  "rdpProxyHost": "string",
+                  "sshProxyHost": "string",
+                  "sshScanDc": true,
+                  "recordAudio": true,
+                  "proxyAutoConnect": true,
+                  "record": true,
+                  "approvalTypeRequired": "Deny",
+                  "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+                  "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+                  "monitorEntireSession": true,
+                  "allowViewPassword": true,
+                  "allowPasswordAccess": true,
+                  "allowAutofillPassword": true,
+                  "leaveInGroup": true,
+                  "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+                  "clearWebsiteDataAfterStop": true,
+                  "clearWebsiteDataBeforeStart": true,
+                  "notesRequired": true,
+                  "ticketRequired": true,
+                  "viewPasswordInSeconds": 0
                 },
                 "activityGroupActivities": [
                   {}
@@ -317,7 +397,54 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedR
                 "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                 "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
               }
-            ]
+            ],
+            "customFields": [
+              {
+                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+                "customFieldNumber": 0,
+                "name": "string",
+                "label": "string",
+                "description": "string",
+                "options": "string",
+                "length": 0,
+                "customFieldDataType": "Integer",
+                "required": true,
+                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+              }
+            ],
+            "deleteAccount": true,
+            "sessionRetryInterval": 0,
+            "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+            "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+            "maxSessionLength": 0,
+            "allowSessionExtension": true,
+            "sessionExtensionMinutes": 0,
+            "sessionExtensionCount": 0,
+            "sessionMonitorInterval": 0,
+            "expirationTimeoutThreshold": 0,
+            "rdpProxyHost": "string",
+            "sshProxyHost": "string",
+            "sshScanDc": true,
+            "recordAudio": true,
+            "proxyAutoConnect": true,
+            "record": true,
+            "approvalTypeRequired": "Deny",
+            "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+            "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+            "monitorEntireSession": true,
+            "allowViewPassword": true,
+            "allowPasswordAccess": true,
+            "allowAutofillPassword": true,
+            "leaveInGroup": true,
+            "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+            "clearWebsiteDataAfterStop": true,
+            "clearWebsiteDataBeforeStart": true,
+            "notesRequired": true,
+            "ticketRequired": true,
+            "viewPasswordInSeconds": 0
           },
           "activityGroupActivities": [
             {
@@ -344,7 +471,40 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedR
                   "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
                   "activityConfigurationSettings": [
                     {}
-                  ]
+                  ],
+                  "customFields": [
+                    {}
+                  ],
+                  "deleteAccount": true,
+                  "sessionRetryInterval": 0,
+                  "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+                  "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+                  "maxSessionLength": 0,
+                  "allowSessionExtension": true,
+                  "sessionExtensionMinutes": 0,
+                  "sessionExtensionCount": 0,
+                  "sessionMonitorInterval": 0,
+                  "expirationTimeoutThreshold": 0,
+                  "rdpProxyHost": "string",
+                  "sshProxyHost": "string",
+                  "sshScanDc": true,
+                  "recordAudio": true,
+                  "proxyAutoConnect": true,
+                  "record": true,
+                  "approvalTypeRequired": "Deny",
+                  "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+                  "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+                  "monitorEntireSession": true,
+                  "allowViewPassword": true,
+                  "allowPasswordAccess": true,
+                  "allowAutofillPassword": true,
+                  "leaveInGroup": true,
+                  "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+                  "clearWebsiteDataAfterStop": true,
+                  "clearWebsiteDataBeforeStart": true,
+                  "notesRequired": true,
+                  "ticketRequired": true,
+                  "viewPasswordInSeconds": 0
                 },
                 "platformId": "32a6e381-64f4-4911-86b6-3bf681b64d23",
                 "platform": {

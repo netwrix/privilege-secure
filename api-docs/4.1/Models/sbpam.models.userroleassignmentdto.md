@@ -20,7 +20,7 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string¦null|false|none|none|
-|roleName|string¦null|false|none|none|
-|isAssigned|boolean|false|none|none|
+|roleName|string¦null|false|none|Name of the role|
+|isAssigned|boolean|false|none|Whether the role is assigned|
 
 

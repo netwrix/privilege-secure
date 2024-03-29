@@ -30,15 +30,17 @@
 
 ```
 
+Populates the activity session wizard's resource list for users to choose from
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
+|id|string(uuid)|false|none|Managed Resource or Credential Id|
 |policyType|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)|false|none|none|
-|activityPolicies|[[SbPAM.Models.ActivityPolicy](../Models/sbpam.models.activitypolicy.md)]¦null|false|none|none|
-|name|string¦null|false|none|none|
-|os|string¦null|false|none|none|
-|platform|string¦null|false|none|none|
+|activityPolicies|[[SbPAM.Models.ActivityPolicy](../Models/sbpam.models.activitypolicy.md)]¦null|false|none|[Each activity session wizard resource has a list of matching activity + policy entries]|
+|name|string¦null|false|none|Name to display - flattened from resource/credential|
+|os|string¦null|false|none|Resource OS or the Credential resource|
+|platform|string¦null|false|none|Platform - flattened from resource/credential|
 
 

@@ -11,11 +11,13 @@
 
 ```
 
+The type of service (e.g., action service) that logged the event
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|none|
+|*anonymous*|integer(int32)|false|none|The type of service (e.g., action service) that logged the event|
 
 #### Enumerated Values
 

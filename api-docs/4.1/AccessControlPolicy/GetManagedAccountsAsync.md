@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/{accessControlPolicyId}/ManagedAccount \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 

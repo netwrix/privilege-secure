@@ -37,10 +37,10 @@
 |startType|[SbPAM.Models.Common.ServiceStartType](../Models/sbpam.models.common.servicestarttype.md)|false|none|none|
 |serviceType|integer(int32)|false|none|none|
 |userName|string¦null|false|none|none|
-|serviceAccountId|string(uuid)¦null|false|none|none|
+|serviceAccountId|string(uuid)¦null|false|none|The Credential record that represents the local account on the host that runs the service and which we manage|
 |serviceAccountType|[SbPAM.Models.CredentialType](../Models/sbpam.models.credentialtype.md)|false|none|none|
 |serviceAccountName|string¦null|false|none|none|
 |managedType|[SbPAM.Models.ManagedTypeEnum](../Models/sbpam.models.managedtypeenum.md)|false|none|none|
-|dependencyCount|integer(int32)|false|none|none|
+|dependencyCount|integer(int32)|false|none|How many other local services depend on this one's existence?|
 
 

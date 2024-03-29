@@ -20,6 +20,8 @@
 
 ```
 
+A flattening of ManagedUser + Credential entities oriented toward website managed users, who don't have HostUser records
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|

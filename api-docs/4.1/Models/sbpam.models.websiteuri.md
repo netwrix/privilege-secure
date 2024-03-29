@@ -51,7 +51,7 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |websiteId|string(uuid)|false|none|none|
-|website|[SbPAM.Models.Website](../Models/sbpam.models.website.md)|false|none|none|
+|website|[SbPAM.Models.Website](../Models/sbpam.models.website.md)|false|none|This is the detail record for web-type manged resources|
 |uri|string¦null|false|none|none|
 |match|[SbPAM.Models.WebsiteUriMatchType](../Models/sbpam.models.websiteurimatchtype.md)|false|none|none|
 |matchType|[SbPAM.Models.WebsiteUriMatchType](../Models/sbpam.models.websiteurimatchtype.md)|false|none|none|

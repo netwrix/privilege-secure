@@ -3518,30 +3518,32 @@
 
 ```
 
+This model represents an action which is a member of an action queue and can be execute by and action service.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|actionQueueId|string(uuid)|false|none|none|
-|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
-|actionId|string(uuid)|false|none|none|
-|action|[SbPAM.Models.Action](../Models/sbpam.models.action.md)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this action.|
+|actionQueueId|string(uuid)|false|none|Id of action queue which contains this action.|
+|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
+|actionId|string(uuid)|false|none|Id of action group action which was used to create this action queue action.|
+|action|[SbPAM.Models.Action](../Models/sbpam.models.action.md)|false|none|This model represents an action which is a member of an action group.|
 |status|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 |jobType|[SbPAM.Models.ActionJobType](../Models/sbpam.models.actionjobtype.md)|true|none|none|
-|statusDescription|string¦null|false|none|none|
-|result|string¦null|false|none|none|
-|results|string¦null|false|none|none|
-|actionQueueActionParameter|[[SbPAM.Models.ActionQueueActionParameter](../Models/sbpam.models.actionqueueactionparameter.md)]¦null|false|none|none|
-|actionLog|[[SbPAM.Models.ActionLog](../Models/sbpam.models.actionlog.md)]¦null|false|none|none|
-|actionServiceId|string(uuid)¦null|false|none|none|
-|registeredService|[SbPAM.Models.RegisteredService](../Models/sbpam.models.registeredservice.md)|false|none|none|
-|startTime|string(date-time)|false|none|none|
-|endTime|string(date-time)|false|none|none|
-|nodeId|string(uuid)|false|none|none|
-|createdDateTimeUtc|string(date-time)|false|none|none|
-|modifiedDateTimeUtc|string(date-time)|false|none|none|
-|heartbeatUtc|string(date-time)|false|none|none|
-|complete|boolean|false|none|none|
+|statusDescription|string¦null|false|none|Human readable description of the action status.|
+|result|string¦null|false|none|Json result.|
+|results|string¦null|false|none|Json results from previous steps.|
+|actionQueueActionParameter|[[SbPAM.Models.ActionQueueActionParameter](../Models/sbpam.models.actionqueueactionparameter.md)]¦null|false|none|Dynamic parameters associated with this action.<br>Note: These may override the static parameters saved with the action group action.|
+|actionLog|[[SbPAM.Models.ActionLog](../Models/sbpam.models.actionlog.md)]¦null|false|none|Log entries associated with the execution of this action queue action.|
+|actionServiceId|string(uuid)¦null|false|none|Id of action service which was selected to execute this action.|
+|registeredService|[SbPAM.Models.RegisteredService](../Models/sbpam.models.registeredservice.md)|false|none|This model represents a registration for an service.|
+|startTime|string(date-time)|false|none|When the job started|
+|endTime|string(date-time)|false|none|When the job finished|
+|nodeId|string(uuid)|false|none|The action service node id|
+|createdDateTimeUtc|string(date-time)|false|none|When the job was created|
+|modifiedDateTimeUtc|string(date-time)|false|none|When the job was modified|
+|heartbeatUtc|string(date-time)|false|none|Heartbeat is used by the scheduler service to determine if a action job has stalled etc.|
+|complete|boolean|false|none|Complete is set true when the action step has completed successfully or continue on failure|
 
 

@@ -11,11 +11,14 @@
 
 ```
 
+User role enums
+Leaving gaps in the enums so they can be ordered alphabetically when sorting
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|none|
+|*anonymous*|integer(int32)|false|none|User role enums<br>Leaving gaps in the enums so they can be ordered alphabetically when sorting|
 
 #### Enumerated Values
 

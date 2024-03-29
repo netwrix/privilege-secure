@@ -816,19 +816,22 @@
 
 ```
 
+This model represents dynamically associated with an action queue action
+    and then applied to an action in the action service.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|value|string¦null|false|none|none|
-|actionTemplateParameterId|string(uuid)|false|none|none|
-|actionTemplateParameter|[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)|false|none|none|
-|actionId|string(uuid)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this parameter.|
+|value|string¦null|false|none|Value for this parameter.|
+|actionTemplateParameterId|string(uuid)|false|none|Id of action template associated with this parameter.|
+|actionTemplateParameter|[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)|false|none|This model represents a template for a parameter associated with an action group action.|
+|actionId|string(uuid)|false|none|Id of action associated with this parameter.|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
-|actionQueueActionId|string(uuid)|false|none|none|
-|actionQueueAction|[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)|false|none|none|
+|actionQueueActionId|string(uuid)|false|none|Id of action queue action to which this parameter belongs.|
+|actionQueueAction|[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)|false|none|This model represents an action which is a member of an action queue and can be execute by and action service.|
 
 

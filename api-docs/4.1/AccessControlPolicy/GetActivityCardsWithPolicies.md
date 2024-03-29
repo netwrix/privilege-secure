@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/ActivityCardWithPolicies \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 
@@ -41,12 +41,12 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/Activity
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |managedAccountId|query|string(uuid)|false|Managed account id|
-|Skip|query|integer(int32)|false|none|
-|Take|query|integer(int32)|false|none|
-|OrderBy|query|string|false|none|
-|OrderDescending|query|boolean|false|none|
-|FilterText|query|string|false|none|
-|FilterColumns|query|array[string]|false|none|
+|Skip|query|integer(int32)|false|Start at this item (default: 0)|
+|Take|query|integer(int32)|false|Return this number of items (default: 100)|
+|OrderBy|query|string|false|Property name to order results by|
+|OrderDescending|query|boolean|false|Use descending sort order (default: false)|
+|FilterText|query|string|false|Filter by entries that contain this text. Properties match vary by endpoint.|
+|FilterColumns|query|array[string]|false|Columns to include in filter|
 |groupByPolicy|query|boolean|false|Group data by policy|
 |includeCount|query|boolean|false|Include counts (slower request)|
 |includeData|query|boolean|false|Include data (slower request)|
@@ -70,6 +70,27 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/Activity
       "managedAccountId": "98c25b84-2c06-4fcd-94c7-306443f45a3d",
       "totalResources": 0,
       "latestSessionActualStartUtc": "2019-08-24T14:15:22Z",
+      "customField1Name": "string",
+      "customField1Label": "string",
+      "customField1Description": "string",
+      "customField1Length": 0,
+      "customField1Options": "string",
+      "customField1CustomFieldDataType": "Integer",
+      "customField1Required": true,
+      "customField2Name": "string",
+      "customField2Label": "string",
+      "customField2Description": "string",
+      "customField2Length": 0,
+      "customField2Options": "string",
+      "customField2CustomFieldDataType": "Integer",
+      "customField2Required": true,
+      "customField3Name": "string",
+      "customField3Label": "string",
+      "customField3Description": "string",
+      "customField3Length": 0,
+      "customField3Options": "string",
+      "customField3CustomFieldDataType": "Integer",
+      "customField3Required": true,
       "policies": [
         {
           "activityId": "bdfd0655-55e6-45e6-8bbc-6ed31d3820b5",
@@ -80,7 +101,24 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/Activity
           "maxSessionLength": 0,
           "notesRequired": true,
           "ticketRequired": true,
-          "activityCard": {}
+          "activityCard": {},
+          "customFields": [
+            {
+              "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+              "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+              "customFieldNumber": 0,
+              "name": "string",
+              "label": "string",
+              "description": "string",
+              "options": "string",
+              "length": 0,
+              "customFieldDataType": "Integer",
+              "required": true,
+              "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+              "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+              "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+            }
+          ]
         }
       ],
       "policyId": "2f5573e6-5ba4-48f2-a75d-df99c936463b",

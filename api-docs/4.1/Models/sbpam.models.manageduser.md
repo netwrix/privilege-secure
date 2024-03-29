@@ -23,23 +23,23 @@
       "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
       "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
       "name": "string",
-      "distinguishedName": "string",
-      "ipAddress": "string",
-      "os": "string",
-      "version": "string",
-      "lsaLookupCache": "string",
-      "lastUpdatedDateTimeUtc": "2019-08-24T14:15:22Z",
-      "credentialId": "f568fec0-10b6-4b94-9daf-e62c50c9bf3e",
-      "hasSSH": true,
+      "distinguishedName": "CN=Host, CN=Computers, DC=example, DC=local",
+      "ipAddress": "192.168.1.1",
+      "os": "Windows Fake Edition",
+      "version": "10.4.1.1",
+      "lsaLookupCache": "10",
+      "lastUpdatedDateTimeUtc": "2024-03-27T18:25:43.511Z",
+      "credentialId": "61101f34-74f5-41a6-9405-73c2c91bd752",
+      "hasSSH": false,
       "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
       "activeDirectoryDomain": {
-        "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-        "name": "string",
-        "domainName": "string",
+        "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+        "name": "example",
+        "domainName": "example.local",
         "netBiosName": "string",
-        "domainController": "string",
-        "usnChanged": 0,
-        "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+        "domainController": "example-dc001.example.local",
+        "usnChanged": 12345,
+        "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
         "activeDirectoryDomainConfiguration": {
           "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
           "activeDirectoryDomain": [
@@ -67,7 +67,7 @@
           "createdDateTimeUtc": "2019-08-24T14:15:22Z",
           "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
         },
-        "functionalLevel": "string",
+        "functionalLevel": "Windows Server 2016",
         "activeDirectoryGroup": [
           {
             "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
@@ -197,28 +197,28 @@
             "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
           }
         ],
-        "objectSid": "string",
-        "maxRenewAge": 0,
-        "maxTicketAge": 0,
-        "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-        "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-        "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+        "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+        "maxRenewAge": 7,
+        "maxTicketAge": 10,
+        "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+        "createdDateTimeUtc": "20240101T05:07:08.555Z",
+        "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
       },
-      "dnsHostName": "string",
-      "netBiosName": "string",
+      "dnsHostName": "host.example.local",
+      "netBiosName": "HOST",
       "users": [
         {
           "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
           "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
           "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
           "activeDirectoryDomain": {
-            "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-            "name": "string",
-            "domainName": "string",
+            "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+            "name": "example",
+            "domainName": "example.local",
             "netBiosName": "string",
-            "domainController": "string",
-            "usnChanged": 0,
-            "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+            "domainController": "example-dc001.example.local",
+            "usnChanged": 12345,
+            "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
             "activeDirectoryDomainConfiguration": {
               "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
               "activeDirectoryDomain": [
@@ -246,7 +246,7 @@
               "createdDateTimeUtc": "2019-08-24T14:15:22Z",
               "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
             },
-            "functionalLevel": "string",
+            "functionalLevel": "Windows Server 2016",
             "activeDirectoryGroup": [
               {
                 "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
@@ -313,12 +313,12 @@
                 "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
               }
             ],
-            "objectSid": "string",
-            "maxRenewAge": 0,
-            "maxTicketAge": 0,
-            "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-            "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-            "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+            "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+            "maxRenewAge": 7,
+            "maxTicketAge": 10,
+            "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+            "createdDateTimeUtc": "20240101T05:07:08.555Z",
+            "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
           },
           "displayName": "string",
           "enabled": true,
@@ -421,22 +421,22 @@
                   ],
                   "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                   "activeDirectoryDomain": {
-                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                    "name": "string",
-                    "domainName": "string",
+                    "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                    "name": "example",
+                    "domainName": "example.local",
                     "netBiosName": "string",
-                    "domainController": "string",
-                    "usnChanged": 0,
-                    "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                    "domainController": "example-dc001.example.local",
+                    "usnChanged": 12345,
+                    "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                     "activeDirectoryDomainConfiguration": {},
-                    "functionalLevel": "string",
+                    "functionalLevel": "Windows Server 2016",
                     "activeDirectoryGroup": [],
-                    "objectSid": "string",
-                    "maxRenewAge": 0,
-                    "maxTicketAge": 0,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                    "maxRenewAge": 7,
+                    "maxTicketAge": 10,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   },
                   "groupTokenId": 0,
                   "name": "string",
@@ -565,22 +565,22 @@
                   ],
                   "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                   "activeDirectoryDomain": {
-                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                    "name": "string",
-                    "domainName": "string",
+                    "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                    "name": "example",
+                    "domainName": "example.local",
                     "netBiosName": "string",
-                    "domainController": "string",
-                    "usnChanged": 0,
-                    "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                    "domainController": "example-dc001.example.local",
+                    "usnChanged": 12345,
+                    "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                     "activeDirectoryDomainConfiguration": {},
-                    "functionalLevel": "string",
+                    "functionalLevel": "Windows Server 2016",
                     "activeDirectoryGroup": [],
-                    "objectSid": "string",
-                    "maxRenewAge": 0,
-                    "maxTicketAge": 0,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                    "maxRenewAge": 7,
+                    "maxTicketAge": 10,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   },
                   "groupTokenId": 0,
                   "name": "string",
@@ -618,13 +618,13 @@
                 "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
                 "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                 "activeDirectoryDomain": {
-                  "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                  "name": "string",
-                  "domainName": "string",
+                  "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                  "name": "example",
+                  "domainName": "example.local",
                   "netBiosName": "string",
-                  "domainController": "string",
-                  "usnChanged": 0,
-                  "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                  "domainController": "example-dc001.example.local",
+                  "usnChanged": 12345,
+                  "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                   "activeDirectoryDomainConfiguration": {
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                     "activeDirectoryDomain": [],
@@ -639,16 +639,16 @@
                     "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   },
-                  "functionalLevel": "string",
+                  "functionalLevel": "Windows Server 2016",
                   "activeDirectoryGroup": [
                     {}
                   ],
-                  "objectSid": "string",
-                  "maxRenewAge": 0,
-                  "maxTicketAge": 0,
-                  "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                  "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                  "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                  "maxRenewAge": 7,
+                  "maxTicketAge": 10,
+                  "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                  "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                  "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                 },
                 "displayName": "string",
                 "enabled": true,
@@ -788,13 +788,13 @@
                 ],
                 "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                 "activeDirectoryDomain": {
-                  "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                  "name": "string",
-                  "domainName": "string",
+                  "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                  "name": "example",
+                  "domainName": "example.local",
                   "netBiosName": "string",
-                  "domainController": "string",
-                  "usnChanged": 0,
-                  "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                  "domainController": "example-dc001.example.local",
+                  "usnChanged": 12345,
+                  "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                   "activeDirectoryDomainConfiguration": {
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                     "activeDirectoryDomain": [],
@@ -809,16 +809,16 @@
                     "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   },
-                  "functionalLevel": "string",
+                  "functionalLevel": "Windows Server 2016",
                   "activeDirectoryGroup": [
                     {}
                   ],
-                  "objectSid": "string",
-                  "maxRenewAge": 0,
-                  "maxTicketAge": 0,
-                  "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                  "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                  "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                  "maxRenewAge": 7,
+                  "maxTicketAge": 10,
+                  "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                  "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                  "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                 },
                 "groupTokenId": 0,
                 "name": "string",
@@ -967,13 +967,13 @@
               "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
               "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
               "activeDirectoryDomain": {
-                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                "name": "string",
-                "domainName": "string",
+                "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                "name": "example",
+                "domainName": "example.local",
                 "netBiosName": "string",
-                "domainController": "string",
-                "usnChanged": 0,
-                "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                "domainController": "example-dc001.example.local",
+                "usnChanged": 12345,
+                "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                 "activeDirectoryDomainConfiguration": {
                   "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                   "activeDirectoryDomain": [
@@ -992,7 +992,7 @@
                   "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                   "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                 },
-                "functionalLevel": "string",
+                "functionalLevel": "Windows Server 2016",
                 "activeDirectoryGroup": [
                   {
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
@@ -1019,12 +1019,12 @@
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   }
                 ],
-                "objectSid": "string",
-                "maxRenewAge": 0,
-                "maxTicketAge": 0,
-                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                "maxRenewAge": 7,
+                "maxTicketAge": 10,
+                "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
               },
               "displayName": "string",
               "enabled": true,
@@ -1202,13 +1202,13 @@
               ],
               "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
               "activeDirectoryDomain": {
-                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                "name": "string",
-                "domainName": "string",
+                "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                "name": "example",
+                "domainName": "example.local",
                 "netBiosName": "string",
-                "domainController": "string",
-                "usnChanged": 0,
-                "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                "domainController": "example-dc001.example.local",
+                "usnChanged": 12345,
+                "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                 "activeDirectoryDomainConfiguration": {
                   "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                   "activeDirectoryDomain": [
@@ -1227,16 +1227,16 @@
                   "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                   "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                 },
-                "functionalLevel": "string",
+                "functionalLevel": "Windows Server 2016",
                 "activeDirectoryGroup": [
                   {}
                 ],
-                "objectSid": "string",
-                "maxRenewAge": 0,
-                "maxTicketAge": 0,
-                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                "maxRenewAge": 7,
+                "maxTicketAge": 10,
+                "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
               },
               "groupTokenId": 0,
               "name": "string",
@@ -1290,22 +1290,22 @@
                   "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
                   "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                   "activeDirectoryDomain": {
-                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                    "name": "string",
-                    "domainName": "string",
+                    "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                    "name": "example",
+                    "domainName": "example.local",
                     "netBiosName": "string",
-                    "domainController": "string",
-                    "usnChanged": 0,
-                    "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                    "domainController": "example-dc001.example.local",
+                    "usnChanged": 12345,
+                    "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                     "activeDirectoryDomainConfiguration": {},
-                    "functionalLevel": "string",
+                    "functionalLevel": "Windows Server 2016",
                     "activeDirectoryGroup": [],
-                    "objectSid": "string",
-                    "maxRenewAge": 0,
-                    "maxTicketAge": 0,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                    "maxRenewAge": 7,
+                    "maxTicketAge": 10,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   },
                   "displayName": "string",
                   "enabled": true,
@@ -1373,22 +1373,22 @@
                   ],
                   "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                   "activeDirectoryDomain": {
-                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                    "name": "string",
-                    "domainName": "string",
+                    "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                    "name": "example",
+                    "domainName": "example.local",
                     "netBiosName": "string",
-                    "domainController": "string",
-                    "usnChanged": 0,
-                    "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                    "domainController": "example-dc001.example.local",
+                    "usnChanged": 12345,
+                    "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                     "activeDirectoryDomainConfiguration": {},
-                    "functionalLevel": "string",
+                    "functionalLevel": "Windows Server 2016",
                     "activeDirectoryGroup": [],
-                    "objectSid": "string",
-                    "maxRenewAge": 0,
-                    "maxTicketAge": 0,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                    "maxRenewAge": 7,
+                    "maxTicketAge": 10,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   },
                   "groupTokenId": 0,
                   "name": "string",
@@ -1442,13 +1442,13 @@
                 "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
                 "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                 "activeDirectoryDomain": {
-                  "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                  "name": "string",
-                  "domainName": "string",
+                  "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                  "name": "example",
+                  "domainName": "example.local",
                   "netBiosName": "string",
-                  "domainController": "string",
-                  "usnChanged": 0,
-                  "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                  "domainController": "example-dc001.example.local",
+                  "usnChanged": 12345,
+                  "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                   "activeDirectoryDomainConfiguration": {
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                     "activeDirectoryDomain": [],
@@ -1463,16 +1463,16 @@
                     "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   },
-                  "functionalLevel": "string",
+                  "functionalLevel": "Windows Server 2016",
                   "activeDirectoryGroup": [
                     {}
                   ],
-                  "objectSid": "string",
-                  "maxRenewAge": 0,
-                  "maxTicketAge": 0,
-                  "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                  "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                  "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                  "maxRenewAge": 7,
+                  "maxTicketAge": 10,
+                  "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                  "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                  "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                 },
                 "displayName": "string",
                 "enabled": true,
@@ -1575,13 +1575,13 @@
                 ],
                 "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                 "activeDirectoryDomain": {
-                  "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                  "name": "string",
-                  "domainName": "string",
+                  "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                  "name": "example",
+                  "domainName": "example.local",
                   "netBiosName": "string",
-                  "domainController": "string",
-                  "usnChanged": 0,
-                  "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                  "domainController": "example-dc001.example.local",
+                  "usnChanged": 12345,
+                  "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                   "activeDirectoryDomainConfiguration": {
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                     "activeDirectoryDomain": [],
@@ -1596,16 +1596,16 @@
                     "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   },
-                  "functionalLevel": "string",
+                  "functionalLevel": "Windows Server 2016",
                   "activeDirectoryGroup": [
                     {}
                   ],
-                  "objectSid": "string",
-                  "maxRenewAge": 0,
-                  "maxTicketAge": 0,
-                  "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                  "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                  "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                  "maxRenewAge": 7,
+                  "maxTicketAge": 10,
+                  "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                  "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                  "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                 },
                 "groupTokenId": 0,
                 "name": "string",
@@ -1634,13 +1634,13 @@
               "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
               "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
               "activeDirectoryDomain": {
-                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                "name": "string",
-                "domainName": "string",
+                "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                "name": "example",
+                "domainName": "example.local",
                 "netBiosName": "string",
-                "domainController": "string",
-                "usnChanged": 0,
-                "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                "domainController": "example-dc001.example.local",
+                "usnChanged": 12345,
+                "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                 "activeDirectoryDomainConfiguration": {
                   "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                   "activeDirectoryDomain": [
@@ -1659,7 +1659,7 @@
                   "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                   "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                 },
-                "functionalLevel": "string",
+                "functionalLevel": "Windows Server 2016",
                 "activeDirectoryGroup": [
                   {
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
@@ -1686,12 +1686,12 @@
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   }
                 ],
-                "objectSid": "string",
-                "maxRenewAge": 0,
-                "maxTicketAge": 0,
-                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                "maxRenewAge": 7,
+                "maxTicketAge": 10,
+                "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
               },
               "displayName": "string",
               "enabled": true,
@@ -1870,13 +1870,13 @@
               ],
               "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
               "activeDirectoryDomain": {
-                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                "name": "string",
-                "domainName": "string",
+                "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                "name": "example",
+                "domainName": "example.local",
                 "netBiosName": "string",
-                "domainController": "string",
-                "usnChanged": 0,
-                "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                "domainController": "example-dc001.example.local",
+                "usnChanged": 12345,
+                "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                 "activeDirectoryDomainConfiguration": {
                   "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                   "activeDirectoryDomain": [
@@ -1895,16 +1895,16 @@
                   "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                   "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                 },
-                "functionalLevel": "string",
+                "functionalLevel": "Windows Server 2016",
                 "activeDirectoryGroup": [
                   {}
                 ],
-                "objectSid": "string",
-                "maxRenewAge": 0,
-                "maxTicketAge": 0,
-                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                "maxRenewAge": 7,
+                "maxTicketAge": 10,
+                "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
               },
               "groupTokenId": 0,
               "name": "string",
@@ -1938,16 +1938,16 @@
         }
       ],
       "samaccountname": "string",
-      "isDomainController": true,
-      "isGlobalCatalog": true,
-      "usnChanged": 0,
-      "objectSid": "string",
-      "added": "2019-08-24T14:15:22Z",
-      "deleted": true,
-      "isVirtual": true,
-      "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-      "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-      "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+      "isDomainController": false,
+      "isGlobalCatalog": false,
+      "usnChanged": 12345,
+      "objectSid": "S-1-5-21-1234567890-1234567890-123456789-123456",
+      "added": "20240327T01:01:01.555Z",
+      "deleted": false,
+      "isVirtual": false,
+      "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+      "createdDateTimeUtc": "20240101T05:07:08.555Z",
+      "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
     },
     "hostScanHostId": "54804af1-3f95-48c4-a5ea-e5414ebf423e",
     "hostScanHost": {
@@ -3231,7 +3231,54 @@
           "createdDateTimeUtc": "2019-08-24T14:15:22Z",
           "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
         }
-      ]
+      ],
+      "customFields": [
+        {
+          "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+          "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+          "customFieldNumber": 0,
+          "name": "string",
+          "label": "string",
+          "description": "string",
+          "options": "string",
+          "length": 0,
+          "customFieldDataType": "Integer",
+          "required": true,
+          "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+          "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+          "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+        }
+      ],
+      "deleteAccount": true,
+      "sessionRetryInterval": 0,
+      "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+      "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+      "maxSessionLength": 0,
+      "allowSessionExtension": true,
+      "sessionExtensionMinutes": 0,
+      "sessionExtensionCount": 0,
+      "sessionMonitorInterval": 0,
+      "expirationTimeoutThreshold": 0,
+      "rdpProxyHost": "string",
+      "sshProxyHost": "string",
+      "sshScanDc": true,
+      "recordAudio": true,
+      "proxyAutoConnect": true,
+      "record": true,
+      "approvalTypeRequired": "Deny",
+      "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+      "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+      "monitorEntireSession": true,
+      "allowViewPassword": true,
+      "allowPasswordAccess": true,
+      "allowAutofillPassword": true,
+      "leaveInGroup": true,
+      "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+      "clearWebsiteDataAfterStop": true,
+      "clearWebsiteDataBeforeStart": true,
+      "notesRequired": true,
+      "ticketRequired": true,
+      "viewPasswordInSeconds": 0
     },
     "actionQueueId": "635ba7e7-b7ac-48d8-91a4-75a21871e523",
     "actionQueue": {
@@ -4057,7 +4104,40 @@
                   "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
                   "activityConfigurationSettings": [
                     {}
-                  ]
+                  ],
+                  "customFields": [
+                    {}
+                  ],
+                  "deleteAccount": true,
+                  "sessionRetryInterval": 0,
+                  "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+                  "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+                  "maxSessionLength": 0,
+                  "allowSessionExtension": true,
+                  "sessionExtensionMinutes": 0,
+                  "sessionExtensionCount": 0,
+                  "sessionMonitorInterval": 0,
+                  "expirationTimeoutThreshold": 0,
+                  "rdpProxyHost": "string",
+                  "sshProxyHost": "string",
+                  "sshScanDc": true,
+                  "recordAudio": true,
+                  "proxyAutoConnect": true,
+                  "record": true,
+                  "approvalTypeRequired": "Deny",
+                  "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+                  "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+                  "monitorEntireSession": true,
+                  "allowViewPassword": true,
+                  "allowPasswordAccess": true,
+                  "allowAutofillPassword": true,
+                  "leaveInGroup": true,
+                  "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+                  "clearWebsiteDataAfterStop": true,
+                  "clearWebsiteDataBeforeStart": true,
+                  "notesRequired": true,
+                  "ticketRequired": true,
+                  "viewPasswordInSeconds": 0
                 },
                 "priority": 0,
                 "isDisabled": true,
@@ -4199,15 +4279,15 @@
             "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
             "activeDirectoryDomain": [
               {
-                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                "name": "string",
-                "domainName": "string",
+                "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                "name": "example",
+                "domainName": "example.local",
                 "netBiosName": "string",
-                "domainController": "string",
-                "usnChanged": 0,
-                "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                "domainController": "example-dc001.example.local",
+                "usnChanged": 12345,
+                "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                 "activeDirectoryDomainConfiguration": {},
-                "functionalLevel": "string",
+                "functionalLevel": "Windows Server 2016",
                 "activeDirectoryGroup": [
                   {
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
@@ -4234,12 +4314,12 @@
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   }
                 ],
-                "objectSid": "string",
-                "maxRenewAge": 0,
-                "maxTicketAge": 0,
-                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                "maxRenewAge": 7,
+                "maxTicketAge": 10,
+                "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
               }
             ],
             "name": "string",
@@ -4248,24 +4328,24 @@
                 "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                 "name": "string",
                 "activeDirectoryDomain": {
-                  "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                  "name": "string",
-                  "domainName": "string",
+                  "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                  "name": "example",
+                  "domainName": "example.local",
                   "netBiosName": "string",
-                  "domainController": "string",
-                  "usnChanged": 0,
-                  "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                  "domainController": "example-dc001.example.local",
+                  "usnChanged": 12345,
+                  "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                   "activeDirectoryDomainConfiguration": {},
-                  "functionalLevel": "string",
+                  "functionalLevel": "Windows Server 2016",
                   "activeDirectoryGroup": [
                     {}
                   ],
-                  "objectSid": "string",
-                  "maxRenewAge": 0,
-                  "maxTicketAge": 0,
-                  "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                  "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                  "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                  "maxRenewAge": 7,
+                  "maxTicketAge": 10,
+                  "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                  "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                  "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                 },
                 "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
                 "activeDirectoryDomainConfiguration": {},
@@ -4323,7 +4403,54 @@
                 "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                 "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
               }
-            ]
+            ],
+            "customFields": [
+              {
+                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+                "customFieldNumber": 0,
+                "name": "string",
+                "label": "string",
+                "description": "string",
+                "options": "string",
+                "length": 0,
+                "customFieldDataType": "Integer",
+                "required": true,
+                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+              }
+            ],
+            "deleteAccount": true,
+            "sessionRetryInterval": 0,
+            "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+            "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+            "maxSessionLength": 0,
+            "allowSessionExtension": true,
+            "sessionExtensionMinutes": 0,
+            "sessionExtensionCount": 0,
+            "sessionMonitorInterval": 0,
+            "expirationTimeoutThreshold": 0,
+            "rdpProxyHost": "string",
+            "sshProxyHost": "string",
+            "sshScanDc": true,
+            "recordAudio": true,
+            "proxyAutoConnect": true,
+            "record": true,
+            "approvalTypeRequired": "Deny",
+            "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+            "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+            "monitorEntireSession": true,
+            "allowViewPassword": true,
+            "allowPasswordAccess": true,
+            "allowAutofillPassword": true,
+            "leaveInGroup": true,
+            "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+            "clearWebsiteDataAfterStop": true,
+            "clearWebsiteDataBeforeStart": true,
+            "notesRequired": true,
+            "ticketRequired": true,
+            "viewPasswordInSeconds": 0
           },
           "priority": 0,
           "isDisabled": true,
@@ -4587,7 +4714,40 @@
                   "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
                   "activityConfigurationSettings": [
                     {}
-                  ]
+                  ],
+                  "customFields": [
+                    {}
+                  ],
+                  "deleteAccount": true,
+                  "sessionRetryInterval": 0,
+                  "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+                  "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+                  "maxSessionLength": 0,
+                  "allowSessionExtension": true,
+                  "sessionExtensionMinutes": 0,
+                  "sessionExtensionCount": 0,
+                  "sessionMonitorInterval": 0,
+                  "expirationTimeoutThreshold": 0,
+                  "rdpProxyHost": "string",
+                  "sshProxyHost": "string",
+                  "sshScanDc": true,
+                  "recordAudio": true,
+                  "proxyAutoConnect": true,
+                  "record": true,
+                  "approvalTypeRequired": "Deny",
+                  "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+                  "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+                  "monitorEntireSession": true,
+                  "allowViewPassword": true,
+                  "allowPasswordAccess": true,
+                  "allowAutofillPassword": true,
+                  "leaveInGroup": true,
+                  "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+                  "clearWebsiteDataAfterStop": true,
+                  "clearWebsiteDataBeforeStart": true,
+                  "notesRequired": true,
+                  "ticketRequired": true,
+                  "viewPasswordInSeconds": 0
                 },
                 "platformId": "32a6e381-64f4-4911-86b6-3bf681b64d23",
                 "platform": {
@@ -4751,7 +4911,40 @@
                   "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
                   "activityConfigurationSettings": [
                     {}
-                  ]
+                  ],
+                  "customFields": [
+                    {}
+                  ],
+                  "deleteAccount": true,
+                  "sessionRetryInterval": 0,
+                  "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+                  "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+                  "maxSessionLength": 0,
+                  "allowSessionExtension": true,
+                  "sessionExtensionMinutes": 0,
+                  "sessionExtensionCount": 0,
+                  "sessionMonitorInterval": 0,
+                  "expirationTimeoutThreshold": 0,
+                  "rdpProxyHost": "string",
+                  "sshProxyHost": "string",
+                  "sshScanDc": true,
+                  "recordAudio": true,
+                  "proxyAutoConnect": true,
+                  "record": true,
+                  "approvalTypeRequired": "Deny",
+                  "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+                  "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+                  "monitorEntireSession": true,
+                  "allowViewPassword": true,
+                  "allowPasswordAccess": true,
+                  "allowAutofillPassword": true,
+                  "leaveInGroup": true,
+                  "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+                  "clearWebsiteDataAfterStop": true,
+                  "clearWebsiteDataBeforeStart": true,
+                  "notesRequired": true,
+                  "ticketRequired": true,
+                  "viewPasswordInSeconds": 0
                 },
                 "activityGroupActivities": [
                   {
@@ -6059,27 +6252,29 @@
 
 ```
 
+This model is used to manage a user.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|domainId|string(uuid)¦null|false|none|none|
-|hostId|string(uuid)¦null|false|none|none|
-|userId|string(uuid)¦null|false|none|none|
-|credentialId|string(uuid)¦null|false|none|none|
-|managedResourceId|string(uuid)|false|none|none|
-|managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this managed user.|
+|domainId|string(uuid)¦null|false|none|Id of domain associated with this managed user.|
+|hostId|string(uuid)¦null|false|none|Id of host associated with this managed user.|
+|userId|string(uuid)¦null|false|none|Id of user associated with this managed user.|
+|credentialId|string(uuid)¦null|false|none|ID of the actual credentials managed by this system|
+|managedResourceId|string(uuid)|false|none|Each managed user is associated with exactly one managed resource|
+|managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|This model represents a managed resource such as a Host.|
 |managedType|[SbPAM.Models.ManagedUserType](../Models/sbpam.models.managedusertype.md)|false|none|none|
-|verificationScheduleId|string(uuid)¦null|false|none|none|
+|verificationScheduleId|string(uuid)¦null|false|none|Id for the managed user verification schedule (can override platform, resource schedule id)|
 |verificationSchedule|[SbPAM.Models.ScheduledChangePolicy](../Models/sbpam.models.scheduledchangepolicy.md)|false|none|none|
 |passwordStatus|[SbPAM.Models.VerificationScanStatus](../Models/sbpam.models.verificationscanstatus.md)|false|none|none|
-|passwordComplexityPolicyId|string(uuid)¦null|false|none|none|
+|passwordComplexityPolicyId|string(uuid)¦null|false|none|Id for password complexity (can override platform, resource password policy id)|
 |passwordComplexityPolicy|[SbPAM.Models.PasswordComplexity](../Models/sbpam.models.passwordcomplexity.md)|false|none|none|
-|passwordLastCheckedUtc|string(date-time)¦null|false|none|none|
-|passwordNextChangeUtc|string(date-time)¦null|false|none|none|
-|actionQueueId|string(uuid)¦null|false|none|none|
-|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
+|passwordLastCheckedUtc|string(date-time)¦null|false|none|The last time a managed users password was changed|
+|passwordNextChangeUtc|string(date-time)¦null|false|none|The next time a managed users password is scheduled to change|
+|actionQueueId|string(uuid)¦null|false|none|Id of action queue to execute to managed this user.|
+|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

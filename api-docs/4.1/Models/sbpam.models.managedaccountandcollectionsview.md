@@ -23,11 +23,11 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|email|string¦null|false|none|none|
-|samAccountName|string¦null|false|none|none|
-|domain|string¦null|false|none|none|
+|id|string(uuid)|false|none|Account/Group/Collection Id|
+|name|string¦null|false|none|Account/Group/Collection Name|
+|email|string¦null|false|none|Account/Group/Collection Email|
+|samAccountName|string¦null|false|none|Account/Group/Collection SamAccountName|
+|domain|string¦null|false|none|Account/Group/Collection Domain|
 |entityType|[SbPAM.Models.ManagedAccountViewEntityTypeEnum](../Models/sbpam.models.managedaccountviewentitytypeenum.md)|false|none|none|
 |isReviewer|boolean|false|none|none|
 

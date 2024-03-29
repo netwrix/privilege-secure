@@ -23,19 +23,21 @@
 
 ```
 
+This model represents a token that can be used once to get a user token to impersonate a user.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|activitySessionId|string(uuid)|false|none|none|
-|managedAccountId|string(uuid)|false|none|none|
-|createdDateTimeUtc|string(date-time)|false|none|none|
-|expirationDate|string(date-time)|false|none|none|
-|revoked|boolean|false|none|none|
+|id|string(uuid)|false|none|Unique identifier for this token.|
+|name|string¦null|false|none|Name of the user to impersonate.|
+|activitySessionId|string(uuid)|false|none|SessionId|
+|managedAccountId|string(uuid)|false|none|ManagedAccountId|
+|createdDateTimeUtc|string(date-time)|false|none|When this token was created.|
+|expirationDate|string(date-time)|false|none|Expiration date/time for this token.|
+|revoked|boolean|false|none|True if this token has been revoked.|
 |videoToken|boolean|false|none|none|
-|createdBy|string(uuid)¦null|false|none|none|
+|createdBy|string(uuid)¦null|false|none|Id of logged in user who created this token.|
 |nodeId|string(uuid)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 

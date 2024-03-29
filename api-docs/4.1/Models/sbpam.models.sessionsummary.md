@@ -109,43 +109,43 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|hostId|string(uuid)¦null|false|none|none|
-|hostDisplayName|string¦null|false|none|none|
-|domainId|string(uuid)¦null|false|none|none|
-|domainName|string¦null|false|none|none|
-|userId|string(uuid)¦null|false|none|none|
-|userDisplayName|string¦null|false|none|none|
-|targetUserId|string(uuid)¦null|false|none|none|
-|targetUserDisplayName|string¦null|false|none|none|
-|canViewPassword|boolean|false|none|none|
-|canAutofillPassword|boolean|false|none|none|
-|viewPasswordInSeconds|integer(int32)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this session.|
+|hostId|string(uuid)¦null|false|none|Id of host associated with this session.|
+|hostDisplayName|string¦null|false|none|The display name for the host|
+|domainId|string(uuid)¦null|false|none|Id of domain associated with this session.|
+|domainName|string¦null|false|none|The display name for the host|
+|userId|string(uuid)¦null|false|none|Id of user associated with this session.|
+|userDisplayName|string¦null|false|none|The display for the user.|
+|targetUserId|string(uuid)¦null|false|none|Id of target user associated with this session.<br>Note: This may be a local user on the target.|
+|targetUserDisplayName|string¦null|false|none|The display for the target user.<br>Note: This may be a local user on the target.|
+|canViewPassword|boolean|false|none|If true caller can view the password for this session.|
+|canAutofillPassword|boolean|false|none|If true browser extension can autofill the password for this session.|
+|viewPasswordInSeconds|integer(int32)|false|none|Timeout period for displaying session password (if canViewPassword is true)|
 |recordAudio|boolean|false|none|none|
-|createdBy|string(uuid)¦null|false|none|none|
-|managedAccountId|string(uuid)¦null|false|none|none|
-|managedResourceId|string(uuid)¦null|false|none|none|
-|managedResourceName|string¦null|false|none|none|
-|managedResourceOs|string¦null|false|none|none|
-|managedResourceDisplayName|string¦null|false|none|none|
-|createdByDisplayName|string¦null|false|none|none|
-|startDateTimeUtc|string(date-time)¦null|false|none|none|
-|actualStartDateTimeUtc|string(date-time)¦null|false|none|none|
-|endDateTimeUtc|string(date-time)¦null|false|none|none|
-|actualEndDateTimeUtc|string(date-time)¦null|false|none|none|
-|durationInSeconds|integer(int32)|false|none|none|
-|createdDateTimeUtc|string(date-time)¦null|false|none|none|
-|expirationDateTimeUtc|string(date-time)¦null|false|none|none|
+|createdBy|string(uuid)¦null|false|none|Id of the user that created the session.|
+|managedAccountId|string(uuid)¦null|false|none|Id of managed user that created the session.|
+|managedResourceId|string(uuid)¦null|false|none|ID of the managed resource associated with the target host.|
+|managedResourceName|string¦null|false|none|Name of the managed resource associated with the target host.|
+|managedResourceOs|string¦null|false|none|Name of the managed resource associated with the target host.|
+|managedResourceDisplayName|string¦null|false|none|Optional display name of the managed resource associated with the target host.|
+|createdByDisplayName|string¦null|false|none|The display name of the user that created the session.|
+|startDateTimeUtc|string(date-time)¦null|false|none|Scheduled date/time when the session should start.|
+|actualStartDateTimeUtc|string(date-time)¦null|false|none|Actual date/time when the session started.|
+|endDateTimeUtc|string(date-time)¦null|false|none|Scheduled date/time when the session should end.|
+|actualEndDateTimeUtc|string(date-time)¦null|false|none|Actual date/time when the session ended.|
+|durationInSeconds|integer(int32)|false|none|Session Duration calculated into seconds|
+|createdDateTimeUtc|string(date-time)¦null|false|none|When this session was created.|
+|expirationDateTimeUtc|string(date-time)¦null|false|none|When this session will expire.|
 |sessionStatus|[SbPAM.Constants.ActionConstants+SessionStatus](../Models/sbpam.constants.actionconstants+sessionstatus.md)|false|none|none|
-|sessionStatusDescription|string¦null|false|none|none|
+|sessionStatusDescription|string¦null|false|none|ActivitySession status description|
 |status|[SbPAM.Models.SessionSummaryStatus](../Models/sbpam.models.sessionsummarystatus.md)|false|none|none|
-|statusMessage|string¦null|false|none|none|
-|loginDateTimeUtc|string(date-time)¦null|false|none|none|
+|statusMessage|string¦null|false|none|Information text that provides additional information about the status.|
+|loginDateTimeUtc|string(date-time)¦null|false|none|Last login date time.|
 |loginSessionState|[SbPAM.ActiveDirectory.Models.Enums.LoginSessionState](../Models/sbpam.activedirectory.models.enums.loginsessionstate.md)|false|none|none|
-|activityName|string¦null|false|none|none|
+|activityName|string¦null|false|none|The selected Activity for this Flip|
 |activityId|string(uuid)¦null|false|none|none|
 |activityType|[SbPAM.Models.ActivityType](../Models/sbpam.models.activitytype.md)|false|none|none|
-|connectionUri|string¦null|false|none|none|
+|connectionUri|string¦null|false|none|Uri for connect now icon.<br>RDP URL for RDP file download.<br>SSH URL for SSH is of the form ssh://username+activty+dnshostname@proxy|
 |platformId|string(uuid)|false|none|none|
 |platformName|string¦null|false|none|none|
 |userType|[SbPAM.Constants.SbPAMAccountType](../Models/sbpam.constants.sbpamaccounttype.md)|false|none|none|

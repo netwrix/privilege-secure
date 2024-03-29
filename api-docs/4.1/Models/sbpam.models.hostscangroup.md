@@ -1187,20 +1187,22 @@
 
 ```
 
+This model is used to store group information from a host scan.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|sid|string¦null|false|none|none|
-|unixId|integer(int32)¦null|false|none|none|
-|groupId|string(uuid)¦null|false|none|none|
-|hostScanHostId|string(uuid)|false|none|none|
-|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
-|hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](../Models/sbpam.models.hostscanusergroupjoin.md)]¦null|false|none|none|
-|hostScanGroupGroupJoin|[[SbPAM.Models.HostScanGroupGroupJoin](../Models/sbpam.models.hostscangroupgroupjoin.md)]¦null|false|none|none|
-|resourceObjectId|string(uuid)¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this group.|
+|name|string¦null|false|none|Name of this group|
+|sid|string¦null|false|none|Windows Security ID for group|
+|unixId|integer(int32)¦null|false|none|Unix id if this is a group on a Unix host.|
+|groupId|string(uuid)¦null|false|none|Id of group created/updated by this scan.|
+|hostScanHostId|string(uuid)|false|none|Id of host scan host to which this group belongs.|
+|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|This model is used to scan a host to obtain os type and version info.|
+|hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](../Models/sbpam.models.hostscanusergroupjoin.md)]¦null|false|none|Users which are in this group via join table.|
+|hostScanGroupGroupJoin|[[SbPAM.Models.HostScanGroupGroupJoin](../Models/sbpam.models.hostscangroupgroupjoin.md)]¦null|false|none|Groups which this group is a member of via join table.<br>Domain groups in local groups only.|
+|resourceObjectId|string(uuid)¦null|false|none|Unique object Id in resource context.|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

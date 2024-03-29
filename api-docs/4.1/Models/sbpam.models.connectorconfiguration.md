@@ -986,13 +986,15 @@
 
 ```
 
+This model represents integration connectors for Stealthbits products and available third-party apps.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|integrationConnector|[SbPAM.Models.IntegrationConnector](../Models/sbpam.models.integrationconnector.md)|false|none|none|
+|id|string(uuid)|false|none|Unique identifier for available connector.|
+|name|string¦null|false|none|Name for configuration type of connector.|
+|integrationConnector|[SbPAM.Models.IntegrationConnector](../Models/sbpam.models.integrationconnector.md)|false|none|This model represents integration connectors for Stealthbits products and available third-party apps.|
 |integrationConnectorTemplate|[SbPAM.Models.IntegrationConnectorTemplate](../Models/sbpam.models.integrationconnectortemplate.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

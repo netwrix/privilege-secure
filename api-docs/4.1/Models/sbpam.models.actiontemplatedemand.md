@@ -1116,16 +1116,22 @@
 
 ```
 
+This model represents a demand template that is used to find an action service
+    that can process a particular type of action.  This is done by searching for
+    this demand template using the template id associated with the action and
+    then matching this demand template's name and value against a property associated
+    with a registered action service.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|value|string¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this demand template.|
+|name|string¦null|false|none|Name of this demand template.|
+|value|string¦null|false|none|Value of this demand template.|
 |type|[SbPAM.Constants.ActionConstants+ActionServiceDemandType](../Models/sbpam.constants.actionconstants+actionservicedemandtype.md)|false|none|none|
-|actionTemplateId|string(uuid)|false|none|none|
-|actionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|none|
+|actionTemplateId|string(uuid)|false|none|Id of action template used to associate an action with this demand template.|
+|actionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|This model represents an action template that is associated with an action group action.<br>    The action template|
 |actionPackId|string(uuid)¦null|false|none|none|
 |actionPack|[SbPAM.Models.ActionPack](../Models/sbpam.models.actionpack.md)|false|none|none|
 |nodeId|string(uuid)|false|none|none|

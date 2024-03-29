@@ -758,20 +758,22 @@
 
 ```
 
+This model represents a registration for a remote service.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this service registration.|
 |type|[SbPAM.Models.RegisteredServiceType](../Models/sbpam.models.registeredservicetype.md)|false|none|none|
-|dnsHostName|string¦null|false|none|none|
-|credentialId|string(uuid)¦null|false|none|none|
-|serviceName|string¦null|false|none|none|
-|settingsFilePath|string¦null|false|none|none|
-|settingsFileContents|string¦null|false|none|none|
-|createdBy|string(uuid)¦null|false|none|none|
-|actionQueueId|string(uuid)¦null|false|none|none|
-|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
+|dnsHostName|string¦null|false|none|Host name for this service registration.|
+|credentialId|string(uuid)¦null|false|none|Id of credentials for host.|
+|serviceName|string¦null|false|none|Service name for this service registration.|
+|settingsFilePath|string¦null|false|none|Settings file path for this service registration.|
+|settingsFileContents|string¦null|false|none|Settings file contents for this service registration.|
+|createdBy|string(uuid)¦null|false|none|Id of logged in user who created this registration.|
+|actionQueueId|string(uuid)¦null|false|none|Id of action queue which registers this service.|
+|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

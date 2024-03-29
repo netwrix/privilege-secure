@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X PUT /api/v1/ManagedResource/WinRmHttps/{managedResourceId} \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 

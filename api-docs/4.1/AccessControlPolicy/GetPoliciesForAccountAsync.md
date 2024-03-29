@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/ManagedAccount/{managedAccountId} \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 
@@ -41,12 +41,12 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedA
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |managedAccountId|path|string(uuid)|true|none|
-|Skip|query|integer(int32)|false|none|
-|Take|query|integer(int32)|false|none|
-|OrderBy|query|string|false|none|
-|OrderDescending|query|boolean|false|none|
-|FilterText|query|string|false|none|
-|FilterColumns|query|array[string]|false|none|
+|Skip|query|integer(int32)|false|Start at this item (default: 0)|
+|Take|query|integer(int32)|false|Return this number of items (default: 100)|
+|OrderBy|query|string|false|Property name to order results by|
+|OrderDescending|query|boolean|false|Use descending sort order (default: false)|
+|FilterText|query|string|false|Filter by entries that contain this text. Properties match vary by endpoint.|
+|FilterColumns|query|array[string]|false|Columns to include in filter|
 |groupByPolicy|query|boolean|false|none|
 
 > Example responses
@@ -68,6 +68,27 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/ManagedA
       "managedAccountId": "98c25b84-2c06-4fcd-94c7-306443f45a3d",
       "totalResources": 0,
       "latestSessionActualStartUtc": "2019-08-24T14:15:22Z",
+      "customField1Name": "string",
+      "customField1Label": "string",
+      "customField1Description": "string",
+      "customField1Length": 0,
+      "customField1Options": "string",
+      "customField1CustomFieldDataType": "Integer",
+      "customField1Required": true,
+      "customField2Name": "string",
+      "customField2Label": "string",
+      "customField2Description": "string",
+      "customField2Length": 0,
+      "customField2Options": "string",
+      "customField2CustomFieldDataType": "Integer",
+      "customField2Required": true,
+      "customField3Name": "string",
+      "customField3Label": "string",
+      "customField3Description": "string",
+      "customField3Length": 0,
+      "customField3Options": "string",
+      "customField3CustomFieldDataType": "Integer",
+      "customField3Required": true,
       "policyId": "2f5573e6-5ba4-48f2-a75d-df99c936463b",
       "policyName": "string",
       "policyType": "Resource",

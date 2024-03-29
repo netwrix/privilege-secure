@@ -935,30 +935,32 @@
 
 ```
 
+This model is used to store user information from a host scan.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|displayName|string¦null|false|none|none|
-|samaccountname|string¦null|false|none|none|
-|lastLogonTimestamp|string(date-time)¦null|false|none|none|
-|sid|string¦null|false|none|none|
-|passwordHash|string¦null|false|none|none|
-|passwordChangedDateTimeUtc|string(date-time)¦null|false|none|none|
-|passwordExpirationDateTimeUtc|string(date-time)¦null|false|none|none|
-|unixId|integer(int32)¦null|false|none|none|
-|unixGroupId|integer(int32)¦null|false|none|none|
-|homeDirectory|string¦null|false|none|none|
-|shell|string¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this user.|
+|name|string¦null|false|none|Short name|
+|displayName|string¦null|false|none|Long name for this user.|
+|samaccountname|string¦null|false|none|SAM account name of user e.g. Domain\Username.|
+|lastLogonTimestamp|string(date-time)¦null|false|none|When this user last logged in.|
+|sid|string¦null|false|none|Windows Security ID for user|
+|passwordHash|string¦null|false|none|Hash of password from linux /etc/shadow|
+|passwordChangedDateTimeUtc|string(date-time)¦null|false|none|Time we last changed password.|
+|passwordExpirationDateTimeUtc|string(date-time)¦null|false|none|When does password expire?|
+|unixId|integer(int32)¦null|false|none|Unix id if this is a user on a Unix host.|
+|unixGroupId|integer(int32)¦null|false|none|Unix group id if this is a user on a Unix host.|
+|homeDirectory|string¦null|false|none|Home directory for user if this is a user on a Unix host.|
+|shell|string¦null|false|none|Shell for user if this is a user on a Unix host.|
 |privilege|[SbPAM.ActiveDirectory.Models.Enums.UserPrivilege](../Models/sbpam.activedirectory.models.enums.userprivilege.md)|false|none|none|
-|discoveredDateTimeUtc|string(date-time)¦null|false|none|none|
-|userId|string(uuid)¦null|false|none|none|
-|hostScanHostId|string(uuid)¦null|false|none|none|
-|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
-|hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](../Models/sbpam.models.hostscanusergroupjoin.md)]¦null|false|none|none|
-|resourceObjectId|string(uuid)¦null|false|none|none|
+|discoveredDateTimeUtc|string(date-time)¦null|false|none|Date time this user was last discovered.|
+|userId|string(uuid)¦null|false|none|Id of user created/updated by this scan.|
+|hostScanHostId|string(uuid)¦null|false|none|Id of host scan host to which this user belongs.<br>Note: Not set for domain users.|
+|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|This model is used to scan a host to obtain os type and version info.|
+|hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](../Models/sbpam.models.hostscanusergroupjoin.md)]¦null|false|none|Groups to which this user belongs via join table.|
+|resourceObjectId|string(uuid)¦null|false|none|Unique object Id in resource context.|
 |isDisabled|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

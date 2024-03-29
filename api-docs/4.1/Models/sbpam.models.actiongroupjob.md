@@ -1049,7 +1049,7 @@
 |actionGroupId|string(uuid)|false|none|none|
 |jobId|string(uuid)|false|none|none|
 |job|[SbPAM.Models.Job](../Models/sbpam.models.job.md)|false|none|none|
-|actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|none|
+|actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|This model represents a group of actions which can be performed<br>    in a particular order (by Action.ExecutionOrder) by an action service.|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

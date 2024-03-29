@@ -11,11 +11,13 @@
 
 ```
 
+Access certification task row status
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|none|
+|*anonymous*|integer(int32)|false|none|Access certification task row status|
 
 #### Enumerated Values
 

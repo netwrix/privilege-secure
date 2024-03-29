@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X POST /api/v1/ManagedResource/TestConnection/{resourceId} \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 

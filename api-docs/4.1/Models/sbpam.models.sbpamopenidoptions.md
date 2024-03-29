@@ -26,8 +26,8 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|clientId|string¦null|false|none|none|
-|authority|string¦null|false|none|none|
+|clientId|string¦null|false|none|Application client Id from the provider|
+|authority|string¦null|false|none|Uri for provider authorization|
 |login|[SbPAM.Models.SbPAMOpenIdLoginType](../Models/sbpam.models.sbpamopenidlogintype.md)|false|none|none|
 |userIdSource|[SbPAM.Models.SbPAMOpenIdUserIdSource](../Models/sbpam.models.sbpamopeniduseridsource.md)|false|none|none|
 |userIdSourceField|string¦null|false|none|none|

@@ -2606,30 +2606,32 @@
 
 ```
 
+This model represents an action which is a member of an action group.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|actionTemplateId|string(uuid)|false|none|none|
-|actionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|none|
-|actionGroupId|string(uuid)|false|none|none|
-|actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|none|
-|actionParameter|[[SbPAM.Models.ActionParameter](../Models/sbpam.models.actionparameter.md)]¦null|false|none|none|
-|continueOnFail|boolean|false|none|none|
-|executionOrder|integer(int32)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this action.|
+|actionTemplateId|string(uuid)|false|none|Id of template for this action.|
+|actionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|This model represents an action template that is associated with an action group action.<br>    The action template|
+|actionGroupId|string(uuid)|false|none|Id for action group that this action belongs to.|
+|actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|This model represents a group of actions which can be performed<br>    in a particular order (by Action.ExecutionOrder) by an action service.|
+|actionParameter|[[SbPAM.Models.ActionParameter](../Models/sbpam.models.actionparameter.md)]¦null|false|none|Parameters associated with this action.|
+|continueOnFail|boolean|false|none|If true then next action in action group will be executed<br>    even if this action fails.|
+|executionOrder|integer(int32)|false|none|This determines the order of execution of the actions<br>    in this action group.  Lowest value first.|
 |executionPath|string¦null|false|none|none|
-|timeout|integer(int32)¦null|false|none|none|
-|displayName|string¦null|false|none|none|
-|actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|none|
-|createdBy|string(uuid)¦null|false|none|none|
-|createdDateTimeUtc|string(date-time)|false|none|none|
-|lastModifiedBy|string(uuid)¦null|false|none|none|
-|modifiedDateTimeUtc|string(date-time)|false|none|none|
+|timeout|integer(int32)¦null|false|none|This defines a timeout for the action, in seconds,<br>    after which it will be failed if it hasn't completed.|
+|displayName|string¦null|false|none|Human readable description of this action.|
+|actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|Current action queues which refer to this action, if any.|
+|createdBy|string(uuid)¦null|false|none|Logged in user id.|
+|createdDateTimeUtc|string(date-time)|false|none|When this action was created.|
+|lastModifiedBy|string(uuid)¦null|false|none|Logged in user id.|
+|modifiedDateTimeUtc|string(date-time)|false|none|When this action was last modified.|
 |nodeId|string(uuid)|false|none|none|
 |classification|[SbPAM.Constants.ActionConstants+ActionClassification](../Models/sbpam.constants.actionconstants+actionclassification.md)|false|none|none|
-|pairedActionId|string(uuid)¦null|false|none|none|
-|pairedAction|[SbPAM.Models.Action](../Models/sbpam.models.action.md)|false|none|none|
+|pairedActionId|string(uuid)¦null|false|none|Reference to another action representing the end to this start or start to this end action|
+|pairedAction|[SbPAM.Models.Action](../Models/sbpam.models.action.md)|false|none|This model represents an action which is a member of an action group.|
 |isDeleted|boolean|false|none|none|
 |isDefault|boolean|false|none|none|
 |isUserModified|boolean|false|none|none|

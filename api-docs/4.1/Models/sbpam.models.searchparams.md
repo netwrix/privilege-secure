@@ -20,15 +20,17 @@
 
 ```
 
+Common search parameters for controllers
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|skip|integer(int32)|false|none|none|
-|take|integer(int32)|false|none|none|
-|orderBy|string¦null|false|none|none|
-|orderDescending|boolean|false|none|none|
-|filterText|string¦null|false|none|none|
-|filterColumns|[string]¦null|false|none|none|
+|skip|integer(int32)|false|none|Start at this item (default: 0)|
+|take|integer(int32)|false|none|Return this number of items (default: 100)|
+|orderBy|string¦null|false|none|Property name to order results by|
+|orderDescending|boolean|false|none|Use descending sort order (default: false)|
+|filterText|string¦null|false|none|Filter by entries that contain this text. Properties match vary by endpoint.|
+|filterColumns|[string]¦null|false|none|Columns to include in filter|
 
 

@@ -528,8 +528,8 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|hostScanGroupId|string(uuid)|false|none|none|
-|hostScanGroup|[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)|false|none|none|
-|hostScanGroupMemberId|string(uuid)|false|none|none|
+|hostScanGroupId|string(uuid)|false|none|Id of the parent group|
+|hostScanGroup|[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)|false|none|This model is used to store group information from a host scan.|
+|hostScanGroupMemberId|string(uuid)|false|none|Id of the member ActiveDirectoryGroup|
 
 

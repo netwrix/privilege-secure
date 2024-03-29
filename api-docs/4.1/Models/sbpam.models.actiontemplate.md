@@ -2249,27 +2249,30 @@
 
 ```
 
+This model represents an action template that is associated with an action group action.
+    The action template
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |createdBy|string(uuid)¦null|false|none|none|
 |lastModifiedBy|string(uuid)¦null|false|none|none|
-|id|string(uuid)|false|none|none|
-|displayName|string¦null|false|none|none|
-|description|string¦null|false|none|none|
-|newActionDisplayName|string¦null|false|none|none|
-|icon|string¦null|false|none|none|
-|definition|string¦null|false|none|none|
-|userDefined|boolean|false|none|none|
-|actionTemplateParameter|[[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)]¦null|false|none|none|
-|action|[[SbPAM.Models.Action](../Models/sbpam.models.action.md)]¦null|false|none|none|
-|actionTemplateDemand|[[SbPAM.Models.ActionTemplateDemand](../Models/sbpam.models.actiontemplatedemand.md)]¦null|false|none|none|
-|actionPackId|string(uuid)¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this template.|
+|displayName|string¦null|false|none|Name for this template.|
+|description|string¦null|false|none|Human readable description of this template.|
+|newActionDisplayName|string¦null|false|none|Optional alternative to DisplayName for populating new actions's .DisplayName<br>properties. This is also a template. It can include bracketed parameter names<br>to insert parameter vales (e.g., "Add User to '{GroupToUpdate}' Group").|
+|icon|string¦null|false|none|Icon for this template.|
+|definition|string¦null|false|none|Human readable definition of this template.|
+|userDefined|boolean|false|none|True if created by a user???|
+|actionTemplateParameter|[[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)]¦null|false|none|List of parameters defined for this template.|
+|action|[[SbPAM.Models.Action](../Models/sbpam.models.action.md)]¦null|false|none|List of actions derived from this template.|
+|actionTemplateDemand|[[SbPAM.Models.ActionTemplateDemand](../Models/sbpam.models.actiontemplatedemand.md)]¦null|false|none|List of action template demands derived from this template.|
+|actionPackId|string(uuid)¦null|false|none|Id of action pack which contains this template|
 |actionPack|[SbPAM.Models.ActionPack](../Models/sbpam.models.actionpack.md)|false|none|none|
 |classification|[SbPAM.Constants.ActionConstants+ActionClassification](../Models/sbpam.constants.actionconstants+actionclassification.md)|false|none|none|
-|pairedActionTemplateId|string(uuid)¦null|false|none|none|
-|pairedActionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|none|
+|pairedActionTemplateId|string(uuid)¦null|false|none|Reference to another template representing the end to this start or start to this end action|
+|pairedActionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|This model represents an action template that is associated with an action group action.<br>    The action template|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

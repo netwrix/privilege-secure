@@ -11,11 +11,13 @@
 
 ```
 
+The general category of this event (e.g., password update)
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|none|
+|*anonymous*|integer(int32)|false|none|The general category of this event (e.g., password update)|
 
 #### Enumerated Values
 

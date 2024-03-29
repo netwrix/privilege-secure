@@ -47,10 +47,10 @@
 |domainConfigId|string(uuid)¦null|false|none|none|
 |domainName|string¦null|false|none|none|
 |lastLogonTimestamp|string(date-time)¦null|false|none|none|
-|activeSessionCount|integer(int32)|false|none|none|
-|scheduledSessionCount|integer(int32)|false|none|none|
-|accessPolicyCount|integer(int32)|false|none|none|
-|certificateSerialNumber|string¦null|false|none|none|
+|activeSessionCount|integer(int32)|false|none|Number of active sessions found for this account. Active sessions are sessions<br>that are currently active or scheduled for the future.|
+|scheduledSessionCount|integer(int32)|false|none|Number of pending sessions found for this account.|
+|accessPolicyCount|integer(int32)|false|none|Number of access policies this account participates in.|
+|certificateSerialNumber|string¦null|false|none|Serial number required for certificate auth|
 |locked|boolean|false|none|none|
 |lockoutEnd|string(date-time)¦null|false|none|none|
 |isReviewer|boolean¦null|false|none|none|

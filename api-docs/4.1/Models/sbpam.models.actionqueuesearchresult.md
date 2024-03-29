@@ -33,15 +33,6 @@
   "managedResourceName": "string",
   "manageAccountId": "0c0b7e07-4be0-4190-9270-b24e3c08cedf",
   "managedAccountName": "string",
-  "currentStepId": "e3f37999-aa7c-4bbb-927b-f852bdd95c53",
-  "currentStep": 0,
-  "totalSteps": 0,
-  "pendingSteps": 0,
-  "queuedSteps": 0,
-  "runningSteps": 0,
-  "failedSteps": 0,
-  "cancelledSteps": 0,
-  "completedSteps": 0,
   "actionGroupName": "string"
 }
 
@@ -76,15 +67,6 @@
 |managedResourceName|string¦null|false|none|none|
 |manageAccountId|string(uuid)¦null|false|none|none|
 |managedAccountName|string¦null|false|none|none|
-|currentStepId|string(uuid)¦null|false|none|none|
-|currentStep|integer(int32)¦null|false|none|none|
-|totalSteps|integer(int32)|false|none|none|
-|pendingSteps|integer(int32)|false|none|none|
-|queuedSteps|integer(int32)|false|none|none|
-|runningSteps|integer(int32)|false|none|none|
-|failedSteps|integer(int32)|false|none|none|
-|cancelledSteps|integer(int32)|false|none|none|
-|completedSteps|integer(int32)|false|none|none|
 |actionGroupName|string¦null|false|none|none|
 
 

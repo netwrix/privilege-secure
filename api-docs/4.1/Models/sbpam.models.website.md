@@ -47,18 +47,20 @@
 
 ```
 
+This is the detail record for web-type manged resources
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|avatarUrl|string¦null|false|none|none|
-|activeDirectoryDomainId|string(uuid)¦null|false|none|none|
-|associatedResourceId|string(uuid)¦null|false|none|none|
-|logonUrl|string¦null|false|none|none|
-|uris|[[SbPAM.Models.WebsiteUri](../Models/sbpam.models.websiteuri.md)]¦null|false|none|none|
-|isVirtual|boolean|false|none|none|
+|id|string(uuid)|false|none|Unique Id|
+|name|string¦null|false|none|required - name of Website|
+|avatarUrl|string¦null|false|none|optional - URL to avatar image (size 96x96)|
+|activeDirectoryDomainId|string(uuid)¦null|false|none|required - Default to WellKnown Website Platform|
+|associatedResourceId|string(uuid)¦null|false|none|A ManagedResource entity representing the server that hosts this website|
+|logonUrl|string¦null|false|none|Where to send the browser for the user to get into the site; typically a login page|
+|uris|[[SbPAM.Models.WebsiteUri](../Models/sbpam.models.websiteuri.md)]¦null|false|none|List of whole URIs or match patterns that this website incorporates|
+|isVirtual|boolean|false|none|True if not a real website<br>Used for AzureAD tenants|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

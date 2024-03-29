@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X GET /api/v1/HostScanJob/Host/{hostScanHostId}/Stop \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 

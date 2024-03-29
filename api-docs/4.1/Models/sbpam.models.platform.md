@@ -103,13 +103,15 @@
 
 ```
 
+This model represents an platform on which a particular activity can be performed.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|description|string¦null|false|none|none|
+|id|string(uuid)|false|none|Unique identifier for this platform.|
+|name|string¦null|false|none|Name for this platform.|
+|description|string¦null|false|none|Description for this platform.|
 |builtInAccount|string¦null|false|none|none|
 |passwordComplexityPolicyId|string(uuid)¦null|false|none|none|
 |passwordComplexityPolicy|[SbPAM.Models.PasswordComplexity](../Models/sbpam.models.passwordcomplexity.md)|false|none|none|

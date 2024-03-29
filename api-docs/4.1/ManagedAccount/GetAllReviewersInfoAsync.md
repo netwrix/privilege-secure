@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X GET /api/v1/ManagedAccount/Reviewer/Info \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 
@@ -83,7 +83,54 @@ Differs from GetAllReviewersAsync only by return data type
               "createdDateTimeUtc": "2019-08-24T14:15:22Z",
               "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
             }
-          ]
+          ],
+          "customFields": [
+            {
+              "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+              "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+              "customFieldNumber": 0,
+              "name": "string",
+              "label": "string",
+              "description": "string",
+              "options": "string",
+              "length": 0,
+              "customFieldDataType": "Integer",
+              "required": true,
+              "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+              "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+              "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+            }
+          ],
+          "deleteAccount": true,
+          "sessionRetryInterval": 0,
+          "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+          "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+          "maxSessionLength": 0,
+          "allowSessionExtension": true,
+          "sessionExtensionMinutes": 0,
+          "sessionExtensionCount": 0,
+          "sessionMonitorInterval": 0,
+          "expirationTimeoutThreshold": 0,
+          "rdpProxyHost": "string",
+          "sshProxyHost": "string",
+          "sshScanDc": true,
+          "recordAudio": true,
+          "proxyAutoConnect": true,
+          "record": true,
+          "approvalTypeRequired": "Deny",
+          "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+          "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+          "monitorEntireSession": true,
+          "allowViewPassword": true,
+          "allowPasswordAccess": true,
+          "allowAutofillPassword": true,
+          "leaveInGroup": true,
+          "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+          "clearWebsiteDataAfterStop": true,
+          "clearWebsiteDataBeforeStart": true,
+          "notesRequired": true,
+          "ticketRequired": true,
+          "viewPasswordInSeconds": 0
         },
         "priority": 0,
         "isDisabled": true,
@@ -226,23 +273,23 @@ Differs from GetAllReviewersAsync only by return data type
                 "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                 "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
                 "name": "string",
-                "distinguishedName": "string",
-                "ipAddress": "string",
-                "os": "string",
-                "version": "string",
-                "lsaLookupCache": "string",
-                "lastUpdatedDateTimeUtc": "2019-08-24T14:15:22Z",
-                "credentialId": "f568fec0-10b6-4b94-9daf-e62c50c9bf3e",
-                "hasSSH": true,
+                "distinguishedName": "CN=Host, CN=Computers, DC=example, DC=local",
+                "ipAddress": "192.168.1.1",
+                "os": "Windows Fake Edition",
+                "version": "10.4.1.1",
+                "lsaLookupCache": "10",
+                "lastUpdatedDateTimeUtc": "2024-03-27T18:25:43.511Z",
+                "credentialId": "61101f34-74f5-41a6-9405-73c2c91bd752",
+                "hasSSH": false,
                 "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                 "activeDirectoryDomain": {
-                  "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                  "name": "string",
-                  "domainName": "string",
+                  "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                  "name": "example",
+                  "domainName": "example.local",
                   "netBiosName": "string",
-                  "domainController": "string",
-                  "usnChanged": 0,
-                  "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                  "domainController": "example-dc001.example.local",
+                  "usnChanged": 12345,
+                  "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                   "activeDirectoryDomainConfiguration": {
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                     "activeDirectoryDomain": [],
@@ -257,19 +304,19 @@ Differs from GetAllReviewersAsync only by return data type
                     "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   },
-                  "functionalLevel": "string",
+                  "functionalLevel": "Windows Server 2016",
                   "activeDirectoryGroup": [
                     {}
                   ],
-                  "objectSid": "string",
-                  "maxRenewAge": 0,
-                  "maxTicketAge": 0,
-                  "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                  "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                  "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                  "maxRenewAge": 7,
+                  "maxTicketAge": 10,
+                  "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                  "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                  "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                 },
-                "dnsHostName": "string",
-                "netBiosName": "string",
+                "dnsHostName": "host.example.local",
+                "netBiosName": "HOST",
                 "users": [
                   {
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
@@ -451,16 +498,16 @@ Differs from GetAllReviewersAsync only by return data type
                   }
                 ],
                 "samaccountname": "string",
-                "isDomainController": true,
-                "isGlobalCatalog": true,
-                "usnChanged": 0,
-                "objectSid": "string",
-                "added": "2019-08-24T14:15:22Z",
-                "deleted": true,
-                "isVirtual": true,
-                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                "isDomainController": false,
+                "isGlobalCatalog": false,
+                "usnChanged": 12345,
+                "objectSid": "S-1-5-21-1234567890-1234567890-123456789-123456",
+                "added": "20240327T01:01:01.555Z",
+                "deleted": false,
+                "isVirtual": false,
+                "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
               },
               "hostScanHostId": "54804af1-3f95-48c4-a5ea-e5414ebf423e",
               "hostScanHost": {
@@ -938,7 +985,54 @@ Differs from GetAllReviewersAsync only by return data type
                     "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   }
-                ]
+                ],
+                "customFields": [
+                  {
+                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                    "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+                    "customFieldNumber": 0,
+                    "name": "string",
+                    "label": "string",
+                    "description": "string",
+                    "options": "string",
+                    "length": 0,
+                    "customFieldDataType": "Integer",
+                    "required": true,
+                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  }
+                ],
+                "deleteAccount": true,
+                "sessionRetryInterval": 0,
+                "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+                "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+                "maxSessionLength": 0,
+                "allowSessionExtension": true,
+                "sessionExtensionMinutes": 0,
+                "sessionExtensionCount": 0,
+                "sessionMonitorInterval": 0,
+                "expirationTimeoutThreshold": 0,
+                "rdpProxyHost": "string",
+                "sshProxyHost": "string",
+                "sshScanDc": true,
+                "recordAudio": true,
+                "proxyAutoConnect": true,
+                "record": true,
+                "approvalTypeRequired": "Deny",
+                "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+                "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+                "monitorEntireSession": true,
+                "allowViewPassword": true,
+                "allowPasswordAccess": true,
+                "allowAutofillPassword": true,
+                "leaveInGroup": true,
+                "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+                "clearWebsiteDataAfterStop": true,
+                "clearWebsiteDataBeforeStart": true,
+                "notesRequired": true,
+                "ticketRequired": true,
+                "viewPasswordInSeconds": 0
               },
               "actionQueueId": "635ba7e7-b7ac-48d8-91a4-75a21871e523",
               "actionQueue": {
@@ -1303,22 +1397,22 @@ Differs from GetAllReviewersAsync only by return data type
                 "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                 "activeDirectoryDomain": [
                   {
-                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                    "name": "string",
-                    "domainName": "string",
+                    "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                    "name": "example",
+                    "domainName": "example.local",
                     "netBiosName": "string",
-                    "domainController": "string",
-                    "usnChanged": 0,
-                    "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                    "domainController": "example-dc001.example.local",
+                    "usnChanged": 12345,
+                    "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                     "activeDirectoryDomainConfiguration": {},
-                    "functionalLevel": "string",
+                    "functionalLevel": "Windows Server 2016",
                     "activeDirectoryGroup": [],
-                    "objectSid": "string",
-                    "maxRenewAge": 0,
-                    "maxTicketAge": 0,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                    "maxRenewAge": 7,
+                    "maxTicketAge": 10,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   }
                 ],
                 "name": "string",
@@ -1386,7 +1480,54 @@ Differs from GetAllReviewersAsync only by return data type
                     "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   }
-                ]
+                ],
+                "customFields": [
+                  {
+                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                    "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+                    "customFieldNumber": 0,
+                    "name": "string",
+                    "label": "string",
+                    "description": "string",
+                    "options": "string",
+                    "length": 0,
+                    "customFieldDataType": "Integer",
+                    "required": true,
+                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  }
+                ],
+                "deleteAccount": true,
+                "sessionRetryInterval": 0,
+                "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+                "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+                "maxSessionLength": 0,
+                "allowSessionExtension": true,
+                "sessionExtensionMinutes": 0,
+                "sessionExtensionCount": 0,
+                "sessionMonitorInterval": 0,
+                "expirationTimeoutThreshold": 0,
+                "rdpProxyHost": "string",
+                "sshProxyHost": "string",
+                "sshScanDc": true,
+                "recordAudio": true,
+                "proxyAutoConnect": true,
+                "record": true,
+                "approvalTypeRequired": "Deny",
+                "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+                "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+                "monitorEntireSession": true,
+                "allowViewPassword": true,
+                "allowPasswordAccess": true,
+                "allowAutofillPassword": true,
+                "leaveInGroup": true,
+                "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+                "clearWebsiteDataAfterStop": true,
+                "clearWebsiteDataBeforeStart": true,
+                "notesRequired": true,
+                "ticketRequired": true,
+                "viewPasswordInSeconds": 0
               },
               "platformId": "32a6e381-64f4-4911-86b6-3bf681b64d23",
               "platform": {
@@ -1575,7 +1716,54 @@ Differs from GetAllReviewersAsync only by return data type
                     "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   }
-                ]
+                ],
+                "customFields": [
+                  {
+                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                    "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+                    "customFieldNumber": 0,
+                    "name": "string",
+                    "label": "string",
+                    "description": "string",
+                    "options": "string",
+                    "length": 0,
+                    "customFieldDataType": "Integer",
+                    "required": true,
+                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  }
+                ],
+                "deleteAccount": true,
+                "sessionRetryInterval": 0,
+                "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+                "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+                "maxSessionLength": 0,
+                "allowSessionExtension": true,
+                "sessionExtensionMinutes": 0,
+                "sessionExtensionCount": 0,
+                "sessionMonitorInterval": 0,
+                "expirationTimeoutThreshold": 0,
+                "rdpProxyHost": "string",
+                "sshProxyHost": "string",
+                "sshScanDc": true,
+                "recordAudio": true,
+                "proxyAutoConnect": true,
+                "record": true,
+                "approvalTypeRequired": "Deny",
+                "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+                "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+                "monitorEntireSession": true,
+                "allowViewPassword": true,
+                "allowPasswordAccess": true,
+                "allowAutofillPassword": true,
+                "leaveInGroup": true,
+                "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+                "clearWebsiteDataAfterStop": true,
+                "clearWebsiteDataBeforeStart": true,
+                "notesRequired": true,
+                "ticketRequired": true,
+                "viewPasswordInSeconds": 0
               },
               "activityGroupActivities": [
                 {
@@ -2004,23 +2192,23 @@ Differs from GetAllReviewersAsync only by return data type
           "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
           "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
           "name": "string",
-          "distinguishedName": "string",
-          "ipAddress": "string",
-          "os": "string",
-          "version": "string",
-          "lsaLookupCache": "string",
-          "lastUpdatedDateTimeUtc": "2019-08-24T14:15:22Z",
-          "credentialId": "f568fec0-10b6-4b94-9daf-e62c50c9bf3e",
-          "hasSSH": true,
+          "distinguishedName": "CN=Host, CN=Computers, DC=example, DC=local",
+          "ipAddress": "192.168.1.1",
+          "os": "Windows Fake Edition",
+          "version": "10.4.1.1",
+          "lsaLookupCache": "10",
+          "lastUpdatedDateTimeUtc": "2024-03-27T18:25:43.511Z",
+          "credentialId": "61101f34-74f5-41a6-9405-73c2c91bd752",
+          "hasSSH": false,
           "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
           "activeDirectoryDomain": {
-            "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-            "name": "string",
-            "domainName": "string",
+            "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+            "name": "example",
+            "domainName": "example.local",
             "netBiosName": "string",
-            "domainController": "string",
-            "usnChanged": 0,
-            "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+            "domainController": "example-dc001.example.local",
+            "usnChanged": 12345,
+            "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
             "activeDirectoryDomainConfiguration": {
               "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
               "activeDirectoryDomain": [
@@ -2048,7 +2236,7 @@ Differs from GetAllReviewersAsync only by return data type
               "createdDateTimeUtc": "2019-08-24T14:15:22Z",
               "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
             },
-            "functionalLevel": "string",
+            "functionalLevel": "Windows Server 2016",
             "activeDirectoryGroup": [
               {
                 "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
@@ -2115,28 +2303,28 @@ Differs from GetAllReviewersAsync only by return data type
                 "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
               }
             ],
-            "objectSid": "string",
-            "maxRenewAge": 0,
-            "maxTicketAge": 0,
-            "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-            "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-            "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+            "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+            "maxRenewAge": 7,
+            "maxTicketAge": 10,
+            "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+            "createdDateTimeUtc": "20240101T05:07:08.555Z",
+            "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
           },
-          "dnsHostName": "string",
-          "netBiosName": "string",
+          "dnsHostName": "host.example.local",
+          "netBiosName": "HOST",
           "users": [
             {
               "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
               "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
               "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
               "activeDirectoryDomain": {
-                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                "name": "string",
-                "domainName": "string",
+                "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                "name": "example",
+                "domainName": "example.local",
                 "netBiosName": "string",
-                "domainController": "string",
-                "usnChanged": 0,
-                "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                "domainController": "example-dc001.example.local",
+                "usnChanged": 12345,
+                "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                 "activeDirectoryDomainConfiguration": {
                   "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                   "activeDirectoryDomain": [
@@ -2155,7 +2343,7 @@ Differs from GetAllReviewersAsync only by return data type
                   "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                   "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                 },
-                "functionalLevel": "string",
+                "functionalLevel": "Windows Server 2016",
                 "activeDirectoryGroup": [
                   {
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
@@ -2182,12 +2370,12 @@ Differs from GetAllReviewersAsync only by return data type
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   }
                 ],
-                "objectSid": "string",
-                "maxRenewAge": 0,
-                "maxTicketAge": 0,
-                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                "maxRenewAge": 7,
+                "maxTicketAge": 10,
+                "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
               },
               "displayName": "string",
               "enabled": true,
@@ -2540,22 +2728,22 @@ Differs from GetAllReviewersAsync only by return data type
                   "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
                   "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                   "activeDirectoryDomain": {
-                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                    "name": "string",
-                    "domainName": "string",
+                    "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                    "name": "example",
+                    "domainName": "example.local",
                     "netBiosName": "string",
-                    "domainController": "string",
-                    "usnChanged": 0,
-                    "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                    "domainController": "example-dc001.example.local",
+                    "usnChanged": 12345,
+                    "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                     "activeDirectoryDomainConfiguration": {},
-                    "functionalLevel": "string",
+                    "functionalLevel": "Windows Server 2016",
                     "activeDirectoryGroup": [],
-                    "objectSid": "string",
-                    "maxRenewAge": 0,
-                    "maxTicketAge": 0,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                    "maxRenewAge": 7,
+                    "maxTicketAge": 10,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   },
                   "displayName": "string",
                   "enabled": true,
@@ -2623,22 +2811,22 @@ Differs from GetAllReviewersAsync only by return data type
                   ],
                   "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                   "activeDirectoryDomain": {
-                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                    "name": "string",
-                    "domainName": "string",
+                    "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                    "name": "example",
+                    "domainName": "example.local",
                     "netBiosName": "string",
-                    "domainController": "string",
-                    "usnChanged": 0,
-                    "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                    "domainController": "example-dc001.example.local",
+                    "usnChanged": 12345,
+                    "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                     "activeDirectoryDomainConfiguration": {},
-                    "functionalLevel": "string",
+                    "functionalLevel": "Windows Server 2016",
                     "activeDirectoryGroup": [],
-                    "objectSid": "string",
-                    "maxRenewAge": 0,
-                    "maxTicketAge": 0,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                    "maxRenewAge": 7,
+                    "maxTicketAge": 10,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   },
                   "groupTokenId": 0,
                   "name": "string",
@@ -2789,22 +2977,22 @@ Differs from GetAllReviewersAsync only by return data type
                   "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
                   "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                   "activeDirectoryDomain": {
-                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                    "name": "string",
-                    "domainName": "string",
+                    "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                    "name": "example",
+                    "domainName": "example.local",
                     "netBiosName": "string",
-                    "domainController": "string",
-                    "usnChanged": 0,
-                    "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                    "domainController": "example-dc001.example.local",
+                    "usnChanged": 12345,
+                    "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                     "activeDirectoryDomainConfiguration": {},
-                    "functionalLevel": "string",
+                    "functionalLevel": "Windows Server 2016",
                     "activeDirectoryGroup": [],
-                    "objectSid": "string",
-                    "maxRenewAge": 0,
-                    "maxTicketAge": 0,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                    "maxRenewAge": 7,
+                    "maxTicketAge": 10,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   },
                   "displayName": "string",
                   "enabled": true,
@@ -2872,22 +3060,22 @@ Differs from GetAllReviewersAsync only by return data type
                   ],
                   "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                   "activeDirectoryDomain": {
-                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                    "name": "string",
-                    "domainName": "string",
+                    "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                    "name": "example",
+                    "domainName": "example.local",
                     "netBiosName": "string",
-                    "domainController": "string",
-                    "usnChanged": 0,
-                    "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                    "domainController": "example-dc001.example.local",
+                    "usnChanged": 12345,
+                    "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                     "activeDirectoryDomainConfiguration": {},
-                    "functionalLevel": "string",
+                    "functionalLevel": "Windows Server 2016",
                     "activeDirectoryGroup": [],
-                    "objectSid": "string",
-                    "maxRenewAge": 0,
-                    "maxTicketAge": 0,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                    "maxRenewAge": 7,
+                    "maxTicketAge": 10,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   },
                   "groupTokenId": 0,
                   "name": "string",
@@ -2904,16 +3092,16 @@ Differs from GetAllReviewersAsync only by return data type
             }
           ],
           "samaccountname": "string",
-          "isDomainController": true,
-          "isGlobalCatalog": true,
-          "usnChanged": 0,
-          "objectSid": "string",
-          "added": "2019-08-24T14:15:22Z",
-          "deleted": true,
-          "isVirtual": true,
-          "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-          "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-          "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+          "isDomainController": false,
+          "isGlobalCatalog": false,
+          "usnChanged": 12345,
+          "objectSid": "S-1-5-21-1234567890-1234567890-123456789-123456",
+          "added": "20240327T01:01:01.555Z",
+          "deleted": false,
+          "isVirtual": false,
+          "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+          "createdDateTimeUtc": "20240101T05:07:08.555Z",
+          "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
         },
         "hostScanHostId": "54804af1-3f95-48c4-a5ea-e5414ebf423e",
         "hostScanHost": {
@@ -3744,7 +3932,54 @@ Differs from GetAllReviewersAsync only by return data type
               "createdDateTimeUtc": "2019-08-24T14:15:22Z",
               "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
             }
-          ]
+          ],
+          "customFields": [
+            {
+              "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+              "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+              "customFieldNumber": 0,
+              "name": "string",
+              "label": "string",
+              "description": "string",
+              "options": "string",
+              "length": 0,
+              "customFieldDataType": "Integer",
+              "required": true,
+              "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+              "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+              "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+            }
+          ],
+          "deleteAccount": true,
+          "sessionRetryInterval": 0,
+          "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+          "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+          "maxSessionLength": 0,
+          "allowSessionExtension": true,
+          "sessionExtensionMinutes": 0,
+          "sessionExtensionCount": 0,
+          "sessionMonitorInterval": 0,
+          "expirationTimeoutThreshold": 0,
+          "rdpProxyHost": "string",
+          "sshProxyHost": "string",
+          "sshScanDc": true,
+          "recordAudio": true,
+          "proxyAutoConnect": true,
+          "record": true,
+          "approvalTypeRequired": "Deny",
+          "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+          "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+          "monitorEntireSession": true,
+          "allowViewPassword": true,
+          "allowPasswordAccess": true,
+          "allowAutofillPassword": true,
+          "leaveInGroup": true,
+          "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+          "clearWebsiteDataAfterStop": true,
+          "clearWebsiteDataBeforeStart": true,
+          "notesRequired": true,
+          "ticketRequired": true,
+          "viewPasswordInSeconds": 0
         },
         "actionQueueId": "635ba7e7-b7ac-48d8-91a4-75a21871e523",
         "actionQueue": {
@@ -4297,22 +4532,22 @@ Differs from GetAllReviewersAsync only by return data type
                 "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                 "activeDirectoryDomain": [
                   {
-                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-                    "name": "string",
-                    "domainName": "string",
+                    "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+                    "name": "example",
+                    "domainName": "example.local",
                     "netBiosName": "string",
-                    "domainController": "string",
-                    "usnChanged": 0,
-                    "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+                    "domainController": "example-dc001.example.local",
+                    "usnChanged": 12345,
+                    "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
                     "activeDirectoryDomainConfiguration": {},
-                    "functionalLevel": "string",
+                    "functionalLevel": "Windows Server 2016",
                     "activeDirectoryGroup": [],
-                    "objectSid": "string",
-                    "maxRenewAge": 0,
-                    "maxTicketAge": 0,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+                    "maxRenewAge": 7,
+                    "maxTicketAge": 10,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   }
                 ],
                 "name": "string",
@@ -4377,7 +4612,54 @@ Differs from GetAllReviewersAsync only by return data type
                     "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                     "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
                   }
-                ]
+                ],
+                "customFields": [
+                  {
+                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                    "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+                    "customFieldNumber": 0,
+                    "name": "string",
+                    "label": "string",
+                    "description": "string",
+                    "options": "string",
+                    "length": 0,
+                    "customFieldDataType": "Integer",
+                    "required": true,
+                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  }
+                ],
+                "deleteAccount": true,
+                "sessionRetryInterval": 0,
+                "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+                "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+                "maxSessionLength": 0,
+                "allowSessionExtension": true,
+                "sessionExtensionMinutes": 0,
+                "sessionExtensionCount": 0,
+                "sessionMonitorInterval": 0,
+                "expirationTimeoutThreshold": 0,
+                "rdpProxyHost": "string",
+                "sshProxyHost": "string",
+                "sshScanDc": true,
+                "recordAudio": true,
+                "proxyAutoConnect": true,
+                "record": true,
+                "approvalTypeRequired": "Deny",
+                "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+                "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+                "monitorEntireSession": true,
+                "allowViewPassword": true,
+                "allowPasswordAccess": true,
+                "allowAutofillPassword": true,
+                "leaveInGroup": true,
+                "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+                "clearWebsiteDataAfterStop": true,
+                "clearWebsiteDataBeforeStart": true,
+                "notesRequired": true,
+                "ticketRequired": true,
+                "viewPasswordInSeconds": 0
               },
               "priority": 0,
               "isDisabled": true,
@@ -4864,78 +5146,122 @@ Status Code **200**
 |» samaccountname|string¦null|false|none|none|
 |» email|string¦null|false|none|none|
 |» mfaConnectorId|string(uuid)¦null|false|none|none|
-|» policies|[[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)]¦null|false|none|none|
-|»» id|string(uuid)|false|none|none|
-|»» name|string¦null|false|none|none|
-|»» description|string¦null|false|none|none|
-|»» activityConfigurationId|string(uuid)¦null|false|none|none|
-|»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|none|
-|»»» id|string(uuid)|false|none|none|
-|»»» name|string¦null|false|none|none|
-|»»» description|string¦null|false|none|none|
+|» policies|[[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)]¦null|false|none|[This model represents a policy which can be associated with<br>    an elevation session.<br>Policies are matched to a particular group, user and host and sorted by priority<br>    to determine which policy to use.]|
+|»» id|string(uuid)|false|none|Unique id and DB key for this item.|
+|»» name|string¦null|false|none|Name of this policy.|
+|»» description|string¦null|false|none|Human readable description of this policy.|
+|»» activityConfigurationId|string(uuid)¦null|false|none|Id of configuration collection for this policy.|
+|»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|This model represents a collection of settings for running an activity.|
+|»»» id|string(uuid)|false|none|Unique id for this collection.|
+|»»» name|string¦null|false|none|Name for this collection of configuration settings.|
+|»»» description|string¦null|false|none|Description of the collection.|
 |»»» type|[SbPAM.Models.ActivityConfigurationType](../Models/sbpam.models.activityconfigurationtype.md)(int32)|false|none|none|
-|»»» createdBy|string(uuid)¦null|false|none|none|
-|»»» modifiedBy|string(uuid)¦null|false|none|none|
-|»»» createdDateTimeUtc|string(date-time)|false|none|none|
-|»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
+|»»» createdBy|string(uuid)¦null|false|none|Id of user that created this collection.|
+|»»» modifiedBy|string(uuid)¦null|false|none|Id of user that modified this collection.|
+|»»» createdDateTimeUtc|string(date-time)|false|none|Creation date time in UTC|
+|»»» modifiedDateTimeUtc|string(date-time)|false|none|Modified date time in UTC|
 |»»» isDefault|boolean|false|none|none|
 |»»» isDeleted|boolean|false|none|none|
 |»»» isUserModified|boolean|false|none|none|
 |»»» nodeId|string(uuid)|false|none|none|
-|»»» activityConfigurationSettings|[[SbPAM.Models.ActivityConfigurationSetting](../Models/sbpam.models.activityconfigurationsetting.md)]¦null|false|none|none|
-|»»»» id|string(uuid)|false|none|none|
-|»»»» name|string¦null|false|none|none|
-|»»»» key|string¦null|false|none|none|
-|»»»» value|string¦null|false|none|none|
+|»»» activityConfigurationSettings|[[SbPAM.Models.ActivityConfigurationSetting](../Models/sbpam.models.activityconfigurationsetting.md)]¦null|false|none|Settings which are part of this collection.|
+|»»»» id|string(uuid)|false|none|Unique id for this setting.|
+|»»»» name|string¦null|false|none|Display Name for this configuration setting.|
+|»»»» key|string¦null|false|none|Key for this setting.|
+|»»»» value|string¦null|false|none|Value for this setting.|
 |»»»» type|[SbPAM.Models.ActivityConfigurationSettingType](../Models/sbpam.models.activityconfigurationsettingtype.md)(int32)|false|none|none|
-|»»»» activityConfigurationId|string(uuid)|false|none|none|
+|»»»» activityConfigurationId|string(uuid)|false|none|Id of configuration collection to which this setting belongs.|
 |»»»» nodeId|string(uuid)|false|none|none|
 |»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»» priority|integer(int32)|false|none|none|
-|»» isDisabled|boolean|false|none|none|
-|»» isDeleted|boolean|false|none|none|
+|»»» customFields|[[SbPAM.Models.CustomField](../Models/sbpam.models.customfield.md)]¦null|false|none|none|
+|»»»» id|string(uuid)|false|none|none|
+|»»»» activityConfigurationId|string(uuid)|false|none|none|
+|»»»» customFieldNumber|integer(int32)|false|none|none|
+|»»»» name|string¦null|false|none|none|
+|»»»» label|string¦null|false|none|none|
+|»»»» description|string¦null|false|none|none|
+|»»»» options|string¦null|false|none|none|
+|»»»» length|integer(int32)¦null|false|none|none|
+|»»»» customFieldDataType|[SbPAM.Models.CustomFieldDataType](../Models/sbpam.models.customfielddatatype.md)(int32)|false|none|none|
+|»»»» required|boolean|false|none|none|
+|»»»» nodeId|string(uuid)|false|none|none|
+|»»»» createdDateTimeUtc|string(date-time)|false|none|none|
+|»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
+|»»» deleteAccount|boolean|false|none|none|
+|»»» sessionRetryInterval|integer(int32)¦null|false|none|none|
+|»»» approvedWorkflowEmailTemplateId|string(uuid)¦null|false|none|none|
+|»»» notifyApproversWorkflowEmailTemplateId|string(uuid)¦null|false|none|none|
+|»»» maxSessionLength|integer(int32)¦null|false|none|none|
+|»»» allowSessionExtension|boolean|false|none|none|
+|»»» sessionExtensionMinutes|integer(int32)¦null|false|none|none|
+|»»» sessionExtensionCount|integer(int32)¦null|false|none|none|
+|»»» sessionMonitorInterval|integer(int32)¦null|false|none|none|
+|»»» expirationTimeoutThreshold|integer(int32)¦null|false|none|none|
+|»»» rdpProxyHost|string¦null|false|none|none|
+|»»» sshProxyHost|string¦null|false|none|none|
+|»»» sshScanDc|boolean|false|none|none|
+|»»» recordAudio|boolean|false|none|none|
+|»»» proxyAutoConnect|boolean|false|none|none|
+|»»» record|boolean|false|none|none|
+|»»» approvalTypeRequired|[SbPAM.Models.ApprovalType](../Models/sbpam.models.approvaltype.md)(int32)|false|none|none|
+|»»» approvalWorkflowId|string(uuid)¦null|false|none|none|
+|»»» approvalWorkflowEmailTemplateId|string(uuid)¦null|false|none|none|
+|»»» monitorEntireSession|boolean|false|none|none|
+|»»» allowViewPassword|boolean|false|none|none|
+|»»» allowPasswordAccess|boolean|false|none|none|
+|»»» allowAutofillPassword|boolean|false|none|none|
+|»»» leaveInGroup|boolean|false|none|none|
+|»»» activityTokenComplexity|string(uuid)¦null|false|none|none|
+|»»» clearWebsiteDataAfterStop|boolean|false|none|none|
+|»»» clearWebsiteDataBeforeStart|boolean|false|none|none|
+|»»» notesRequired|boolean|false|none|none|
+|»»» ticketRequired|boolean|false|none|none|
+|»»» viewPasswordInSeconds|integer(int32)¦null|false|none|none|
+|»» priority|integer(int32)|false|none|Priority of this policy relative to other matching policies.<br>Note: 0 is the lowest priority.|
+|»» isDisabled|boolean|false|none|True if this policy has been disabled.|
+|»» isDeleted|boolean|false|none|True if this policy has been deleted.|
 |»» isDefault|boolean|false|none|none|
 |»» isUserModified|boolean|false|none|none|
-|»» managedAccountPolicyJoin|[[SbPAM.Models.ManagedAccountPolicyJoin](../Models/sbpam.models.managedaccountpolicyjoin.md)]¦null|false|none|none|
-|»»» managedAccountId|string(uuid)|false|none|none|
-|»»» managedAccount|[SbPAM.Models.ManagedAccount](../Models/sbpam.models.managedaccount.md)|false|none|none|
-|»»»» id|string(uuid)|false|none|none|
-|»»»» name|string¦null|false|none|none|
+|»» managedAccountPolicyJoin|[[SbPAM.Models.ManagedAccountPolicyJoin](../Models/sbpam.models.managedaccountpolicyjoin.md)]¦null|false|none|Managed account(s) referenced by this policy via join table.|
+|»»» managedAccountId|string(uuid)|false|none|Id of managed account.|
+|»»» managedAccount|[SbPAM.Models.ManagedAccount](../Models/sbpam.models.managedaccount.md)|false|none|This model represents a managed account.|
+|»»»» id|string(uuid)|false|none|Unique id and DB key for this account.|
+|»»»» name|string¦null|false|none|Name of this user.|
 |»»»» type|[SbPAM.Models.ManagedAccountType](../Models/sbpam.models.managedaccounttype.md)(int32)|false|none|none|
-|»»»» locked|boolean|false|none|none|
-|»»»» userId|string(uuid)¦null|false|none|none|
-|»»»» managedAccountJoin|[[SbPAM.Models.ManagedAccountJoin](../Models/sbpam.models.managedaccountjoin.md)]¦null|false|none|none|
-|»»»»» managedAccountId|string(uuid)|false|none|none|
-|»»»»» managedAccount|[SbPAM.Models.ManagedAccount](../Models/sbpam.models.managedaccount.md)|false|none|none|
-|»»»»» managedAccountGroupId|string(uuid)|false|none|none|
-|»»»»» managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](../Models/sbpam.models.managedaccountgroup.md)|false|none|none|
-|»»»»»» id|string(uuid)|false|none|none|
-|»»»»»» name|string¦null|false|none|none|
+|»»»» locked|boolean|false|none|Activity Lock - while true prevents from creating new activities|
+|»»»» userId|string(uuid)¦null|false|none|AD user id associated with this user.|
+|»»»» managedAccountJoin|[[SbPAM.Models.ManagedAccountJoin](../Models/sbpam.models.managedaccountjoin.md)]¦null|false|none|Groups to which this account belongs via join table.|
+|»»»»» managedAccountId|string(uuid)|false|none|Id of managed account.|
+|»»»»» managedAccount|[SbPAM.Models.ManagedAccount](../Models/sbpam.models.managedaccount.md)|false|none|This model represents a managed account.|
+|»»»»» managedAccountGroupId|string(uuid)|false|none|Id of managed account group.|
+|»»»»» managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](../Models/sbpam.models.managedaccountgroup.md)|false|none|This model represents a group of managed accounts.|
+|»»»»»» id|string(uuid)|false|none|Unique id and DB key for this group.|
+|»»»»»» name|string¦null|false|none|Name of this group.|
 |»»»»»» type|[SbPAM.Models.ManagedAccountGroupType](../Models/sbpam.models.managedaccountgrouptype.md)(int32)|false|none|none|
-|»»»»»» groupId|string(uuid)¦null|false|none|none|
-|»»»»»» mfaConnectorId|string(uuid)¦null|false|none|none|
-|»»»»»» isReviewer|boolean|false|none|none|
-|»»»»»» managedAccountJoin|[[SbPAM.Models.ManagedAccountJoin](../Models/sbpam.models.managedaccountjoin.md)]¦null|false|none|none|
-|»»»»»» managedAccountGroupPolicyJoin|[[SbPAM.Models.ManagedAccountGroupPolicyJoin](../Models/sbpam.models.managedaccountgrouppolicyjoin.md)]¦null|false|none|none|
-|»»»»»»» managedAccountGroupId|string(uuid)|false|none|none|
-|»»»»»»» managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](../Models/sbpam.models.managedaccountgroup.md)|false|none|none|
-|»»»»»»» accessControlPolicyId|string(uuid)|false|none|none|
-|»»»»»»» accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|none|
-|»»»»»» groupCollectionJoin|[[SbPAM.Models.GroupCollectionJoin](../Models/sbpam.models.groupcollectionjoin.md)]¦null|false|read-only|none|
-|»»»»»»» managedAccountGroupId|string(uuid)|false|none|none|
-|»»»»»»» managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](../Models/sbpam.models.managedaccountgroup.md)|false|none|none|
-|»»»»»»» userAndGroupCollectionId|string(uuid)|false|none|none|
+|»»»»»» groupId|string(uuid)¦null|false|none|AD group id if this is an active directory group|
+|»»»»»» mfaConnectorId|string(uuid)¦null|false|none|Alternate MFA provider for members of this group. Override this at the User level.|
+|»»»»»» isReviewer|boolean|false|none|Is assigned reviewer role (for AccessCertification)|
+|»»»»»» managedAccountJoin|[[SbPAM.Models.ManagedAccountJoin](../Models/sbpam.models.managedaccountjoin.md)]¦null|false|none|Managed accounts in this group via join table.|
+|»»»»»» managedAccountGroupPolicyJoin|[[SbPAM.Models.ManagedAccountGroupPolicyJoin](../Models/sbpam.models.managedaccountgrouppolicyjoin.md)]¦null|false|none|Policies which reference this account group via join table.|
+|»»»»»»» managedAccountGroupId|string(uuid)|false|none|Id of managed account group.|
+|»»»»»»» managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](../Models/sbpam.models.managedaccountgroup.md)|false|none|This model represents a group of managed accounts.|
+|»»»»»»» accessControlPolicyId|string(uuid)|false|none|Id of access control policy.|
+|»»»»»»» accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|This model represents a policy which can be associated with<br>    an elevation session.<br>Policies are matched to a particular group, user and host and sorted by priority<br>    to determine which policy to use.|
+|»»»»»» groupCollectionJoin|[[SbPAM.Models.GroupCollectionJoin](../Models/sbpam.models.groupcollectionjoin.md)]¦null|false|read-only|This model is used to model the many to many relationship between managed account groups and user collections.|
+|»»»»»»» managedAccountGroupId|string(uuid)|false|none|Id of Managed Account Group.|
+|»»»»»»» managedAccountGroup|[SbPAM.Models.ManagedAccountGroup](../Models/sbpam.models.managedaccountgroup.md)|false|none|This model represents a group of managed accounts.|
+|»»»»»»» userAndGroupCollectionId|string(uuid)|false|none|Id of User Collection.|
 |»»»»»»» userAndGroupCollection|[SbPAM.Models.UserAndGroupCollection](../Models/sbpam.models.userandgroupcollection.md)|false|none|none|
 |»»»»»»»» id|string(uuid)|false|none|none|
 |»»»»»»»» name|string¦null|false|none|none|
 |»»»»»»»» description|string¦null|false|none|none|
-|»»»»»»»» userCollectionJoin|[[SbPAM.Models.UserCollectionJoin](../Models/sbpam.models.usercollectionjoin.md)]¦null|false|read-only|none|
-|»»»»»»»»» managedAccountId|string(uuid)|false|none|none|
-|»»»»»»»»» managedAccount|[SbPAM.Models.ManagedAccount](../Models/sbpam.models.managedaccount.md)|false|none|none|
-|»»»»»»»»» userAndGroupCollectionId|string(uuid)|false|none|none|
+|»»»»»»»» userCollectionJoin|[[SbPAM.Models.UserCollectionJoin](../Models/sbpam.models.usercollectionjoin.md)]¦null|false|read-only|This model is used to model the many to many relationship between managed accounts and user collections.|
+|»»»»»»»»» managedAccountId|string(uuid)|false|none|Id of Managed Account.|
+|»»»»»»»»» managedAccount|[SbPAM.Models.ManagedAccount](../Models/sbpam.models.managedaccount.md)|false|none|This model represents a managed account.|
+|»»»»»»»»» userAndGroupCollectionId|string(uuid)|false|none|Id of User Collection.|
 |»»»»»»»»» userAndGroupCollection|[SbPAM.Models.UserAndGroupCollection](../Models/sbpam.models.userandgroupcollection.md)|false|none|none|
-|»»»»»»»» groupCollectionJoin|[[SbPAM.Models.GroupCollectionJoin](../Models/sbpam.models.groupcollectionjoin.md)]¦null|false|read-only|none|
+|»»»»»»»» groupCollectionJoin|[[SbPAM.Models.GroupCollectionJoin](../Models/sbpam.models.groupcollectionjoin.md)]¦null|false|read-only|This model is used to model the many to many relationship between managed account groups and user collections.|
 |»»»»»»»» userAndGroupCollectionPolicyJoin|[[SbPAM.Models.UserAndGroupCollectionPolicyJoin](../Models/sbpam.models.userandgroupcollectionpolicyjoin.md)]¦null|false|read-only|none|
 |»»»»»»»»» accessControlPolicyId|string(uuid)|false|none|none|
 |»»»»»»»»» userAndGroupCollectionId|string(uuid)|false|none|none|
@@ -4950,52 +5276,52 @@ Status Code **200**
 |»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»» managedAccountPolicyJoin|[[SbPAM.Models.ManagedAccountPolicyJoin](../Models/sbpam.models.managedaccountpolicyjoin.md)]¦null|false|none|none|
-|»»»» sid|string¦null|false|none|none|
-|»»»» userCollectionJoin|[[SbPAM.Models.UserCollectionJoin](../Models/sbpam.models.usercollectionjoin.md)]¦null|false|read-only|none|
+|»»»» managedAccountPolicyJoin|[[SbPAM.Models.ManagedAccountPolicyJoin](../Models/sbpam.models.managedaccountpolicyjoin.md)]¦null|false|none|Policies which reference this account via join table.|
+|»»»» sid|string¦null|false|none|Sid of user, this should match an existing HostUser|
+|»»»» userCollectionJoin|[[SbPAM.Models.UserCollectionJoin](../Models/sbpam.models.usercollectionjoin.md)]¦null|false|read-only|This model is used to model the many to many relationship between managed accounts and user collections.|
 |»»»» isReviewer|boolean|false|none|none|
 |»»»» nodeId|string(uuid)|false|none|none|
 |»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»» accessControlPolicyId|string(uuid)|false|none|none|
-|»»» accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|none|
-|»» managedAccountGroupPolicyJoin|[[SbPAM.Models.ManagedAccountGroupPolicyJoin](../Models/sbpam.models.managedaccountgrouppolicyjoin.md)]¦null|false|none|none|
-|»» managedResourcePolicyJoin|[[SbPAM.Models.ManagedResourcePolicyJoin](../Models/sbpam.models.managedresourcepolicyjoin.md)]¦null|false|none|none|
-|»»» managedResourceId|string(uuid)|false|none|none|
-|»»» managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|none|
-|»»»» id|string(uuid)|false|none|none|
-|»»»» name|string¦null|false|none|none|
+|»»» accessControlPolicyId|string(uuid)|false|none|Id of access control policy.|
+|»»» accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|This model represents a policy which can be associated with<br>    an elevation session.<br>Policies are matched to a particular group, user and host and sorted by priority<br>    to determine which policy to use.|
+|»» managedAccountGroupPolicyJoin|[[SbPAM.Models.ManagedAccountGroupPolicyJoin](../Models/sbpam.models.managedaccountgrouppolicyjoin.md)]¦null|false|none|Managed account group(s) referenced by this policy via join table.|
+|»» managedResourcePolicyJoin|[[SbPAM.Models.ManagedResourcePolicyJoin](../Models/sbpam.models.managedresourcepolicyjoin.md)]¦null|false|none|Managed resource(s) referenced by this policy via join table.|
+|»»» managedResourceId|string(uuid)|false|none|Id of managed resource.|
+|»»» managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|This model represents a managed resource such as a Host.|
+|»»»» id|string(uuid)|false|none|Unique id and DB key for this resource.|
+|»»»» name|string¦null|false|none|Name of this managed resource.|
 |»»»» type|[SbPAM.Models.ManagedResourceType](../Models/sbpam.models.managedresourcetype.md)(int32)|false|none|none|
-|»»»» hostId|string(uuid)¦null|false|none|none|
-|»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
-|»»»»» id|string(uuid)|false|none|none|
-|»»»»» activeDirectoryObjectId|string(uuid)¦null|false|none|none|
+|»»»» hostId|string(uuid)¦null|false|none|Host id  If this resource is a host.|
+|»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|This model represents a host machine.|
+|»»»»» id|string(uuid)|false|none|Unique id and DB key for this host.|
+|»»»»» activeDirectoryObjectId|string(uuid)¦null|false|none|Unique id from AD sync (usually same as Id).|
 |»»»»» name|string¦null|false|none|none|
-|»»»»» distinguishedName|string¦null|false|none|none|
-|»»»»» ipAddress|string¦null|false|none|none|
-|»»»»» os|string¦null|false|none|none|
-|»»»»» version|string¦null|false|none|none|
-|»»»»» lsaLookupCache|string¦null|false|none|none|
-|»»»»» lastUpdatedDateTimeUtc|string(date-time)¦null|false|none|none|
-|»»»»» credentialId|string(uuid)¦null|false|none|none|
-|»»»»» hasSSH|boolean|false|none|none|
-|»»»»» activeDirectoryDomainId|string(uuid)¦null|false|none|none|
-|»»»»» activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)|false|none|none|
-|»»»»»» id|string(uuid)|false|none|none|
-|»»»»»» name|string¦null|false|none|none|
-|»»»»»» domainName|string¦null|false|none|none|
+|»»»»» distinguishedName|string¦null|false|none|Distingished name from active directory|
+|»»»»» ipAddress|string¦null|false|none|IP address of host.|
+|»»»»» os|string¦null|false|none|Name of OS on host.|
+|»»»»» version|string¦null|false|none|Verion of OS on host.|
+|»»»»» lsaLookupCache|string¦null|false|none|Most recent LsaLookupCacheMaxSize|
+|»»»»» lastUpdatedDateTimeUtc|string(date-time)¦null|false|none|Date/time of last system update.|
+|»»»»» credentialId|string(uuid)¦null|false|none|Id of service account for this host|
+|»»»»» hasSSH|boolean|false|none|True if the host supports SSH.|
+|»»»»» activeDirectoryDomainId|string(uuid)¦null|false|none|Id of active directory domain if host is a member of a domain.|
+|»»»»» activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)|false|none|This model represents an active directory domain.|
+|»»»»»» id|string(uuid)|false|none|Unique id and DB key for this domain.|
+|»»»»»» name|string¦null|false|none|Name of this domain, e.g. sbitsinc.|
+|»»»»»» domainName|string¦null|false|none|Fully qualified name of this domain|
 |»»»»»» netBiosName|string¦null|false|none|none|
-|»»»»»» domainController|string¦null|false|none|none|
-|»»»»»» usnChanged|integer(int64)¦null|false|none|none|
-|»»»»»» activeDirectoryDomainConfigurationId|string(uuid)|false|none|none|
+|»»»»»» domainController|string¦null|false|none|Name of the domain controller for this domain.|
+|»»»»»» usnChanged|integer(int64)¦null|false|none|Update sequence number (USN) assigned by the directory for the latest change.|
+|»»»»»» activeDirectoryDomainConfigurationId|string(uuid)|false|none|NPS Id of the active directory domain configuration.|
 |»»»»»» activeDirectoryDomainConfiguration|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomainConfiguration](../Models/sbpam.activedirectory.models.activedirectorydomainconfiguration.md)|false|none|none|
 |»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»» activeDirectoryDomain|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)]¦null|false|read-only|none|
+|»»»»»»» activeDirectoryDomain|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)]¦null|false|read-only|This model represents an active directory domain.|
 |»»»»»»» name|string¦null|false|none|none|
 |»»»»»»» controllers|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryController](../Models/sbpam.activedirectory.models.activedirectorycontroller.md)]¦null|false|read-only|none|
 |»»»»»»»» id|string(uuid)|false|none|none|
 |»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»» activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)|false|none|none|
+|»»»»»»»» activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)|false|none|This model represents an active directory domain.|
 |»»»»»»»» activeDirectoryDomainConfigurationId|string(uuid)|false|none|none|
 |»»»»»»»» activeDirectoryDomainConfiguration|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomainConfiguration](../Models/sbpam.activedirectory.models.activedirectorydomainconfiguration.md)|false|none|none|
 |»»»»»»»» nodeId|string(uuid)|false|none|none|
@@ -5004,13 +5330,13 @@ Status Code **200**
 |»»»»»»» enabled|boolean|false|none|none|
 |»»»»»»» credentialId|string(uuid)¦null|false|none|none|
 |»»»»»»» useSsl|boolean|false|none|none|
-|»»»»»»» functionalLevel|string¦null|false|none|none|
+|»»»»»»» functionalLevel|string¦null|false|none|Name of the domain's functional level|
 |»»»»»»» syncActionQueueId|string(uuid)¦null|false|none|none|
 |»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» functionalLevel|string¦null|false|none|none|
-|»»»»»» activeDirectoryGroup|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)]¦null|false|none|none|
+|»»»»»» functionalLevel|string¦null|false|none|Name of this domain controller's functional level|
+|»»»»»» activeDirectoryGroup|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)]¦null|false|none|Active Directory Groups within this domain.|
 |»»»»»»» id|string(uuid)|false|none|none|
 |»»»»»»» samaccountname|string¦null|false|none|none|
 |»»»»»»» usnchanged|integer(int64)|false|none|none|
@@ -5025,56 +5351,56 @@ Status Code **200**
 |»»»»»»»» groupId|string(uuid)|false|none|none|
 |»»»»»»»» memberId|string(uuid)|false|none|none|
 |»»»»»»»» group|[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)|false|none|none|
-|»»»»»»»» member|[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)|false|none|none|
-|»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»» activeDirectoryObjectId|string(uuid)¦null|false|none|none|
-|»»»»»»»»» activeDirectoryDomainId|string(uuid)¦null|false|none|none|
-|»»»»»»»»» activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)|false|none|none|
-|»»»»»»»»» displayName|string¦null|false|none|none|
-|»»»»»»»»» enabled|boolean|false|none|none|
-|»»»»»»»»» unixId|integer(int32)¦null|false|none|none|
-|»»»»»»»»» unixGroupId|integer(int32)¦null|false|none|none|
-|»»»»»»»»» homeDirectory|string¦null|false|none|none|
-|»»»»»»»»» shell|string¦null|false|none|none|
-|»»»»»»»»» expirationDate|string(date-time)¦null|false|none|none|
-|»»»»»»»»» managed|boolean|false|none|none|
-|»»»»»»»»» hostId|string(uuid)¦null|false|none|none|
-|»»»»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
-|»»»»»»»»» primaryGroupTokenId|integer(int32)¦null|false|none|none|
-|»»»»»»»»» primaryGroupToken|string(byte)¦null|false|none|none|
-|»»»»»»»»» managerSamaccountname|string¦null|false|none|none|
-|»»»»»»»»» title|string¦null|false|none|none|
-|»»»»»»»»» samaccountname|string¦null|false|none|none|
-|»»»»»»»»» userPrincipalName|string¦null|false|none|none|
-|»»»»»»»»» distinguishedName|string¦null|false|none|none|
-|»»»»»»»»» department|string¦null|false|none|none|
-|»»»»»»»»» email|string¦null|false|none|none|
-|»»»»»»»»» lastLogonTimestamp|string(date-time)¦null|false|none|none|
-|»»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»»» sid|string¦null|false|none|none|
-|»»»»»»»»» firstName|string¦null|false|none|none|
-|»»»»»»»»» lastName|string¦null|false|none|none|
-|»»»»»»»»» passwordHash|string¦null|false|none|none|
-|»»»»»»»»» passwordChangedDateTimeUtc|string(date-time)¦null|false|none|none|
-|»»»»»»»»» passwordExpirationDateTimeUtc|string(date-time)¦null|false|none|none|
-|»»»»»»»»» forcePasswordReset|boolean|false|none|none|
+|»»»»»»»» member|[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)|false|none|This model represents a user which may be associated with target host.|
+|»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this user.|
+|»»»»»»»»» activeDirectoryObjectId|string(uuid)¦null|false|none|Unique id from AD sync (usually same as Id).|
+|»»»»»»»»» activeDirectoryDomainId|string(uuid)¦null|false|none|Id of active directory domain to which this user belongs.|
+|»»»»»»»»» activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)|false|none|This model represents an active directory domain.|
+|»»»»»»»»» displayName|string¦null|false|none|Display name for this user.|
+|»»»»»»»»» enabled|boolean|false|none|True if this user is enabled.|
+|»»»»»»»»» unixId|integer(int32)¦null|false|none|Unix id if this is a user on a Unix host.|
+|»»»»»»»»» unixGroupId|integer(int32)¦null|false|none|Unix group id if this is a user on a Unix host.|
+|»»»»»»»»» homeDirectory|string¦null|false|none|Home directory for user if this is a user on a Unix host.|
+|»»»»»»»»» shell|string¦null|false|none|Shell for user if this is a user on a Unix host.|
+|»»»»»»»»» expirationDate|string(date-time)¦null|false|none|Expiration date for this user.|
+|»»»»»»»»» managed|boolean|false|none|True if this user should be managed.|
+|»»»»»»»»» hostId|string(uuid)¦null|false|none|Id of host to which this user belongs.|
+|»»»»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|This model represents a host machine.|
+|»»»»»»»»» primaryGroupTokenId|integer(int32)¦null|false|none|Id of primary group token.|
+|»»»»»»»»» primaryGroupToken|string(byte)¦null|false|none|Primary group token.|
+|»»»»»»»»» managerSamaccountname|string¦null|false|none|SAM account name of Manager.|
+|»»»»»»»»» title|string¦null|false|none|Title of this user.|
+|»»»»»»»»» samaccountname|string¦null|false|none|SAM account name of user, e.g. Domain\Username.<br>https://docs.microsoft.com/en-us/windows/win32/ad/naming-properties#samaccountname|
+|»»»»»»»»» userPrincipalName|string¦null|false|none|The userPrincipalName attribute is the logon name for the user.<br>https://docs.microsoft.com/en-us/windows/win32/ad/naming-properties#userprincipalname|
+|»»»»»»»»» distinguishedName|string¦null|false|none|Distinguished name of user from active directory.|
+|»»»»»»»»» department|string¦null|false|none|Department to which this user belongs.|
+|»»»»»»»»» email|string¦null|false|none|Email address for this user.|
+|»»»»»»»»» lastLogonTimestamp|string(date-time)¦null|false|none|When this user last logged in.|
+|»»»»»»»»» name|string¦null|false|none|Short name|
+|»»»»»»»»» sid|string¦null|false|none|Windows Security ID for user|
+|»»»»»»»»» firstName|string¦null|false|none|User's first name - AD attribute 'givenName'|
+|»»»»»»»»» lastName|string¦null|false|none|User's surname - AD attribute 'sn'|
+|»»»»»»»»» passwordHash|string¦null|false|none|Hash of password from linux /etc/shadow|
+|»»»»»»»»» passwordChangedDateTimeUtc|string(date-time)¦null|false|none|Time we last changed password.|
+|»»»»»»»»» passwordExpirationDateTimeUtc|string(date-time)¦null|false|none|When does password expire?|
+|»»»»»»»»» forcePasswordReset|boolean|false|none|If true, need to change password.|
 |»»»»»»»»» privilege|[SbPAM.ActiveDirectory.Models.Enums.UserPrivilege](../Models/sbpam.activedirectory.models.enums.userprivilege.md)(int32)|false|none|none|
-|»»»»»»»»» hostUserGroupJoin|[[SbPAM.ActiveDirectory.Models.HostUserGroupJoin](../Models/sbpam.activedirectory.models.hostusergroupjoin.md)]¦null|false|read-only|none|
-|»»»»»»»»»» userId|string(uuid)|false|none|none|
-|»»»»»»»»»» user|[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)|false|none|none|
-|»»»»»»»»»» groupId|string(uuid)|false|none|none|
-|»»»»»»»»»» group|[SbPAM.ActiveDirectory.Models.HostGroup](../Models/sbpam.activedirectory.models.hostgroup.md)|false|none|none|
-|»»»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»»»»» sid|string¦null|false|none|none|
-|»»»»»»»»»»» unixId|integer(int32)¦null|false|none|none|
-|»»»»»»»»»»» hostId|string(uuid)¦null|false|none|none|
-|»»»»»»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
-|»»»»»»»»»»» hostUserGroupJoin|[[SbPAM.ActiveDirectory.Models.HostUserGroupJoin](../Models/sbpam.activedirectory.models.hostusergroupjoin.md)]¦null|false|read-only|none|
-|»»»»»»»»»»» hostGroupGroupJoins|[[SbPAM.ActiveDirectory.Models.HostGroupGroupJoin](../Models/sbpam.activedirectory.models.hostgroupgroupjoin.md)]¦null|false|none|none|
-|»»»»»»»»»»»» hostGroupId|string(uuid)|false|none|none|
-|»»»»»»»»»»»» hostGroup|[SbPAM.ActiveDirectory.Models.HostGroup](../Models/sbpam.activedirectory.models.hostgroup.md)|false|none|none|
-|»»»»»»»»»»»» domainGroupMemberId|string(uuid)|false|none|none|
+|»»»»»»»»» hostUserGroupJoin|[[SbPAM.ActiveDirectory.Models.HostUserGroupJoin](../Models/sbpam.activedirectory.models.hostusergroupjoin.md)]¦null|false|read-only|Groups to which this user belongs via join table.|
+|»»»»»»»»»» userId|string(uuid)|false|none|Id of AD user.|
+|»»»»»»»»»» user|[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)|false|none|This model represents a user which may be associated with target host.|
+|»»»»»»»»»» groupId|string(uuid)|false|none|Id of AD group.|
+|»»»»»»»»»» group|[SbPAM.ActiveDirectory.Models.HostGroup](../Models/sbpam.activedirectory.models.hostgroup.md)|false|none|This model represents a group which may be associated with target host.|
+|»»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this group.|
+|»»»»»»»»»»» name|string¦null|false|none|Name for this group.|
+|»»»»»»»»»»» sid|string¦null|false|none|Windows Security ID for group|
+|»»»»»»»»»»» unixId|integer(int32)¦null|false|none|Unix id if this is a group on a Unix host.|
+|»»»»»»»»»»» hostId|string(uuid)¦null|false|none|Id of host to which this group belongs.|
+|»»»»»»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|This model represents a host machine.|
+|»»»»»»»»»»» hostUserGroupJoin|[[SbPAM.ActiveDirectory.Models.HostUserGroupJoin](../Models/sbpam.activedirectory.models.hostusergroupjoin.md)]¦null|false|read-only|Users which are in this group via join table.|
+|»»»»»»»»»»» hostGroupGroupJoins|[[SbPAM.ActiveDirectory.Models.HostGroupGroupJoin](../Models/sbpam.activedirectory.models.hostgroupgroupjoin.md)]¦null|false|none|Domain groups which are in this group via join table|
+|»»»»»»»»»»»» hostGroupId|string(uuid)|false|none|Id of the parent group|
+|»»»»»»»»»»»» hostGroup|[SbPAM.ActiveDirectory.Models.HostGroup](../Models/sbpam.activedirectory.models.hostgroup.md)|false|none|This model represents a group which may be associated with target host.|
+|»»»»»»»»»»»» domainGroupMemberId|string(uuid)|false|none|Id of the member ActiveDirectoryGroup|
 |»»»»»»»»»»»» domainGroupMember|[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)|false|none|none|
 |»»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
@@ -5094,10 +5420,10 @@ Status Code **200**
 |»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»» hostId|string(uuid)|false|none|none|
-|»»»»»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
-|»»»»»»»»»» hostUsers|[[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)]¦null|false|read-only|none|
-|»»»»»»»»»» hostGroups|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)]¦null|false|none|none|
+|»»»»»»»»»» hostId|string(uuid)|false|none|Id of host database with this database.|
+|»»»»»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|This model represents a host machine.|
+|»»»»»»»»»» hostUsers|[[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)]¦null|false|read-only|Users which are in this database|
+|»»»»»»»»»» hostGroups|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)]¦null|false|none|Domain groups which are in this database|
 |»»»»»»»»»» hostDbRoles|[[SbPAM.ActiveDirectory.Models.HostDatabaseRole](../Models/sbpam.activedirectory.models.hostdatabaserole.md)]¦null|false|none|none|
 |»»»»»»»»»»» id|string(uuid)|false|none|none|
 |»»»»»»»»»»» name|string¦null|false|none|none|
@@ -5110,14 +5436,14 @@ Status Code **200**
 |»»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»»» hostId|string(uuid)|false|none|none|
-|»»»»»»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
-|»»»»»»»»»»» databaseDbId|string(uuid)¦null|false|none|none|
+|»»»»»»»»»»» hostId|string(uuid)|false|none|Id of host database with this database.|
+|»»»»»»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|This model represents a host machine.|
+|»»»»»»»»»»» databaseDbId|string(uuid)¦null|false|none|Null if a server role|
 |»»»»»»»»»»» databaseDb|[SbPAM.ActiveDirectory.Models.HostDatabaseDb](../Models/sbpam.activedirectory.models.hostdatabasedb.md)|false|none|none|
-|»»»»»»»»»»» hostUsers|[[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)]¦null|false|read-only|none|
-|»»»»»»»»»»» hostGroups|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)]¦null|false|none|none|
+|»»»»»»»»»»» hostUsers|[[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)]¦null|false|read-only|Users which are assigned the role|
+|»»»»»»»»»»» hostGroups|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroup](../Models/sbpam.activedirectory.models.activedirectorygroup.md)]¦null|false|none|Domain groups which are assigned this role|
 |»»»»»»»»» hostDatabaseRoles|[[SbPAM.ActiveDirectory.Models.HostDatabaseRole](../Models/sbpam.activedirectory.models.hostdatabaserole.md)]¦null|false|read-only|none|
-|»»»»»»»»» deleted|boolean|false|none|none|
+|»»»»»»»»» deleted|boolean|false|none|True if this user has been deleted.|
 |»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
@@ -5135,26 +5461,26 @@ Status Code **200**
 |»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»» activeDirectoryGroupGroupMember|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryGroupGroup](../Models/sbpam.activedirectory.models.activedirectorygroupgroup.md)]¦null|false|none|none|
 |»»»»»»» activeDirectoryDomainId|string(uuid)|false|none|none|
-|»»»»»»» activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)|false|none|none|
+|»»»»»»» activeDirectoryDomain|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)|false|none|This model represents an active directory domain.|
 |»»»»»»» groupTokenId|integer(int32)¦null|false|none|none|
 |»»»»»»» name|string¦null|false|none|none|
 |»»»»»»» sid|string¦null|false|none|none|
 |»»»»»»» hostGroupGroupJoins|[[SbPAM.ActiveDirectory.Models.HostGroupGroupJoin](../Models/sbpam.activedirectory.models.hostgroupgroupjoin.md)]¦null|false|none|none|
-|»»»»»»» deleted|boolean|false|none|none|
+|»»»»»»» deleted|boolean|false|none|True if this group has been deleted.|
 |»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» objectSid|string¦null|false|none|none|
-|»»»»»» maxRenewAge|integer(int32)¦null|false|none|none|
-|»»»»»» maxTicketAge|integer(int32)¦null|false|none|none|
-|»»»»»» nodeId|string(uuid)|false|none|none|
-|»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»» dnsHostName|string¦null|false|none|none|
-|»»»»» netBiosName|string¦null|false|none|none|
-|»»»»» users|[[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)]¦null|false|read-only|none|
-|»»»»» groups|[[SbPAM.ActiveDirectory.Models.HostGroup](../Models/sbpam.activedirectory.models.hostgroup.md)]¦null|false|read-only|none|
-|»»»»» features|[[SbPAM.ActiveDirectory.Models.HostFeature](../Models/sbpam.activedirectory.models.hostfeature.md)]¦null|false|read-only|none|
+|»»»»»» objectSid|string¦null|false|none|Object SID for the domain controller this record represents|
+|»»»»»» maxRenewAge|integer(int32)¦null|false|none|Max renew age <a href="https://learn.microsoft.com/en-us/windows/win32/adschema/a-maxrenewage">MS Documentation</a>|
+|»»»»»» maxTicketAge|integer(int32)¦null|false|none|Max ticket age <a href="https://learn.microsoft.com/en-us/windows/win32/adschema/a-maxticketage">MS Documentation</a>|
+|»»»»»» nodeId|string(uuid)|false|none|Internal identifier for node that is the primary database.<br>This should not be sent as a property during creation.|
+|»»»»»» createdDateTimeUtc|string(date-time)|false|none|Internal date (when object was created in database)|
+|»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|Internal date (when object was modified in database)|
+|»»»»» dnsHostName|string¦null|false|none|DNS hostname.|
+|»»»»» netBiosName|string¦null|false|none|NetBios hostname.|
+|»»»»» users|[[SbPAM.ActiveDirectory.Models.HostUser](../Models/sbpam.activedirectory.models.hostuser.md)]¦null|false|read-only|List of users associated with this host.|
+|»»»»» groups|[[SbPAM.ActiveDirectory.Models.HostGroup](../Models/sbpam.activedirectory.models.hostgroup.md)]¦null|false|read-only|List of groups associated with this host.|
+|»»»»» features|[[SbPAM.ActiveDirectory.Models.HostFeature](../Models/sbpam.activedirectory.models.hostfeature.md)]¦null|false|read-only|List of features installed on this host.|
 |»»»»»» id|string(uuid)|false|none|none|
 |»»»»»» name|string¦null|false|none|none|
 |»»»»»» version|string¦null|false|none|none|
@@ -5163,9 +5489,9 @@ Status Code **200**
 |»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» hostId|string(uuid)|false|none|none|
-|»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
-|»»»»» services|[[SbPAM.ActiveDirectory.Models.HostService](../Models/sbpam.activedirectory.models.hostservice.md)]¦null|false|read-only|none|
+|»»»»»» hostId|string(uuid)|false|none|Id of host with this installed feature.|
+|»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|This model represents a host machine.|
+|»»»»» services|[[SbPAM.ActiveDirectory.Models.HostService](../Models/sbpam.activedirectory.models.hostservice.md)]¦null|false|read-only|List of services that have accounts that can be managed.|
 |»»»»»» id|string(uuid)|false|none|none|
 |»»»»»» name|string¦null|false|none|none|
 |»»»»»» displayName|string¦null|false|none|none|
@@ -5184,10 +5510,10 @@ Status Code **200**
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» discoveredDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» hostId|string(uuid)|false|none|none|
-|»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
+|»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|This model represents a host machine.|
 |»»»»»» credentialId|string(uuid)¦null|false|none|none|
 |»»»»»» hostUserId|string(uuid)¦null|false|none|none|
-|»»»»» scheduledTasks|[[SbPAM.ActiveDirectory.Models.HostScheduledTask](../Models/sbpam.activedirectory.models.hostscheduledtask.md)]¦null|false|read-only|none|
+|»»»»» scheduledTasks|[[SbPAM.ActiveDirectory.Models.HostScheduledTask](../Models/sbpam.activedirectory.models.hostscheduledtask.md)]¦null|false|read-only|List of scheduled tasks that have accounts that can be managed.|
 |»»»»»» id|string(uuid)|false|none|none|
 |»»»»»» userName|string¦null|false|none|none|
 |»»»»»» name|string¦null|false|none|none|
@@ -5226,10 +5552,10 @@ Status Code **200**
 |»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» hostId|string(uuid)|false|none|none|
-|»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
+|»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|This model represents a host machine.|
 |»»»»»» credentialId|string(uuid)¦null|false|none|none|
 |»»»»»» hostUserId|string(uuid)¦null|false|none|none|
-|»»»»» databases|[[SbPAM.ActiveDirectory.Models.HostDatabase](../Models/sbpam.activedirectory.models.hostdatabase.md)]¦null|false|read-only|none|
+|»»»»» databases|[[SbPAM.ActiveDirectory.Models.HostDatabase](../Models/sbpam.activedirectory.models.hostdatabase.md)]¦null|false|read-only|List of SQL Server database server instances found on Windows host|
 |»»»»»» id|string(uuid)|false|none|none|
 |»»»»»» name|string¦null|false|none|none|
 |»»»»»» fullName|string¦null|false|none|none|
@@ -5242,83 +5568,83 @@ Status Code **200**
 |»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» hostId|string(uuid)|false|none|none|
-|»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|none|
-|»»»»» databaseDbs|[[SbPAM.ActiveDirectory.Models.HostDatabaseDb](../Models/sbpam.activedirectory.models.hostdatabasedb.md)]¦null|false|read-only|none|
-|»»»»» databaseRoles|[[SbPAM.ActiveDirectory.Models.HostDatabaseRole](../Models/sbpam.activedirectory.models.hostdatabaserole.md)]¦null|false|read-only|none|
-|»»»»» samaccountname|string¦null|false|none|none|
-|»»»»» isDomainController|boolean|false|none|none|
-|»»»»» isGlobalCatalog|boolean¦null|false|none|none|
-|»»»»» usnChanged|integer(int64)|false|none|none|
-|»»»»» objectSid|string¦null|false|none|none|
-|»»»»» added|string(date-time)|false|none|none|
-|»»»»» deleted|boolean|false|none|none|
-|»»»»» isVirtual|boolean|false|none|none|
-|»»»»» nodeId|string(uuid)|false|none|none|
-|»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
-|»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»» hostScanHostId|string(uuid)¦null|false|none|none|
-|»»»» hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
-|»»»»» id|string(uuid)|false|none|none|
-|»»»»» name|string¦null|false|none|none|
-|»»»»» dnsHostName|string¦null|false|none|none|
-|»»»»» ipAddress|string¦null|false|none|none|
-|»»»»» os|string¦null|false|none|none|
-|»»»»» version|string¦null|false|none|none|
-|»»»»» lsaLookupCache|string¦null|false|none|none|
-|»»»»» lastUpdatedDateTimeUtc|string(date-time)¦null|false|none|none|
-|»»»»» hostId|string(uuid)¦null|false|none|none|
-|»»»»» credentialId|string(uuid)|false|none|none|
-|»»»»» platformId|string(uuid)¦null|false|none|none|
-|»»»»» lastScanTimeUtc|string(date-time)¦null|false|none|none|
-|»»»»» lastScanStartTimeUtc|string(date-time)|false|none|none|
-|»»»»» hostScanUser|[[SbPAM.Models.HostScanUser](../Models/sbpam.models.hostscanuser.md)]¦null|false|none|none|
-|»»»»»» id|string(uuid)|false|none|none|
-|»»»»»» name|string¦null|false|none|none|
-|»»»»»» displayName|string¦null|false|none|none|
-|»»»»»» samaccountname|string¦null|false|none|none|
-|»»»»»» lastLogonTimestamp|string(date-time)¦null|false|none|none|
-|»»»»»» sid|string¦null|false|none|none|
-|»»»»»» passwordHash|string¦null|false|none|none|
-|»»»»»» passwordChangedDateTimeUtc|string(date-time)¦null|false|none|none|
-|»»»»»» passwordExpirationDateTimeUtc|string(date-time)¦null|false|none|none|
-|»»»»»» unixId|integer(int32)¦null|false|none|none|
-|»»»»»» unixGroupId|integer(int32)¦null|false|none|none|
-|»»»»»» homeDirectory|string¦null|false|none|none|
-|»»»»»» shell|string¦null|false|none|none|
+|»»»»»» hostId|string(uuid)|false|none|Id of host with this database.|
+|»»»»»» host|[SbPAM.ActiveDirectory.Models.Host](../Models/sbpam.activedirectory.models.host.md)|false|none|This model represents a host machine.|
+|»»»»» databaseDbs|[[SbPAM.ActiveDirectory.Models.HostDatabaseDb](../Models/sbpam.activedirectory.models.hostdatabasedb.md)]¦null|false|read-only|List of SQL Server databases found on Windows host|
+|»»»»» databaseRoles|[[SbPAM.ActiveDirectory.Models.HostDatabaseRole](../Models/sbpam.activedirectory.models.hostdatabaserole.md)]¦null|false|read-only|List of SQL Server databse roles found on Windows host|
+|»»»»» samaccountname|string¦null|false|none|sAMAccountname for host (from ActiveDirectory) NOTE: this includes the NETBIOS name to make it unique|
+|»»»»» isDomainController|boolean|false|none|Boolean indicating if this host is a Domain Controller|
+|»»»»» isGlobalCatalog|boolean¦null|false|none|Boolean indicating if this host is a Global Catalog server|
+|»»»»» usnChanged|integer(int64)|false|none|USN from Active Directory|
+|»»»»» objectSid|string¦null|false|none|SID from Active Directory|
+|»»»»» added|string(date-time)|false|none|UTC Time of when host was Added to NPS|
+|»»»»» deleted|boolean|false|none|True if this host has been deleted.|
+|»»»»» isVirtual|boolean|false|none|True if not a real host<br>Used for AzureAD tenants|
+|»»»»» nodeId|string(uuid)|false|none|Internal identifier for node that is the primary database.<br>This should not be sent as a property during creation.|
+|»»»»» createdDateTimeUtc|string(date-time)|false|none|Internal date (when object was created in database)|
+|»»»»» modifiedDateTimeUtc|string(date-time)|false|none|Internal date (when object was modified in database)|
+|»»»» hostScanHostId|string(uuid)¦null|false|none|Scanned host id  If this resource is a host.|
+|»»»» hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|This model is used to scan a host to obtain os type and version info.|
+|»»»»» id|string(uuid)|false|none|Unique id and DB key for this host.|
+|»»»»» name|string¦null|false|none|name of host.|
+|»»»»» dnsHostName|string¦null|false|none|DNS hostname.|
+|»»»»» ipAddress|string¦null|false|none|IP address of host.|
+|»»»»» os|string¦null|false|none|Name of OS on host.|
+|»»»»» version|string¦null|false|none|Version of OS on host.|
+|»»»»» lsaLookupCache|string¦null|false|none|Most recent LsaLookupCacheMaxSize|
+|»»»»» lastUpdatedDateTimeUtc|string(date-time)¦null|false|none|Date/time of last system update.|
+|»»»»» hostId|string(uuid)¦null|false|none|Id of host created/updated by this scan.|
+|»»»»» credentialId|string(uuid)|false|none|Id of credentials for host.|
+|»»»»» platformId|string(uuid)¦null|false|none|Id of platform for host.|
+|»»»»» lastScanTimeUtc|string(date-time)¦null|false|none|Date time the host scan completed for the host.|
+|»»»»» lastScanStartTimeUtc|string(date-time)|false|none|Date time the last host scan was started for the host.|
+|»»»»» hostScanUser|[[SbPAM.Models.HostScanUser](../Models/sbpam.models.hostscanuser.md)]¦null|false|none|Users which belong to this host.|
+|»»»»»» id|string(uuid)|false|none|Unique id and DB key for this user.|
+|»»»»»» name|string¦null|false|none|Short name|
+|»»»»»» displayName|string¦null|false|none|Long name for this user.|
+|»»»»»» samaccountname|string¦null|false|none|SAM account name of user e.g. Domain\Username.|
+|»»»»»» lastLogonTimestamp|string(date-time)¦null|false|none|When this user last logged in.|
+|»»»»»» sid|string¦null|false|none|Windows Security ID for user|
+|»»»»»» passwordHash|string¦null|false|none|Hash of password from linux /etc/shadow|
+|»»»»»» passwordChangedDateTimeUtc|string(date-time)¦null|false|none|Time we last changed password.|
+|»»»»»» passwordExpirationDateTimeUtc|string(date-time)¦null|false|none|When does password expire?|
+|»»»»»» unixId|integer(int32)¦null|false|none|Unix id if this is a user on a Unix host.|
+|»»»»»» unixGroupId|integer(int32)¦null|false|none|Unix group id if this is a user on a Unix host.|
+|»»»»»» homeDirectory|string¦null|false|none|Home directory for user if this is a user on a Unix host.|
+|»»»»»» shell|string¦null|false|none|Shell for user if this is a user on a Unix host.|
 |»»»»»» privilege|[SbPAM.ActiveDirectory.Models.Enums.UserPrivilege](../Models/sbpam.activedirectory.models.enums.userprivilege.md)(int32)|false|none|none|
-|»»»»»» discoveredDateTimeUtc|string(date-time)¦null|false|none|none|
-|»»»»»» userId|string(uuid)¦null|false|none|none|
-|»»»»»» hostScanHostId|string(uuid)¦null|false|none|none|
-|»»»»»» hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
-|»»»»»» hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](../Models/sbpam.models.hostscanusergroupjoin.md)]¦null|false|none|none|
-|»»»»»»» hostScanUserId|string(uuid)|false|none|none|
-|»»»»»»» hostScanUser|[SbPAM.Models.HostScanUser](../Models/sbpam.models.hostscanuser.md)|false|none|none|
-|»»»»»»» hostScanGroupId|string(uuid)|false|none|none|
-|»»»»»»» hostScanGroup|[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)|false|none|none|
-|»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»» sid|string¦null|false|none|none|
-|»»»»»»»» unixId|integer(int32)¦null|false|none|none|
-|»»»»»»»» groupId|string(uuid)¦null|false|none|none|
-|»»»»»»»» hostScanHostId|string(uuid)|false|none|none|
-|»»»»»»»» hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
-|»»»»»»»» hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](../Models/sbpam.models.hostscanusergroupjoin.md)]¦null|false|none|none|
-|»»»»»»»» hostScanGroupGroupJoin|[[SbPAM.Models.HostScanGroupGroupJoin](../Models/sbpam.models.hostscangroupgroupjoin.md)]¦null|false|none|none|
-|»»»»»»»»» hostScanGroupId|string(uuid)|false|none|none|
-|»»»»»»»»» hostScanGroup|[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)|false|none|none|
-|»»»»»»»»» hostScanGroupMemberId|string(uuid)|false|none|none|
-|»»»»»»»» resourceObjectId|string(uuid)¦null|false|none|none|
+|»»»»»» discoveredDateTimeUtc|string(date-time)¦null|false|none|Date time this user was last discovered.|
+|»»»»»» userId|string(uuid)¦null|false|none|Id of user created/updated by this scan.|
+|»»»»»» hostScanHostId|string(uuid)¦null|false|none|Id of host scan host to which this user belongs.<br>Note: Not set for domain users.|
+|»»»»»» hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|This model is used to scan a host to obtain os type and version info.|
+|»»»»»» hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](../Models/sbpam.models.hostscanusergroupjoin.md)]¦null|false|none|Groups to which this user belongs via join table.|
+|»»»»»»» hostScanUserId|string(uuid)|false|none|Id of host scan user.|
+|»»»»»»» hostScanUser|[SbPAM.Models.HostScanUser](../Models/sbpam.models.hostscanuser.md)|false|none|This model is used to store user information from a host scan.|
+|»»»»»»» hostScanGroupId|string(uuid)|false|none|Id of host scan group.|
+|»»»»»»» hostScanGroup|[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)|false|none|This model is used to store group information from a host scan.|
+|»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this group.|
+|»»»»»»»» name|string¦null|false|none|Name of this group|
+|»»»»»»»» sid|string¦null|false|none|Windows Security ID for group|
+|»»»»»»»» unixId|integer(int32)¦null|false|none|Unix id if this is a group on a Unix host.|
+|»»»»»»»» groupId|string(uuid)¦null|false|none|Id of group created/updated by this scan.|
+|»»»»»»»» hostScanHostId|string(uuid)|false|none|Id of host scan host to which this group belongs.|
+|»»»»»»»» hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|This model is used to scan a host to obtain os type and version info.|
+|»»»»»»»» hostScanUserGroupJoin|[[SbPAM.Models.HostScanUserGroupJoin](../Models/sbpam.models.hostscanusergroupjoin.md)]¦null|false|none|Users which are in this group via join table.|
+|»»»»»»»» hostScanGroupGroupJoin|[[SbPAM.Models.HostScanGroupGroupJoin](../Models/sbpam.models.hostscangroupgroupjoin.md)]¦null|false|none|Groups which this group is a member of via join table.<br>Domain groups in local groups only.|
+|»»»»»»»»» hostScanGroupId|string(uuid)|false|none|Id of the parent group|
+|»»»»»»»»» hostScanGroup|[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)|false|none|This model is used to store group information from a host scan.|
+|»»»»»»»»» hostScanGroupMemberId|string(uuid)|false|none|Id of the member ActiveDirectoryGroup|
+|»»»»»»»» resourceObjectId|string(uuid)¦null|false|none|Unique object Id in resource context.|
 |»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» resourceObjectId|string(uuid)¦null|false|none|none|
+|»»»»»» resourceObjectId|string(uuid)¦null|false|none|Unique object Id in resource context.|
 |»»»»»» isDisabled|boolean|false|none|none|
 |»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»» hostScanGroup|[[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)]¦null|false|none|none|
-|»»»»» hostScanFeature|[[SbPAM.Models.HostScanFeature](../Models/sbpam.models.hostscanfeature.md)]¦null|false|none|none|
+|»»»»» hostScanGroup|[[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)]¦null|false|none|Groups which belong to this host.|
+|»»»»» hostScanFeature|[[SbPAM.Models.HostScanFeature](../Models/sbpam.models.hostscanfeature.md)]¦null|false|none|Features which are installed on this host.|
 |»»»»»» id|string(uuid)|false|none|none|
 |»»»»»» name|string¦null|false|none|none|
 |»»»»»» version|string¦null|false|none|none|
@@ -5327,86 +5653,86 @@ Status Code **200**
 |»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» hostScanHostId|string(uuid)|false|none|none|
-|»»»»»» hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
-|»»»»»» hostObjectId|string(uuid)¦null|false|none|none|
-|»»»»» hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](../Models/sbpam.models.hostscanjobhostjoin.md)]¦null|false|none|none|
-|»»»»»» hostScanJobId|string(uuid)|false|none|none|
-|»»»»»» hostScanJob|[SbPAM.Models.HostScanJob](../Models/sbpam.models.hostscanjob.md)|false|none|none|
-|»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»» createdBy|string(uuid)¦null|false|none|none|
-|»»»»»»» createdByUserName|string¦null|false|none|none|
-|»»»»»»» createdFromAddress|string¦null|false|none|none|
-|»»»»»»» hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](../Models/sbpam.models.hostscanjobhostjoin.md)]¦null|false|none|none|
+|»»»»»» hostScanHostId|string(uuid)|false|none|Id of host scan host on which this feature is installed.|
+|»»»»»» hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|This model is used to scan a host to obtain os type and version info.|
+|»»»»»» hostObjectId|string(uuid)¦null|false|none|Id of feature created/updated by this scanned feature.|
+|»»»»» hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](../Models/sbpam.models.hostscanjobhostjoin.md)]¦null|false|none|Jobs which reference this host via join table.|
+|»»»»»» hostScanJobId|string(uuid)|false|none|Id of host scan job.|
+|»»»»»» hostScanJob|[SbPAM.Models.HostScanJob](../Models/sbpam.models.hostscanjob.md)|false|none|This model represent a job to scan a collection of hosts to obtain os type and version info.|
+|»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this job.|
+|»»»»»»» createdBy|string(uuid)¦null|false|none|Id of user that created this job.|
+|»»»»»»» createdByUserName|string¦null|false|none|Name of user that created this job.|
+|»»»»»»» createdFromAddress|string¦null|false|none|IP address of user that created this job.|
+|»»»»»»» hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](../Models/sbpam.models.hostscanjobhostjoin.md)]¦null|false|none|Host(s) scanned by this job via join table.|
 |»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» hostScanHostId|string(uuid)|false|none|none|
-|»»»»»» hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
-|»»»»»» actionQueueId|string(uuid)¦null|false|none|none|
-|»»»»»» actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
-|»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»» actionJobId|string(uuid)¦null|false|none|none|
-|»»»»»»» runUserId|string(uuid)¦null|false|none|none|
-|»»»»»»» timeCreated|string(date-time)|false|none|none|
-|»»»»»»» timeStarted|string(date-time)|false|none|none|
-|»»»»»»» timeFinished|string(date-time)|false|none|none|
-|»»»»»»» heartBeatDateTimeUtc|string(date-time)|false|none|none|
+|»»»»»» hostScanHostId|string(uuid)|false|none|Id of host scan host.|
+|»»»»»» hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|This model is used to scan a host to obtain os type and version info.|
+|»»»»»» actionQueueId|string(uuid)¦null|false|none|Id of action queue to execute to scan this host.|
+|»»»»»» actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
+|»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this action queue.|
+|»»»»»»» actionJobId|string(uuid)¦null|false|none|Action Job that created this ActionQueue|
+|»»»»»»» runUserId|string(uuid)¦null|false|none|Id associated with the logged in user which created this action queue.|
+|»»»»»»» timeCreated|string(date-time)|false|none|When this action queue was created.|
+|»»»»»»» timeStarted|string(date-time)|false|none|When this action queue started execution.|
+|»»»»»»» timeFinished|string(date-time)|false|none|When this action queue finished execution.|
+|»»»»»»» heartBeatDateTimeUtc|string(date-time)|false|none|Heartbeat for this ActionQueue - this gets updated when an ActionQueueAction<br>associated with the Queue is updated.<br>If the Queue isn't updated frequently enough, the scheduler will<br>post a healthcheck for it|
 |»»»»»»» status|any|false|none|none|
-|»»»»»»» statusDescription|string¦null|false|none|none|
+|»»»»»»» statusDescription|string¦null|false|none|Human readable description of the action queue status.|
 |»»»»»»» failureReason|any|false|none|none|
-|»»»»»»» actionGroupId|string(uuid)|false|none|none|
-|»»»»»»» actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|none|
-|»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»» description|string¦null|false|none|none|
-|»»»»»»»» trigger|boolean|false|none|none|
+|»»»»»»» actionGroupId|string(uuid)|false|none|Id of action group associated with this action queue.|
+|»»»»»»» actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|This model represents a group of actions which can be performed<br>    in a particular order (by Action.ExecutionOrder) by an action service.|
+|»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this action group.|
+|»»»»»»»» name|string¦null|false|none|Human readable name for this action group.|
+|»»»»»»»» description|string¦null|false|none|Human readable desciption for this action group.|
+|»»»»»»»» trigger|boolean|false|none|Not used???|
 |»»»»»»»» createdBy|string(uuid)¦null|false|none|none|
-|»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»» lastModifiedBy|string(uuid)¦null|false|none|none|
-|»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
+|»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|When this action group was created.|
+|»»»»»»»» lastModifiedBy|string(uuid)¦null|false|none|Logged in user id.|
+|»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|When this action group was last modified.|
 |»»»»»»»» nodeId|string(uuid)|false|none|none|
-|»»»»»»»» action|[[SbPAM.Models.Action](../Models/sbpam.models.action.md)]¦null|false|none|none|
-|»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»» actionTemplateId|string(uuid)|false|none|none|
-|»»»»»»»»» actionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|none|
+|»»»»»»»» action|[[SbPAM.Models.Action](../Models/sbpam.models.action.md)]¦null|false|none|List of actions associated with this action group.|
+|»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this action.|
+|»»»»»»»»» actionTemplateId|string(uuid)|false|none|Id of template for this action.|
+|»»»»»»»»» actionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|This model represents an action template that is associated with an action group action.<br>    The action template|
 |»»»»»»»»»» createdBy|string(uuid)¦null|false|none|none|
 |»»»»»»»»»» lastModifiedBy|string(uuid)¦null|false|none|none|
-|»»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»»» displayName|string¦null|false|none|none|
-|»»»»»»»»»» description|string¦null|false|none|none|
-|»»»»»»»»»» newActionDisplayName|string¦null|false|none|none|
-|»»»»»»»»»» icon|string¦null|false|none|none|
-|»»»»»»»»»» definition|string¦null|false|none|none|
-|»»»»»»»»»» userDefined|boolean|false|none|none|
-|»»»»»»»»»» actionTemplateParameter|[[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)]¦null|false|none|none|
-|»»»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»»»»» displayName|string¦null|false|none|none|
-|»»»»»»»»»»» description|string¦null|false|none|none|
-|»»»»»»»»»»» sortOrder|integer(int32)|false|none|none|
-|»»»»»»»»»»» required|boolean|false|none|none|
+|»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this template.|
+|»»»»»»»»»» displayName|string¦null|false|none|Name for this template.|
+|»»»»»»»»»» description|string¦null|false|none|Human readable description of this template.|
+|»»»»»»»»»» newActionDisplayName|string¦null|false|none|Optional alternative to DisplayName for populating new actions's .DisplayName<br>properties. This is also a template. It can include bracketed parameter names<br>to insert parameter vales (e.g., "Add User to '{GroupToUpdate}' Group").|
+|»»»»»»»»»» icon|string¦null|false|none|Icon for this template.|
+|»»»»»»»»»» definition|string¦null|false|none|Human readable definition of this template.|
+|»»»»»»»»»» userDefined|boolean|false|none|True if created by a user???|
+|»»»»»»»»»» actionTemplateParameter|[[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)]¦null|false|none|List of parameters defined for this template.|
+|»»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this parameter.|
+|»»»»»»»»»»» name|string¦null|false|none|Name for this parameter.|
+|»»»»»»»»»»» displayName|string¦null|false|none|Long name for this parameter.|
+|»»»»»»»»»»» description|string¦null|false|none|Human readable description for this parameter.|
+|»»»»»»»»»»» sortOrder|integer(int32)|false|none|The order these will appear in lists and reports|
+|»»»»»»»»»»» required|boolean|false|none|True if parameter is required.|
 |»»»»»»»»»»» type|any|false|none|none|
-|»»»»»»»»»»» multiline|boolean|false|none|none|
-|»»»»»»»»»»» defaultValue|string¦null|false|none|none|
-|»»»»»»»»»»» shouldSerialize_ValueSet|boolean|false|read-only|none|
+|»»»»»»»»»»» multiline|boolean|false|none|Tell UI to make this multiline|
+|»»»»»»»»»»» defaultValue|string¦null|false|none|Default value.|
+|»»»»»»»»»»» shouldSerialize_ValueSet|boolean|false|read-only|Allowed values (if restricted).|
 |»»»»»»»»»»» _ValueSet|string¦null|false|none|none|
 |»»»»»»»»»»» valueSet|[string]¦null|false|none|none|
-|»»»»»»»»»»» limitToValueSet|boolean|false|none|none|
+|»»»»»»»»»»» limitToValueSet|boolean|false|none|If true (default) and .ValueSet is given then the user may not enter something off that list|
 |»»»»»»»»»»» helperText|string¦null|false|none|none|
-|»»»»»»»»»»» actionTemplateId|string(uuid)¦null|false|none|none|
+|»»»»»»»»»»» actionTemplateId|string(uuid)¦null|false|none|Id of action template which contains this parameter.|
 |»»»»»»»»»»» actionPackId|string(uuid)¦null|false|none|none|
 |»»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»» action|[[SbPAM.Models.Action](../Models/sbpam.models.action.md)]¦null|false|none|none|
-|»»»»»»»»»» actionTemplateDemand|[[SbPAM.Models.ActionTemplateDemand](../Models/sbpam.models.actiontemplatedemand.md)]¦null|false|none|none|
-|»»»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»»»»» value|string¦null|false|none|none|
+|»»»»»»»»»» action|[[SbPAM.Models.Action](../Models/sbpam.models.action.md)]¦null|false|none|List of actions derived from this template.|
+|»»»»»»»»»» actionTemplateDemand|[[SbPAM.Models.ActionTemplateDemand](../Models/sbpam.models.actiontemplatedemand.md)]¦null|false|none|List of action template demands derived from this template.|
+|»»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this demand template.|
+|»»»»»»»»»»» name|string¦null|false|none|Name of this demand template.|
+|»»»»»»»»»»» value|string¦null|false|none|Value of this demand template.|
 |»»»»»»»»»»» type|any|false|none|none|
-|»»»»»»»»»»» actionTemplateId|string(uuid)|false|none|none|
-|»»»»»»»»»»» actionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|none|
+|»»»»»»»»»»» actionTemplateId|string(uuid)|false|none|Id of action template used to associate an action with this demand template.|
+|»»»»»»»»»»» actionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|This model represents an action template that is associated with an action group action.<br>    The action template|
 |»»»»»»»»»»» actionPackId|string(uuid)¦null|false|none|none|
 |»»»»»»»»»»» actionPack|[SbPAM.Models.ActionPack](../Models/sbpam.models.actionpack.md)|false|none|none|
 |»»»»»»»»»»»» id|string(uuid)|false|none|none|
@@ -5416,143 +5742,143 @@ Status Code **200**
 |»»»»»»»»»»»» version|string¦null|false|none|none|
 |»»»»»»»»»»»» timeoutOverride|integer(int32)|false|none|none|
 |»»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»»»» actionTemplate|[[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)]¦null|false|none|none|
-|»»»»»»»»»»»» actionTemplateParameter|[[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)]¦null|false|none|none|
-|»»»»»»»»»»»» actionTemplateDemand|[[SbPAM.Models.ActionTemplateDemand](../Models/sbpam.models.actiontemplatedemand.md)]¦null|false|none|none|
+|»»»»»»»»»»»» actionTemplate|[[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)]¦null|false|none|This model represents an action template that is associated with an action group action.<br>    The action template|
+|»»»»»»»»»»»» actionTemplateParameter|[[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)]¦null|false|none|[This model represents a template for a parameter associated with an action group action.]|
+|»»»»»»»»»»»» actionTemplateDemand|[[SbPAM.Models.ActionTemplateDemand](../Models/sbpam.models.actiontemplatedemand.md)]¦null|false|none|This model represents a demand template that is used to find an action service<br>    that can process a particular type of action.  This is done by searching for<br>    this demand template using the template id associated with the action and<br>    then matching this demand template's name and value against a property associated<br>    with a registered action service.|
 |»»»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»» actionPackId|string(uuid)¦null|false|none|none|
+|»»»»»»»»»» actionPackId|string(uuid)¦null|false|none|Id of action pack which contains this template|
 |»»»»»»»»»» actionPack|[SbPAM.Models.ActionPack](../Models/sbpam.models.actionpack.md)|false|none|none|
 |»»»»»»»»»» classification|any|false|none|none|
-|»»»»»»»»»» pairedActionTemplateId|string(uuid)¦null|false|none|none|
-|»»»»»»»»»» pairedActionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|none|
+|»»»»»»»»»» pairedActionTemplateId|string(uuid)¦null|false|none|Reference to another template representing the end to this start or start to this end action|
+|»»»»»»»»»» pairedActionTemplate|[SbPAM.Models.ActionTemplate](../Models/sbpam.models.actiontemplate.md)|false|none|This model represents an action template that is associated with an action group action.<br>    The action template|
 |»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»» actionGroupId|string(uuid)|false|none|none|
-|»»»»»»»»» actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|none|
-|»»»»»»»»» actionParameter|[[SbPAM.Models.ActionParameter](../Models/sbpam.models.actionparameter.md)]¦null|false|none|none|
-|»»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»»» value|string¦null|false|none|none|
-|»»»»»»»»»» actionTemplateParameterId|string(uuid)|false|none|none|
-|»»»»»»»»»» actionTemplateParameter|[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)|false|none|none|
-|»»»»»»»»»» actionId|string(uuid)|false|none|none|
+|»»»»»»»»» actionGroupId|string(uuid)|false|none|Id for action group that this action belongs to.|
+|»»»»»»»»» actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|This model represents a group of actions which can be performed<br>    in a particular order (by Action.ExecutionOrder) by an action service.|
+|»»»»»»»»» actionParameter|[[SbPAM.Models.ActionParameter](../Models/sbpam.models.actionparameter.md)]¦null|false|none|Parameters associated with this action.|
+|»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this parameter.|
+|»»»»»»»»»» value|string¦null|false|none|Value for this parameter.|
+|»»»»»»»»»» actionTemplateParameterId|string(uuid)|false|none|Id of action template associated with this parameter.|
+|»»»»»»»»»» actionTemplateParameter|[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)|false|none|This model represents a template for a parameter associated with an action group action.|
+|»»»»»»»»»» actionId|string(uuid)|false|none|Id of action associated with this parameter.|
 |»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»» continueOnFail|boolean|false|none|none|
-|»»»»»»»»» executionOrder|integer(int32)|false|none|none|
+|»»»»»»»»» continueOnFail|boolean|false|none|If true then next action in action group will be executed<br>    even if this action fails.|
+|»»»»»»»»» executionOrder|integer(int32)|false|none|This determines the order of execution of the actions<br>    in this action group.  Lowest value first.|
 |»»»»»»»»» executionPath|string¦null|false|none|none|
-|»»»»»»»»» timeout|integer(int32)¦null|false|none|none|
-|»»»»»»»»» displayName|string¦null|false|none|none|
-|»»»»»»»»» actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|none|
-|»»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»»» actionQueueId|string(uuid)|false|none|none|
-|»»»»»»»»»» actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
-|»»»»»»»»»» actionId|string(uuid)|false|none|none|
-|»»»»»»»»»» action|[SbPAM.Models.Action](../Models/sbpam.models.action.md)|false|none|none|
+|»»»»»»»»» timeout|integer(int32)¦null|false|none|This defines a timeout for the action, in seconds,<br>    after which it will be failed if it hasn't completed.|
+|»»»»»»»»» displayName|string¦null|false|none|Human readable description of this action.|
+|»»»»»»»»» actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|Current action queues which refer to this action, if any.|
+|»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this action.|
+|»»»»»»»»»» actionQueueId|string(uuid)|false|none|Id of action queue which contains this action.|
+|»»»»»»»»»» actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
+|»»»»»»»»»» actionId|string(uuid)|false|none|Id of action group action which was used to create this action queue action.|
+|»»»»»»»»»» action|[SbPAM.Models.Action](../Models/sbpam.models.action.md)|false|none|This model represents an action which is a member of an action group.|
 |»»»»»»»»»» status|any|false|none|none|
 |»»»»»»»»»» jobType|[SbPAM.Models.ActionJobType](../Models/sbpam.models.actionjobtype.md)(int32)|true|none|none|
-|»»»»»»»»»» statusDescription|string¦null|false|none|none|
-|»»»»»»»»»» result|string¦null|false|none|none|
-|»»»»»»»»»» results|string¦null|false|none|none|
-|»»»»»»»»»» actionQueueActionParameter|[[SbPAM.Models.ActionQueueActionParameter](../Models/sbpam.models.actionqueueactionparameter.md)]¦null|false|none|none|
-|»»»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»»»» value|string¦null|false|none|none|
-|»»»»»»»»»»» actionTemplateParameterId|string(uuid)|false|none|none|
-|»»»»»»»»»»» actionTemplateParameter|[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)|false|none|none|
-|»»»»»»»»»»» actionId|string(uuid)|false|none|none|
+|»»»»»»»»»» statusDescription|string¦null|false|none|Human readable description of the action status.|
+|»»»»»»»»»» result|string¦null|false|none|Json result.|
+|»»»»»»»»»» results|string¦null|false|none|Json results from previous steps.|
+|»»»»»»»»»» actionQueueActionParameter|[[SbPAM.Models.ActionQueueActionParameter](../Models/sbpam.models.actionqueueactionparameter.md)]¦null|false|none|Dynamic parameters associated with this action.<br>Note: These may override the static parameters saved with the action group action.|
+|»»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this parameter.|
+|»»»»»»»»»»» value|string¦null|false|none|Value for this parameter.|
+|»»»»»»»»»»» actionTemplateParameterId|string(uuid)|false|none|Id of action template associated with this parameter.|
+|»»»»»»»»»»» actionTemplateParameter|[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)|false|none|This model represents a template for a parameter associated with an action group action.|
+|»»»»»»»»»»» actionId|string(uuid)|false|none|Id of action associated with this parameter.|
 |»»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»»» actionQueueActionId|string(uuid)|false|none|none|
-|»»»»»»»»»»» actionQueueAction|[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)|false|none|none|
-|»»»»»»»»»» actionLog|[[SbPAM.Models.ActionLog](../Models/sbpam.models.actionlog.md)]¦null|false|none|none|
-|»»»»»»»»»»» id|string(uuid)|false|none|none|
+|»»»»»»»»»»» actionQueueActionId|string(uuid)|false|none|Id of action queue action to which this parameter belongs.|
+|»»»»»»»»»»» actionQueueAction|[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)|false|none|This model represents an action which is a member of an action queue and can be execute by and action service.|
+|»»»»»»»»»» actionLog|[[SbPAM.Models.ActionLog](../Models/sbpam.models.actionlog.md)]¦null|false|none|Log entries associated with the execution of this action queue action.|
+|»»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this action log entry.|
 |»»»»»»»»»»» type|any|false|none|none|
-|»»»»»»»»»»» hResult|integer(int32)|false|none|none|
-|»»»»»»»»»»» timestamp|string(date-time)|false|none|none|
-|»»»»»»»»»»» message|string¦null|false|none|none|
-|»»»»»»»»»»» version|string¦null|false|none|none|
-|»»»»»»»»»»» actionQueueActionId|string(uuid)|false|none|none|
-|»»»»»»»»»»» actionQueueAction|[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)|false|none|none|
+|»»»»»»»»»»» hResult|integer(int32)|false|none|Internal reason for action failure if available.|
+|»»»»»»»»»»» timestamp|string(date-time)|false|none|When this log entry was created.|
+|»»»»»»»»»»» message|string¦null|false|none|Human readable message associate with this log entry.|
+|»»»»»»»»»»» version|string¦null|false|none|Current version captured in the log.|
+|»»»»»»»»»»» actionQueueActionId|string(uuid)|false|none|Id of action queue action associated with this log entry.|
+|»»»»»»»»»»» actionQueueAction|[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)|false|none|This model represents an action which is a member of an action queue and can be execute by and action service.|
 |»»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»» actionServiceId|string(uuid)¦null|false|none|none|
-|»»»»»»»»»» registeredService|[SbPAM.Models.RegisteredService](../Models/sbpam.models.registeredservice.md)|false|none|none|
-|»»»»»»»»»»» id|string(uuid)|false|none|none|
+|»»»»»»»»»» actionServiceId|string(uuid)¦null|false|none|Id of action service which was selected to execute this action.|
+|»»»»»»»»»» registeredService|[SbPAM.Models.RegisteredService](../Models/sbpam.models.registeredservice.md)|false|none|This model represents a registration for an service.|
+|»»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this service.|
 |»»»»»»»»»»» type|[SbPAM.Models.RegisteredServiceType](../Models/sbpam.models.registeredservicetype.md)(int32)|false|none|none|
-|»»»»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»»»»» added|string(date-time)|false|none|none|
-|»»»»»»»»»»» refreshToken|string¦null|false|none|none|
-|»»»»»»»»»»» appTokenId|string(uuid)¦null|false|none|none|
-|»»»»»»»»»»» appToken|[SbPAM.Models.AppToken](../Models/sbpam.models.apptoken.md)|false|none|none|
-|»»»»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»»»»»» description|string¦null|false|none|none|
-|»»»»»»»»»»»» token|string¦null|false|none|none|
-|»»»»»»»»»»»» tokenSalt|string¦null|false|none|none|
-|»»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»»»» expirationDate|string(date-time)|false|none|none|
-|»»»»»»»»»»»» revoked|boolean|false|none|none|
-|»»»»»»»»»»»» createdBy|string(uuid)¦null|false|none|none|
+|»»»»»»»»»»» name|string¦null|false|none|Host name for this service.|
+|»»»»»»»»»»» added|string(date-time)|false|none|When this service was registered.|
+|»»»»»»»»»»» refreshToken|string¦null|false|none|Refresh token to the service (encrypted)|
+|»»»»»»»»»»» appTokenId|string(uuid)¦null|false|none|Id of App token assigned to this service.|
+|»»»»»»»»»»» appToken|[SbPAM.Models.AppToken](../Models/sbpam.models.apptoken.md)|false|none|This model represents a token that can be used by a service for authorization.|
+|»»»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this token.|
+|»»»»»»»»»»»» name|string¦null|false|none|Name for this token.|
+|»»»»»»»»»»»» description|string¦null|false|none|Human readable description of this token.|
+|»»»»»»»»»»»» token|string¦null|false|none|Encrypted JWT Authorization BEARER token.|
+|»»»»»»»»»»»» tokenSalt|string¦null|false|none|Salt for token encryption.|
+|»»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|When this token was created.|
+|»»»»»»»»»»»» expirationDate|string(date-time)|false|none|Expiration date/time for this token.|
+|»»»»»»»»»»»» revoked|boolean|false|none|True if this token has been revoked.|
+|»»»»»»»»»»»» createdBy|string(uuid)¦null|false|none|Id of logged in user who created this token.|
 |»»»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»»» status|any|false|none|none|
-|»»»»»»»»»»» description|string¦null|false|none|none|
-|»»»»»»»»»»» version|string¦null|false|none|none|
-|»»»»»»»»»»» serviceRegistrationId|string(uuid)¦null|false|none|none|
-|»»»»»»»»»»» serviceRegistration|[SbPAM.Models.ServiceRegistration](../Models/sbpam.models.serviceregistration.md)|false|none|none|
-|»»»»»»»»»»»» id|string(uuid)|false|none|none|
+|»»»»»»»»»»» description|string¦null|false|none|Human readable description of service status.|
+|»»»»»»»»»»» version|string¦null|false|none|Version number reported by the service.|
+|»»»»»»»»»»» serviceRegistrationId|string(uuid)¦null|false|none|Id of service registration associated with this service.|
+|»»»»»»»»»»» serviceRegistration|[SbPAM.Models.ServiceRegistration](../Models/sbpam.models.serviceregistration.md)|false|none|This model represents a registration for a remote service.|
+|»»»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this service registration.|
 |»»»»»»»»»»»» type|[SbPAM.Models.RegisteredServiceType](../Models/sbpam.models.registeredservicetype.md)(int32)|false|none|none|
-|»»»»»»»»»»»» dnsHostName|string¦null|false|none|none|
-|»»»»»»»»»»»» credentialId|string(uuid)¦null|false|none|none|
-|»»»»»»»»»»»» serviceName|string¦null|false|none|none|
-|»»»»»»»»»»»» settingsFilePath|string¦null|false|none|none|
-|»»»»»»»»»»»» settingsFileContents|string¦null|false|none|none|
-|»»»»»»»»»»»» createdBy|string(uuid)¦null|false|none|none|
-|»»»»»»»»»»»» actionQueueId|string(uuid)¦null|false|none|none|
-|»»»»»»»»»»»» actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
+|»»»»»»»»»»»» dnsHostName|string¦null|false|none|Host name for this service registration.|
+|»»»»»»»»»»»» credentialId|string(uuid)¦null|false|none|Id of credentials for host.|
+|»»»»»»»»»»»» serviceName|string¦null|false|none|Service name for this service registration.|
+|»»»»»»»»»»»» settingsFilePath|string¦null|false|none|Settings file path for this service registration.|
+|»»»»»»»»»»»» settingsFileContents|string¦null|false|none|Settings file contents for this service registration.|
+|»»»»»»»»»»»» createdBy|string(uuid)¦null|false|none|Id of logged in user who created this registration.|
+|»»»»»»»»»»»» actionQueueId|string(uuid)¦null|false|none|Id of action queue which registers this service.|
+|»»»»»»»»»»»» actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
 |»»»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»»» actionServiceProperty|[[SbPAM.Models.ActionServiceProperty](../Models/sbpam.models.actionserviceproperty.md)]¦null|false|none|none|
-|»»»»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»»»»»» value|string¦null|false|none|none|
-|»»»»»»»»»»»» actionServiceId|string(uuid)|false|none|none|
-|»»»»»»»»»»»» registeredService|[SbPAM.Models.RegisteredService](../Models/sbpam.models.registeredservice.md)|false|none|none|
+|»»»»»»»»»»» actionServiceProperty|[[SbPAM.Models.ActionServiceProperty](../Models/sbpam.models.actionserviceproperty.md)]¦null|false|none|A list of properties associated with this service.|
+|»»»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this property.|
+|»»»»»»»»»»»» name|string¦null|false|none|Name of this property.|
+|»»»»»»»»»»»» value|string¦null|false|none|Value of this property.|
+|»»»»»»»»»»»» actionServiceId|string(uuid)|false|none|Id of action service which owns this property.|
+|»»»»»»»»»»»» registeredService|[SbPAM.Models.RegisteredService](../Models/sbpam.models.registeredservice.md)|false|none|This model represents a registration for an service.|
 |»»»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»»» actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|none|
-|»»»»»»»»»»» serviceNodeId|string(uuid)¦null|false|none|none|
+|»»»»»»»»»»» actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|A list of action queue actions currently active on this service if this is an action service.|
+|»»»»»»»»»»» serviceNodeId|string(uuid)¦null|false|none|Id of the node this service is running from|
 |»»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»» startTime|string(date-time)|false|none|none|
-|»»»»»»»»»» endTime|string(date-time)|false|none|none|
-|»»»»»»»»»» nodeId|string(uuid)|false|none|none|
-|»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»»» heartbeatUtc|string(date-time)|false|none|none|
-|»»»»»»»»»» complete|boolean|false|none|none|
-|»»»»»»»»» createdBy|string(uuid)¦null|false|none|none|
-|»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»» lastModifiedBy|string(uuid)¦null|false|none|none|
-|»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
+|»»»»»»»»»» startTime|string(date-time)|false|none|When the job started|
+|»»»»»»»»»» endTime|string(date-time)|false|none|When the job finished|
+|»»»»»»»»»» nodeId|string(uuid)|false|none|The action service node id|
+|»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|When the job was created|
+|»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|When the job was modified|
+|»»»»»»»»»» heartbeatUtc|string(date-time)|false|none|Heartbeat is used by the scheduler service to determine if a action job has stalled etc.|
+|»»»»»»»»»» complete|boolean|false|none|Complete is set true when the action step has completed successfully or continue on failure|
+|»»»»»»»»» createdBy|string(uuid)¦null|false|none|Logged in user id.|
+|»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|When this action was created.|
+|»»»»»»»»» lastModifiedBy|string(uuid)¦null|false|none|Logged in user id.|
+|»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|When this action was last modified.|
 |»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»» classification|any|false|none|none|
-|»»»»»»»»» pairedActionId|string(uuid)¦null|false|none|none|
-|»»»»»»»»» pairedAction|[SbPAM.Models.Action](../Models/sbpam.models.action.md)|false|none|none|
+|»»»»»»»»» pairedActionId|string(uuid)¦null|false|none|Reference to another action representing the end to this start or start to this end action|
+|»»»»»»»»» pairedAction|[SbPAM.Models.Action](../Models/sbpam.models.action.md)|false|none|This model represents an action which is a member of an action group.|
 |»»»»»»»»» isDeleted|boolean|false|none|none|
 |»»»»»»»»» isDefault|boolean|false|none|none|
 |»»»»»»»»» isUserModified|boolean|false|none|none|
-|»»»»»»»» actionGroupJob|[[SbPAM.Models.ActionGroupJob](../Models/sbpam.models.actiongroupjob.md)]¦null|false|none|none|
+|»»»»»»»» actionGroupJob|[[SbPAM.Models.ActionGroupJob](../Models/sbpam.models.actiongroupjob.md)]¦null|false|none|Current action group jobs which refer to this action group, if any.<br>Note: Is this obsolete???|
 |»»»»»»»»» id|string(uuid)|false|none|none|
 |»»»»»»»»» actionGroupId|string(uuid)|false|none|none|
 |»»»»»»»»» jobId|string(uuid)|false|none|none|
@@ -5563,60 +5889,60 @@ Status Code **200**
 |»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»»» actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|none|
+|»»»»»»»»» actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|This model represents a group of actions which can be performed<br>    in a particular order (by Action.ExecutionOrder) by an action service.|
 |»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»» actionQueue|[[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)]¦null|false|none|none|
-|»»»»»»» actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|none|
+|»»»»»»»» actionQueue|[[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)]¦null|false|none|Current action queues which refer to this action group, if any.|
+|»»»»»»» actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|List of action queue action associate with this action queue.|
 |»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»» hostConnected|boolean|false|none|none|
+|»»»»» hostConnected|boolean|false|none|True if the host was connected to during the last scan|
 |»»»»» netBiosName|string¦null|false|none|none|
 |»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»» domainConfigId|string(uuid)¦null|false|none|none|
-|»»»» websiteId|string(uuid)¦null|false|none|none|
-|»»»» website|[SbPAM.Models.Website](../Models/sbpam.models.website.md)|false|none|none|
-|»»»»» id|string(uuid)|false|none|none|
-|»»»»» name|string¦null|false|none|none|
-|»»»»» avatarUrl|string¦null|false|none|none|
-|»»»»» activeDirectoryDomainId|string(uuid)¦null|false|none|none|
-|»»»»» associatedResourceId|string(uuid)¦null|false|none|none|
-|»»»»» logonUrl|string¦null|false|none|none|
-|»»»»» uris|[[SbPAM.Models.WebsiteUri](../Models/sbpam.models.websiteuri.md)]¦null|false|none|none|
+|»»»» domainConfigId|string(uuid)¦null|false|none|When a resource represents an AD domain then we need to link to it|
+|»»»» websiteId|string(uuid)¦null|false|none|When a resource represents a website then we need to link to it|
+|»»»» website|[SbPAM.Models.Website](../Models/sbpam.models.website.md)|false|none|This is the detail record for web-type manged resources|
+|»»»»» id|string(uuid)|false|none|Unique Id|
+|»»»»» name|string¦null|false|none|required - name of Website|
+|»»»»» avatarUrl|string¦null|false|none|optional - URL to avatar image (size 96x96)|
+|»»»»» activeDirectoryDomainId|string(uuid)¦null|false|none|required - Default to WellKnown Website Platform|
+|»»»»» associatedResourceId|string(uuid)¦null|false|none|A ManagedResource entity representing the server that hosts this website|
+|»»»»» logonUrl|string¦null|false|none|Where to send the browser for the user to get into the site; typically a login page|
+|»»»»» uris|[[SbPAM.Models.WebsiteUri](../Models/sbpam.models.websiteuri.md)]¦null|false|none|List of whole URIs or match patterns that this website incorporates|
 |»»»»»» id|string(uuid)|false|none|none|
 |»»»»»» websiteId|string(uuid)|false|none|none|
-|»»»»»» website|[SbPAM.Models.Website](../Models/sbpam.models.website.md)|false|none|none|
+|»»»»»» website|[SbPAM.Models.Website](../Models/sbpam.models.website.md)|false|none|This is the detail record for web-type manged resources|
 |»»»»»» uri|string¦null|false|none|none|
 |»»»»»» match|[SbPAM.Models.WebsiteUriMatchType](../Models/sbpam.models.websiteurimatchtype.md)(int32)|false|none|none|
 |»»»»»» matchType|[SbPAM.Models.WebsiteUriMatchType](../Models/sbpam.models.websiteurimatchtype.md)(int32)|false|none|none|
 |»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»» isVirtual|boolean|false|none|none|
+|»»»»» isVirtual|boolean|false|none|True if not a real website<br>Used for AzureAD tenants|
 |»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»» azureAdTenantId|string(uuid)¦null|false|none|none|
+|»»»» azureAdTenantId|string(uuid)¦null|false|none|When a resource represents an AzureAD tenant then we need to link to it|
 |»»»» azureAdTenant|[SbPAM.Models.AzureAdTenant](../Models/sbpam.models.azureadtenant.md)|false|none|none|
-|»»»»» id|string(uuid)|false|none|none|
-|»»»»» name|string¦null|false|none|none|
-|»»»»» description|string¦null|false|none|none|
-|»»»»» tenantId|string¦null|false|none|none|
-|»»»»» logonUrl|string¦null|false|none|none|
-|»»»»» emailDomain|string¦null|false|none|none|
-|»»»»» associatedDomainId|string(uuid)¦null|false|none|none|
-|»»»»» processGroupMembership|boolean|false|none|none|
+|»»»»» id|string(uuid)|false|none|Unique Id|
+|»»»»» name|string¦null|false|none|Required - name of AzureAD tenant|
+|»»»»» description|string¦null|false|none|Description of the AzureAD tenant|
+|»»»»» tenantId|string¦null|false|none|Required - tenant identifier<br>"https://login.microsoftonline.com/$TenantId/oauth2/v2.0/token"|
+|»»»»» logonUrl|string¦null|false|none|Required - where to send the browser for the user to get into the site; typically a login page|
+|»»»»» emailDomain|string¦null|false|none|The '@whatever.com' part of the email address <br>Activity Token random characters will form the prefix|
+|»»»»» associatedDomainId|string(uuid)¦null|false|none|Optional link to ActiveDirectory domain|
+|»»»»» processGroupMembership|boolean|false|none|Enable/disable group membership processing|
 |»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»» secretVaultId|string(uuid)¦null|false|none|none|
+|»»»» secretVaultId|string(uuid)¦null|false|none|When a resource represents a Secret Vault we need a link to it|
 |»»»» secretVault|[SbPAM.Models.SecretVault](../Models/sbpam.models.secretvault.md)|false|none|none|
 |»»»»» id|string(uuid)|false|read-only|none|
 |»»»»» name|string¦null|false|none|none|
@@ -5624,26 +5950,26 @@ Status Code **200**
 |»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»» managedDatabaseId|string(uuid)¦null|false|none|none|
+|»»»» managedDatabaseId|string(uuid)¦null|false|none|When a resource represents a database we need a link to it|
 |»»»» managedDatabase|[SbPAM.Models.ManagedDatabase](../Models/sbpam.models.manageddatabase.md)|false|none|none|
-|»»»»» id|string(uuid)|false|none|none|
-|»»»»» name|string¦null|false|none|none|
+|»»»»» id|string(uuid)|false|none|Unique id and DB key for this resource.|
+|»»»»» name|string¦null|false|none|Name of this managed resource.|
 |»»»»» server|string¦null|false|none|none|
 |»»»»» port|integer(int32)|false|none|none|
 |»»»»» type|[SbPAM.Models.Common.DatabaseType](../Models/sbpam.models.common.databasetype.md)(int32)|false|none|none|
 |»»»»» hostDatabaseId|string(uuid)¦null|false|none|none|
 |»»»»» domainId|string(uuid)¦null|false|none|none|
-|»»»»» integratedSecurity|boolean|false|none|none|
+|»»»»» integratedSecurity|boolean|false|none|For SQL|
 |»»»»» trustServerCertificate|boolean|false|none|none|
 |»»»»» encrypted|boolean|false|none|none|
 |»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»» platformId|string(uuid)¦null|false|none|none|
-|»»»» platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|none|
-|»»»»» id|string(uuid)|false|none|none|
-|»»»»» name|string¦null|false|none|none|
-|»»»»» description|string¦null|false|none|none|
+|»»»» platformId|string(uuid)¦null|false|none|Id of platform that this activity can be performed on.|
+|»»»» platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|This model represents an platform on which a particular activity can be performed.|
+|»»»»» id|string(uuid)|false|none|Unique identifier for this platform.|
+|»»»»» name|string¦null|false|none|Name for this platform.|
+|»»»»» description|string¦null|false|none|Description for this platform.|
 |»»»»» builtInAccount|string¦null|false|none|none|
 |»»»»» passwordComplexityPolicyId|string(uuid)¦null|false|none|none|
 |»»»»» passwordComplexityPolicy|[SbPAM.Models.PasswordComplexity](../Models/sbpam.models.passwordcomplexity.md)|false|none|none|
@@ -5691,58 +6017,58 @@ Status Code **200**
 |»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»» displayName|string¦null|false|none|none|
-|»»»» ipAddress|string¦null|false|none|none|
-|»»»» serviceAccountId|string(uuid)¦null|false|none|none|
-|»»»» serviceAccount|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|none|none|
-|»»»»» id|string(uuid)|false|none|none|
-|»»»»» domain|string¦null|false|none|none|
-|»»»»» username|string¦null|false|none|none|
-|»»»»» password|string¦null|false|none|none|
-|»»»»» salt|string¦null|false|none|none|
-|»»»»» enablePassword|string¦null|false|none|none|
-|»»»»» enableSalt|string¦null|false|none|none|
-|»»»»» name|string¦null|false|none|none|
-|»»»»» description|string¦null|false|none|none|
+|»»»» displayName|string¦null|false|none|Display name for resource.|
+|»»»» ipAddress|string¦null|false|none|IP Address for resource.|
+|»»»» serviceAccountId|string(uuid)¦null|false|none|Service Account used to connect to the resource.|
+|»»»» serviceAccount|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|none|This model represents the stored credentials for a user.|
+|»»»»» id|string(uuid)|false|none|Unique id and DB key for this credential.|
+|»»»»» domain|string¦null|false|none|Domain|
+|»»»»» username|string¦null|false|none|Username|
+|»»»»» password|string¦null|false|none|Password (encrypted while persisted).|
+|»»»»» salt|string¦null|false|none|Some salt for the password encryption|
+|»»»»» enablePassword|string¦null|false|none|Enable Password (encrypted while persisted).|
+|»»»»» enableSalt|string¦null|false|none|Some salt for the enable password encryption|
+|»»»»» name|string¦null|false|none|Name for this username password pair|
+|»»»»» description|string¦null|false|none|Description for username password pair|
 |»»»»» type|[SbPAM.Models.CredentialType](../Models/sbpam.models.credentialtype.md)(int32)|false|none|none|
-|»»»»» userId|string(uuid)¦null|false|none|none|
-|»»»»» managedAccountId|string(uuid)¦null|false|none|none|
-|»»»»» platformId|string(uuid)¦null|false|none|none|
-|»»»»» platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|none|
-|»»»»» sudoCommand|string¦null|false|none|none|
-|»»»»» passwordVaultConnectorId|string(uuid)¦null|false|none|none|
-|»»»»» passwordVaultConnector|[SbPAM.Models.IntegrationConnector](../Models/sbpam.models.integrationconnector.md)|false|none|none|
-|»»»»»» id|string(uuid)|false|none|none|
-|»»»»»» name|string¦null|false|none|none|
-|»»»»»» description|string¦null|false|none|none|
-|»»»»»» connectorConfigurationId|string(uuid)|false|none|none|
-|»»»»»» connectorTemplateId|string(uuid)|false|none|none|
-|»»»»»» monitorActionQueueId|string(uuid)¦null|false|none|none|
-|»»»»»» monitorActionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
-|»»»»»» configuration|[SbPAM.Models.ConnectorConfiguration](../Models/sbpam.models.connectorconfiguration.md)|false|none|none|
-|»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»» name|string¦null|false|none|none|
-|»»»»»»» integrationConnector|[SbPAM.Models.IntegrationConnector](../Models/sbpam.models.integrationconnector.md)|false|none|none|
+|»»»»» userId|string(uuid)¦null|false|none|Host User Id, if there is one|
+|»»»»» managedAccountId|string(uuid)¦null|false|none|Host User Id, if there is one|
+|»»»»» platformId|string(uuid)¦null|false|none|Platform identifier for these credentials<br>Use this to group credentials for a platform|
+|»»»»» platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|This model represents an platform on which a particular activity can be performed.|
+|»»»»» sudoCommand|string¦null|false|none|Command to use for elevated commands on Linux, default "sudo".|
+|»»»»» passwordVaultConnectorId|string(uuid)¦null|false|none|Id for password vault integration connector for these credentials<br>Use this to manage credentials for this user.|
+|»»»»» passwordVaultConnector|[SbPAM.Models.IntegrationConnector](../Models/sbpam.models.integrationconnector.md)|false|none|This model represents integration connectors for Stealthbits products and available third-party apps.|
+|»»»»»» id|string(uuid)|false|none|Unique identifier for this integration connector.|
+|»»»»»» name|string¦null|false|none|Name for integration connector.|
+|»»»»»» description|string¦null|false|none|Description for integration connector|
+|»»»»»» connectorConfigurationId|string(uuid)|false|none|Configuration Id for integration connector|
+|»»»»»» connectorTemplateId|string(uuid)|false|none|The template that this connector is based on.|
+|»»»»»» monitorActionQueueId|string(uuid)¦null|false|none|Id of periodic action queue to execute, e.g. to fetch managed user list for a password vault.|
+|»»»»»» monitorActionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
+|»»»»»» configuration|[SbPAM.Models.ConnectorConfiguration](../Models/sbpam.models.connectorconfiguration.md)|false|none|This model represents integration connectors for Stealthbits products and available third-party apps.|
+|»»»»»»» id|string(uuid)|false|none|Unique identifier for available connector.|
+|»»»»»»» name|string¦null|false|none|Name for configuration type of connector.|
+|»»»»»»» integrationConnector|[SbPAM.Models.IntegrationConnector](../Models/sbpam.models.integrationconnector.md)|false|none|This model represents integration connectors for Stealthbits products and available third-party apps.|
 |»»»»»»» integrationConnectorTemplate|[SbPAM.Models.IntegrationConnectorTemplate](../Models/sbpam.models.integrationconnectortemplate.md)|false|none|none|
-|»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»» description|string¦null|false|none|none|
+|»»»»»»»» id|string(uuid)|false|none|Unique identifier for this integration connector.|
+|»»»»»»»» name|string¦null|false|none|Name for integration connector, this corresponds to the "type" of the connector|
+|»»»»»»»» description|string¦null|false|none|Description for integration connector template.|
 |»»»»»»»» type|[SbPAM.Models.IntegrationConnectorType](../Models/sbpam.models.integrationconnectortype.md)(int32)|false|none|none|
-|»»»»»»»» configurationId|string(uuid)|false|none|none|
-|»»»»»»»» configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](../Models/sbpam.models.connectorconfigurationvalue.md)]¦null|false|none|none|
-|»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»» configurationId|string(uuid)|false|none|none|
-|»»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»»» value|string¦null|false|none|none|
-|»»»»»»»»» defaultValue|string¦null|false|none|none|
-|»»»»»»»»» description|string¦null|false|none|none|
-|»»»»»»»»» displayOrder|integer(int32)|false|none|none|
-|»»»»»»»»» required|boolean|false|none|none|
-|»»»»»»»»» connectorId|string(uuid)¦null|false|none|none|
-|»»»»»»»»» integrationConnectorTemplateId|string(uuid)¦null|false|none|none|
-|»»»»»»»»» connectorConfiguration|[SbPAM.Models.ConnectorConfiguration](../Models/sbpam.models.connectorconfiguration.md)|false|none|none|
+|»»»»»»»» configurationId|string(uuid)|false|none|Configuration Id for integration connector template.<br>The configuration of a template provide defaults for a new instance of a connector.|
+|»»»»»»»» configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](../Models/sbpam.models.connectorconfigurationvalue.md)]¦null|false|none|List of available connector settings|
+|»»»»»»»»» id|string(uuid)|false|none|Unique identifier for connector configuration values.|
+|»»»»»»»»» configurationId|string(uuid)|false|none|Unique identifier of connector configuration set.|
+|»»»»»»»»» name|string¦null|false|none|Name of configuration value.|
+|»»»»»»»»» value|string¦null|false|none|Set value for configuration.|
+|»»»»»»»»» defaultValue|string¦null|false|none|Default value for configuration.|
+|»»»»»»»»» description|string¦null|false|none|Description for configuration set.|
+|»»»»»»»»» displayOrder|integer(int32)|false|none|Numerical order display of configuration set for use in UI.|
+|»»»»»»»»» required|boolean|false|none|Determines whether a configuration value is required or optional.|
+|»»»»»»»»» connectorId|string(uuid)¦null|false|none|Unique identifier of integration connector|
+|»»»»»»»»» integrationConnectorTemplateId|string(uuid)¦null|false|none|Unique identifier of integration connector|
+|»»»»»»»»» connectorConfiguration|[SbPAM.Models.ConnectorConfiguration](../Models/sbpam.models.connectorconfiguration.md)|false|none|This model represents integration connectors for Stealthbits products and available third-party apps.|
 |»»»»»»»»» type|[SbPAM.Models.ConnectorConfigurationValueType](../Models/sbpam.models.connectorconfigurationvaluetype.md)(int32)|false|none|none|
-|»»»»»»»»» advanced|boolean|false|none|none|
+|»»»»»»»»» advanced|boolean|false|none|Advanced setting|
 |»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
@@ -5752,27 +6078,27 @@ Status Code **200**
 |»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](../Models/sbpam.models.connectorconfigurationvalue.md)]¦null|false|none|none|
+|»»»»»» configurationValues|[[SbPAM.Models.ConnectorConfigurationValue](../Models/sbpam.models.connectorconfigurationvalue.md)]¦null|false|none|Settings for this connector|
 |»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»» passwordVaultInfo|string¦null|false|none|none|
-|»»»»» changeOnCheckout|boolean¦null|false|none|none|
-|»»»»» changeOnRelease|boolean¦null|false|none|none|
+|»»»»» passwordVaultInfo|string¦null|false|none|Extra info needed for password vault integration.|
+|»»»»» changeOnCheckout|boolean¦null|false|none|Settings for managed users on checkout change|
+|»»»»» changeOnRelease|boolean¦null|false|none|Settings for managed users on release change|
 |»»»»» showPassword|boolean|false|none|none|
-|»»»»» credentialJoin|[[SbPAM.Models.CredentialJoin](../Models/sbpam.models.credentialjoin.md)]¦null|false|read-only|none|
-|»»»»»» credentialId|string(uuid)|false|none|none|
-|»»»»»» credential|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|none|none|
-|»»»»»» credentialGroupId|string(uuid)|false|none|none|
+|»»»»» credentialJoin|[[SbPAM.Models.CredentialJoin](../Models/sbpam.models.credentialjoin.md)]¦null|false|read-only|This model is used to model the many to many relationship between credentials and credential groups.|
+|»»»»»» credentialId|string(uuid)|false|none|Id of credential.|
+|»»»»»» credential|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|none|This model represents the stored credentials for a user.|
+|»»»»»» credentialGroupId|string(uuid)|false|none|Id of credential group.|
 |»»»»»» credentialGroup|[SbPAM.Models.CredentialGroup](../Models/sbpam.models.credentialgroup.md)|false|none|none|
 |»»»»»»» id|string(uuid)|false|none|none|
 |»»»»»»» name|string¦null|false|none|none|
 |»»»»»»» description|string¦null|false|none|none|
-|»»»»»»» credentialJoin|[[SbPAM.Models.CredentialJoin](../Models/sbpam.models.credentialjoin.md)]¦null|false|read-only|none|
+|»»»»»»» credentialJoin|[[SbPAM.Models.CredentialJoin](../Models/sbpam.models.credentialjoin.md)]¦null|false|read-only|This model is used to model the many to many relationship between credentials and credential groups.|
 |»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»» isDeleted|boolean|false|none|none|
+|»»»»» isDeleted|boolean|false|none|Credentials are marked as deleted when the owning user is removed|
 |»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
@@ -5784,104 +6110,104 @@ Status Code **200**
 |»»»»» privateKey|string¦null|false|none|none|
 |»»»»» publicKey|string¦null|false|none|none|
 |»»»» manageAccount|[SbPAM.Models.ManagedResourceManageAccountEnum](../Models/sbpam.models.managedresourcemanageaccountenum.md)(int32)|false|none|none|
-|»»»» protectedGroup|[[SbPAM.Models.ProtectedGroup](../Models/sbpam.models.protectedgroup.md)]¦null|false|none|none|
-|»»»»» id|string(uuid)|false|none|none|
-|»»»»» name|string¦null|false|none|none|
-|»»»»» allowedProtectedGroupMember|[[SbPAM.Models.ProtectedGroupMember](../Models/sbpam.models.protectedgroupmember.md)]¦null|false|none|none|
-|»»»»»» id|string(uuid)|false|none|none|
-|»»»»»» userName|string¦null|false|none|none|
-|»»»»»» userId|string(uuid)¦null|false|none|none|
-|»»»»»» allowedProtectedGroupId|string(uuid)¦null|false|none|none|
-|»»»»»» allowedProtectedGroup|[SbPAM.Models.ProtectedGroup](../Models/sbpam.models.protectedgroup.md)|false|none|none|
-|»»»»»» currentProtectedGroupId|string(uuid)¦null|false|none|none|
-|»»»»»» currentProtectedGroup|[SbPAM.Models.ProtectedGroup](../Models/sbpam.models.protectedgroup.md)|false|none|none|
-|»»»»»» isTransient|boolean|false|none|none|
-|»»»»»» isSystem|boolean|false|none|none|
+|»»»» protectedGroup|[[SbPAM.Models.ProtectedGroup](../Models/sbpam.models.protectedgroup.md)]¦null|false|none|Group(s) protected by this resource.|
+|»»»»» id|string(uuid)|false|none|Unique id and DB key for this group.|
+|»»»»» name|string¦null|false|none|Name of this group.|
+|»»»»» allowedProtectedGroupMember|[[SbPAM.Models.ProtectedGroupMember](../Models/sbpam.models.protectedgroupmember.md)]¦null|false|none|Members allowed in this group.|
+|»»»»»» id|string(uuid)|false|none|Unique id and DB key for this member.|
+|»»»»»» userName|string¦null|false|none|UserName of this member.|
+|»»»»»» userId|string(uuid)¦null|false|none|Id of user if this member is a user.|
+|»»»»»» allowedProtectedGroupId|string(uuid)¦null|false|none|Id of group to which this member is allowed.|
+|»»»»»» allowedProtectedGroup|[SbPAM.Models.ProtectedGroup](../Models/sbpam.models.protectedgroup.md)|false|none|This model represents a protected group associated with a managed resource.|
+|»»»»»» currentProtectedGroupId|string(uuid)¦null|false|none|Id of group to which this member belongs.|
+|»»»»»» currentProtectedGroup|[SbPAM.Models.ProtectedGroup](../Models/sbpam.models.protectedgroup.md)|false|none|This model represents a protected group associated with a managed resource.|
+|»»»»»» isTransient|boolean|false|none|Transient group membership (was added by a session)|
+|»»»»»» isSystem|boolean|false|none|System group membership (was added by policy)|
 |»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»» currentProtectedGroupMember|[[SbPAM.Models.ProtectedGroupMember](../Models/sbpam.models.protectedgroupmember.md)]¦null|false|none|none|
-|»»»»» managedResourceId|string(uuid)|false|none|none|
-|»»»»» managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|none|
-|»»»»» isSystem|boolean|false|none|none|
+|»»»»» currentProtectedGroupMember|[[SbPAM.Models.ProtectedGroupMember](../Models/sbpam.models.protectedgroupmember.md)]¦null|false|none|Current members in this group.|
+|»»»»» managedResourceId|string(uuid)|false|none|Id of managed resource which protects this group.|
+|»»»»» managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|This model represents a managed resource such as a Host.|
+|»»»»» isSystem|boolean|false|none|Protection policy created by|
 |»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»» activityConfigurationId|string(uuid)¦null|false|none|none|
-|»»»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|none|
-|»»»» actionQueueId|string(uuid)¦null|false|none|none|
-|»»»» actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
-|»»»» managedResourceJoin|[[SbPAM.Models.ManagedResourceJoin](../Models/sbpam.models.managedresourcejoin.md)]¦null|false|none|none|
-|»»»»» managedResourceId|string(uuid)|false|none|none|
-|»»»»» managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|none|
-|»»»»» managedResourceGroupId|string(uuid)|false|none|none|
+|»»»» activityConfigurationId|string(uuid)¦null|false|none|Id of configuration collection for this policy.|
+|»»»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|This model represents a collection of settings for running an activity.|
+|»»»» actionQueueId|string(uuid)¦null|false|none|Id of Action queue which manages this resource.|
+|»»»» actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
+|»»»» managedResourceJoin|[[SbPAM.Models.ManagedResourceJoin](../Models/sbpam.models.managedresourcejoin.md)]¦null|false|none|Groups to which this resource belongs via join table.|
+|»»»»» managedResourceId|string(uuid)|false|none|Id of managed resource.|
+|»»»»» managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|This model represents a managed resource such as a Host.|
+|»»»»» managedResourceGroupId|string(uuid)|false|none|Id of managed resource group.|
 |»»»»» managedResourceGroup|[SbPAM.Models.ManagedResourceGroup](../Models/sbpam.models.managedresourcegroup.md)|false|none|none|
-|»»»»»» id|string(uuid)|false|none|none|
-|»»»»»» name|string¦null|false|none|none|
+|»»»»»» id|string(uuid)|false|none|Unique id and DB key for this group.|
+|»»»»»» name|string¦null|false|none|Name of this group.|
 |»»»»»» type|[SbPAM.Models.ManagedResourceGroupType](../Models/sbpam.models.managedresourcegrouptype.md)(int32)|false|none|none|
-|»»»»»» platformId|string(uuid)¦null|false|none|none|
+|»»»»»» platformId|string(uuid)¦null|false|none|If this is a built-in platform resource group then for which platform?|
 |»»»»»» manageAccounts|[SbPAM.Models.ManagedResourceGroupManageAccountsEnum](../Models/sbpam.models.managedresourcegroupmanageaccountsenum.md)(int32)|false|none|none|
-|»»»»»» notificationEmailList|string¦null|false|none|none|
-|»»»»»» nodeId|string(uuid)|false|none|none|
+|»»»»»» notificationEmailList|string¦null|false|none|Comma-delimited list of email addresses to send notifications to|
+|»»»»»» nodeId|string(uuid)|false|none|Support multi-master data clustering|
 |»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» managedResourceJoin|[[SbPAM.Models.ManagedResourceJoin](../Models/sbpam.models.managedresourcejoin.md)]¦null|false|read-only|none|
-|»»»»»» platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|none|
-|»»»»»» managedResourceGroupPolicyJoin|[[SbPAM.Models.ManagedResourceGroupPolicyJoin](../Models/sbpam.models.managedresourcegrouppolicyjoin.md)]¦null|false|read-only|none|
-|»»»»»»» managedResourceGroupId|string(uuid)|false|none|none|
+|»»»»»» managedResourceJoin|[[SbPAM.Models.ManagedResourceJoin](../Models/sbpam.models.managedresourcejoin.md)]¦null|false|read-only|Managed resources in this group via join table.|
+|»»»»»» platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|This model represents an platform on which a particular activity can be performed.|
+|»»»»»» managedResourceGroupPolicyJoin|[[SbPAM.Models.ManagedResourceGroupPolicyJoin](../Models/sbpam.models.managedresourcegrouppolicyjoin.md)]¦null|false|read-only|Policies which reference this group via join table.|
+|»»»»»»» managedResourceGroupId|string(uuid)|false|none|Id of managed resource group.|
 |»»»»»»» managedResourceGroup|[SbPAM.Models.ManagedResourceGroup](../Models/sbpam.models.managedresourcegroup.md)|false|none|none|
-|»»»»»»» accessControlPolicyId|string(uuid)|false|none|none|
-|»»»»»»» accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|none|
-|»»»»»» manageResourceGroupProtectionPolicyJoin|[[SbPAM.Models.ManageResourceGroupProtectionPolicyJoin](../Models/sbpam.models.manageresourcegroupprotectionpolicyjoin.md)]¦null|false|read-only|none|
-|»»»»»»» managedResourceGroupId|string(uuid)|false|none|none|
+|»»»»»»» accessControlPolicyId|string(uuid)|false|none|Id of access control policy.|
+|»»»»»»» accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|This model represents a policy which can be associated with<br>    an elevation session.<br>Policies are matched to a particular group, user and host and sorted by priority<br>    to determine which policy to use.|
+|»»»»»» manageResourceGroupProtectionPolicyJoin|[[SbPAM.Models.ManageResourceGroupProtectionPolicyJoin](../Models/sbpam.models.manageresourcegroupprotectionpolicyjoin.md)]¦null|false|read-only|Policies which reference this group via join table.|
+|»»»»»»» managedResourceGroupId|string(uuid)|false|none|Id of managed resource group.|
 |»»»»»»» managedResourceGroup|[SbPAM.Models.ManagedResourceGroup](../Models/sbpam.models.managedresourcegroup.md)|false|none|none|
-|»»»»»»» protectionPolicyId|string(uuid)|false|none|none|
-|»»»»»»» protectionPolicy|[SbPAM.Models.ProtectionPolicy](../Models/sbpam.models.protectionpolicy.md)|false|none|none|
-|»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»» description|string¦null|false|none|none|
+|»»»»»»» protectionPolicyId|string(uuid)|false|none|Id of protect group policy.|
+|»»»»»»» protectionPolicy|[SbPAM.Models.ProtectionPolicy](../Models/sbpam.models.protectionpolicy.md)|false|none|This model represents a policy which specifies a group or groups to be protected on a collection of managed resources.|
+|»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this policy.|
+|»»»»»»»» name|string¦null|false|none|Name of this policy.|
+|»»»»»»»» description|string¦null|false|none|Human readable description of this policy.|
 |»»»»»»»» groupMonitorInterval|integer(int32)|false|none|none|
-|»»»»»»»» isDisabled|boolean|false|none|none|
-|»»»»»»»» isDeleted|boolean|false|none|none|
-|»»»»»»»» protectionPolicyGroup|[[SbPAM.Models.ProtectionPolicyGroup](../Models/sbpam.models.protectionpolicygroup.md)]¦null|false|none|none|
-|»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»» name|string¦null|false|none|none|
-|»»»»»»»»» deleted|boolean|false|none|none|
-|»»»»»»»»» protectionPolicyId|string(uuid)|false|none|none|
-|»»»»»»»»» protectionPolicy|[SbPAM.Models.ProtectionPolicy](../Models/sbpam.models.protectionpolicy.md)|false|none|none|
-|»»»»»»»»» protectionPolicyGroupMember|[[SbPAM.Models.ProtectionPolicyGroupMember](../Models/sbpam.models.protectionpolicygroupmember.md)]¦null|false|none|none|
-|»»»»»»»»»» id|string(uuid)|false|none|none|
-|»»»»»»»»»» userName|string¦null|false|none|none|
-|»»»»»»»»»» deleted|boolean|false|none|none|
-|»»»»»»»»»» userId|string(uuid)¦null|false|none|none|
-|»»»»»»»»»» protectionPolicyGroupId|string(uuid)¦null|false|none|none|
-|»»»»»»»»»» protectionPolicyGroup|[SbPAM.Models.ProtectionPolicyGroup](../Models/sbpam.models.protectionpolicygroup.md)|false|none|none|
+|»»»»»»»» isDisabled|boolean|false|none|True if this policy has been disabled.|
+|»»»»»»»» isDeleted|boolean|false|none|True if this policy has been deleted.|
+|»»»»»»»» protectionPolicyGroup|[[SbPAM.Models.ProtectionPolicyGroup](../Models/sbpam.models.protectionpolicygroup.md)]¦null|false|none|Protected groups which belong to this policy.|
+|»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this group.|
+|»»»»»»»»» name|string¦null|false|none|Name of this group.|
+|»»»»»»»»» deleted|boolean|false|none|Has this group been removed from policy?|
+|»»»»»»»»» protectionPolicyId|string(uuid)|false|none|Id of policy to which this group belongs.|
+|»»»»»»»»» protectionPolicy|[SbPAM.Models.ProtectionPolicy](../Models/sbpam.models.protectionpolicy.md)|false|none|This model represents a policy which specifies a group or groups to be protected on a collection of managed resources.|
+|»»»»»»»»» protectionPolicyGroupMember|[[SbPAM.Models.ProtectionPolicyGroupMember](../Models/sbpam.models.protectionpolicygroupmember.md)]¦null|false|none|Members allowed in this group.|
+|»»»»»»»»»» id|string(uuid)|false|none|Unique id and DB key for this member.|
+|»»»»»»»»»» userName|string¦null|false|none|UserName of this member.|
+|»»»»»»»»»» deleted|boolean|false|none|Has this member been removed from its group?|
+|»»»»»»»»»» userId|string(uuid)¦null|false|none|Id of user if this member is a user.|
+|»»»»»»»»»» protectionPolicyGroupId|string(uuid)¦null|false|none|Id of group in which this member is allowed.|
+|»»»»»»»»»» protectionPolicyGroup|[SbPAM.Models.ProtectionPolicyGroup](../Models/sbpam.models.protectionpolicygroup.md)|false|none|This model represents a group protected by a protected group policy.|
 |»»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»»»» manageResourceProtectionPolicyJoin|[[SbPAM.Models.ManageResourceProtectionPolicyJoin](../Models/sbpam.models.manageresourceprotectionpolicyjoin.md)]¦null|false|none|none|
-|»»»»»»»»» managedResourceId|string(uuid)|false|none|none|
-|»»»»»»»»» managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|none|
-|»»»»»»»»» protectionPolicyId|string(uuid)|false|none|none|
-|»»»»»»»»» protectionPolicy|[SbPAM.Models.ProtectionPolicy](../Models/sbpam.models.protectionpolicy.md)|false|none|none|
-|»»»»»»»» manageResourceGroupProtectionPolicyJoin|[[SbPAM.Models.ManageResourceGroupProtectionPolicyJoin](../Models/sbpam.models.manageresourcegroupprotectionpolicyjoin.md)]¦null|false|none|none|
+|»»»»»»»» manageResourceProtectionPolicyJoin|[[SbPAM.Models.ManageResourceProtectionPolicyJoin](../Models/sbpam.models.manageresourceprotectionpolicyjoin.md)]¦null|false|none|Managed resources which use this policy via join table.|
+|»»»»»»»»» managedResourceId|string(uuid)|false|none|Id of managed resource.|
+|»»»»»»»»» managedResource|[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)|false|none|This model represents a managed resource such as a Host.|
+|»»»»»»»»» protectionPolicyId|string(uuid)|false|none|Id of protect group policy.|
+|»»»»»»»»» protectionPolicy|[SbPAM.Models.ProtectionPolicy](../Models/sbpam.models.protectionpolicy.md)|false|none|This model represents a policy which specifies a group or groups to be protected on a collection of managed resources.|
+|»»»»»»»» manageResourceGroupProtectionPolicyJoin|[[SbPAM.Models.ManageResourceGroupProtectionPolicyJoin](../Models/sbpam.models.manageresourcegroupprotectionpolicyjoin.md)]¦null|false|none|Managed resource groups which use this policy via join table.|
 |»»»»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» ouMappingEnabled|boolean|false|none|none|
-|»»»»»» ouFqdn|string¦null|false|none|none|
-|»»»»»» ouDomainConfigId|string(uuid)¦null|false|none|none|
+|»»»»»» ouMappingEnabled|boolean|false|none|Is mapping enabled for this group|
+|»»»»»» ouFqdn|string¦null|false|none|Fully Qualified Domain Name for the mapped OU|
+|»»»»»» ouDomainConfigId|string(uuid)¦null|false|none|Id of Domain which contains the mapped OU|
 |»»»»»» ouDomainConfig|[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomainConfiguration](../Models/sbpam.activedirectory.models.activedirectorydomainconfiguration.md)|false|none|none|
-|»»»»»» ouAutoOnboard|boolean|false|none|none|
-|»»»»»» ouIncludeChildren|boolean|false|none|none|
-|»»»» managedResourcePolicyJoin|[[SbPAM.Models.ManagedResourcePolicyJoin](../Models/sbpam.models.managedresourcepolicyjoin.md)]¦null|false|none|none|
-|»»»» manageResourceProtectionPolicyJoin|[[SbPAM.Models.ManageResourceProtectionPolicyJoin](../Models/sbpam.models.manageresourceprotectionpolicyjoin.md)]¦null|false|none|none|
-|»»»» verificationScheduleId|string(uuid)¦null|false|none|none|
+|»»»»»» ouAutoOnboard|boolean|false|none|Automatically onboard to SbPAM|
+|»»»»»» ouIncludeChildren|boolean|false|none|Include chiild OUs in the group|
+|»»»» managedResourcePolicyJoin|[[SbPAM.Models.ManagedResourcePolicyJoin](../Models/sbpam.models.managedresourcepolicyjoin.md)]¦null|false|none|Policies which reference this resource via join table.|
+|»»»» manageResourceProtectionPolicyJoin|[[SbPAM.Models.ManageResourceProtectionPolicyJoin](../Models/sbpam.models.manageresourceprotectionpolicyjoin.md)]¦null|false|none|Policies which reference this group via join table.|
+|»»»» verificationScheduleId|string(uuid)¦null|false|none|Id for the managed user verification schedule (can override platform, resource schedule id)|
 |»»»» verificationSchedule|[SbPAM.Models.ScheduledChangePolicy](../Models/sbpam.models.scheduledchangepolicy.md)|false|none|none|
-|»»»» passwordComplexityPolicyId|string(uuid)¦null|false|none|none|
+|»»»» passwordComplexityPolicyId|string(uuid)¦null|false|none|Id for password complexity (can override platform, resource password policy id)|
 |»»»» passwordComplexityPolicy|[SbPAM.Models.PasswordComplexity](../Models/sbpam.models.passwordcomplexity.md)|false|none|none|
 |»»»» portSsh|integer(int32)|false|none|none|
 |»»»» portRdp|integer(int32)|false|none|none|
@@ -5897,47 +6223,47 @@ Status Code **200**
 |»»»» nodeId|string(uuid)|false|none|none|
 |»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»» accessControlPolicyId|string(uuid)|false|none|none|
-|»»» accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|none|
-|»» managedResourceGroupPolicyJoin|[[SbPAM.Models.ManagedResourceGroupPolicyJoin](../Models/sbpam.models.managedresourcegrouppolicyjoin.md)]¦null|false|none|none|
-|»» activityJoin|[[SbPAM.Models.ActivityJoin](../Models/sbpam.models.activityjoin.md)]¦null|false|none|none|
+|»»» accessControlPolicyId|string(uuid)|false|none|Id of access control policy.|
+|»»» accessControlPolicy|[SbPAM.Models.AccessControlPolicy](../Models/sbpam.models.accesscontrolpolicy.md)|false|none|This model represents a policy which can be associated with<br>    an elevation session.<br>Policies are matched to a particular group, user and host and sorted by priority<br>    to determine which policy to use.|
+|»» managedResourceGroupPolicyJoin|[[SbPAM.Models.ManagedResourceGroupPolicyJoin](../Models/sbpam.models.managedresourcegrouppolicyjoin.md)]¦null|false|none|Managed resource group(s) referenced by this policy via join table.|
+|»» activityJoin|[[SbPAM.Models.ActivityJoin](../Models/sbpam.models.activityjoin.md)]¦null|false|none|Activities referenced by this policy via join table.|
 |»»» accessControlPolicyId|string(uuid)|false|none|none|
 |»»» activityId|string(uuid)|false|none|none|
-|»»» activity|[SbPAM.Models.Activity](../Models/sbpam.models.activity.md)|false|none|none|
-|»»»» id|string(uuid)|false|none|none|
-|»»»» createdBy|string(uuid)¦null|false|none|none|
-|»»»» modifiedBy|string(uuid)¦null|false|none|none|
-|»»»» name|string¦null|false|none|none|
-|»»»» description|string¦null|false|none|none|
-|»»»» activityConfigurationId|string(uuid)¦null|false|none|none|
-|»»»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|none|
-|»»»» platformId|string(uuid)¦null|false|none|none|
-|»»»» platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|none|
-|»»»» startActionGroupId|string(uuid)¦null|false|none|none|
-|»»»» duringActionGroupId|string(uuid)¦null|false|none|none|
-|»»»» endActionGroupId|string(uuid)¦null|false|none|none|
+|»»» activity|[SbPAM.Models.Activity](../Models/sbpam.models.activity.md)|false|none|This model represents an activity that a user can perform such as requesting elevated access to a resource.|
+|»»»» id|string(uuid)|false|none|Unique identifier for this activity.|
+|»»»» createdBy|string(uuid)¦null|false|none|Id of user that created this activity.|
+|»»»» modifiedBy|string(uuid)¦null|false|none|Id of user that modified this activity.|
+|»»»» name|string¦null|false|none|Activity name - i.e. Add to Local Group|
+|»»»» description|string¦null|false|none|Description of the activity|
+|»»»» activityConfigurationId|string(uuid)¦null|false|none|Id of configuration collection for this activity.|
+|»»»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|This model represents a collection of settings for running an activity.|
+|»»»» platformId|string(uuid)¦null|false|none|Id of platform that this activity can be performed on.|
+|»»»» platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|This model represents an platform on which a particular activity can be performed.|
+|»»»» startActionGroupId|string(uuid)¦null|false|none|Action Group to run at the start of the activity.|
+|»»»» duringActionGroupId|string(uuid)¦null|false|none|Optional - Action group to run during the activity|
+|»»»» endActionGroupId|string(uuid)¦null|false|none|Action group to run at the end of the activity.|
 |»»»» activityType|[SbPAM.Models.ActivityType](../Models/sbpam.models.activitytype.md)(int32)|false|none|none|
 |»»»» loginAccount|[SbPAM.Models.ActivityLoginType](../Models/sbpam.models.activitylogintype.md)(int32)|false|none|none|
-|»»»» loginAccountNameFormat|string¦null|false|none|none|
+|»»»» loginAccountNameFormat|string¦null|false|none|Login account format.|
 |»»»» requesterLoginFormat|[SbPAM.Models.RequesterLoginFormat](../Models/sbpam.models.requesterloginformat.md)(int32)|false|none|none|
-|»»»» applicationToLaunch|string¦null|false|none|none|
-|»»»» preferredRDSHostId|string(uuid)¦null|false|none|none|
-|»»»» connectCredentialId|string(uuid)¦null|false|none|none|
-|»»»» createAccount|boolean|false|none|none|
-|»»»» activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](../Models/sbpam.models.activitygroupactivity.md)]¦null|false|none|none|
+|»»»» applicationToLaunch|string¦null|false|none|Launch proxy from path|
+|»»»» preferredRDSHostId|string(uuid)¦null|false|none|Managed resource for Remote Desktop Server(RDS)|
+|»»»» connectCredentialId|string(uuid)¦null|false|none|Connect Account for RDS impersonation|
+|»»»» createAccount|boolean|false|none|Create local account option for activity|
+|»»»» activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](../Models/sbpam.models.activitygroupactivity.md)]¦null|false|none|Many to many relationship between activities and activity groups.|
 |»»»»» activityId|string(uuid)|false|none|none|
-|»»»»» activity|[SbPAM.Models.Activity](../Models/sbpam.models.activity.md)|false|none|none|
+|»»»»» activity|[SbPAM.Models.Activity](../Models/sbpam.models.activity.md)|false|none|This model represents an activity that a user can perform such as requesting elevated access to a resource.|
 |»»»»» activityGroupId|string(uuid)|false|none|none|
-|»»»»» activityGroup|[SbPAM.Models.ActivityGroup](../Models/sbpam.models.activitygroup.md)|false|none|none|
-|»»»»»» id|string(uuid)|false|none|none|
-|»»»»»» createdBy|string(uuid)¦null|false|none|none|
-|»»»»»» modifiedBy|string(uuid)¦null|false|none|none|
-|»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»»»» name|string¦null|false|none|none|
-|»»»»»» description|string¦null|false|none|none|
-|»»»»»» activityConfigurationId|string(uuid)¦null|false|none|none|
-|»»»»»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|none|
-|»»»»»» activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](../Models/sbpam.models.activitygroupactivity.md)]¦null|false|none|none|
+|»»»»» activityGroup|[SbPAM.Models.ActivityGroup](../Models/sbpam.models.activitygroup.md)|false|none|This model represents an group of activities.|
+|»»»»»» id|string(uuid)|false|none|Unique identifier for this group.|
+|»»»»»» createdBy|string(uuid)¦null|false|none|Id of user that created this activity.|
+|»»»»»» modifiedBy|string(uuid)¦null|false|none|Id of user that modified this activity.|
+|»»»»»» modifiedDateTimeUtc|string(date-time)|false|none|Modified date time in UTC|
+|»»»»»» name|string¦null|false|none|Name for this group.|
+|»»»»»» description|string¦null|false|none|Description for this group.|
+|»»»»»» activityConfigurationId|string(uuid)¦null|false|none|Id of configuration collection for this group.|
+|»»»»»» activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|This model represents a collection of settings for running an activity.|
+|»»»»»» activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](../Models/sbpam.models.activitygroupactivity.md)]¦null|false|none|Many to many relationship between activities and activity groups.|
 |»»»»»» isDefault|boolean|false|none|none|
 |»»»»»» isDeleted|boolean|false|none|none|
 |»»»»»» isUserModified|boolean|false|none|none|
@@ -5947,10 +6273,10 @@ Status Code **200**
 |»»»»» nodeId|string(uuid)|false|none|none|
 |»»»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»»»» deleteAccount|boolean|false|none|none|
+|»»»» deleteAccount|boolean|false|none|For a managed account, delete account when finished when false account will be disabled|
 |»»»» vaultId|string(uuid)¦null|false|none|none|
-|»»»» vaultInfo|string¦null|false|none|none|
-|»»»» logonUrl|string¦null|false|none|none|
+|»»»» vaultInfo|string¦null|false|none|Vault properties, JSON string and specific to the Vault|
+|»»»» logonUrl|string¦null|false|none|Url for site login|
 |»»»» isDefault|boolean|false|none|none|
 |»»»» isDeleted|boolean|false|none|none|
 |»»»» isUserModified|boolean|false|none|none|
@@ -5962,71 +6288,71 @@ Status Code **200**
 |»»» nodeId|string(uuid)|false|none|none|
 |»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»» activityGroupJoin|[[SbPAM.Models.ActivityGroupJoin](../Models/sbpam.models.activitygroupjoin.md)]¦null|false|none|none|
+|»» activityGroupJoin|[[SbPAM.Models.ActivityGroupJoin](../Models/sbpam.models.activitygroupjoin.md)]¦null|false|none|Activity groups referenced by this policy via join table.|
 |»»» accessControlPolicyId|string(uuid)|false|none|none|
 |»»» activityGroupId|string(uuid)|false|none|none|
-|»»» activityGroup|[SbPAM.Models.ActivityGroup](../Models/sbpam.models.activitygroup.md)|false|none|none|
+|»»» activityGroup|[SbPAM.Models.ActivityGroup](../Models/sbpam.models.activitygroup.md)|false|none|This model represents an group of activities.|
 |»»» nodeId|string(uuid)|false|none|none|
 |»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»» credentialPolicyJoin|[[SbPAM.Models.CredentialPolicyJoin](../Models/sbpam.models.credentialpolicyjoin.md)]¦null|false|none|none|
+|»» credentialPolicyJoin|[[SbPAM.Models.CredentialPolicyJoin](../Models/sbpam.models.credentialpolicyjoin.md)]¦null|false|none|Credentials referenced by this policy via join table.|
 |»»» accessControlPolicyId|string(uuid)|false|none|none|
 |»»» credentialId|string(uuid)|false|none|none|
-|»»» credential|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|none|none|
+|»»» credential|[SbPAM.Models.Credential](../Models/sbpam.models.credential.md)|false|none|This model represents the stored credentials for a user.|
 |»»» nodeId|string(uuid)|false|none|none|
 |»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»» credentialGroupPolicyJoin|[[SbPAM.Models.CredentialGroupPolicyJoin](../Models/sbpam.models.credentialgrouppolicyjoin.md)]¦null|false|none|none|
+|»» credentialGroupPolicyJoin|[[SbPAM.Models.CredentialGroupPolicyJoin](../Models/sbpam.models.credentialgrouppolicyjoin.md)]¦null|false|none|Credential Groups referenced by this policy via join table.|
 |»»» accessControlPolicyId|string(uuid)|false|none|none|
 |»»» credentialGroupId|string(uuid)|false|none|none|
 |»»» credentialGroup|[SbPAM.Models.CredentialGroup](../Models/sbpam.models.credentialgroup.md)|false|none|none|
 |»»» nodeId|string(uuid)|false|none|none|
 |»»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|»» userAndGroupCollectionPolicyJoin|[[SbPAM.Models.UserAndGroupCollectionPolicyJoin](../Models/sbpam.models.userandgroupcollectionpolicyjoin.md)]¦null|false|none|none|
+|»» userAndGroupCollectionPolicyJoin|[[SbPAM.Models.UserAndGroupCollectionPolicyJoin](../Models/sbpam.models.userandgroupcollectionpolicyjoin.md)]¦null|false|none|User and Group Collections referenced by this policy via join table.|
 |»» policyType|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)(int32)|false|none|none|
 |»» nodeId|string(uuid)|false|none|none|
 |»» createdDateTimeUtc|string(date-time)|false|none|none|
 |»» modifiedDateTimeUtc|string(date-time)|false|none|none|
-|» resources|[[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)]¦null|false|none|none|
+|» resources|[[SbPAM.Models.ManagedResource](../Models/sbpam.models.managedresource.md)]¦null|false|none|[This model represents a managed resource such as a Host.]|
 |» activeSessions|[[SbPAM.Models.SessionSummary](../Models/sbpam.models.sessionsummary.md)]¦null|false|none|none|
-|»» id|string(uuid)|false|none|none|
-|»» hostId|string(uuid)¦null|false|none|none|
-|»» hostDisplayName|string¦null|false|none|none|
-|»» domainId|string(uuid)¦null|false|none|none|
-|»» domainName|string¦null|false|none|none|
-|»» userId|string(uuid)¦null|false|none|none|
-|»» userDisplayName|string¦null|false|none|none|
-|»» targetUserId|string(uuid)¦null|false|none|none|
-|»» targetUserDisplayName|string¦null|false|none|none|
-|»» canViewPassword|boolean|false|none|none|
-|»» canAutofillPassword|boolean|false|none|none|
-|»» viewPasswordInSeconds|integer(int32)|false|none|none|
+|»» id|string(uuid)|false|none|Unique id and DB key for this session.|
+|»» hostId|string(uuid)¦null|false|none|Id of host associated with this session.|
+|»» hostDisplayName|string¦null|false|none|The display name for the host|
+|»» domainId|string(uuid)¦null|false|none|Id of domain associated with this session.|
+|»» domainName|string¦null|false|none|The display name for the host|
+|»» userId|string(uuid)¦null|false|none|Id of user associated with this session.|
+|»» userDisplayName|string¦null|false|none|The display for the user.|
+|»» targetUserId|string(uuid)¦null|false|none|Id of target user associated with this session.<br>Note: This may be a local user on the target.|
+|»» targetUserDisplayName|string¦null|false|none|The display for the target user.<br>Note: This may be a local user on the target.|
+|»» canViewPassword|boolean|false|none|If true caller can view the password for this session.|
+|»» canAutofillPassword|boolean|false|none|If true browser extension can autofill the password for this session.|
+|»» viewPasswordInSeconds|integer(int32)|false|none|Timeout period for displaying session password (if canViewPassword is true)|
 |»» recordAudio|boolean|false|none|none|
-|»» createdBy|string(uuid)¦null|false|none|none|
-|»» managedAccountId|string(uuid)¦null|false|none|none|
-|»» managedResourceId|string(uuid)¦null|false|none|none|
-|»» managedResourceName|string¦null|false|none|none|
-|»» managedResourceOs|string¦null|false|none|none|
-|»» managedResourceDisplayName|string¦null|false|none|none|
-|»» createdByDisplayName|string¦null|false|none|none|
-|»» startDateTimeUtc|string(date-time)¦null|false|none|none|
-|»» actualStartDateTimeUtc|string(date-time)¦null|false|none|none|
-|»» endDateTimeUtc|string(date-time)¦null|false|none|none|
-|»» actualEndDateTimeUtc|string(date-time)¦null|false|none|none|
-|»» durationInSeconds|integer(int32)|false|none|none|
-|»» createdDateTimeUtc|string(date-time)¦null|false|none|none|
-|»» expirationDateTimeUtc|string(date-time)¦null|false|none|none|
+|»» createdBy|string(uuid)¦null|false|none|Id of the user that created the session.|
+|»» managedAccountId|string(uuid)¦null|false|none|Id of managed user that created the session.|
+|»» managedResourceId|string(uuid)¦null|false|none|ID of the managed resource associated with the target host.|
+|»» managedResourceName|string¦null|false|none|Name of the managed resource associated with the target host.|
+|»» managedResourceOs|string¦null|false|none|Name of the managed resource associated with the target host.|
+|»» managedResourceDisplayName|string¦null|false|none|Optional display name of the managed resource associated with the target host.|
+|»» createdByDisplayName|string¦null|false|none|The display name of the user that created the session.|
+|»» startDateTimeUtc|string(date-time)¦null|false|none|Scheduled date/time when the session should start.|
+|»» actualStartDateTimeUtc|string(date-time)¦null|false|none|Actual date/time when the session started.|
+|»» endDateTimeUtc|string(date-time)¦null|false|none|Scheduled date/time when the session should end.|
+|»» actualEndDateTimeUtc|string(date-time)¦null|false|none|Actual date/time when the session ended.|
+|»» durationInSeconds|integer(int32)|false|none|Session Duration calculated into seconds|
+|»» createdDateTimeUtc|string(date-time)¦null|false|none|When this session was created.|
+|»» expirationDateTimeUtc|string(date-time)¦null|false|none|When this session will expire.|
 |»» sessionStatus|any|false|none|none|
-|»» sessionStatusDescription|string¦null|false|none|none|
+|»» sessionStatusDescription|string¦null|false|none|ActivitySession status description|
 |»» status|[SbPAM.Models.SessionSummaryStatus](../Models/sbpam.models.sessionsummarystatus.md)(int32)|false|none|none|
-|»» statusMessage|string¦null|false|none|none|
-|»» loginDateTimeUtc|string(date-time)¦null|false|none|none|
+|»» statusMessage|string¦null|false|none|Information text that provides additional information about the status.|
+|»» loginDateTimeUtc|string(date-time)¦null|false|none|Last login date time.|
 |»» loginSessionState|[SbPAM.ActiveDirectory.Models.Enums.LoginSessionState](../Models/sbpam.activedirectory.models.enums.loginsessionstate.md)(int32)|false|none|none|
-|»» activityName|string¦null|false|none|none|
+|»» activityName|string¦null|false|none|The selected Activity for this Flip|
 |»» activityId|string(uuid)¦null|false|none|none|
 |»» activityType|[SbPAM.Models.ActivityType](../Models/sbpam.models.activitytype.md)(int32)|false|none|none|
-|»» connectionUri|string¦null|false|none|none|
+|»» connectionUri|string¦null|false|none|Uri for connect now icon.<br>RDP URL for RDP file download.<br>SSH URL for SSH is of the form ssh://username+activty+dnshostname@proxy|
 |»» platformId|string(uuid)|false|none|none|
 |»» platformName|string¦null|false|none|none|
 |»» userType|[SbPAM.Constants.SbPAMAccountType](../Models/sbpam.constants.sbpamaccounttype.md)(int32)|false|none|none|
@@ -6098,6 +6424,12 @@ Status Code **200**
 |type|UnsignedInteger|
 |type|Boolean|
 |type|Guid|
+|customFieldDataType|Integer|
+|customFieldDataType|String|
+|customFieldDataType|Options|
+|approvalTypeRequired|Deny|
+|approvalTypeRequired|Allow|
+|approvalTypeRequired|Workflow|
 |type|HostUser|
 |type|HostService|
 |type|HostScheduledTask|

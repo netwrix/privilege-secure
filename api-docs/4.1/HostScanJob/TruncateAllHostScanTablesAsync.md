@@ -8,7 +8,7 @@
 ```shell
 # You can also use wget
 curl -X DELETE /api/v1/HostScanJob/TruncateAllTables \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 

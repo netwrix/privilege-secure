@@ -26,12 +26,12 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
+|id|string(uuid)|false|none|Record Id|
 |state|[SbPAM.Models.WizardStateEnum](../Models/sbpam.models.wizardstateenum.md)|false|none|none|
-|netbiosDomain|string¦null|false|none|none|
-|dnsDomain|string¦null|false|none|none|
-|adminUsername|string¦null|false|none|none|
-|serviceUsername|string¦null|false|none|none|
+|netbiosDomain|string¦null|false|none|Domain Netbios name|
+|dnsDomain|string¦null|false|none|Domain DNS|
+|adminUsername|string¦null|false|none|Admin username|
+|serviceUsername|string¦null|false|none|Service username|
 |initialActiveDirectoryConfigId|string(uuid)¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

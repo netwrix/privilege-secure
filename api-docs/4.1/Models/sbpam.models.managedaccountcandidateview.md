@@ -37,6 +37,6 @@
 |managed|boolean|false|none|none|
 |domainConfigId|string(uuid)¦null|false|none|none|
 |domainName|string¦null|false|none|none|
-|managedAccountId|string(uuid)¦null|false|none|none|
+|managedAccountId|string(uuid)¦null|false|none|ManagedAccount.Id or ManagedAccountGroup.Id, if this entity is managed by SbPAM|
 
 

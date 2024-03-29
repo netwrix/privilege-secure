@@ -33,13 +33,16 @@
 
 ```
 
+DTO for Action Job Schedule.
+Combines the ActionQueue and ActionJob class
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|actionQueueId|string(uuid)¦null|false|none|none|
+|id|string(uuid)|false|none|SbPAM.Models.ActionJobActionJob<br>             Id|
+|name|string¦null|false|none|Name of the ActionGroup that is associated with the ActionJob|
+|actionQueueId|string(uuid)¦null|false|none|Id of ActionQueue associated with it.|
 |recurrenceType|[SbPAM.Constants.ActionConstants+RecurrenceType](../Models/sbpam.constants.actionconstants+recurrencetype.md)|false|none|none|
 |hour|integer(int32)|false|none|none|
 |minute|integer(int32)|false|none|none|

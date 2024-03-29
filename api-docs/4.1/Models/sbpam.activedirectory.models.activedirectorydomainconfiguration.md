@@ -11,13 +11,13 @@
   "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
   "activeDirectoryDomain": [
     {
-      "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-      "name": "string",
-      "domainName": "string",
+      "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+      "name": "example",
+      "domainName": "example.local",
       "netBiosName": "string",
-      "domainController": "string",
-      "usnChanged": 0,
-      "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+      "domainController": "example-dc001.example.local",
+      "usnChanged": 12345,
+      "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
       "activeDirectoryDomainConfiguration": {
         "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
         "activeDirectoryDomain": [],
@@ -43,7 +43,7 @@
         "createdDateTimeUtc": "2019-08-24T14:15:22Z",
         "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
       },
-      "functionalLevel": "string",
+      "functionalLevel": "Windows Server 2016",
       "activeDirectoryGroup": [
         {
           "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
@@ -79,18 +79,18 @@
                   "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                   "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
                   "name": "string",
-                  "distinguishedName": "string",
-                  "ipAddress": "string",
-                  "os": "string",
-                  "version": "string",
-                  "lsaLookupCache": "string",
-                  "lastUpdatedDateTimeUtc": "2019-08-24T14:15:22Z",
-                  "credentialId": "f568fec0-10b6-4b94-9daf-e62c50c9bf3e",
-                  "hasSSH": true,
+                  "distinguishedName": "CN=Host, CN=Computers, DC=example, DC=local",
+                  "ipAddress": "192.168.1.1",
+                  "os": "Windows Fake Edition",
+                  "version": "10.4.1.1",
+                  "lsaLookupCache": "10",
+                  "lastUpdatedDateTimeUtc": "2024-03-27T18:25:43.511Z",
+                  "credentialId": "61101f34-74f5-41a6-9405-73c2c91bd752",
+                  "hasSSH": false,
                   "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                   "activeDirectoryDomain": {},
-                  "dnsHostName": "string",
-                  "netBiosName": "string",
+                  "dnsHostName": "host.example.local",
+                  "netBiosName": "HOST",
                   "users": [
                     {}
                   ],
@@ -116,16 +116,16 @@
                     {}
                   ],
                   "samaccountname": "string",
-                  "isDomainController": true,
-                  "isGlobalCatalog": true,
-                  "usnChanged": 0,
-                  "objectSid": "string",
-                  "added": "2019-08-24T14:15:22Z",
-                  "deleted": true,
-                  "isVirtual": true,
-                  "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                  "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                  "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  "isDomainController": false,
+                  "isGlobalCatalog": false,
+                  "usnChanged": 12345,
+                  "objectSid": "S-1-5-21-1234567890-1234567890-123456789-123456",
+                  "added": "20240327T01:01:01.555Z",
+                  "deleted": false,
+                  "isVirtual": false,
+                  "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                  "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                  "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                 },
                 "primaryGroupTokenId": 0,
                 "primaryGroupToken": "string",
@@ -250,18 +250,18 @@
                   "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                   "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
                   "name": "string",
-                  "distinguishedName": "string",
-                  "ipAddress": "string",
-                  "os": "string",
-                  "version": "string",
-                  "lsaLookupCache": "string",
-                  "lastUpdatedDateTimeUtc": "2019-08-24T14:15:22Z",
-                  "credentialId": "f568fec0-10b6-4b94-9daf-e62c50c9bf3e",
-                  "hasSSH": true,
+                  "distinguishedName": "CN=Host, CN=Computers, DC=example, DC=local",
+                  "ipAddress": "192.168.1.1",
+                  "os": "Windows Fake Edition",
+                  "version": "10.4.1.1",
+                  "lsaLookupCache": "10",
+                  "lastUpdatedDateTimeUtc": "2024-03-27T18:25:43.511Z",
+                  "credentialId": "61101f34-74f5-41a6-9405-73c2c91bd752",
+                  "hasSSH": false,
                   "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                   "activeDirectoryDomain": {},
-                  "dnsHostName": "string",
-                  "netBiosName": "string",
+                  "dnsHostName": "host.example.local",
+                  "netBiosName": "HOST",
                   "users": [
                     {}
                   ],
@@ -287,16 +287,16 @@
                     {}
                   ],
                   "samaccountname": "string",
-                  "isDomainController": true,
-                  "isGlobalCatalog": true,
-                  "usnChanged": 0,
-                  "objectSid": "string",
-                  "added": "2019-08-24T14:15:22Z",
-                  "deleted": true,
-                  "isVirtual": true,
-                  "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                  "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                  "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                  "isDomainController": false,
+                  "isGlobalCatalog": false,
+                  "usnChanged": 12345,
+                  "objectSid": "S-1-5-21-1234567890-1234567890-123456789-123456",
+                  "added": "20240327T01:01:01.555Z",
+                  "deleted": false,
+                  "isVirtual": false,
+                  "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                  "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                  "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                 },
                 "hostUserGroupJoin": [
                   {
@@ -326,12 +326,12 @@
           "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
         }
       ],
-      "objectSid": "string",
-      "maxRenewAge": 0,
-      "maxTicketAge": 0,
-      "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-      "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-      "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+      "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+      "maxRenewAge": 7,
+      "maxTicketAge": 10,
+      "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+      "createdDateTimeUtc": "20240101T05:07:08.555Z",
+      "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
     }
   ],
   "name": "string",
@@ -340,13 +340,13 @@
       "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
       "name": "string",
       "activeDirectoryDomain": {
-        "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-        "name": "string",
-        "domainName": "string",
+        "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+        "name": "example",
+        "domainName": "example.local",
         "netBiosName": "string",
-        "domainController": "string",
-        "usnChanged": 0,
-        "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+        "domainController": "example-dc001.example.local",
+        "usnChanged": 12345,
+        "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
         "activeDirectoryDomainConfiguration": {
           "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
           "activeDirectoryDomain": [
@@ -363,7 +363,7 @@
           "createdDateTimeUtc": "2019-08-24T14:15:22Z",
           "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
         },
-        "functionalLevel": "string",
+        "functionalLevel": "Windows Server 2016",
         "activeDirectoryGroup": [
           {
             "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
@@ -399,18 +399,18 @@
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                     "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
                     "name": "string",
-                    "distinguishedName": "string",
-                    "ipAddress": "string",
-                    "os": "string",
-                    "version": "string",
-                    "lsaLookupCache": "string",
-                    "lastUpdatedDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "credentialId": "f568fec0-10b6-4b94-9daf-e62c50c9bf3e",
-                    "hasSSH": true,
+                    "distinguishedName": "CN=Host, CN=Computers, DC=example, DC=local",
+                    "ipAddress": "192.168.1.1",
+                    "os": "Windows Fake Edition",
+                    "version": "10.4.1.1",
+                    "lsaLookupCache": "10",
+                    "lastUpdatedDateTimeUtc": "2024-03-27T18:25:43.511Z",
+                    "credentialId": "61101f34-74f5-41a6-9405-73c2c91bd752",
+                    "hasSSH": false,
                     "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                     "activeDirectoryDomain": {},
-                    "dnsHostName": "string",
-                    "netBiosName": "string",
+                    "dnsHostName": "host.example.local",
+                    "netBiosName": "HOST",
                     "users": [],
                     "groups": [],
                     "features": [],
@@ -420,16 +420,16 @@
                     "databaseDbs": [],
                     "databaseRoles": [],
                     "samaccountname": "string",
-                    "isDomainController": true,
-                    "isGlobalCatalog": true,
-                    "usnChanged": 0,
-                    "objectSid": "string",
-                    "added": "2019-08-24T14:15:22Z",
-                    "deleted": true,
-                    "isVirtual": true,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "isDomainController": false,
+                    "isGlobalCatalog": false,
+                    "usnChanged": 12345,
+                    "objectSid": "S-1-5-21-1234567890-1234567890-123456789-123456",
+                    "added": "20240327T01:01:01.555Z",
+                    "deleted": false,
+                    "isVirtual": false,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   },
                   "primaryGroupTokenId": 0,
                   "primaryGroupToken": "string",
@@ -511,18 +511,18 @@
                     "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
                     "activeDirectoryObjectId": "c323cc1a-aecb-4eb0-9599-286516de7e9f",
                     "name": "string",
-                    "distinguishedName": "string",
-                    "ipAddress": "string",
-                    "os": "string",
-                    "version": "string",
-                    "lsaLookupCache": "string",
-                    "lastUpdatedDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "credentialId": "f568fec0-10b6-4b94-9daf-e62c50c9bf3e",
-                    "hasSSH": true,
+                    "distinguishedName": "CN=Host, CN=Computers, DC=example, DC=local",
+                    "ipAddress": "192.168.1.1",
+                    "os": "Windows Fake Edition",
+                    "version": "10.4.1.1",
+                    "lsaLookupCache": "10",
+                    "lastUpdatedDateTimeUtc": "2024-03-27T18:25:43.511Z",
+                    "credentialId": "61101f34-74f5-41a6-9405-73c2c91bd752",
+                    "hasSSH": false,
                     "activeDirectoryDomainId": "c9151464-b069-4770-b7ea-a1f6e23f2428",
                     "activeDirectoryDomain": {},
-                    "dnsHostName": "string",
-                    "netBiosName": "string",
+                    "dnsHostName": "host.example.local",
+                    "netBiosName": "HOST",
                     "users": [],
                     "groups": [],
                     "features": [],
@@ -532,16 +532,16 @@
                     "databaseDbs": [],
                     "databaseRoles": [],
                     "samaccountname": "string",
-                    "isDomainController": true,
-                    "isGlobalCatalog": true,
-                    "usnChanged": 0,
-                    "objectSid": "string",
-                    "added": "2019-08-24T14:15:22Z",
-                    "deleted": true,
-                    "isVirtual": true,
-                    "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-                    "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-                    "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+                    "isDomainController": false,
+                    "isGlobalCatalog": false,
+                    "usnChanged": 12345,
+                    "objectSid": "S-1-5-21-1234567890-1234567890-123456789-123456",
+                    "added": "20240327T01:01:01.555Z",
+                    "deleted": false,
+                    "isVirtual": false,
+                    "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+                    "createdDateTimeUtc": "20240101T05:07:08.555Z",
+                    "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
                   },
                   "hostUserGroupJoin": [
                     {}
@@ -563,27 +563,27 @@
             "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
           }
         ],
-        "objectSid": "string",
-        "maxRenewAge": 0,
-        "maxTicketAge": 0,
-        "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-        "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-        "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+        "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+        "maxRenewAge": 7,
+        "maxTicketAge": 10,
+        "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+        "createdDateTimeUtc": "20240101T05:07:08.555Z",
+        "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
       },
       "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
       "activeDirectoryDomainConfiguration": {
         "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
         "activeDirectoryDomain": [
           {
-            "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
-            "name": "string",
-            "domainName": "string",
+            "id": "c9151464-b069-4770-b7ea-a1f6e23f2428",
+            "name": "example",
+            "domainName": "example.local",
             "netBiosName": "string",
-            "domainController": "string",
-            "usnChanged": 0,
-            "activeDirectoryDomainConfigurationId": "49888c94-0f98-4f12-afa0-6d4c13cf7f38",
+            "domainController": "example-dc001.example.local",
+            "usnChanged": 12345,
+            "activeDirectoryDomainConfigurationId": "7c50cc10-1412-485e-9020-50b41d8070bf",
             "activeDirectoryDomainConfiguration": {},
-            "functionalLevel": "string",
+            "functionalLevel": "Windows Server 2016",
             "activeDirectoryGroup": [
               {
                 "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
@@ -650,12 +650,12 @@
                 "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
               }
             ],
-            "objectSid": "string",
-            "maxRenewAge": 0,
-            "maxTicketAge": 0,
-            "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
-            "createdDateTimeUtc": "2019-08-24T14:15:22Z",
-            "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+            "objectSid": "S-1-5-21-2801403971-1535060088-509881625",
+            "maxRenewAge": 7,
+            "maxTicketAge": 10,
+            "nodeId": "710b18c4-ac74-4cfc-9aeb-4a3794149923",
+            "createdDateTimeUtc": "20240101T05:07:08.555Z",
+            "modifiedDateTimeUtc": "20240102T05:07:08.555Z"
           }
         ],
         "name": "string",
@@ -691,13 +691,13 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|activeDirectoryDomain|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)]¦null|false|read-only|none|
+|activeDirectoryDomain|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryDomain](../Models/sbpam.activedirectory.models.activedirectorydomain.md)]¦null|false|read-only|[This model represents an active directory domain.]|
 |name|string¦null|false|none|none|
 |controllers|[[SbPAM.ActiveDirectory.Models.ActiveDirectoryController](../Models/sbpam.activedirectory.models.activedirectorycontroller.md)]¦null|false|read-only|none|
 |enabled|boolean|false|none|none|
 |credentialId|string(uuid)¦null|false|none|none|
 |useSsl|boolean|false|none|none|
-|functionalLevel|string¦null|false|none|none|
+|functionalLevel|string¦null|false|none|Name of the domain's functional level|
 |syncActionQueueId|string(uuid)¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

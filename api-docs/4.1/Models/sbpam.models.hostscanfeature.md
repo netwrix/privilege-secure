@@ -573,6 +573,8 @@
 
 ```
 
+This model is used to store installed features information from a host scan.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
@@ -585,8 +587,8 @@
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
-|hostScanHostId|string(uuid)|false|none|none|
-|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
-|hostObjectId|string(uuid)¦null|false|none|none|
+|hostScanHostId|string(uuid)|false|none|Id of host scan host on which this feature is installed.|
+|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|This model is used to scan a host to obtain os type and version info.|
+|hostObjectId|string(uuid)¦null|false|none|Id of feature created/updated by this scanned feature.|
 
 

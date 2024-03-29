@@ -33,25 +33,27 @@
 
 ```
 
+This model represents a template for a parameter associated with an action group action.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|displayName|string¦null|false|none|none|
-|description|string¦null|false|none|none|
-|sortOrder|integer(int32)|false|none|none|
-|required|boolean|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this parameter.|
+|name|string¦null|false|none|Name for this parameter.|
+|displayName|string¦null|false|none|Long name for this parameter.|
+|description|string¦null|false|none|Human readable description for this parameter.|
+|sortOrder|integer(int32)|false|none|The order these will appear in lists and reports|
+|required|boolean|false|none|True if parameter is required.|
 |type|[SbPAM.Constants.ActionConstants+ActionParameterType](../Models/sbpam.constants.actionconstants+actionparametertype.md)|false|none|none|
-|multiline|boolean|false|none|none|
-|defaultValue|string¦null|false|none|none|
-|shouldSerialize_ValueSet|boolean|false|read-only|none|
+|multiline|boolean|false|none|Tell UI to make this multiline|
+|defaultValue|string¦null|false|none|Default value.|
+|shouldSerialize_ValueSet|boolean|false|read-only|Allowed values (if restricted).|
 |_ValueSet|string¦null|false|none|none|
 |valueSet|[string]¦null|false|none|none|
-|limitToValueSet|boolean|false|none|none|
+|limitToValueSet|boolean|false|none|If true (default) and .ValueSet is given then the user may not enter something off that list|
 |helperText|string¦null|false|none|none|
-|actionTemplateId|string(uuid)¦null|false|none|none|
+|actionTemplateId|string(uuid)¦null|false|none|Id of action template which contains this parameter.|
 |actionPackId|string(uuid)¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

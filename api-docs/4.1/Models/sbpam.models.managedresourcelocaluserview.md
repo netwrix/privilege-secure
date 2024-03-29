@@ -48,6 +48,9 @@
 
 ```
 
+Represents a single row in the managed_account_local_user_searchable DB view. Used to populate
+a domain detail page's "Users" tab with all the users in that domain.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|

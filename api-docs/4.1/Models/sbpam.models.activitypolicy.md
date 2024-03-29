@@ -21,6 +21,8 @@
 
 ```
 
+Each activity session wizard resource has a list of matching activity + policy entries
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|

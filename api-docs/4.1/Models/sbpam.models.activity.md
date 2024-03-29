@@ -39,7 +39,54 @@
         "createdDateTimeUtc": "2019-08-24T14:15:22Z",
         "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
       }
-    ]
+    ],
+    "customFields": [
+      {
+        "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+        "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+        "customFieldNumber": 0,
+        "name": "string",
+        "label": "string",
+        "description": "string",
+        "options": "string",
+        "length": 0,
+        "customFieldDataType": "Integer",
+        "required": true,
+        "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+        "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+        "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+      }
+    ],
+    "deleteAccount": true,
+    "sessionRetryInterval": 0,
+    "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+    "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+    "maxSessionLength": 0,
+    "allowSessionExtension": true,
+    "sessionExtensionMinutes": 0,
+    "sessionExtensionCount": 0,
+    "sessionMonitorInterval": 0,
+    "expirationTimeoutThreshold": 0,
+    "rdpProxyHost": "string",
+    "sshProxyHost": "string",
+    "sshScanDc": true,
+    "recordAudio": true,
+    "proxyAutoConnect": true,
+    "record": true,
+    "approvalTypeRequired": "Deny",
+    "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+    "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+    "monitorEntireSession": true,
+    "allowViewPassword": true,
+    "allowPasswordAccess": true,
+    "allowAutofillPassword": true,
+    "leaveInGroup": true,
+    "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+    "clearWebsiteDataAfterStop": true,
+    "clearWebsiteDataBeforeStart": true,
+    "notesRequired": true,
+    "ticketRequired": true,
+    "viewPasswordInSeconds": 0
   },
   "platformId": "32a6e381-64f4-4911-86b6-3bf681b64d23",
   "platform": {
@@ -181,7 +228,54 @@
               "createdDateTimeUtc": "2019-08-24T14:15:22Z",
               "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
             }
-          ]
+          ],
+          "customFields": [
+            {
+              "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+              "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+              "customFieldNumber": 0,
+              "name": "string",
+              "label": "string",
+              "description": "string",
+              "options": "string",
+              "length": 0,
+              "customFieldDataType": "Integer",
+              "required": true,
+              "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+              "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+              "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+            }
+          ],
+          "deleteAccount": true,
+          "sessionRetryInterval": 0,
+          "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+          "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+          "maxSessionLength": 0,
+          "allowSessionExtension": true,
+          "sessionExtensionMinutes": 0,
+          "sessionExtensionCount": 0,
+          "sessionMonitorInterval": 0,
+          "expirationTimeoutThreshold": 0,
+          "rdpProxyHost": "string",
+          "sshProxyHost": "string",
+          "sshScanDc": true,
+          "recordAudio": true,
+          "proxyAutoConnect": true,
+          "record": true,
+          "approvalTypeRequired": "Deny",
+          "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+          "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+          "monitorEntireSession": true,
+          "allowViewPassword": true,
+          "allowPasswordAccess": true,
+          "allowAutofillPassword": true,
+          "leaveInGroup": true,
+          "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+          "clearWebsiteDataAfterStop": true,
+          "clearWebsiteDataBeforeStart": true,
+          "notesRequired": true,
+          "ticketRequired": true,
+          "viewPasswordInSeconds": 0
         },
         "platformId": "32a6e381-64f4-4911-86b6-3bf681b64d23",
         "platform": {
@@ -334,7 +428,54 @@
               "createdDateTimeUtc": "2019-08-24T14:15:22Z",
               "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
             }
-          ]
+          ],
+          "customFields": [
+            {
+              "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+              "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+              "customFieldNumber": 0,
+              "name": "string",
+              "label": "string",
+              "description": "string",
+              "options": "string",
+              "length": 0,
+              "customFieldDataType": "Integer",
+              "required": true,
+              "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+              "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+              "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+            }
+          ],
+          "deleteAccount": true,
+          "sessionRetryInterval": 0,
+          "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+          "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+          "maxSessionLength": 0,
+          "allowSessionExtension": true,
+          "sessionExtensionMinutes": 0,
+          "sessionExtensionCount": 0,
+          "sessionMonitorInterval": 0,
+          "expirationTimeoutThreshold": 0,
+          "rdpProxyHost": "string",
+          "sshProxyHost": "string",
+          "sshScanDc": true,
+          "recordAudio": true,
+          "proxyAutoConnect": true,
+          "record": true,
+          "approvalTypeRequired": "Deny",
+          "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+          "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+          "monitorEntireSession": true,
+          "allowViewPassword": true,
+          "allowPasswordAccess": true,
+          "allowAutofillPassword": true,
+          "leaveInGroup": true,
+          "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+          "clearWebsiteDataAfterStop": true,
+          "clearWebsiteDataBeforeStart": true,
+          "notesRequired": true,
+          "ticketRequired": true,
+          "viewPasswordInSeconds": 0
         },
         "activityGroupActivities": [
           {}
@@ -365,35 +506,37 @@
 
 ```
 
+This model represents an activity that a user can perform such as requesting elevated access to a resource.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|createdBy|string(uuid)¦null|false|none|none|
-|modifiedBy|string(uuid)¦null|false|none|none|
-|name|string¦null|false|none|none|
-|description|string¦null|false|none|none|
-|activityConfigurationId|string(uuid)¦null|false|none|none|
-|activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|none|
-|platformId|string(uuid)¦null|false|none|none|
-|platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|none|
-|startActionGroupId|string(uuid)¦null|false|none|none|
-|duringActionGroupId|string(uuid)¦null|false|none|none|
-|endActionGroupId|string(uuid)¦null|false|none|none|
+|id|string(uuid)|false|none|Unique identifier for this activity.|
+|createdBy|string(uuid)¦null|false|none|Id of user that created this activity.|
+|modifiedBy|string(uuid)¦null|false|none|Id of user that modified this activity.|
+|name|string¦null|false|none|Activity name - i.e. Add to Local Group|
+|description|string¦null|false|none|Description of the activity|
+|activityConfigurationId|string(uuid)¦null|false|none|Id of configuration collection for this activity.|
+|activityConfiguration|[SbPAM.Models.ActivityConfiguration](../Models/sbpam.models.activityconfiguration.md)|false|none|This model represents a collection of settings for running an activity.|
+|platformId|string(uuid)¦null|false|none|Id of platform that this activity can be performed on.|
+|platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|This model represents an platform on which a particular activity can be performed.|
+|startActionGroupId|string(uuid)¦null|false|none|Action Group to run at the start of the activity.|
+|duringActionGroupId|string(uuid)¦null|false|none|Optional - Action group to run during the activity|
+|endActionGroupId|string(uuid)¦null|false|none|Action group to run at the end of the activity.|
 |activityType|[SbPAM.Models.ActivityType](../Models/sbpam.models.activitytype.md)|false|none|none|
 |loginAccount|[SbPAM.Models.ActivityLoginType](../Models/sbpam.models.activitylogintype.md)|false|none|none|
-|loginAccountNameFormat|string¦null|false|none|none|
+|loginAccountNameFormat|string¦null|false|none|Login account format.|
 |requesterLoginFormat|[SbPAM.Models.RequesterLoginFormat](../Models/sbpam.models.requesterloginformat.md)|false|none|none|
-|applicationToLaunch|string¦null|false|none|none|
-|preferredRDSHostId|string(uuid)¦null|false|none|none|
-|connectCredentialId|string(uuid)¦null|false|none|none|
-|createAccount|boolean|false|none|none|
-|activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](../Models/sbpam.models.activitygroupactivity.md)]¦null|false|none|none|
-|deleteAccount|boolean|false|none|none|
+|applicationToLaunch|string¦null|false|none|Launch proxy from path|
+|preferredRDSHostId|string(uuid)¦null|false|none|Managed resource for Remote Desktop Server(RDS)|
+|connectCredentialId|string(uuid)¦null|false|none|Connect Account for RDS impersonation|
+|createAccount|boolean|false|none|Create local account option for activity|
+|activityGroupActivities|[[SbPAM.Models.ActivityGroupActivity](../Models/sbpam.models.activitygroupactivity.md)]¦null|false|none|Many to many relationship between activities and activity groups.|
+|deleteAccount|boolean|false|none|For a managed account, delete account when finished when false account will be disabled|
 |vaultId|string(uuid)¦null|false|none|none|
-|vaultInfo|string¦null|false|none|none|
-|logonUrl|string¦null|false|none|none|
+|vaultInfo|string¦null|false|none|Vault properties, JSON string and specific to the Vault|
+|logonUrl|string¦null|false|none|Url for site login|
 |isDefault|boolean|false|none|none|
 |isDeleted|boolean|false|none|none|
 |isUserModified|boolean|false|none|none|

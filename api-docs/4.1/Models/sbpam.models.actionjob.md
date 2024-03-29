@@ -774,32 +774,35 @@
 
 ```
 
+This model represents a job that has been scheduled to an
+    associated action queue.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|startDateTimeUtc|string(date-time)|false|none|none|
-|recurrenceInterval|integer(int32)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this action job.|
+|startDateTimeUtc|string(date-time)|false|none|Scheduled time for this action.<br>Note: If in the past, it will be excecuted ASAP.|
+|recurrenceInterval|integer(int32)|false|none|Recurrence interval in minutes.<br>Recurrence type of Minutes|
 |recurrenceType|[SbPAM.Constants.ActionConstants+RecurrenceType](../Models/sbpam.constants.actionconstants+recurrencetype.md)|false|none|none|
-|hour|integer(int32)|false|none|none|
-|minute|integer(int32)|false|none|none|
+|hour|integer(int32)|false|none|For recurrence type of daily and weekly, this is the hour of the recurrence. 0-23|
+|minute|integer(int32)|false|none|For recurrence type of daily and weekly, this is the minute|
 |dayOfWeek|[System.DayOfWeek](../Models/system.dayofweek.md)|false|none|none|
-|dayOfMonth|integer(int32)|false|none|none|
+|dayOfMonth|integer(int32)|false|none|For recurrence type of monthly, 0-31|
 |recurrenceCount|integer(int32)|false|none|none|
-|nextStartTimeUtc|string(date-time)|false|none|none|
-|actionGroupId|string(uuid)|false|none|none|
-|actionQueueId|string(uuid)¦null|false|none|none|
-|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
-|hostId|string(uuid)¦null|false|none|none|
-|userId|string(uuid)¦null|false|none|none|
-|managedResourceId|string(uuid)¦null|false|none|none|
-|domainId|string(uuid)¦null|false|none|none|
-|managedObjectId|string(uuid)¦null|false|none|none|
+|nextStartTimeUtc|string(date-time)|false|none|Next scheduled start time in UTC|
+|actionGroupId|string(uuid)|false|none|Id of action group to execute for this job.|
+|actionQueueId|string(uuid)¦null|false|none|Id of action queue to execute for this job.|
+|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
+|hostId|string(uuid)¦null|false|none|Id of host related to this job.|
+|userId|string(uuid)¦null|false|none|Id of host user related to this job.|
+|managedResourceId|string(uuid)¦null|false|none|Id of resource related to this job.|
+|domainId|string(uuid)¦null|false|none|Id of domain related to this job.|
+|managedObjectId|string(uuid)¦null|false|none|Id of a managed item (type is in ManagedObjectType)|
 |managedObjectType|[SbPAM.Models.ManagedAccountType](../Models/sbpam.models.managedaccounttype.md)|false|none|none|
 |type|[SbPAM.Models.ActionJobType](../Models/sbpam.models.actionjobtype.md)|false|none|none|
-|name|string¦null|false|none|none|
-|disabled|boolean|false|none|none|
+|name|string¦null|false|none|Display name for the action job - shows up in the Schedule page|
+|disabled|boolean|false|none|Disable a job from running|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

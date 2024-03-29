@@ -38,11 +38,15 @@
 
 ```
 
+Access Certification Task row request structure
+UI => Endpoint
+Not persisted
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |taskId|string(uuid)|false|none|none|
-|rows|[[SbPAM.Models.AccessCertificationTaskRowDetail](../Models/sbpam.models.accesscertificationtaskrowdetail.md)]¦null|false|none|none|
+|rows|[[SbPAM.Models.AccessCertificationTaskRowDetail](../Models/sbpam.models.accesscertificationtaskrowdetail.md)]¦null|false|none|[Access Certification task row details<br>Endpoint => UI<br>Not persisted]|
 
 

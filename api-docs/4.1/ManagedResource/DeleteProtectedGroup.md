@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X DELETE /api/v1/ManagedResource/ProtectedGroup/{groupId} \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 

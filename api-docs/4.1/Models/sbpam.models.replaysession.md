@@ -33,21 +33,21 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
+|id|string(uuid)|false|none|Id|
 |streamId|string(uuid)|false|none|none|
-|activitySessionId|string(uuid)|false|none|none|
-|proxySessionId|string(uuid)|false|none|none|
-|viewingKey|string(uuid)¦null|false|none|none|
-|sessionType|string¦null|false|none|none|
-|createdFromIPV4Address|string¦null|false|none|none|
-|startDateTimeUtc|string(date-time)|false|none|none|
-|endDateTimeUtc|string(date-time)|false|none|none|
-|startOffset|integer(int32)|false|none|none|
+|activitySessionId|string(uuid)|false|none|ActivitySession for replay|
+|proxySessionId|string(uuid)|false|none|ProxySession for replay|
+|viewingKey|string(uuid)¦null|false|none|ProxySession for replay|
+|sessionType|string¦null|false|none|RDP or SSH|
+|createdFromIPV4Address|string¦null|false|none|IPv4 Address where this was created from|
+|startDateTimeUtc|string(date-time)|false|none|When the user started viewing the replay|
+|endDateTimeUtc|string(date-time)|false|none|When the user stopped viewing the replay|
+|startOffset|integer(int32)|false|none|Specifics about the recording|
 |endOffset|integer(int32)|false|none|none|
 |recordingStartDateTimeUtc|string(date-time)|false|none|none|
 |recordingEndDateTimeUtc|string(date-time)|false|none|none|
-|createdBy|string(uuid)¦null|false|none|none|
-|nodeId|string(uuid)|false|none|none|
+|createdBy|string(uuid)¦null|false|none|Id of user that created this collection.|
+|nodeId|string(uuid)|false|none|Create date time in UTC|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 

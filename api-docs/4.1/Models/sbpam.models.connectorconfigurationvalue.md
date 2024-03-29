@@ -625,23 +625,25 @@
 
 ```
 
+This model represents integration connectors for Stealthbits products and available third-party apps.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|configurationId|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|value|string¦null|false|none|none|
-|defaultValue|string¦null|false|none|none|
-|description|string¦null|false|none|none|
-|displayOrder|integer(int32)|false|none|none|
-|required|boolean|false|none|none|
-|connectorId|string(uuid)¦null|false|none|none|
-|integrationConnectorTemplateId|string(uuid)¦null|false|none|none|
-|connectorConfiguration|[SbPAM.Models.ConnectorConfiguration](../Models/sbpam.models.connectorconfiguration.md)|false|none|none|
+|id|string(uuid)|false|none|Unique identifier for connector configuration values.|
+|configurationId|string(uuid)|false|none|Unique identifier of connector configuration set.|
+|name|string¦null|false|none|Name of configuration value.|
+|value|string¦null|false|none|Set value for configuration.|
+|defaultValue|string¦null|false|none|Default value for configuration.|
+|description|string¦null|false|none|Description for configuration set.|
+|displayOrder|integer(int32)|false|none|Numerical order display of configuration set for use in UI.|
+|required|boolean|false|none|Determines whether a configuration value is required or optional.|
+|connectorId|string(uuid)¦null|false|none|Unique identifier of integration connector|
+|integrationConnectorTemplateId|string(uuid)¦null|false|none|Unique identifier of integration connector|
+|connectorConfiguration|[SbPAM.Models.ConnectorConfiguration](../Models/sbpam.models.connectorconfiguration.md)|false|none|This model represents integration connectors for Stealthbits products and available third-party apps.|
 |type|[SbPAM.Models.ConnectorConfigurationValueType](../Models/sbpam.models.connectorconfigurationvaluetype.md)|false|none|none|
-|advanced|boolean|false|none|none|
+|advanced|boolean|false|none|Advanced setting|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

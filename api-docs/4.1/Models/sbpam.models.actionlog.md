@@ -795,18 +795,21 @@
 
 ```
 
+This model represents a log entry associated with the execution
+    of an action queue action.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this action log entry.|
 |type|[SbPAM.Constants.ActionConstants+ActionLogType](../Models/sbpam.constants.actionconstants+actionlogtype.md)|false|none|none|
-|hResult|integer(int32)|false|none|none|
-|timestamp|string(date-time)|false|none|none|
-|message|string¦null|false|none|none|
-|version|string¦null|false|none|none|
-|actionQueueActionId|string(uuid)|false|none|none|
-|actionQueueAction|[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)|false|none|none|
+|hResult|integer(int32)|false|none|Internal reason for action failure if available.|
+|timestamp|string(date-time)|false|none|When this log entry was created.|
+|message|string¦null|false|none|Human readable message associate with this log entry.|
+|version|string¦null|false|none|Current version captured in the log.|
+|actionQueueActionId|string(uuid)|false|none|Id of action queue action associated with this log entry.|
+|actionQueueAction|[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)|false|none|This model represents an action which is a member of an action queue and can be execute by and action service.|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

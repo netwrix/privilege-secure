@@ -30,11 +30,14 @@
 
 ```
 
+Generic container for the output of some API endpoints and .Search() 
+methods in some actors that return paged subsets of filtered search results
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|data|[[SbPAM.Models.HostServiceView](../Models/sbpam.models.hostserviceview.md)]¦null|false|none|none|
-|recordsTotal|integer(int32)|false|none|none|
+|data|[[SbPAM.Models.HostServiceView](../Models/sbpam.models.hostserviceview.md)]¦null|false|none|A subset of the filtered, sorted, and paged (e.g., rows 30 - 39 of <br>589 found) search results|
+|recordsTotal|integer(int32)|false|none|What is the total count of search results that .DataRows may only <br>be a paged subset of (e.g., rows 30 - 39 of 589 found)|
 
 

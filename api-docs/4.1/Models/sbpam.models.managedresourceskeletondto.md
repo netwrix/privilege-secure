@@ -28,6 +28,10 @@
 
 ```
 
+We need to hand off potentially huge numbers of managed resources to the ActionService
+together with some host information
+Cut the data down to only what we actually need
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|

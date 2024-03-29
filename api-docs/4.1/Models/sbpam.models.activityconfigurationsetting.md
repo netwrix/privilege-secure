@@ -21,16 +21,18 @@
 
 ```
 
+This model represents a collection of settings (name/value pairs) for running an activity.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|key|string¦null|false|none|none|
-|value|string¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id for this setting.|
+|name|string¦null|false|none|Display Name for this configuration setting.|
+|key|string¦null|false|none|Key for this setting.|
+|value|string¦null|false|none|Value for this setting.|
 |type|[SbPAM.Models.ActivityConfigurationSettingType](../Models/sbpam.models.activityconfigurationsettingtype.md)|false|none|none|
-|activityConfigurationId|string(uuid)|false|none|none|
+|activityConfigurationId|string(uuid)|false|none|Id of configuration collection to which this setting belongs.|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

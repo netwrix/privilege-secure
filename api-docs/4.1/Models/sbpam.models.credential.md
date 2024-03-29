@@ -1407,33 +1407,35 @@
 
 ```
 
+This model represents the stored credentials for a user.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|domain|string¦null|false|none|none|
-|username|string¦null|false|none|none|
-|password|string¦null|false|none|none|
-|salt|string¦null|false|none|none|
-|enablePassword|string¦null|false|none|none|
-|enableSalt|string¦null|false|none|none|
-|name|string¦null|false|none|none|
-|description|string¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this credential.|
+|domain|string¦null|false|none|Domain|
+|username|string¦null|false|none|Username|
+|password|string¦null|false|none|Password (encrypted while persisted).|
+|salt|string¦null|false|none|Some salt for the password encryption|
+|enablePassword|string¦null|false|none|Enable Password (encrypted while persisted).|
+|enableSalt|string¦null|false|none|Some salt for the enable password encryption|
+|name|string¦null|false|none|Name for this username password pair|
+|description|string¦null|false|none|Description for username password pair|
 |type|[SbPAM.Models.CredentialType](../Models/sbpam.models.credentialtype.md)|false|none|none|
-|userId|string(uuid)¦null|false|none|none|
-|managedAccountId|string(uuid)¦null|false|none|none|
-|platformId|string(uuid)¦null|false|none|none|
-|platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|none|
-|sudoCommand|string¦null|false|none|none|
-|passwordVaultConnectorId|string(uuid)¦null|false|none|none|
-|passwordVaultConnector|[SbPAM.Models.IntegrationConnector](../Models/sbpam.models.integrationconnector.md)|false|none|none|
-|passwordVaultInfo|string¦null|false|none|none|
-|changeOnCheckout|boolean¦null|false|none|none|
-|changeOnRelease|boolean¦null|false|none|none|
+|userId|string(uuid)¦null|false|none|Host User Id, if there is one|
+|managedAccountId|string(uuid)¦null|false|none|Host User Id, if there is one|
+|platformId|string(uuid)¦null|false|none|Platform identifier for these credentials<br>Use this to group credentials for a platform|
+|platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|This model represents an platform on which a particular activity can be performed.|
+|sudoCommand|string¦null|false|none|Command to use for elevated commands on Linux, default "sudo".|
+|passwordVaultConnectorId|string(uuid)¦null|false|none|Id for password vault integration connector for these credentials<br>Use this to manage credentials for this user.|
+|passwordVaultConnector|[SbPAM.Models.IntegrationConnector](../Models/sbpam.models.integrationconnector.md)|false|none|This model represents integration connectors for Stealthbits products and available third-party apps.|
+|passwordVaultInfo|string¦null|false|none|Extra info needed for password vault integration.|
+|changeOnCheckout|boolean¦null|false|none|Settings for managed users on checkout change|
+|changeOnRelease|boolean¦null|false|none|Settings for managed users on release change|
 |showPassword|boolean|false|none|none|
-|credentialJoin|[[SbPAM.Models.CredentialJoin](../Models/sbpam.models.credentialjoin.md)]¦null|false|read-only|none|
-|isDeleted|boolean|false|none|none|
+|credentialJoin|[[SbPAM.Models.CredentialJoin](../Models/sbpam.models.credentialjoin.md)]¦null|false|read-only|[This model is used to model the many to many relationship between credentials and credential groups.]|
+|isDeleted|boolean|false|none|Credentials are marked as deleted when the owning user is removed|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

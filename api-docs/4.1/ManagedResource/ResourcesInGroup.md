@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X GET /api/v1/ManagedResource/InGroup/{managedResourceGroupId} \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 

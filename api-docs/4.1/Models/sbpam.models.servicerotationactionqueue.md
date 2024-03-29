@@ -1184,7 +1184,7 @@
 |id|string(uuid)|false|none|none|
 |rotationJob|[SbPAM.Models.ServiceRotationJob](../Models/sbpam.models.servicerotationjob.md)|false|none|none|
 |rotationJobId|string(uuid)|false|none|none|
-|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
+|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
 |actionQueueId|string(uuid)|false|none|none|
 |status|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
 |targetName|string¦null|false|none|none|

@@ -27,14 +27,14 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|description|string¦null|false|none|none|
-|tenantId|string¦null|false|none|none|
-|logonUrl|string¦null|false|none|none|
-|emailDomain|string¦null|false|none|none|
-|associatedDomainId|string(uuid)¦null|false|none|none|
-|processGroupMembership|boolean|false|none|none|
+|id|string(uuid)|false|none|Unique Id|
+|name|string¦null|false|none|Required - name of AzureAD tenant|
+|description|string¦null|false|none|Description of the AzureAD tenant|
+|tenantId|string¦null|false|none|Required - tenant identifier<br>"https://login.microsoftonline.com/$TenantId/oauth2/v2.0/token"|
+|logonUrl|string¦null|false|none|Required - where to send the browser for the user to get into the site; typically a login page|
+|emailDomain|string¦null|false|none|The '@whatever.com' part of the email address <br>Activity Token random characters will form the prefix|
+|associatedDomainId|string(uuid)¦null|false|none|Optional link to ActiveDirectory domain|
+|processGroupMembership|boolean|false|none|Enable/disable group membership processing|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

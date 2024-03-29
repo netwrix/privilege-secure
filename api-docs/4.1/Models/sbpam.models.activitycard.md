@@ -19,6 +19,27 @@
   "managedAccountId": "98c25b84-2c06-4fcd-94c7-306443f45a3d",
   "totalResources": 0,
   "latestSessionActualStartUtc": "2019-08-24T14:15:22Z",
+  "customField1Name": "string",
+  "customField1Label": "string",
+  "customField1Description": "string",
+  "customField1Length": 0,
+  "customField1Options": "string",
+  "customField1CustomFieldDataType": "Integer",
+  "customField1Required": true,
+  "customField2Name": "string",
+  "customField2Label": "string",
+  "customField2Description": "string",
+  "customField2Length": 0,
+  "customField2Options": "string",
+  "customField2CustomFieldDataType": "Integer",
+  "customField2Required": true,
+  "customField3Name": "string",
+  "customField3Label": "string",
+  "customField3Description": "string",
+  "customField3Length": 0,
+  "customField3Options": "string",
+  "customField3CustomFieldDataType": "Integer",
+  "customField3Required": true,
   "policyId": "2f5573e6-5ba4-48f2-a75d-df99c936463b",
   "policyName": "string",
   "policyType": "Resource",
@@ -44,6 +65,27 @@
 |managedAccountId|string(uuid)|false|none|none|
 |totalResources|integer(int32)|false|none|none|
 |latestSessionActualStartUtc|string(date-time)¦null|false|none|none|
+|customField1Name|string¦null|false|none|none|
+|customField1Label|string¦null|false|none|none|
+|customField1Description|string¦null|false|none|none|
+|customField1Length|integer(int32)¦null|false|none|none|
+|customField1Options|string¦null|false|none|none|
+|customField1CustomFieldDataType|[SbPAM.Models.CustomFieldDataType](../Models/sbpam.models.customfielddatatype.md)|false|none|none|
+|customField1Required|boolean¦null|false|none|none|
+|customField2Name|string¦null|false|none|none|
+|customField2Label|string¦null|false|none|none|
+|customField2Description|string¦null|false|none|none|
+|customField2Length|integer(int32)¦null|false|none|none|
+|customField2Options|string¦null|false|none|none|
+|customField2CustomFieldDataType|[SbPAM.Models.CustomFieldDataType](../Models/sbpam.models.customfielddatatype.md)|false|none|none|
+|customField2Required|boolean¦null|false|none|none|
+|customField3Name|string¦null|false|none|none|
+|customField3Label|string¦null|false|none|none|
+|customField3Description|string¦null|false|none|none|
+|customField3Length|integer(int32)¦null|false|none|none|
+|customField3Options|string¦null|false|none|none|
+|customField3CustomFieldDataType|[SbPAM.Models.CustomFieldDataType](../Models/sbpam.models.customfielddatatype.md)|false|none|none|
+|customField3Required|boolean¦null|false|none|none|
 |policyId|string(uuid)|false|none|none|
 |policyName|string¦null|false|none|none|
 |policyType|[SbPAM.Models.PolicyType](../Models/sbpam.models.policytype.md)|false|none|none|

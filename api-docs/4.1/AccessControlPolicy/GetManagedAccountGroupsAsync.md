@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/{policyId}/ManagedAccountGroup \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 
@@ -79,13 +79,13 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|[[SbPAM.Models.ManagedAccountGroupInfo](../Models/sbpam.models.managedaccountgroupinfo.md)]|false|none|none|
-|» id|string(uuid)|false|none|none|
-|» name|string¦null|false|none|none|
+|*anonymous*|[[SbPAM.Models.ManagedAccountGroupInfo](../Models/sbpam.models.managedaccountgroupinfo.md)]|false|none|[This model represents a group of managed accounts.]|
+|» id|string(uuid)|false|none|Unique id and DB key for this group.|
+|» name|string¦null|false|none|Name of this group.|
 |» type|[SbPAM.Models.ManagedAccountGroupType](../Models/sbpam.models.managedaccountgrouptype.md)(int32)|false|none|none|
-|» groupId|string(uuid)¦null|false|none|none|
-|» mfaConnectorId|string(uuid)¦null|false|none|none|
-|» isReviewer|boolean|false|none|none|
+|» groupId|string(uuid)¦null|false|none|AD group id if this is an active directory group|
+|» mfaConnectorId|string(uuid)¦null|false|none|Alternate MFA provider for members of this group. Override this at the User level.|
+|» isReviewer|boolean|false|none|Is assigned reviewer role (for AccessCertification)|
 |» distinguishedName|string¦null|false|none|none|
 |» domain|string¦null|false|none|none|
 |» email|string¦null|false|none|none|

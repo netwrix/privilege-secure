@@ -13,5 +13,4 @@
 
 [Get scheduled tasks for host (Auth roles: Admin,App)](Host/GetScheduledTasksAsync.md)
 
-[Get list of hosts found in OU (Auth roles: Admin,App)](Host/ManageResourcesFoOuAsync.md)
 

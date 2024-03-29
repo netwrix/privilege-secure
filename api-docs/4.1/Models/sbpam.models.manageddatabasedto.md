@@ -27,6 +27,8 @@
 
 ```
 
+Combined ManagedResource and ManagedDatabase object
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
@@ -43,7 +45,7 @@
 |domainId|string(uuid)¦null|false|none|none|
 |type|[SbPAM.Models.Common.DatabaseType](../Models/sbpam.models.common.databasetype.md)|false|none|none|
 |hostDatabaseId|string(uuid)¦null|false|none|none|
-|integratedSecurity|boolean|false|none|none|
+|integratedSecurity|boolean|false|none|For SQL|
 |trustServerCertificate|boolean|false|none|none|
 |encrypted|boolean|false|none|none|
 

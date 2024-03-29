@@ -1844,16 +1844,18 @@
 
 ```
 
+This model is used to model the many to many relationship between host scan jobs and host scan hosts.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|hostScanJobId|string(uuid)|false|none|none|
-|hostScanJob|[SbPAM.Models.HostScanJob](../Models/sbpam.models.hostscanjob.md)|false|none|none|
-|hostScanHostId|string(uuid)|false|none|none|
-|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|none|
-|actionQueueId|string(uuid)¦null|false|none|none|
-|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|none|
+|hostScanJobId|string(uuid)|false|none|Id of host scan job.|
+|hostScanJob|[SbPAM.Models.HostScanJob](../Models/sbpam.models.hostscanjob.md)|false|none|This model represent a job to scan a collection of hosts to obtain os type and version info.|
+|hostScanHostId|string(uuid)|false|none|Id of host scan host.|
+|hostScanHost|[SbPAM.Models.HostScanHost](../Models/sbpam.models.hostscanhost.md)|false|none|This model is used to scan a host to obtain os type and version info.|
+|actionQueueId|string(uuid)¦null|false|none|Id of action queue to execute to scan this host.|
+|actionQueue|[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)|false|none|This model represents a collection of action queue actions associated<br>    with the actions in an action group, which can be scheduled for execution.<br>    The queue is ordered by the Action.ExecutionOrder (lowest to highest).|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

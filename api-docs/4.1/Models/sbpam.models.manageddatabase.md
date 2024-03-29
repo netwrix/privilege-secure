@@ -29,14 +29,14 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this resource.|
+|name|string¦null|false|none|Name of this managed resource.|
 |server|string¦null|false|none|none|
 |port|integer(int32)|false|none|none|
 |type|[SbPAM.Models.Common.DatabaseType](../Models/sbpam.models.common.databasetype.md)|false|none|none|
 |hostDatabaseId|string(uuid)¦null|false|none|none|
 |domainId|string(uuid)¦null|false|none|none|
-|integratedSecurity|boolean|false|none|none|
+|integratedSecurity|boolean|false|none|For SQL|
 |trustServerCertificate|boolean|false|none|none|
 |encrypted|boolean|false|none|none|
 |nodeId|string(uuid)|false|none|none|

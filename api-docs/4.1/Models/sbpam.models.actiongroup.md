@@ -1797,21 +1797,24 @@
 
 ```
 
+This model represents a group of actions which can be performed
+    in a particular order (by Action.ExecutionOrder) by an action service.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|description|string¦null|false|none|none|
-|trigger|boolean|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this action group.|
+|name|string¦null|false|none|Human readable name for this action group.|
+|description|string¦null|false|none|Human readable desciption for this action group.|
+|trigger|boolean|false|none|Not used???|
 |createdBy|string(uuid)¦null|false|none|none|
-|createdDateTimeUtc|string(date-time)|false|none|none|
-|lastModifiedBy|string(uuid)¦null|false|none|none|
-|modifiedDateTimeUtc|string(date-time)|false|none|none|
+|createdDateTimeUtc|string(date-time)|false|none|When this action group was created.|
+|lastModifiedBy|string(uuid)¦null|false|none|Logged in user id.|
+|modifiedDateTimeUtc|string(date-time)|false|none|When this action group was last modified.|
 |nodeId|string(uuid)|false|none|none|
-|action|[[SbPAM.Models.Action](../Models/sbpam.models.action.md)]¦null|false|none|none|
-|actionGroupJob|[[SbPAM.Models.ActionGroupJob](../Models/sbpam.models.actiongroupjob.md)]¦null|false|none|none|
-|actionQueue|[[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)]¦null|false|none|none|
+|action|[[SbPAM.Models.Action](../Models/sbpam.models.action.md)]¦null|false|none|List of actions associated with this action group.|
+|actionGroupJob|[[SbPAM.Models.ActionGroupJob](../Models/sbpam.models.actiongroupjob.md)]¦null|false|none|Current action group jobs which refer to this action group, if any.<br>Note: Is this obsolete???|
+|actionQueue|[[SbPAM.Models.ActionQueue](../Models/sbpam.models.actionqueue.md)]¦null|false|none|Current action queues which refer to this action group, if any.|
 
 

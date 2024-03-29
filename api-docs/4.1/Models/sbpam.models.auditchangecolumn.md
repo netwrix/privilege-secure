@@ -48,16 +48,19 @@
 
 ```
 
+This model represents a job that has been scheduled to an
+    associated action queue.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|auditRowChangeId|string(uuid)|false|none|none|
-|auditChangeRow|[SbPAM.Models.AuditChangeRow](../Models/sbpam.models.auditchangerow.md)|false|none|none|
-|propertyName|string¦null|false|none|none|
-|value|string¦null|false|none|none|
-|oldValue|string¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this entity|
+|auditRowChangeId|string(uuid)|false|none|The parent row-change record that groups column-changes together|
+|auditChangeRow|[SbPAM.Models.AuditChangeRow](../Models/sbpam.models.auditchangerow.md)|false|none|This model represents a job that has been scheduled to an<br>    associated action queue.|
+|propertyName|string¦null|false|none|The name of the entity model's property (not the column name)|
+|value|string¦null|false|none|If this is a row change then this is the newer value. Otherwise this is<br>the current (or former) value for a new or deleted row.|
+|oldValue|string¦null|false|none|If this is a row change then this is the value before save|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

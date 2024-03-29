@@ -53,21 +53,24 @@
 
 ```
 
+This model represents a job that has been scheduled to an
+    associated action queue.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|timeRecordedUtc|string(date-time)|false|none|none|
-|modelName|string¦null|false|none|none|
-|modelTitle|string¦null|false|none|none|
-|rowKey|string¦null|false|none|none|
-|rowTitle|string¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this entity|
+|timeRecordedUtc|string(date-time)|false|none|When the database change occurred|
+|modelName|string¦null|false|none|The name of the model changed (e.g. "HostScanJob")|
+|modelTitle|string¦null|false|none|A descriptive title (e.g., "Host Scan Job") for the model|
+|rowKey|string¦null|false|none|Typically the value of the "id" column for the row that was changed|
+|rowTitle|string¦null|false|none|A descriptive title (e.g., "John Doe") representing the record that got changed|
 |changeType|[SbPAM.Constants.ActionConstants+AuditChangeRowType](../Models/sbpam.constants.actionconstants+auditchangerowtype.md)|false|none|none|
-|changedByUserId|string(uuid)¦null|false|none|none|
-|changedByUserName|string¦null|false|none|none|
-|fromAction|string¦null|false|none|none|
-|changedColumns|[[SbPAM.Models.AuditChangeColumn](../Models/sbpam.models.auditchangecolumn.md)]¦null|false|none|none|
+|changedByUserId|string(uuid)¦null|false|none|Which logged-in user, if any, was responsible?|
+|changedByUserName|string¦null|false|none|Which logged-in user, if any, was responsible?|
+|fromAction|string¦null|false|none|Indication of what broad action (e.g., MVC controller name and action name) initiated this change|
+|changedColumns|[[SbPAM.Models.AuditChangeColumn](../Models/sbpam.models.auditchangecolumn.md)]¦null|false|none|What columns changed or were added/deleted?|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

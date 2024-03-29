@@ -32,9 +32,9 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|description|string¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this item.|
+|name|string¦null|false|none|Name of this policy.|
+|description|string¦null|false|none|Human readable description of this policy.|
 |groupMonitorInterval|integer(int32)|false|none|none|
 |managedResourceIds|[string]¦null|false|none|none|
 |managedResourceGroupIds|[string]¦null|false|none|none|

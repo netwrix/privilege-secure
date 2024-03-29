@@ -26,10 +26,10 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|credentialId|string(uuid)¦null|false|none|none|
-|displayName|string¦null|false|none|none|
-|domain|string¦null|false|none|none|
+|id|string(uuid)|false|none|User Id or Credential Id or Credential Group Id|
+|credentialId|string(uuid)¦null|false|none|Credential Id|
+|displayName|string¦null|false|none|Credential dislay name|
+|domain|string¦null|false|none|Credential domain/resource|
 |passwordStatus|[SbPAM.Models.VerificationScanStatus](../Models/sbpam.models.verificationscanstatus.md)|false|none|none|
 |managedType|[SbPAM.Models.ManagedType](../Models/sbpam.models.managedtype.md)|false|none|none|
 |rotationType|[SbPAM.Models.ManagedUserType](../Models/sbpam.models.managedusertype.md)|false|none|none|

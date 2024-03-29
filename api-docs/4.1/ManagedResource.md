@@ -33,6 +33,8 @@
 
 [Get managed resource for activity directory domain config (Auth roles: Admin,App)](ManagedResource/GetManagedResourceByDomainConfigId.md)
 
+[IsTaskEnabled check appsettings.json for the property (bool) and returns the value (Auth roles: Admin,App)](ManagedResource/IsTaskEnabled.md)
+
 [Set service account for batch of resources (Auth roles: Admin,App)](ManagedResource/SetServiceAccountBatchAsync.md)
 
 [Set platform for batch of resources (Auth roles: Admin,App)](ManagedResource/SetPlatformBatchAsync.md)
@@ -40,6 +42,8 @@
 [Remove batch of managed resources (Auth roles: Admin,App)](ManagedResource/DeleteIdsAsync.md)
 
 [Get resource groups that resource is a member of (Auth roles: Admin,App)](ManagedResource/GetGroups.md)
+
+[Retrieves the built-in account for the Managed Resource, if one exists for its platform, or a null value if the platform does not support it. (Auth roles: Admin,App)](ManagedResource/GetBuiltInAdmin.md)
 
 [Return DataTable of managed resources in group (Auth roles: Admin,App)](ManagedResource/ResourcesInGroup.md)
 

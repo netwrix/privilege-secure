@@ -1999,25 +1999,27 @@
 
 ```
 
+This model represents a registration for an service.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this service.|
 |type|[SbPAM.Models.RegisteredServiceType](../Models/sbpam.models.registeredservicetype.md)|false|none|none|
-|name|string¦null|false|none|none|
-|added|string(date-time)|false|none|none|
-|refreshToken|string¦null|false|none|none|
-|appTokenId|string(uuid)¦null|false|none|none|
-|appToken|[SbPAM.Models.AppToken](../Models/sbpam.models.apptoken.md)|false|none|none|
+|name|string¦null|false|none|Host name for this service.|
+|added|string(date-time)|false|none|When this service was registered.|
+|refreshToken|string¦null|false|none|Refresh token to the service (encrypted)|
+|appTokenId|string(uuid)¦null|false|none|Id of App token assigned to this service.|
+|appToken|[SbPAM.Models.AppToken](../Models/sbpam.models.apptoken.md)|false|none|This model represents a token that can be used by a service for authorization.|
 |status|[SbPAM.Constants.ActionConstants+RegisteredServiceStatus](../Models/sbpam.constants.actionconstants+registeredservicestatus.md)|false|none|none|
-|description|string¦null|false|none|none|
-|version|string¦null|false|none|none|
-|serviceRegistrationId|string(uuid)¦null|false|none|none|
-|serviceRegistration|[SbPAM.Models.ServiceRegistration](../Models/sbpam.models.serviceregistration.md)|false|none|none|
-|actionServiceProperty|[[SbPAM.Models.ActionServiceProperty](../Models/sbpam.models.actionserviceproperty.md)]¦null|false|none|none|
-|actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|none|
-|serviceNodeId|string(uuid)¦null|false|none|none|
+|description|string¦null|false|none|Human readable description of service status.|
+|version|string¦null|false|none|Version number reported by the service.|
+|serviceRegistrationId|string(uuid)¦null|false|none|Id of service registration associated with this service.|
+|serviceRegistration|[SbPAM.Models.ServiceRegistration](../Models/sbpam.models.serviceregistration.md)|false|none|This model represents a registration for a remote service.|
+|actionServiceProperty|[[SbPAM.Models.ActionServiceProperty](../Models/sbpam.models.actionserviceproperty.md)]¦null|false|none|A list of properties associated with this service.|
+|actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|A list of action queue actions currently active on this service if this is an action service.|
+|serviceNodeId|string(uuid)¦null|false|none|Id of the node this service is running from|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

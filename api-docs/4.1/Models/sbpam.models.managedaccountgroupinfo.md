@@ -26,16 +26,18 @@
 
 ```
 
+This model represents a group of managed accounts.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this group.|
+|name|string¦null|false|none|Name of this group.|
 |type|[SbPAM.Models.ManagedAccountGroupType](../Models/sbpam.models.managedaccountgrouptype.md)|false|none|none|
-|groupId|string(uuid)¦null|false|none|none|
-|mfaConnectorId|string(uuid)¦null|false|none|none|
-|isReviewer|boolean|false|none|none|
+|groupId|string(uuid)¦null|false|none|AD group id if this is an active directory group|
+|mfaConnectorId|string(uuid)¦null|false|none|Alternate MFA provider for members of this group. Override this at the User level.|
+|isReviewer|boolean|false|none|Is assigned reviewer role (for AccessCertification)|
 |distinguishedName|string¦null|false|none|none|
 |domain|string¦null|false|none|none|
 |email|string¦null|false|none|none|

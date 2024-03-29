@@ -23,19 +23,21 @@
 
 ```
 
+This model represents a token that can be used by a service for authorization.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|description|string¦null|false|none|none|
-|token|string¦null|false|none|none|
-|tokenSalt|string¦null|false|none|none|
-|createdDateTimeUtc|string(date-time)|false|none|none|
-|expirationDate|string(date-time)|false|none|none|
-|revoked|boolean|false|none|none|
-|createdBy|string(uuid)¦null|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this token.|
+|name|string¦null|false|none|Name for this token.|
+|description|string¦null|false|none|Human readable description of this token.|
+|token|string¦null|false|none|Encrypted JWT Authorization BEARER token.|
+|tokenSalt|string¦null|false|none|Salt for token encryption.|
+|createdDateTimeUtc|string(date-time)|false|none|When this token was created.|
+|expirationDate|string(date-time)|false|none|Expiration date/time for this token.|
+|revoked|boolean|false|none|True if this token has been revoked.|
+|createdBy|string(uuid)¦null|false|none|Id of logged in user who created this token.|
 |nodeId|string(uuid)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|
 

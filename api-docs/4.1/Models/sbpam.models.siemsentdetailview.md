@@ -36,7 +36,7 @@
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this resource.|
 |message|string¦null|false|none|none|
 |sentTime|string(date-time)¦null|false|none|none|
 |sent|boolean|false|none|none|

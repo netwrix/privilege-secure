@@ -10,7 +10,7 @@
 curl -X POST /api/v1/HostScanJob/ByHostIdMultiple \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 
@@ -63,20 +63,20 @@ Invoke-RestMethod -Method POST -Url "$($Host)/api/v1/HostScanJob/ByHostIdMultipl
 ```json
 [
   {
-    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+    "id": "9c711ab3-8fc1-4d66-88d4-08f85117f32e",
     "status": null,
-    "statusDescription": "string",
+    "statusDescription": "Running.",
     "hostScanHostStatus": [
       {
-        "hostScanHostId": "54804af1-3f95-48c4-a5ea-e5414ebf423e",
+        "hostScanHostId": "c448d5e8-8078-4d92-8dd3-ee29a6c12f9d",
         "hostId": "70e3fb2d-1cb6-4dbc-ab8d-fa7209aca5dd",
         "name": "string",
-        "dnsHostName": "string",
-        "os": "string",
-        "ipAddress": "string",
-        "version": "string",
+        "dnsHostName": "host.example.local",
+        "os": "Windows Fake Edition",
+        "ipAddress": "192.168.1.1",
+        "version": "10.4.1.1",
         "status": null,
-        "statusDescription": "string",
+        "statusDescription": "Running",
         "failureReason": null
       }
     ]
@@ -98,19 +98,19 @@ Status Code **200**
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |*anonymous*|[[SbPAM.Models.HostScanJobStatus](../Models/sbpam.models.hostscanjobstatus.md)]|false|none|none|
-|» id|string(uuid)|false|none|none|
+|» id|string(uuid)|false|none|Unique id and DB key for this job.|
 |» status|any|false|none|none|
-|» statusDescription|string¦null|false|none|none|
-|» hostScanHostStatus|[[SbPAM.Models.HostScanHostStatus](../Models/sbpam.models.hostscanhoststatus.md)]¦null|false|none|none|
-|»» hostScanHostId|string(uuid)|false|none|none|
-|»» hostId|string(uuid)¦null|false|none|none|
-|»» name|string¦null|false|none|none|
-|»» dnsHostName|string¦null|false|none|none|
-|»» os|string¦null|false|none|none|
-|»» ipAddress|string¦null|false|none|none|
-|»» version|string¦null|false|none|none|
+|» statusDescription|string¦null|false|none|Human readable description of the action queue status.|
+|» hostScanHostStatus|[[SbPAM.Models.HostScanHostStatus](../Models/sbpam.models.hostscanhoststatus.md)]¦null|false|none|Status for host(s) scanned by this job.|
+|»» hostScanHostId|string(uuid)|false|none|Record for the host scan results|
+|»» hostId|string(uuid)¦null|false|none|Unique identifier for host|
+|»» name|string¦null|false|none|Name of host|
+|»» dnsHostName|string¦null|false|none|DNS hostname.|
+|»» os|string¦null|false|none|Name of OS on host.|
+|»» ipAddress|string¦null|false|none|IP Address of host|
+|»» version|string¦null|false|none|Version of OS on host.|
 |»» status|any|false|none|none|
-|»» statusDescription|string¦null|false|none|none|
+|»» statusDescription|string¦null|false|none|Human readable description of the action queue status.|
 |»» failureReason|any|false|none|none|
 
 <aside class="warning">

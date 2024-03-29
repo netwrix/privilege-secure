@@ -33,13 +33,17 @@
 
 ```
 
+Access Certification task row details
+Endpoint => UI
+Not persisted
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |userName|string¦null|false|none|none|
-|status|[SbPAM.Models.AccessCertificationTaskRowStatus](../Models/sbpam.models.accesscertificationtaskrowstatus.md)|false|none|none|
+|status|[SbPAM.Models.AccessCertificationTaskRowStatus](../Models/sbpam.models.accesscertificationtaskrowstatus.md)|false|none|Access certification task row status|
 |accessControlPolicy|string¦null|false|none|none|
 |resource|string¦null|false|none|none|
 |credential|string¦null|false|none|none|

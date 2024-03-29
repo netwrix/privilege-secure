@@ -1767,28 +1767,30 @@
 
 ```
 
+This model is used to scan a host to obtain os type and version info.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|name|string¦null|false|none|none|
-|dnsHostName|string¦null|false|none|none|
-|ipAddress|string¦null|false|none|none|
-|os|string¦null|false|none|none|
-|version|string¦null|false|none|none|
-|lsaLookupCache|string¦null|false|none|none|
-|lastUpdatedDateTimeUtc|string(date-time)¦null|false|none|none|
-|hostId|string(uuid)¦null|false|none|none|
-|credentialId|string(uuid)|false|none|none|
-|platformId|string(uuid)¦null|false|none|none|
-|lastScanTimeUtc|string(date-time)¦null|false|none|none|
-|lastScanStartTimeUtc|string(date-time)|false|none|none|
-|hostScanUser|[[SbPAM.Models.HostScanUser](../Models/sbpam.models.hostscanuser.md)]¦null|false|none|none|
-|hostScanGroup|[[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)]¦null|false|none|none|
-|hostScanFeature|[[SbPAM.Models.HostScanFeature](../Models/sbpam.models.hostscanfeature.md)]¦null|false|none|none|
-|hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](../Models/sbpam.models.hostscanjobhostjoin.md)]¦null|false|none|none|
-|hostConnected|boolean|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this host.|
+|name|string¦null|false|none|name of host.|
+|dnsHostName|string¦null|false|none|DNS hostname.|
+|ipAddress|string¦null|false|none|IP address of host.|
+|os|string¦null|false|none|Name of OS on host.|
+|version|string¦null|false|none|Version of OS on host.|
+|lsaLookupCache|string¦null|false|none|Most recent LsaLookupCacheMaxSize|
+|lastUpdatedDateTimeUtc|string(date-time)¦null|false|none|Date/time of last system update.|
+|hostId|string(uuid)¦null|false|none|Id of host created/updated by this scan.|
+|credentialId|string(uuid)|false|none|Id of credentials for host.|
+|platformId|string(uuid)¦null|false|none|Id of platform for host.|
+|lastScanTimeUtc|string(date-time)¦null|false|none|Date time the host scan completed for the host.|
+|lastScanStartTimeUtc|string(date-time)|false|none|Date time the last host scan was started for the host.|
+|hostScanUser|[[SbPAM.Models.HostScanUser](../Models/sbpam.models.hostscanuser.md)]¦null|false|none|Users which belong to this host.|
+|hostScanGroup|[[SbPAM.Models.HostScanGroup](../Models/sbpam.models.hostscangroup.md)]¦null|false|none|Groups which belong to this host.|
+|hostScanFeature|[[SbPAM.Models.HostScanFeature](../Models/sbpam.models.hostscanfeature.md)]¦null|false|none|Features which are installed on this host.|
+|hostScanJobHostJoin|[[SbPAM.Models.HostScanJobHostJoin](../Models/sbpam.models.hostscanjobhostjoin.md)]¦null|false|none|Jobs which reference this host via join table.|
+|hostConnected|boolean|false|none|True if the host was connected to during the last scan|
 |netBiosName|string¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|

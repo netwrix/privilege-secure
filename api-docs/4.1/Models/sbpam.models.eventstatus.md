@@ -11,11 +11,13 @@
 
 ```
 
+The general tone of an event (error, warning, or FYI)
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|none|
+|*anonymous*|integer(int32)|false|none|The general tone of an event (error, warning, or FYI)|
 
 #### Enumerated Values
 

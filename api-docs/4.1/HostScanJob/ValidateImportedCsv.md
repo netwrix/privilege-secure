@@ -10,7 +10,7 @@
 curl -X POST /api/v1/HostScanJob/ValidateImportedCSV \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 
@@ -122,17 +122,17 @@ Status Code **200**
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |*anonymous*|[[SbPAM.Models.HostScanJobResponse](../Models/sbpam.models.hostscanjobresponse.md)]|false|none|none|
-|» dnsHostName|string¦null|false|none|none|
-|» ipAddress|string¦null|false|none|none|
-|» os|string¦null|false|none|none|
-|» credentialId|string(uuid)|false|none|none|
-|» credentialName|string¦null|false|none|none|
+|» dnsHostName|string¦null|false|none|DNS hostname.|
+|» ipAddress|string¦null|false|none|IP Address to use if DNS resolution fails|
+|» os|string¦null|false|none|Default OS value if scan fails|
+|» credentialId|string(uuid)|false|none|Id of credentials for host.|
+|» credentialName|string¦null|false|none|Name of credentials for host.|
 |» platformName|string¦null|false|none|none|
-|» acceptThumbprintOnFirstDiscovery|boolean|false|none|none|
+|» acceptThumbprintOnFirstDiscovery|boolean|false|none|Accept thumbprint on first discovery will allow the scan to complete and store the found thumbprint as trusted|
 |» sshTrustActionType|any|false|none|none|
 |» certificateType|any|false|none|none|
-|» trustedThumbprint|string¦null|false|none|none|
-|» sshPort|integer(int32)¦null|false|none|none|
+|» trustedThumbprint|string¦null|false|none|Trusted thumbprint|
+|» sshPort|integer(int32)¦null|false|none|SSH Port|
 |» source|string¦null|false|none|none|
 |» credentialNameError|string¦null|false|none|none|
 |» platformNameError|string¦null|false|none|none|

@@ -42,15 +42,17 @@
 
 ```
 
+This model represents a parameter statically associated with an action.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|value|string¦null|false|none|none|
-|actionTemplateParameterId|string(uuid)|false|none|none|
-|actionTemplateParameter|[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)|false|none|none|
-|actionId|string(uuid)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this parameter.|
+|value|string¦null|false|none|Value for this parameter.|
+|actionTemplateParameterId|string(uuid)|false|none|Id of action template associated with this parameter.|
+|actionTemplateParameter|[SbPAM.Models.ActionTemplateParameter](../Models/sbpam.models.actiontemplateparameter.md)|false|none|This model represents a template for a parameter associated with an action group action.|
+|actionId|string(uuid)|false|none|Id of action associated with this parameter.|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

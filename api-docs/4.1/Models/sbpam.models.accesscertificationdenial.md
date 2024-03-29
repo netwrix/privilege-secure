@@ -30,12 +30,12 @@
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
 |accessPolicyId|string(uuid)|false|none|none|
-|managedUserId|string(uuid)|false|none|none|
+|managedUserId|string(uuid)|false|none|Managed account ID representing the user who is denied access|
 |resourceId|string(uuid)¦null|false|none|none|
 |activityId|string(uuid)|false|none|none|
 |credentialId|string(uuid)¦null|false|none|none|
 |denyingTaskId|string(uuid)|false|none|none|
-|status|[SbPAM.Models.AccessCertificationTaskRowStatus](../Models/sbpam.models.accesscertificationtaskrowstatus.md)|false|none|none|
+|status|[SbPAM.Models.AccessCertificationTaskRowStatus](../Models/sbpam.models.accesscertificationtaskrowstatus.md)|false|none|Access certification task row status|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

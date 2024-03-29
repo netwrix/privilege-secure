@@ -69,7 +69,54 @@
                 "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                 "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
               }
-            ]
+            ],
+            "customFields": [
+              {
+                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+                "customFieldNumber": 0,
+                "name": "string",
+                "label": "string",
+                "description": "string",
+                "options": "string",
+                "length": 0,
+                "customFieldDataType": "Integer",
+                "required": true,
+                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+              }
+            ],
+            "deleteAccount": true,
+            "sessionRetryInterval": 0,
+            "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+            "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+            "maxSessionLength": 0,
+            "allowSessionExtension": true,
+            "sessionExtensionMinutes": 0,
+            "sessionExtensionCount": 0,
+            "sessionMonitorInterval": 0,
+            "expirationTimeoutThreshold": 0,
+            "rdpProxyHost": "string",
+            "sshProxyHost": "string",
+            "sshScanDc": true,
+            "recordAudio": true,
+            "proxyAutoConnect": true,
+            "record": true,
+            "approvalTypeRequired": "Deny",
+            "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+            "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+            "monitorEntireSession": true,
+            "allowViewPassword": true,
+            "allowPasswordAccess": true,
+            "allowAutofillPassword": true,
+            "leaveInGroup": true,
+            "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+            "clearWebsiteDataAfterStop": true,
+            "clearWebsiteDataBeforeStart": true,
+            "notesRequired": true,
+            "ticketRequired": true,
+            "viewPasswordInSeconds": 0
           },
           "platformId": "32a6e381-64f4-4911-86b6-3bf681b64d23",
           "platform": {
@@ -204,7 +251,40 @@
                   "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
                   "activityConfigurationSettings": [
                     {}
-                  ]
+                  ],
+                  "customFields": [
+                    {}
+                  ],
+                  "deleteAccount": true,
+                  "sessionRetryInterval": 0,
+                  "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+                  "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+                  "maxSessionLength": 0,
+                  "allowSessionExtension": true,
+                  "sessionExtensionMinutes": 0,
+                  "sessionExtensionCount": 0,
+                  "sessionMonitorInterval": 0,
+                  "expirationTimeoutThreshold": 0,
+                  "rdpProxyHost": "string",
+                  "sshProxyHost": "string",
+                  "sshScanDc": true,
+                  "recordAudio": true,
+                  "proxyAutoConnect": true,
+                  "record": true,
+                  "approvalTypeRequired": "Deny",
+                  "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+                  "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+                  "monitorEntireSession": true,
+                  "allowViewPassword": true,
+                  "allowPasswordAccess": true,
+                  "allowAutofillPassword": true,
+                  "leaveInGroup": true,
+                  "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+                  "clearWebsiteDataAfterStop": true,
+                  "clearWebsiteDataBeforeStart": true,
+                  "notesRequired": true,
+                  "ticketRequired": true,
+                  "viewPasswordInSeconds": 0
                 },
                 "activityGroupActivities": [
                   {}
@@ -270,7 +350,54 @@
                 "createdDateTimeUtc": "2019-08-24T14:15:22Z",
                 "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
               }
-            ]
+            ],
+            "customFields": [
+              {
+                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                "activityConfigurationId": "e649ca68-23ab-42cb-8af5-260e01dc50d6",
+                "customFieldNumber": 0,
+                "name": "string",
+                "label": "string",
+                "description": "string",
+                "options": "string",
+                "length": 0,
+                "customFieldDataType": "Integer",
+                "required": true,
+                "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
+                "createdDateTimeUtc": "2019-08-24T14:15:22Z",
+                "modifiedDateTimeUtc": "2019-08-24T14:15:22Z"
+              }
+            ],
+            "deleteAccount": true,
+            "sessionRetryInterval": 0,
+            "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+            "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+            "maxSessionLength": 0,
+            "allowSessionExtension": true,
+            "sessionExtensionMinutes": 0,
+            "sessionExtensionCount": 0,
+            "sessionMonitorInterval": 0,
+            "expirationTimeoutThreshold": 0,
+            "rdpProxyHost": "string",
+            "sshProxyHost": "string",
+            "sshScanDc": true,
+            "recordAudio": true,
+            "proxyAutoConnect": true,
+            "record": true,
+            "approvalTypeRequired": "Deny",
+            "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+            "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+            "monitorEntireSession": true,
+            "allowViewPassword": true,
+            "allowPasswordAccess": true,
+            "allowAutofillPassword": true,
+            "leaveInGroup": true,
+            "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+            "clearWebsiteDataAfterStop": true,
+            "clearWebsiteDataBeforeStart": true,
+            "notesRequired": true,
+            "ticketRequired": true,
+            "viewPasswordInSeconds": 0
           },
           "activityGroupActivities": [
             {
@@ -297,7 +424,40 @@
                   "nodeId": "959356e3-6168-4a92-b4a5-b9d462be6177",
                   "activityConfigurationSettings": [
                     {}
-                  ]
+                  ],
+                  "customFields": [
+                    {}
+                  ],
+                  "deleteAccount": true,
+                  "sessionRetryInterval": 0,
+                  "approvedWorkflowEmailTemplateId": "7323f20a-d61f-4cbd-9b9a-1ce63404d7a1",
+                  "notifyApproversWorkflowEmailTemplateId": "5997e1ba-a294-43d0-acaa-18d25ec8482f",
+                  "maxSessionLength": 0,
+                  "allowSessionExtension": true,
+                  "sessionExtensionMinutes": 0,
+                  "sessionExtensionCount": 0,
+                  "sessionMonitorInterval": 0,
+                  "expirationTimeoutThreshold": 0,
+                  "rdpProxyHost": "string",
+                  "sshProxyHost": "string",
+                  "sshScanDc": true,
+                  "recordAudio": true,
+                  "proxyAutoConnect": true,
+                  "record": true,
+                  "approvalTypeRequired": "Deny",
+                  "approvalWorkflowId": "2db777ef-e869-4d8f-8dc2-f01750b5b4aa",
+                  "approvalWorkflowEmailTemplateId": "3416bc31-9e7f-4338-b33c-7314dfcb92d4",
+                  "monitorEntireSession": true,
+                  "allowViewPassword": true,
+                  "allowPasswordAccess": true,
+                  "allowAutofillPassword": true,
+                  "leaveInGroup": true,
+                  "activityTokenComplexity": "123519da-14b2-440d-af88-b17b69fb9aa6",
+                  "clearWebsiteDataAfterStop": true,
+                  "clearWebsiteDataBeforeStart": true,
+                  "notesRequired": true,
+                  "ticketRequired": true,
+                  "viewPasswordInSeconds": 0
                 },
                 "platformId": "32a6e381-64f4-4911-86b6-3bf681b64d23",
                 "platform": {
@@ -443,11 +603,14 @@
 
 ```
 
+Generic container for the output of some API endpoints and .Search() 
+methods in some actors that return paged subsets of filtered search results
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|data|[[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md)]¦null|false|none|none|
-|recordsTotal|integer(int32)|false|none|none|
+|data|[[SbPAM.Models.SimpleAccessControlPolicy](../Models/sbpam.models.simpleaccesscontrolpolicy.md)]¦null|false|none|A subset of the filtered, sorted, and paged (e.g., rows 30 - 39 of <br>589 found) search results|
+|recordsTotal|integer(int32)|false|none|What is the total count of search results that .DataRows may only <br>be a paged subset of (e.g., rows 30 - 39 of 589 found)|
 
 

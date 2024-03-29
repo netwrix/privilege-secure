@@ -27,10 +27,10 @@
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|string(uuid)|false|none|none|
-|specificGroups|string¦null|false|none|none|
+|specificGroups|string¦null|false|none|Gets or sets the specific groups this job should scan.|
 |nameFormat|[SbPAM.ActiveDirectory.Models.Enums.ActiveDirectoryNameFormat](../Models/sbpam.activedirectory.models.enums.activedirectorynameformat.md)|false|none|none|
-|fullScan|boolean|false|none|none|
-|useGlobalCatalog|boolean|false|none|none|
+|fullScan|boolean|false|none|Gets or sets a value indicating whether all object should be re-scanned or a scan should continue from the position of the last scan.|
+|useGlobalCatalog|boolean|false|none|Gets or sets a value indicating if the name translations should be performed by a global catalog server.|
 |domain|string¦null|false|none|none|
 |domainController|string¦null|false|none|none|
 |nodeId|string(uuid)|false|none|none|

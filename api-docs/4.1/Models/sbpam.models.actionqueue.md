@@ -1414,23 +1414,27 @@
 
 ```
 
+This model represents a collection of action queue actions associated
+    with the actions in an action group, which can be scheduled for execution.
+    The queue is ordered by the Action.ExecutionOrder (lowest to highest).
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string(uuid)|false|none|none|
-|actionJobId|string(uuid)¦null|false|none|none|
-|runUserId|string(uuid)¦null|false|none|none|
-|timeCreated|string(date-time)|false|none|none|
-|timeStarted|string(date-time)|false|none|none|
-|timeFinished|string(date-time)|false|none|none|
-|heartBeatDateTimeUtc|string(date-time)|false|none|none|
+|id|string(uuid)|false|none|Unique id and DB key for this action queue.|
+|actionJobId|string(uuid)¦null|false|none|Action Job that created this ActionQueue|
+|runUserId|string(uuid)¦null|false|none|Id associated with the logged in user which created this action queue.|
+|timeCreated|string(date-time)|false|none|When this action queue was created.|
+|timeStarted|string(date-time)|false|none|When this action queue started execution.|
+|timeFinished|string(date-time)|false|none|When this action queue finished execution.|
+|heartBeatDateTimeUtc|string(date-time)|false|none|Heartbeat for this ActionQueue - this gets updated when an ActionQueueAction<br>associated with the Queue is updated.<br>If the Queue isn't updated frequently enough, the scheduler will<br>post a healthcheck for it|
 |status|[SbPAM.Constants.ActionConstants+ActionStatus](../Models/sbpam.constants.actionconstants+actionstatus.md)|false|none|none|
-|statusDescription|string¦null|false|none|none|
+|statusDescription|string¦null|false|none|Human readable description of the action queue status.|
 |failureReason|[SbPAM.Constants.ActionConstants+ActionFailureReason](../Models/sbpam.constants.actionconstants+actionfailurereason.md)|false|none|none|
-|actionGroupId|string(uuid)|false|none|none|
-|actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|none|
-|actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|none|
+|actionGroupId|string(uuid)|false|none|Id of action group associated with this action queue.|
+|actionGroup|[SbPAM.Models.ActionGroup](../Models/sbpam.models.actiongroup.md)|false|none|This model represents a group of actions which can be performed<br>    in a particular order (by Action.ExecutionOrder) by an action service.|
+|actionQueueAction|[[SbPAM.Models.ActionQueueAction](../Models/sbpam.models.actionqueueaction.md)]¦null|false|none|List of action queue action associate with this action queue.|
 |nodeId|string(uuid)|false|none|none|
 |createdDateTimeUtc|string(date-time)|false|none|none|
 |modifiedDateTimeUtc|string(date-time)|false|none|none|

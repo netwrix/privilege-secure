@@ -35,15 +35,6 @@
       "managedResourceName": "string",
       "manageAccountId": "0c0b7e07-4be0-4190-9270-b24e3c08cedf",
       "managedAccountName": "string",
-      "currentStepId": "e3f37999-aa7c-4bbb-927b-f852bdd95c53",
-      "currentStep": 0,
-      "totalSteps": 0,
-      "pendingSteps": 0,
-      "queuedSteps": 0,
-      "runningSteps": 0,
-      "failedSteps": 0,
-      "cancelledSteps": 0,
-      "completedSteps": 0,
       "actionGroupName": "string"
     }
   ],
@@ -52,11 +43,14 @@
 
 ```
 
+Generic container for the output of some API endpoints and .Search() 
+methods in some actors that return paged subsets of filtered search results
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|data|[[SbPAM.Models.ActionQueueSearchResult](../Models/sbpam.models.actionqueuesearchresult.md)]¦null|false|none|none|
-|recordsTotal|integer(int32)|false|none|none|
+|data|[[SbPAM.Models.ActionQueueSearchResult](../Models/sbpam.models.actionqueuesearchresult.md)]¦null|false|none|A subset of the filtered, sorted, and paged (e.g., rows 30 - 39 of <br>589 found) search results|
+|recordsTotal|integer(int32)|false|none|What is the total count of search results that .DataRows may only <br>be a paged subset of (e.g., rows 30 - 39 of 589 found)|
 
 

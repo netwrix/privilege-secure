@@ -919,12 +919,12 @@
 |type|[SbPAM.Models.CredentialType](../Models/sbpam.models.credentialtype.md)|false|none|none|
 |userId|string(uuid)¦null|false|none|none|
 |platformId|string(uuid)¦null|false|none|none|
-|platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|none|
+|platform|[SbPAM.Models.Platform](../Models/sbpam.models.platform.md)|false|none|This model represents an platform on which a particular activity can be performed.|
 |sudoCommand|string¦null|false|none|none|
 |changeOnCheckout|boolean¦null|false|none|none|
 |changeOnRelease|boolean¦null|false|none|none|
 |passwordVaultConnectorId|string(uuid)¦null|false|none|none|
-|passwordVaultConnector|[SbPAM.Models.IntegrationConnector](../Models/sbpam.models.integrationconnector.md)|false|none|none|
+|passwordVaultConnector|[SbPAM.Models.IntegrationConnector](../Models/sbpam.models.integrationconnector.md)|false|none|This model represents integration connectors for Stealthbits products and available third-party apps.|
 |passwordVaultInfo|string¦null|false|none|none|
 |isDeleted|boolean|false|none|none|
 |isManaged|boolean|false|none|none|
