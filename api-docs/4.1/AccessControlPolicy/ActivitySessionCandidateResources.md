@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X GET /api/v1/AccessControlPolicy/ActivitySessionResources \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 
@@ -40,12 +40,12 @@ Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/Activity
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|Skip|query|integer(int32)|false|none|
-|Take|query|integer(int32)|false|none|
-|OrderBy|query|string|false|none|
-|OrderDescending|query|boolean|false|none|
-|FilterText|query|string|false|none|
-|FilterColumns|query|array[string]|false|none|
+|Skip|query|integer(int32)|false|Start at this item (default: 0)|
+|Take|query|integer(int32)|false|Return this number of items (default: 100)|
+|OrderBy|query|string|false|Property name to order results by|
+|OrderDescending|query|boolean|false|Use descending sort order (default: false)|
+|FilterText|query|string|false|Filter by entries that contain this text. Properties match vary by endpoint.|
+|FilterColumns|query|array[string]|false|Columns to include in filter|
 |activityId|query|string(uuid)|false|Activity id|
 |policyId|query|string(uuid)|false|Access control policy id|
 |managedAccountId|query|string(uuid)|false|Managed account id|

@@ -9,7 +9,7 @@
 # You can also use wget
 curl -X DELETE /api/v1/Credential/DeleteByHostUser/{userId} \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 

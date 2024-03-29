@@ -10,7 +10,7 @@
 curl -X POST /api/v1/Credential/GenerateUserSSHCertificate/{userId} \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 

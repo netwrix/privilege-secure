@@ -10,7 +10,7 @@
 curl -X PUT /api/v1/Credential/OnChangeReset \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
-  -H 'Authorization: API_KEY'
+  -H 'Authorization: Bearer API_KEY'
 
 ```
 
