@@ -22,7 +22,7 @@ $JsonBody = @"
 ]
 "@
 
-$Host = "https://localhost:6500"
+$NPSUrl = "https://localhost:6500"
 
 $Login = @{
     Login = "User"
@@ -30,14 +30,13 @@ $Login = @{
 }
 # Cookie container for multi-factor authentication
 $WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
-$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
-$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Uri "$($NPSUrl)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebSession $WebSession -ContentType "application/json"
+$Token = Invoke-RestMethod -Uri "$($NPSUrl)/signin2fa" -Method Post -Body $MfaCode -Headers @{Authorization = "Bearer $Token"} -WebSession $WebSession -ContentType "application/json"
 
 $Headers = @{
-
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method PUT -Url "$($Host)/api/v1/ManagedResource/ManageAccount/{manageAccount}" -ContentType "application/json" -Body $JsonBody -Headers $Headers
+Invoke-RestMethod -Method PUT -Uri "$($NPSUrl)/api/v1/ManagedResource/ManageAccount/{manageAccount}" -ContentType "application/json" -Body $JsonBody -Headers $Headers -ContentType "application/json"
 ```
 
 `PUT /api/v1/ManagedResource/ManageAccount/{manageAccount}`

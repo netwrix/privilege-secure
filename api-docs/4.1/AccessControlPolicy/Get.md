@@ -16,22 +16,21 @@ curl -X GET /api/v1/AccessControlPolicy/{accessControlPolicyId} \
 ```powershell
 # PowerShell example
 
-$Host = "https://localhost:6500"
+$NPSUrl = "https://192.168.77.99:6500"
 
 $Login = @{
-    Login = "User"
-    Password = "Password"
+    Login = "sbpam\kevinh"
+    Password = "Stealth99#"
 }
 # Cookie container for multi-factor authentication
 $WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
-$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
-$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Uri "$($NPSUrl)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebSession $WebSession -ContentType "application/json"
+$Token = Invoke-RestMethod -Uri "$($NPSUrl)/signin2fa" -Method Post -Body $MfaCode -Headers @{Authorization = "Bearer $Token"} -WebSession $WebSession -ContentType "application/json"
 
 $Headers = @{
-
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method GET -Url "$($Host)/api/v1/AccessControlPolicy/{accessControlPolicyId} -Headers $Headers
+Invoke-RestMethod -Method GET -Uri "$($NPSUrl)/api/v1/AccessControlPolicy -Headers $Headers -ContentType "application/json"
 ```
 
 `GET /api/v1/AccessControlPolicy/{accessControlPolicyId}`

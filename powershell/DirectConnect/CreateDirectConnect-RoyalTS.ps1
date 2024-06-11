@@ -56,13 +56,13 @@ function Invoke-Export
 
     $WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
 
-    $jwt = Get-SbPAMToken -Credential $userCred -Uri $SbPAMUrl -WebSession $WebSession -ErrorAction Stop -SkipCertificateCheck
+    $jwt = Get-SbPAMToken -Credential $userCred -Uri $SbPAMUrl -WebSession $WebSession -ContentType "application/json" -ErrorAction Stop -SkipCertificateCheck
     if ($null -eq $jwt) {
         Write-Error "Unable to get JWT from SbPAM."
         return
     }
 
-    $jwt = Get-SbPAMMfaToken -Uri $SbPAMUrl -WebSession $WebSession -ErrorAction Stop -Token $jwt -Code $Code -SkipCertificateCheck
+    $jwt = Get-SbPAMMfaToken -Uri $SbPAMUrl -WebSession $WebSession -ContentType "application/json" -ErrorAction Stop -Token $jwt -Code $Code -SkipCertificateCheck
     if ($null -eq $jwt) {
         Write-Error "Unable to get JWT from SbPAM."
         return
@@ -167,7 +167,7 @@ function Get-SbPAMUser
     )
     $UserPart = [System.Web.HttpUtility]::UrlEncode($User)
 
-    $SearchResult = Invoke-SbPAMRest -Uri "$($Uri)/api/v1/ManagedAccount/Search?filterText=$UserPart" -Token $Token -WebSession $WebSession -SkipCertificateCheck
+    $SearchResult = Invoke-SbPAMRest -Uri "$($Uri)/api/v1/ManagedAccount/Search?filterText=$UserPart" -Token $Token -WebSession $WebSession -ContentType "application/json" -SkipCertificateCheck
     return $SearchResult.Data
 }
 
