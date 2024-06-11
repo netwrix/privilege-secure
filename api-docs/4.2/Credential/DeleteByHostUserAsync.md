@@ -33,13 +33,13 @@ $Login = @{
 }
 # Cookie container for multi-factor authentication
 $WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
-$Token = Invoke-RestMethod -Url "$($NPSUrl)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebSession $WebSession -ContentType "application/json"
-$Token = Invoke-RestMethod -Url "$($NPSUrl)/signin2fa" -Method Post -Body $MfaCode -Headers @{Authorization = "Bearer $Token"} -WebSession $WebSession -ContentType "application/json"
+$Token = Invoke-RestMethod -Uri "$($NPSUrl)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebSession $WebSession -ContentType "application/json"
+$Token = Invoke-RestMethod -Uri "$($NPSUrl)/signin2fa" -Method Post -Body $MfaCode -Headers @{Authorization = "Bearer $Token"} -WebSession $WebSession -ContentType "application/json"
 
 $Headers = @{
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method DELETE -Url "$($NPSUrl)/api/v1/Credential/DeleteByHostUser/{userId} -Headers $Headers -ContentType "application/json"
+Invoke-RestMethod -Method DELETE -Uri "$($NPSUrl)/api/v1/Credential/DeleteByHostUser/{userId} -Headers $Headers -ContentType "application/json"
 ```
 
 

@@ -960,13 +960,13 @@ $Login = @{
 }
 # Cookie container for multi-factor authentication
 $WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
-$Token = Invoke-RestMethod -Url "$($NPSUrl)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebSession $WebSession -ContentType "application/json"
-$Token = Invoke-RestMethod -Url "$($NPSUrl)/signin2fa" -Method Post -Body $MfaCode -Headers @{Authorization = "Bearer $Token"} -WebSession $WebSession -ContentType "application/json"
+$Token = Invoke-RestMethod -Uri "$($NPSUrl)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebSession $WebSession -ContentType "application/json"
+$Token = Invoke-RestMethod -Uri "$($NPSUrl)/signin2fa" -Method Post -Body $MfaCode -Headers @{Authorization = "Bearer $Token"} -WebSession $WebSession -ContentType "application/json"
 
 $Headers = @{
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method PUT -Url "$($NPSUrl)/api/v1/HostScanJob/User/{actionQueueActionId}" -ContentType "application/json" -Body $JsonBody -Headers $Headers -ContentType "application/json"
+Invoke-RestMethod -Method PUT -Uri "$($NPSUrl)/api/v1/HostScanJob/User/{actionQueueActionId}" -ContentType "application/json" -Body $JsonBody -Headers $Headers -ContentType "application/json"
 ```
 
 
