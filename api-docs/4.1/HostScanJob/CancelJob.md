@@ -39,7 +39,7 @@ $Token = Invoke-RestMethod -Uri "$($NPSUrl)/signin2fa" -Method Post -Body $MfaCo
 $Headers = @{
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method DELETE -Uri "$($NPSUrl)/api/v1/HostScanJob/{hostScanJobId} -Headers $Headers -ContentType "application/json"
+Invoke-RestMethod -Method DELETE -Uri "$($NPSUrl)/api/v1/HostScanJob/{hostScanJobId}" -Headers $Headers -ContentType "application/json"
 ```
 
 

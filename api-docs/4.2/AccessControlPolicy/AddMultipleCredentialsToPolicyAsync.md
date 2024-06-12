@@ -48,7 +48,7 @@ $Token = Invoke-RestMethod -Uri "$($NPSUrl)/signin2fa" -Method Post -Body $MfaCo
 $Headers = @{
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method PUT -Uri "$($NPSUrl)/api/v1/AccessControlPolicy/{policyId}/Credential" -ContentType "application/json" -Body $JsonBody -Headers $Headers -ContentType "application/json"
+Invoke-RestMethod -Method PUT -Uri "$($NPSUrl)/api/v1/AccessControlPolicy/{policyId}/Credential" -Body $JsonBody -Headers $Headers -ContentType "application/json"
 ```
 
 

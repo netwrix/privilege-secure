@@ -45,7 +45,7 @@ $Token = Invoke-RestMethod -Uri "$($NPSUrl)/signin2fa" -Method Post -Body $MfaCo
 $Headers = @{
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method DELETE -Uri "$($NPSUrl)/api/v1/AccessControlPolicy/{policyId}/SecretVault" -ContentType "application/json" -Body $JsonBody -Headers $Headers -ContentType "application/json"
+Invoke-RestMethod -Method DELETE -Uri "$($NPSUrl)/api/v1/AccessControlPolicy/{policyId}/SecretVault" -Body $JsonBody -Headers $Headers -ContentType "application/json"
 ```
 
 

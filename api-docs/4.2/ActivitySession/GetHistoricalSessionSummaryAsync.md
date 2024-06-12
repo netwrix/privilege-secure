@@ -40,7 +40,7 @@ $Token = Invoke-RestMethod -Uri "$($NPSUrl)/signin2fa" -Method Post -Body $MfaCo
 $Headers = @{
     Authorization = "Bearer $Token"
 }
-Invoke-RestMethod -Method GET -Uri "$($NPSUrl)/api/v1/ActivitySession/SummaryByStatus/Historical -Headers $Headers -ContentType "application/json"
+Invoke-RestMethod -Method GET -Uri "$($NPSUrl)/api/v1/ActivitySession/SummaryByStatus/Historical" -Headers $Headers -ContentType "application/json"
 ```
 
 
