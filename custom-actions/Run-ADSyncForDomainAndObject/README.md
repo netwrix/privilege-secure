@@ -12,3 +12,9 @@ If you see the error:
 To grant permission, you’ll need to launch the `ADSIEdit` tool and grant 
 permission at the root of the domain for `Replication Synchronization`
 
+# To install
+1. Download the Zip file to your NPS server.
+1. Unzip the file.
+1. Start PowerShell as Administrator.
+1. CD to the directory you unzipped to.
+1. Run the Install-Addon.ps1
