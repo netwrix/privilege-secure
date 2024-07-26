@@ -9,7 +9,6 @@ It is recommended that you use the `Logoff User` step in your activity before th
 
 ## Sample entries from Activity Log
 
-|--    |--        |--      |--       |
 | LINE | DATETIME | STATUS | MESSAGE |
 | --   | --       | --     | --      | 
 | 33   | 7/26/2024 2:54:23 PM	| Info	| Remove user profile from remote computer script finsished, SessionId: 70074940-ee2d-4304-a87d-e5530c74c27f. |
