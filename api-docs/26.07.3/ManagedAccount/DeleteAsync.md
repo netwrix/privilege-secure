@@ -1,0 +1,69 @@
+
+## Soft-delete an NPS user (Auth roles: Admin,App)
+
+<a id="opIdDeleteAsync"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X DELETE /api/v1/ManagedAccount/{managedAccountId} \
+  -H 'Accept: application/json'
+
+```
+
+```powershell
+# PowerShell example
+
+$Host = "https://localhost:6500"
+
+$Login = @{
+    Login = "User"
+    Password = "Password"
+}
+# Cookie container for multi-factor authentication
+$WebSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$Token = Invoke-RestMethod -Url "$($Host)/signinBody" -Method POST -Body (ConvertTo-Json $Login) -WebRequestSession $WebSession
+$Token = Invoke-RestMethod -Url "$($Host)/sigin2fa" -Method Post -Body $MfaCode -Headers @{Authorization: "Bearer $Token"} -WebRequestSession $WebSession
+
+$Headers = @{
+
+    Authorization = "Bearer $Token"
+}
+Invoke-RestMethod -Method DELETE -Url "$($Host)/api/v1/ManagedAccount/{managedAccountId} -Headers $Headers
+```
+
+`DELETE /api/v1/ManagedAccount/{managedAccountId}`
+
+<h3 id="soft-delete-an-nps-user-(auth-roles:-admin,app)-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|managedAccountId|path|string(uuid)|true|User to remove|
+
+> Example responses
+
+> 202 Response
+
+```json
+"string"
+```
+
+<h3 id="soft-delete-an-nps-user-(auth-roles:-admin,app)-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|202|[Accepted](https://tools.ietf.org/html/rfc7231#section-6.3.3)|Accepted|string|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not Found|[Microsoft.AspNetCore.Mvc.ProblemDetails](../Models/microsoft.aspnetcore.mvc.problemdetails.md)|
+|HttpStatusCode.BadRequest|Unknown|Error deleting user|None|
+|HttpStatusCode.Forbidden|Unknown|User is not an Administrator|None|
+|HttpStatusCode.NotFound|Unknown|User not found|None|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
+</aside>
+
+
